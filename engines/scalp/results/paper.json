@@ -52,19 +52,36 @@
   }
  },
  "closed": [],
- "updated": "2026-11-08T23:50:42Z",
- "runs": 1,
+ "updated": "2026-11-08T23:52:35Z",
+ "runs": 2,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-08 23:49:00",
+  "bb_maker-NEARUSDT-1m": "2026-11-08 23:51:00",
   "streak_bb-LTCUSDT-5m": "2026-11-08 23:45:00",
   "streak_bb-SUIUSDT-5m": "2026-11-08 23:45:00",
   "bb_maker-NEARUSDT-5m": "2026-11-08 23:45:00",
   "vol_burst_revert-ARBUSDT-5m": "2026-11-08 23:45:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-08 23:49:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-08 23:51:00",
   "bollinger_reversion-NEARUSDT-5m": "2026-11-08 23:45:00",
-  "wick_vol-OPUSDT-15m": "2026-11-08 23:30:00"
+  "wick_vol-APTUSDT-15m": "2026-11-08 23:30:00"
  },
  "tops": [
+  {
+   "key": "wick_vol-APTUSDT-15m",
+   "strategy": "wick_vol",
+   "symbol": "APTUSDT",
+   "tf": "15m",
+   "params": {
+    "h": 15,
+    "vz": 2.0,
+    "w": 0.5
+   },
+   "fee_mode": "maker",
+   "oos_sharpe": 3.02,
+   "score": 3.02,
+   "signal": 0.0,
+   "sig_last": "2026-11-05 19:30:00",
+   "sig_pct": 11.47
+  },
   {
    "key": "bb_maker-NEARUSDT-1m",
    "strategy": "bb_maker",
@@ -179,23 +196,6 @@
    "signal": 1.0,
    "sig_last": "2026-11-08 23:45:00",
    "sig_pct": 9.53
-  },
-  {
-   "key": "wick_vol-OPUSDT-15m",
-   "strategy": "wick_vol",
-   "symbol": "OPUSDT",
-   "tf": "15m",
-   "params": {
-    "h": 30,
-    "vz": 3.0,
-    "w": 0.4
-   },
-   "fee_mode": "maker",
-   "oos_sharpe": 1.99,
-   "score": 1.29,
-   "signal": 0.0,
-   "sig_last": "2026-11-07 19:30:00",
-   "sig_pct": 14.86
   }
  ],
  "stats": {
@@ -207,11 +207,11 @@
   "open": 4
  },
  "filter_stats": {
-  "total": 1807,
-  "low_trades": 338,
+  "total": 1860,
+  "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1363,
-  "low_t": 97,
+  "low_pf": 1395,
+  "low_t": 107,
   "no_params": 0,
   "admitted": 8
  },

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T23:50:42Z",
+ "updated": "2026-11-08T23:52:35Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 50.0
   },
   "updated": "2026-11-08T23:21:59Z",
-  "age_s": 1724.0
+  "age_s": 1837.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,15 +35,15 @@
   "snaps": 766,
   "golden": [],
   "updated": "2026-11-08T23:14:42Z",
-  "age_s": 2161.0
+  "age_s": 2274.0
  },
  "scalp": {
-  "done": 2474,
-  "total": 2560,
+  "done": 2560,
+  "total": 2600,
   "errors": 0,
-  "pending": 86,
-  "updated": "2026-11-08T23:50:28Z",
-  "age_s": 15.0,
+  "pending": 40,
+  "updated": "2026-11-08T23:52:22Z",
+  "age_s": 14.0,
   "paper": {
    "equity": 1000.0,
    "pnl_pct": 0.0,
@@ -52,7 +52,7 @@
    "open": 4,
    "tops": 8
   },
-  "paper_updated": "2026-11-08T23:50:42Z",
+  "paper_updated": "2026-11-08T23:52:35Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -72,6 +72,25 @@
     "monthly_pct": "0.157712",
     "trades_per_day": "19.49",
     "usd_per_month_1000": "157.71"
+   },
+   {
+    "strategy": "wick_vol",
+    "symbol": "APTUSDT",
+    "tf": "15m",
+    "oos_sharpe": "3.018",
+    "oos_pf": "1.111",
+    "oos_t": "2.77",
+    "trades": "546",
+    "param_stability": "0.36",
+    "is_sharpe_avg": "4.13",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "3.017669560487111",
+    "maker_pf": "1.1114548952381564",
+    "daily_pct": "0.002281",
+    "monthly_pct": "0.070749",
+    "trades_per_day": "1.5",
+    "usd_per_month_1000": "70.75"
    },
    {
     "strategy": "bb_regime",
@@ -319,25 +338,6 @@
     "monthly_pct": "0.06467",
     "trades_per_day": "6.95",
     "usd_per_month_1000": "64.67"
-   },
-   {
-    "strategy": "wick_vol",
-    "symbol": "NEARUSDT",
-    "tf": "1m",
-    "oos_sharpe": "1.577",
-    "oos_pf": "1.012",
-    "oos_t": "1.03",
-    "trades": "2780",
-    "param_stability": "0.23",
-    "is_sharpe_avg": "4.86",
-    "folds": "31",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.576973332287493",
-    "maker_pf": "1.0124666382537535",
-    "daily_pct": "0.002305",
-    "monthly_pct": "0.071507",
-    "trades_per_day": "15.44",
-    "usd_per_month_1000": "71.51"
    }
   ]
  },
