@@ -1,3 +1,4 @@
+# OmniLab reporter v1.0.1
 """OmniLab — единый репортёр: агрегирует статус всех движков в results/universe.json.
 
 Бог-обзор: Polymarket live-трейдинг, исследовательская лаборатория,
