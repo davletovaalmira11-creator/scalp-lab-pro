@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T22:11:03Z",
+ "updated": "2026-11-08T22:14:35Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -24,12 +24,12 @@
  "pm_lab": {
   "status": "ready",
   "status_note": "База достаточна. Подтверждённых OOS закономерностей: 0 из 8 гипотез.",
-  "windows": 1000,
-  "settled": 1000,
+  "windows": 1002,
+  "settled": 1002,
   "snaps": 0,
   "golden": [],
-  "updated": "2026-11-08T22:11:03Z",
-  "age_s": 1.0
+  "updated": "2026-11-08T22:14:35Z",
+  "age_s": 0.0
  },
  "scalp": {
   "done": null,

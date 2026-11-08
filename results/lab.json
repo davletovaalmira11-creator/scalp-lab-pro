@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-08T22:11:03Z",
+ "updated": "2026-11-08T22:14:35Z",
  "status": "ready",
  "status_note": "База достаточна. Подтверждённых OOS закономерностей: 0 из 8 гипотез.",
  "settled_this_run": 0,
- "backfilled": 0,
- "base_up_rate": 0.503,
+ "backfilled": 2,
+ "base_up_rate": 0.502,
  "data": {
-  "windows": 1000,
-  "settled": 1000,
+  "windows": 1002,
+  "settled": 1002,
   "snaps": 0,
-  "span_h": 50.0,
-  "hist": 1000
+  "span_h": 50.1,
+  "hist": 1002
  },
  "model": {
   "n": 0,
@@ -88,24 +88,24 @@
   {
    "tag": "sht5",
    "k": 1,
-   "n_up": 305,
-   "p_after_up": 0.734,
-   "n_dn": 294,
-   "p_after_dn": 0.276
+   "n_up": 306,
+   "p_after_up": 0.732,
+   "n_dn": 295,
+   "p_after_dn": 0.275
   },
   {
    "tag": "sht5",
    "k": 2,
-   "n_up": 223,
-   "p_after_up": 0.731,
+   "n_up": 224,
+   "p_after_up": 0.728,
    "n_dn": 213,
    "p_after_dn": 0.244
   },
   {
    "tag": "sht5",
    "k": 3,
-   "n_up": 162,
-   "p_after_up": 0.698,
+   "n_up": 163,
+   "p_after_up": 0.693,
    "n_dn": 161,
    "p_after_dn": 0.242
   }
@@ -210,11 +210,11 @@
  ],
  "streak_edge": {
   "probs": {
-   "after_up": 0.537,
+   "after_up": 0.538,
    "after_down": 0.496
   },
   "n_est": {
-   "up": 354,
+   "up": 355,
    "down": 341
   },
   "oos": {
@@ -297,9 +297,9 @@
   },
   {
    "name": "Стрик-эдж: рынок недооценивает моментум",
-   "note": "вероятности из старых 70% данных, сделки только на новых 30%; P(Up|после Up)=0.537, P(Up|после Down)=0.496",
-   "is_n": 695,
-   "is_v": "P(up|up)=0.537",
+   "note": "вероятности из старых 70% данных, сделки только на новых 30%; P(Up|после Up)=0.538, P(Up|после Down)=0.496",
+   "is_n": 696,
+   "is_v": "P(up|up)=0.538",
    "oos_n": 0,
    "oos_v": null,
    "ok": false,

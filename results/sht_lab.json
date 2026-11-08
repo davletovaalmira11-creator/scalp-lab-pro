@@ -10998,5 +10998,27 @@
   "snaps": [],
   "outcome": 1,
   "src": "hist"
+ },
+ "eth-updown-5m-1794175500": {
+  "series": "eth-up-or-down-5m",
+  "tag": "sht5",
+  "sym": "ETHUSDT",
+  "win_s": 300,
+  "start": 1794175500,
+  "end": 1794175800,
+  "snaps": [],
+  "outcome": 0,
+  "src": "hist"
+ },
+ "sol-updown-5m-1794175500": {
+  "series": "sol-up-or-down-5m",
+  "tag": "sht5",
+  "sym": "SOLUSDT",
+  "win_s": 300,
+  "start": 1794175500,
+  "end": 1794175800,
+  "snaps": [],
+  "outcome": 0,
+  "src": "hist"
  }
 }
