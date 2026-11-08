@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-08T22:10:44Z",
+ "updated": "2026-11-08T22:11:03Z",
  "status": "ready",
  "status_note": "База достаточна. Подтверждённых OOS закономерностей: 0 из 8 гипотез.",
  "settled_this_run": 0,
- "backfilled": 1000,
+ "backfilled": 0,
  "base_up_rate": 0.503,
  "data": {
   "windows": 1000,
