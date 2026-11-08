@@ -1,4 +1,4 @@
-# OmniLab OKX live-трейдинг — настройки и риски
+# OmniLab OKX live-трейдинг — настройки и риски (v1.0.1)
 import os
 
 # Фьючерсы USDT (SWAP). Для спота замени на "BTC-USDT" и tdMode="cash" в trader.py
