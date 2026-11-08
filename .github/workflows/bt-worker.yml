@@ -27,7 +27,7 @@ jobs:
           path: engines/scalp/.cache
           key: omni-bt-cache-v1
       - name: Backtest worker
-        run: timeout 2100 python worker.py --budget 32 || echo "worker stopped (budget/cap)"
+        run: timeout 2100 python worker.py --budget 32 2>&1 | tail -80 || echo "worker stopped (budget/cap)"
         working-directory: engines/scalp
         continue-on-error: true
       - name: Scalp reporter
@@ -46,13 +46,17 @@ jobs:
         run: |
           git config user.name "omni-bot"
           git config user.email "omni-bot@users.noreply.github.com"
-          git add engines/scalp/results engines/scalp/reports results || true
-          if git status --porcelain | grep -q .; then
-            git commit -m "auto: backtest wave [skip ci]" || echo "nothing to commit"
-            for i in 1 2 3; do git fetch origin && git rebase origin/main && git push origin HEAD:main && break; done || echo "push failed, will retry next run"
-          else
-            echo "nothing to commit"
+          git add results/ || true
+          git add engines/scalp/results engines/scalp/reports || true
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: backtest wave [skip ci]" || true
+            for i in 1 2 3; do
+              git fetch origin || true
+              git rebase origin/main > /dev/null 2>&1 || { git rebase --abort > /dev/null 2>&1 || true; echo "rebase conflict - skip round, next run will retry"; break; }
+              git push origin HEAD:main && exit 0
+            done
           fi
+          exit 0
       - name: Self-trigger next run if work remains
         if: always()
         env:
