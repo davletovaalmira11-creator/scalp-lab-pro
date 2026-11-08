@@ -162,7 +162,7 @@ app.innerHTML=h;
 }
 function load(){
 Promise.all([get('results/universe.json'),get('results/state.json'),get('results/sht.json'),get('results/lab.json'),get('engines/scalp/results/progress.json'),get('engines/scalp/results/paper.json'),get('results/signals.json'),get('engines/okx/results/okx_live.json'),get('results/clob.json')])
-.then(function(r){T.uni=r[0];T.state=r[1];T.sht=r[2];T.lab=r[3];T.prog=r[4];T.paper=r[5];T.signals=r[6];T.okx=r[8]&&r[8].updated?r[8]:r[7];T.clob=r[8];render();
+.then(function(r){T.uni=r[0];T.state=r[1];T.sht=r[2];T.lab=r[3];T.prog=r[4];T.paper=r[5];T.signals=r[6];T.okx=r[7];T.clob=r[8];render();
 document.getElementById('refresh').textContent='обновлено '+new Date().toLocaleTimeString();});
 }
 document.getElementById('nav').addEventListener('click',function(e){
