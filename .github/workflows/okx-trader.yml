@@ -22,8 +22,11 @@ jobs:
           python-version: "3.11"
           cache: pip
           cache-dependency-path: engines/okx/requirements.txt
-      - run: pip install -r requirements.txt
+      - name: Install deps (лог в файл)
         working-directory: engines/okx
+        run: |
+          pip install -r requirements.txt 2>&1 | tee pip_log.txt | tail -5
+          python -c "import pandas, requests; print('imports ok:', pandas.__version__, requests.__version__)" 2>&1 | tee -a pip_log.txt
       - name: OKX trader (live при Secrets, иначе paper на живых свечах OKX)
         working-directory: engines/okx
         env:
@@ -34,8 +37,11 @@ jobs:
           OKX_ORDER_USDT: ${{ vars.OKX_ORDER_USDT }}
           OKX_LEVERAGE: ${{ vars.OKX_LEVERAGE }}
           OKX_MAX_OPEN: ${{ vars.OKX_MAX_OPEN }}
-        run: timeout 300 python trader.py || echo "trader step failed"
-        continue-on-error: true
+        run: |
+          rm -f trader_log.txt
+          timeout 300 python trader.py > trader_log.txt 2>&1 || echo "TRADER FAILED (exit $?)" >> trader_log.txt
+          cat trader_log.txt | tail -40
+          exit 0
       - name: Unified reporter
         run: python reporter.py || true
       - name: Commit
@@ -43,7 +49,7 @@ jobs:
         run: |
           git config user.name "omni-bot"
           git config user.email "omni-bot@users.noreply.github.com"
-          git add engines/okx/results results/universe.json || true
+          git add engines/okx/results engines/okx/trader_log.txt engines/okx/pip_log.txt results/universe.json || true
           if ! git diff --cached --quiet; then
             git commit -m "auto: okx trader [skip ci]" || true
             for i in 1 2 3; do
