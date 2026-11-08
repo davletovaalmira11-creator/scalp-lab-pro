@@ -19,12 +19,13 @@ import time
 import pandas as pd
 import requests
 
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OKX = "https://www.okx.com/api/v5/market/candles"
 PAIRS = ["BTC-USDT-SWAP", "ETH-USDT-SWAP", "SOL-USDT-SWAP"]
 BAR = "15m"
 LIMIT = 900
-FEE_RT = 0.0016          # taker roundtrip + slip
-MIN_TRADES = 6            # минимум сделок на половине выборки
+FEE_RT = 0.0016
+MIN_TRADES = 6
 EMA_GRID = [(5, 13), (8, 21), (9, 21), (12, 26), (20, 50)]
 SL_GRID = [1.0, 1.5, 2.0]
 TP_GRID = [2.0, 2.5, 3.0]
@@ -32,6 +33,10 @@ TP_GRID = [2.0, 2.5, 3.0]
 
 def now():
     return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+
+
+def rp(*parts):
+    return os.path.join(ROOT, *parts)
 
 
 def candles(inst):
@@ -88,14 +93,6 @@ def backtest(df, fast, slow, sl_k, tp_k):
     return rets
 
 
-def sharpe(rets):
-    if len(rets) < 2:
-        return 0.0
-    m = sum(rets) / len(rets)
-    sd = math.sqrt(sum((x - m) ** 2 for x in rets) / (len(rets) - 1)) or 1e-9
-    return m / sd * math.sqrt(len(rets))
-
-
 def evolve_okx():
     results = []
     try:
@@ -119,26 +116,25 @@ def evolve_okx():
                     is_total += sum(is_rets); is_n += len(is_rets)
                     oos_total += sum(oos_rets); oos_n += len(oos_rets)
                 if ok and is_total > 0 and oos_total > 0:
-                    score = oos_total
                     results.append({"ema_fast": fast, "ema_slow": slow, "sl_atr": sl_k, "tp_atr": tp_k,
                                     "is_ret": round(is_total * 100, 2), "oos_ret": round(oos_total * 100, 2),
                                     "trades": is_n + oos_n})
-                    if best is None or score > best[0]:
-                        best = (score, results[-1])
+                    if best is None or oos_total > best[0]:
+                        best = (oos_total, results[-1])
     return (best[1] if best else None), results
 
 
 def golden_cross_venue():
     items = []
     try:
-        with open("results/lab.json") as f:
+        with open(rp("results", "lab.json")) as f:
             lab = json.load(f)
         for g in lab.get("golden") or []:
             items.append({"src": "polymarket-lab", "name": g.get("name"), "note": g.get("note")})
     except Exception:
         pass
     try:
-        with open("engines/scalp/reports/leaderboard.csv") as f:
+        with open(rp("engines", "scalp", "reports", "leaderboard.csv")) as f:
             rows = list(csv.DictReader(f))[:3]
         for r in rows:
             items.append({"src": "walk-forward bt", "name": "%s %s %s" % (
@@ -150,7 +146,7 @@ def golden_cross_venue():
 
 
 def main():
-    ev_path = "results/evolve.json"
+    ev_path = rp("results", "evolve.json")
     ev = {"history": []}
     try:
         with open(ev_path) as f:
@@ -163,7 +159,7 @@ def main():
         err, res = res, []
     if best:
         best["updated"] = now()
-        with open("best_params.json", "w") as f:
+        with open(rp("engines", "okx", "best_params.json"), "w") as f:
             json.dump(best, f, indent=1)
     golden = golden_cross_venue()
     ev["updated"] = now()
