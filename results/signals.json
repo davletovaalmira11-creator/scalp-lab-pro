@@ -1,0 +1,21 @@
+{
+ "updated": "2026-11-08T22:18:50Z",
+ "scanned": 200,
+ "signals": [
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-reach-180000-by-december-31-2026-629-622-598",
+   "question": "Will Bitcoin reach $180,000 by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 6129 против среднего 1578",
+   "liq": 112241,
+   "v24": 6129,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 53.1,
+   "tradeable": false
+  }
+ ]
+}
