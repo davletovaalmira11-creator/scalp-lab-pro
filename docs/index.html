@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OmniLab — единая квант-лаборатория</title>
+<style>
+:root{--bg:#0a0e17;--card:#121826;--card2:#0d1320;--tx:#e6ebf5;--mut:#8b95ab;--acc:#5eead4;--acc2:#818cf8;--ok:#34d399;--warn:#fbbf24;--bad:#f87171;--bd:#1f2937}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font:14px/1.5 -apple-system,'Segoe UI',Roboto,sans-serif;padding:18px}
+h1{font-size:20px;background:linear-gradient(90deg,#5eead4,#818cf8,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);font-size:12px;margin-bottom:14px}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+nav button{background:var(--card);border:1px solid var(--bd);color:var(--mut);padding:7px 14px;border-radius:8px;cursor:pointer;font-size:13px}
+nav button.on{color:var(--acc);border-color:var(--acc);background:#0f2a29}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px}
+.card .k{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+.card .v{font-size:20px;font-weight:600;margin-top:3px}
+.card .s{color:var(--mut);font-size:11px;margin-top:2px}
+.pos{color:var(--ok)}.neg{color:var(--bad)}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12.5px}
+th{color:var(--mut);text-align:left;font-weight:500;padding:6px 8px;border-bottom:1px solid var(--bd);white-space:nowrap}
+td{padding:6px 8px;border-bottom:1px solid #161d2c;white-space:nowrap}
+tr:hover td{background:#151d2e}
+.panel{background:var(--card2);border:1px solid var(--bd);border-radius:10px;padding:14px;margin-top:12px}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11px;margin-right:5px}
+.p-ok{background:#0f2a29;color:var(--ok)}.p-warn{background:#2d230a;color:var(--warn)}.p-bad{background:#2c1518;color:var(--bad)}
+.p-acc{background:#1b2340;color:#a5b4fc}
+h3{font-size:14px;color:#c7d0e0;margin-bottom:6px}
+.mut{color:var(--mut)}
+#refresh{position:fixed;right:16px;top:16px;color:var(--mut);font-size:11px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+@media(max-width:600px){body{padding:10px}.card .v{font-size:17px}}
+</style>
+</head>
+<body>
+<div id="refresh"></div>
+<h1>⚡ OmniLab — единая квант-лаборатория</h1>
+<div class="sub">Polymarket live · исследования · walk-forward бэктесты · paper-трейдинг — одна система, GitHub Actions 24/7</div>
+<nav id="nav">
+<button data-t="ov" class="on">Обзор</button>
+<button data-t="pm">Polymarket</button>
+<button data-t="bt">Бэктесты</button>
+<button data-t="rs">Исследования</button>
+</nav>
+<div id="app"><div class="mut">Загрузка данных…</div></div>
+<script>
+var RAW='https://raw.githubusercontent.com/davletovaalmira11-creator/scalp-lab-pro/main/';
+var T={};
+function get(p){return fetch(RAW+p+'?t='+Date.now()).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+function esc(s){return String(s==null?'—':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function pct(v){v=parseFloat(v);return (v>=0?'+':'')+v.toFixed(2)+'%'}
+function cls(v){v=parseFloat(v);return isNaN(v)?'':v>=0?'pos':'neg'}
+function hcol(h){return h==='ok'?'p-ok':(h==='warmup'?'p-warn':'p-bad')}
+function dt(iso){return iso?String(iso).replace('T',' ').slice(0,19)+' UTC':'—'}
+function card(k,v,s,c){return '<div class="card"><div class="k">'+k+'</div><div class="v '+(c||'')+'">'+v+'</div>'+(s?'<div class="s">'+s+'</div>':'')+'</div>'}
+function table(head,rows){var h='<table><tr>'+head.map(function(x){return '<th>'+x+'</th>'}).join('')+'</tr>';
+rows.forEach(function(r){h+='<tr>'+r.map(function(x){return '<td>'+x+'</td>'}).join('')+'</tr>'});
+return h+'</table>'}
+function render(){
+var app=document.getElementById('app');var tab=document.querySelector('#nav button.on').dataset.t;
+var U=T.uni||{},PM=T.state&&T.state.stats||{},S=T.sht||{},L=T.lab||{},P=T.prog||{},PP=T.paper||{};
+var h='';
+if(tab==='ov'){
+ var H=(U.health&&U.health.modules)||{};
+ h+='<div class="grid">'
+ +card('Здоровье',H.pm_worker==='ok'?'<span class="pos">OK</span>':'<span class="neg">STALE</span>','pm-worker, обновлён '+(U.pm?dt(U.pm.updated):'—'))
+ +card('Лаборатория',H.pm_lab==='ok'?'<span class="pos">OK</span>':'<span class="neg">STALE</span>','pm-lab, '+(U.pm_lab?dt(U.pm_lab.updated):'—'))
+ +card('Бэктесты',H.scalp_worker==='ok'?'<span class="pos">OK</span>':(H.scalp_worker==='warmup'?'<span class="warn" style="color:var(--warn)">WARMUP</span>':'<span class="neg">STALE</span>'),'bt-worker, '+(U.scalp?dt(U.scalp.updated):'—'))
+ +card('PM Equity','$'+(PM.equity!=null?PM.equity.toFixed(2):'—'),pct(PM.pnl_pct||0)+' от $1000',cls(PM.pnl_pct))
+ +card('Paper Equity','$'+(PP.stats&&PP.stats.equity!=null?PP.stats.equity.toFixed(2):'—'),(PP.stats?pct(PP.stats.pnl_pct||0):'—')+' scalp paper',PP.stats?cls(PP.stats.pnl_pct):'')
+ +'</div>';
+ h+='<div class="panel"><h3>Модули системы</h3>'
+ +table(['Модуль','Статус','Обновлено'],[
+ ['pm-worker — Polymarket live','<span class="pill '+hcol(H.pm_worker)+'">'+(H.pm_worker||'?')+'</span>',U.pm?dt(U.pm.updated):'—'],
+ ['pm-lab — исследования гипотез','<span class="pill '+hcol(H.pm_lab)+'">'+(H.pm_lab||'?')+'</span>',U.pm_lab?dt(U.pm_lab.updated):'—'],
+ ['bt-worker — walk-forward бэктесты','<span class="pill '+hcol(H.scalp_worker)+'">'+(H.scalp_worker||'?')+'</span>',U.scalp?dt(U.scalp.updated):'—']])
+ +'</div>';
+ h+='<div class="panel"><h3>Ключевые метрики</h3><div class="grid">'
+ +card('PM сделок',PM.trades||0,'winrate '+(PM.winrate||0)+'%')
+ +card('PM открытых',PM.open||0,'окон: '+(PM.sht_open||0))
+ +card('Калибровка',S.cal&&S.cal.n?S.cal.n+' окон':'—',S.cal&&S.cal.brier!=null?'Brier '+S.cal.brier:'—')
+ +card('Бэктест задач',(P.done||0)+'/'+(P.total||0),'ошибок: '+(P.errors||0)+', в очереди: '+(P.pending||0))
+ +card('Размечено окон',(L.data&&L.data.settled)||0,'исследований: '+(L.data&&L.data.windows||0)+' окон')
+ +'</div></div>';
+}
+if(tab==='pm'){
+ h+='<div class="grid">'
+ +card('Equity','$'+(PM.equity!=null?PM.equity.toFixed(2):'—'),pct(PM.pnl_pct||0),cls(PM.pnl_pct))
+ +card('Winrate',(PM.winrate||0)+'%',(PM.trades||0)+' сделок')
+ +card('Открытых',PM.open||0,'живых окон: '+(PM.sht_open||0))
+ +card('Оконные сделки',PM.sht_trades||0,'PnL $'+(PM.sht_pnl||0),cls(PM.sht_pnl))
+ +card('Калибровка',S.cal&&S.cal.brier!=null?'Brier '+S.cal.brier:'—','n='+(S.cal?S.cal.n:0)+', acc='+(S.cal?S.cal.acc:'—'))
+ +'</div>';
+ h+='<div class="panel"><h3>Живые бинарные окна</h3>';
+ var live=(S.live||[]).map(function(w){return [esc(w.title),w.series,w.outcome? esc(w.outcome):'',w.p_up!=null?w.p_up.toFixed(3):'—',w.fair_up!=null?w.fair_up:'—',w.edge_up!=null?w.edge_up:'—',Math.max(0,Math.round((w.end-Date.now()/1000)/60))+' мин']});
+ h+=live.length?table(['Окно','Серия','Цена Up','Fair','Эдж','Осталось'],live):'<div class="mut">Пока нет живых окон</div>';
+ h+='</div><div class="panel"><h3>Последние расчёты</h3>';
+ var st=(S.settled||[]).map(function(c){return [esc(c.question),esc(c.outcome),c.entry+'→'+c.exit,'<span class="'+cls(c.ret_pct)+'">'+pct(c.ret_pct)+'</span>',dt(c.closed),esc(c.reason||'')]});
+ h+=st.length?table(['Окно','Исход','Вход→Выход','PnL','Закрыто','Причина'],st):'<div class="mut">Сделок ещё нет</div>';
+ h+='</div>';
+ var sig=(T.signals&&T.signals.signals||[]).slice(0,12).map(function(s){return [esc(s.strategy),esc(s.question).slice(0,70),esc(s.outcome),s.price,'<span class="'+cls(s.edge)+'">'+(s.edge||0)+'</span>',s.liq]});
+ h+='<div class="panel"><h3>Сигналы (классические рынки)</h3>'+(sig.length?table(['Стратегия','Рынок','Исход','Цена','Эдж','Ликвидность',],sig):'<div class="mut">—</div>')+'</div>';
+}
+if(tab==='bt'){
+ h+='<div class="grid">'
+ +card('Прогресс',(P.done||0)+'/'+(P.total||0),'в очереди: '+(P.pending||0))
+ +card('Paper Equity','$'+(PP.stats&&PP.stats.equity!=null?PP.stats.equity.toFixed(2):'—'),PP.stats?pct(PP.stats.pnl_pct||0):'—',PP.stats?cls(PP.stats.pnl_pct):'')
+ +card('Paper сделок',PP.stats?PP.stats.n_trades||0:0,'winrate '+(PP.stats?PP.stats.winrate||0:0)+'%')
+ +card('Топ-стратегий',PP.tops?PP.tops.length:0,'в paper-трекинге')
+ +'</div>';
+ h+='<div class="panel"><h3>Лидерборд walk-forward (OOS, с комиссиями)</h3>';
+ var lb=(U.scalp&&U.scalp.leaderboard)||[];
+ var rows=lb.map(function(r,i){return [i+1,esc(r.strategy),esc(r.symbol),esc(r.tf),r.oos_sharpe,r.oos_pf,r.oos_t,r.trades,r.monthly_pct!=null?pct((parseFloat(r.monthly_pct)*100).toFixed(2)):'—',r.fee_mode]});
+ h+=lb.length?table(['#','Стратегия','Пара','TF','Sharpe','PF','t','Сделок','В месяц','Режим'],rows):'<div class="mut">Бэктесты идут — очередь обрабатывается, лидерборд появится после первых задач</div>';
+ h+='</div><div class="panel"><h3>Paper-трейдинг: открытые позиции</h3>';
+ var pos=Object.keys(PP.positions||{}).map(function(k){var p=PP.positions[k];return [esc(k),p.signal>0?'LONG':'SHORT',p.entry,esc(p.opened),p.fee_mode]});
+ h+=pos.length?table(['Стратегия','Направление','Вход','Открыто','Режим'],pos):'<div class="mut">Позиций нет</div>';
+ h+='</div>';
+}
+if(tab==='rs'){
+ h+='<div class="grid">'
+ +card('Статус',L.status==='ready'?'ГОТОВА':'СБОР ДАННЫХ',esc((L.status_note||'').slice(0,60)))
+ +card('Размечено окон',(L.data&&L.data.settled)||0,'цель ~200')
+ +card('Снимков',(L.data&&L.data.snaps)||0,'охват '+(L.data&&L.data.span_h||0)+' ч')
+ +card('Golden-закономерности',((L.golden||[]).length),'подтверждено IS+OOS')
+ +'</div>';
+ var hy=(L.hyp||[]).map(function(x){return [esc(x.name),'<span class="pill '+(String(x.status).indexOf('✅')>=0?'p-ok':(String(x.status).indexOf('✨')>=0?'p-acc':'p-warn'))+'">'+esc(x.status)+'</span>','IS: '+esc(x.is_v)+' (n='+(x.is_n||0)+')','OOS: '+esc(x.oos_v)+' (n='+(x.oos_n||0)+')',esc((x.note||'').slice(0,60))]});
+ h+='<div class="panel"><h3>Гипотезы (пороги зафиксированы заранее)</h3>'+(hy.length?table(['Гипотеза','Вердикт','IS','OOS','Заметка'],hy):'<div class="mut">—</div>')+'</div>';
+ var g=(L.golden||[]).map(function(x){return [esc(x.name),esc((x.note||'').slice(0,80))]});
+ h+='<div class="panel"><h3>✨ Golden — подтверждённые OOS закономерности</h3>'+(g.length?table(['Закономерность','Описание'],g):'<div class="mut">Пока ни одна гипотеза не подтверждена OOS — система копит данные без подгонок</div>')+'</div>';
+}
+app.innerHTML=h;
+}
+function load(){
+Promise.all([get('results/universe.json'),get('results/state.json'),get('results/sht.json'),get('results/lab.json'),get('engines/scalp/results/progress.json'),get('engines/scalp/results/paper.json'),get('results/signals.json')])
+.then(function(r){T.uni=r[0];T.state=r[1];T.sht=r[2];T.lab=r[3];T.prog=r[4];T.paper=r[5];T.signals=r[6];render();
+document.getElementById('refresh').textContent='обновлено '+new Date().toLocaleTimeString();});
+}
+document.getElementById('nav').addEventListener('click',function(e){
+if(e.target.tagName!=='BUTTON')return;
+document.querySelectorAll('#nav button').forEach(function(b){b.classList.remove('on')});
+e.target.classList.add('on');render();
+});
+load();setInterval(load,60000);
+</script>
+</body>
+</html>
