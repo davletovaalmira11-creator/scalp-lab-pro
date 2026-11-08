@@ -7,7 +7,7 @@ on:
     branches: [main]
     paths: ["engines/pm_worker.py", "reporter.py", ".github/workflows/pm-worker.yml"]
 concurrency:
-  group: pm-worker
+  group: omni-pm
   cancel-in-progress: true
 permissions:
   contents: write
