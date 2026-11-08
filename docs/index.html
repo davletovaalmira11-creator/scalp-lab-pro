@@ -37,9 +37,10 @@ h3{font-size:14px;color:#c7d0e0;margin-bottom:6px}
 <body>
 <div id="refresh"></div>
 <h1>⚡ OmniLab — единая квант-лаборатория</h1>
-<div class="sub">Polymarket live · исследования · walk-forward бэктесты · paper-трейдинг — одна система, GitHub Actions 24/7</div>
+<div class="sub">Live-торговля OKX + Polymarket · walk-forward бэктесты · исследования — одна система, GitHub Actions 24/7</div>
 <nav id="nav">
 <button data-t="ov" class="on">Обзор</button>
+<button data-t="live">🔴 Live-торговля</button>
 <button data-t="pm">Polymarket</button>
 <button data-t="bt">Бэктесты</button>
 <button data-t="rs">Исследования</button>
@@ -60,30 +61,56 @@ rows.forEach(function(r){h+='<tr>'+r.map(function(x){return '<td>'+x+'</td>'}).j
 return h+'</table>'}
 function render(){
 var app=document.getElementById('app');var tab=document.querySelector('#nav button.on').dataset.t;
-var U=T.uni||{},PM=T.state&&T.state.stats||{},S=T.sht||{},L=T.lab||{},P=T.prog||{},PP=T.paper||{};
+var U=T.uni||{},PM=T.state&&T.state.stats||{},S=T.sht||{},L=T.lab||{},P=T.prog||{},PP=T.paper||{},OX=T.okx||{},CB=T.clob||{};
 var h='';
 if(tab==='ov'){
  var H=(U.health&&U.health.modules)||{};
  h+='<div class="grid">'
  +card('Здоровье',H.pm_worker==='ok'?'<span class="pos">OK</span>':'<span class="neg">STALE</span>','pm-worker, обновлён '+(U.pm?dt(U.pm.updated):'—'))
- +card('Лаборатория',H.pm_lab==='ok'?'<span class="pos">OK</span>':'<span class="neg">STALE</span>','pm-lab, '+(U.pm_lab?dt(U.pm_lab.updated):'—'))
- +card('Бэктесты',H.scalp_worker==='ok'?'<span class="pos">OK</span>':(H.scalp_worker==='warmup'?'<span class="warn" style="color:var(--warn)">WARMUP</span>':'<span class="neg">STALE</span>'),'bt-worker, '+(U.scalp?dt(U.scalp.updated):'—'))
+ +card('OKX движок',OX.mode==='live'?'<span class="pos">LIVE</span>':'PAPER',OX.demo?'демо-счёт OKX':'сигналы на живых свечах, '+(OX.updated?dt(OX.updated):'—'))
  +card('PM Equity','$'+(PM.equity!=null?PM.equity.toFixed(2):'—'),pct(PM.pnl_pct||0)+' от $1000',cls(PM.pnl_pct))
  +card('Paper Equity','$'+(PP.stats&&PP.stats.equity!=null?PP.stats.equity.toFixed(2):'—'),(PP.stats?pct(PP.stats.pnl_pct||0):'—')+' scalp paper',PP.stats?cls(PP.stats.pnl_pct):'')
  +'</div>';
  h+='<div class="panel"><h3>Модули системы</h3>'
  +table(['Модуль','Статус','Обновлено'],[
- ['pm-worker — Polymarket live','<span class="pill '+hcol(H.pm_worker)+'">'+(H.pm_worker||'?')+'</span>',U.pm?dt(U.pm.updated):'—'],
+ ['pm-worker — Polymarket сканер+paper','<span class="pill '+hcol(H.pm_worker)+'">'+(H.pm_worker||'?')+'</span>',U.pm?dt(U.pm.updated):'—'],
  ['pm-lab — исследования гипотез','<span class="pill '+hcol(H.pm_lab)+'">'+(H.pm_lab||'?')+'</span>',U.pm_lab?dt(U.pm_lab.updated):'—'],
- ['bt-worker — walk-forward бэктесты','<span class="pill '+hcol(H.scalp_worker)+'">'+(H.scalp_worker||'?')+'</span>',U.scalp?dt(U.scalp.updated):'—']])
+ ['bt-worker — walk-forward бэктесты','<span class="pill '+hcol(H.scalp_worker)+'">'+(H.scalp_worker||'?')+'</span>',U.scalp?dt(U.scalp.updated):'—'],
+ ['okx-trader — реальная торговля OKX','<span class="pill '+(OX.mode==='live'?'p-ok':'p-acc')+'">'+(OX.mode==='live'?(OX.demo?'LIVE демо':'LIVE'):'PAPER')+'</span>',OX.updated?dt(OX.updated):'—'],
+ ['pm-trader — реальные ордера Polymarket','<span class="pill '+(CB.mode==='live'?'p-ok':'p-acc')+'">'+(CB.mode==='live'?'LIVE':'OFF')+'</span>',CB.updated?dt(CB.updated):'—']])
  +'</div>';
  h+='<div class="panel"><h3>Ключевые метрики</h3><div class="grid">'
  +card('PM сделок',PM.trades||0,'winrate '+(PM.winrate||0)+'%')
- +card('PM открытых',PM.open||0,'окон: '+(PM.sht_open||0))
- +card('Калибровка',S.cal&&S.cal.n?S.cal.n+' окон':'—',S.cal&&S.cal.brier!=null?'Brier '+S.cal.brier:'—')
+ +card('OKX equity','$'+(OX.equity!=null?OX.equity.toFixed(2):'—'),OX.pnl_pct!=null?pct(OX.pnl_pct):'—',cls(OX.pnl_pct))
+ +card('OKX позиций',OX.open||0,'сделок: '+(OX.trades||0))
  +card('Бэктест задач',(P.done||0)+'/'+(P.total||0),'ошибок: '+(P.errors||0)+', в очереди: '+(P.pending||0))
  +card('Размечено окон',(L.data&&L.data.settled)||0,'исследований: '+(L.data&&L.data.windows||0)+' окон')
  +'</div></div>';
+}
+if(tab==='live'){
+ var liveMode=OX.mode==='live';
+ h+='<div class="grid">'
+ +card('Режим',liveMode?'<span class="pos">LIVE</span>':'PAPER',liveMode?(OX.demo?'OKX демо-счёт (x-simulated)':'OKX БОЕВОЙ счёт'):'нет Secrets — paper на живых свечах OKX 15m')
+ +card('Equity','$'+(OX.equity!=null?OX.equity.toFixed(2):'—'),(OX.pnl_pct!=null?pct(OX.pnl_pct):'—')+' от старта',cls(OX.pnl_pct))
+ +card('Позиций',OX.open||0,'из '+2+' макс.')
+ +card('Сделок',OX.trades||0,'EMA(9/21) · TP 2.5×ATR · SL 1.5×ATR')
+ +card('Polymarket CLOB',CB.mode==='live'?'<span class="pos">LIVE</span>':'OFF',esc((CB.note||'нет ключа POLY_PRIVATE_KEY').slice(0,44)))
+ +'</div>';
+ h+='<div class="panel"><h3>Сигналы движка (закрытые бары 15m)</h3>';
+ var sg=Object.keys(OX.signals||{}).map(function(k){var s=OX.signals[k];return [esc(k),s.sig>0?'<span class="pos">LONG</span>':(s.sig<0?'<span class="neg">SHORT</span>':'—'),s.price!=null?s.price:'—',s.err?'<span class="neg">'+esc(s.err.slice(0,40))+'</span>':'ok']});
+ h+=sg.length?table(['Инструмент','Сигнал','Цена','API'],sg):'<div class="mut">Данные появятся после первого прогона okx-trader</div>';
+ h+='</div>';
+ var pp=OX.paper_positions||{},lp=OX.live_positions||{};
+ var allPos=Object.keys(pp).map(function(k){var p=pp[k];return [esc(k),p.side>0?'LONG':'SHORT',p.entry,p.tp&&p.tp.toFixed?p.tp.toFixed(2):'—',p.sl&&p.sl.toFixed?p.sl.toFixed(2):'—',dt(p.opened),'paper']})
+ .concat(Object.keys(lp).map(function(k){var p=lp[k];return [esc(k),p.side>0?'LONG':'SHORT',p.entry!=null?p.entry.toFixed?p.entry.toFixed(2):p.entry:'—',p.tp!=null?p.tp:'—',p.sl!=null?p.sl:'—',dt(p.opened),'<span class="pos">LIVE</span>']}));
+ h+='<div class="panel"><h3>Открытые позиции OKX</h3>'+(allPos.length?table(['Инструмент','Направление','Вход','TP','SL','Открыто','Режим'],allPos):'<div class="mut">Позиций нет — движок ждёт пересечения EMA</div>')+'</div>';
+ var trades=((OX.paper||OX).trades);
+ var tr=[];
+ if(OX.all_trades){tr=OX.all_trades}else{try{tr=(T.okxLive&&T.okxLive.all_trades)||[]}catch(e){tr=[]}}
+ h+='<div class="panel"><h3>Журнал сделок</h3><div class="mut">Последние сделки — в okx_live.json (paper.trades / live.trades), сводка: '+(OX.trades||0)+' сделок</div></div>';
+ h+='<div class="panel"><h3>Polymarket CLOB — последний прогон</h3>'
+ +table(['Параметр','Значение'],[['Режим',esc(CB.mode||'—')],['Сигнал',CB.picked?esc(CB.picked.question||CB.picked.slug):'—'],['Edge',CB.picked?CB.picked.edge:'—'],['Ордер',CB.order?esc(JSON.stringify(CB.order).slice(0,80)):'—'],['Ошибки',CB.error?'<span class="neg">'+esc(CB.error.slice(0,60))+'</span>':'—'],['Обновлено',dt(CB.updated)]])
+ +'</div>';
 }
 if(tab==='pm'){
  h+='<div class="grid">'
@@ -134,8 +161,8 @@ if(tab==='rs'){
 app.innerHTML=h;
 }
 function load(){
-Promise.all([get('results/universe.json'),get('results/state.json'),get('results/sht.json'),get('results/lab.json'),get('engines/scalp/results/progress.json'),get('engines/scalp/results/paper.json'),get('results/signals.json')])
-.then(function(r){T.uni=r[0];T.state=r[1];T.sht=r[2];T.lab=r[3];T.prog=r[4];T.paper=r[5];T.signals=r[6];render();
+Promise.all([get('results/universe.json'),get('results/state.json'),get('results/sht.json'),get('results/lab.json'),get('engines/scalp/results/progress.json'),get('engines/scalp/results/paper.json'),get('results/signals.json'),get('engines/okx/results/okx_live.json'),get('results/clob.json')])
+.then(function(r){T.uni=r[0];T.state=r[1];T.sht=r[2];T.lab=r[3];T.prog=r[4];T.paper=r[5];T.signals=r[6];T.okx=r[8]&&r[8].updated?r[8]:r[7];T.clob=r[8];render();
 document.getElementById('refresh').textContent='обновлено '+new Date().toLocaleTimeString();});
 }
 document.getElementById('nav').addEventListener('click',function(e){
@@ -145,6 +172,5 @@ e.target.classList.add('on');render();
 });
 load();setInterval(load,60000);
 </script>
-<!-- omnilab: pages redeploy trigger -->
 </body>
 </html>
