@@ -1,113 +1,228 @@
 {
- "updated": "2026-11-08T22:14:35Z",
+ "updated": "2026-11-08T23:14:42Z",
  "status": "ready",
  "status_note": "База достаточна. Подтверждённых OOS закономерностей: 0 из 8 гипотез.",
- "settled_this_run": 0,
- "backfilled": 2,
- "base_up_rate": 0.502,
+ "settled_this_run": 30,
+ "backfilled": 6,
+ "base_up_rate": 0.504,
  "data": {
-  "windows": 1002,
-  "settled": 1002,
-  "snaps": 0,
-  "span_h": 50.1,
-  "hist": 1002
+  "windows": 1287,
+  "settled": 1038,
+  "snaps": 766,
+  "span_h": 50.9,
+  "hist": 1008
  },
  "model": {
-  "n": 0,
+  "n": 9,
   "is": {
-   "n": 0,
-   "brier": null,
-   "acc": null
+   "n": 5,
+   "brier": 0.2729,
+   "acc": 60.0
   },
   "oos": {
-   "n": 0,
-   "brier": null,
-   "acc": null
+   "n": 4,
+   "brier": 0.1472,
+   "acc": 75.0
   },
   "mkt_cmp": {
-   "is": null,
-   "oos": null
+   "is": "мод 0.2729 / рынок 0.3058",
+   "oos": "мод 0.1472 / рынок 0.196"
   },
   "mkt_brier": {
-   "is": null,
-   "oos": null
+   "is": 0.3058,
+   "oos": 0.196
   },
   "blend": {
-   "is": null,
-   "oos": null
+   "is": 0.2811,
+   "oos": 0.1673
   },
-  "per_tag": {}
+  "per_tag": {
+   "sht15": {
+    "n": 3,
+    "brier": 0.2937,
+    "acc": 33.3
+   },
+   "sht5": {
+    "n": 6,
+    "brier": 0.1787,
+    "acc": 83.3
+   }
+  }
  },
  "rule": {
   "is": {
-   "n": 0,
-   "winrate": null,
-   "pnl_r": null,
-   "ev": null
+   "n": 2,
+   "winrate": 0.0,
+   "pnl_r": -2.0,
+   "ev": -1.0
   },
   "oos": {
-   "n": 0,
-   "winrate": null,
-   "pnl_r": null,
-   "ev": null
+   "n": 2,
+   "winrate": 100.0,
+   "pnl_r": 0.45,
+   "ev": 0.226
   },
   "total": {
-   "n": 0,
-   "winrate": null,
-   "pnl_r": null,
-   "ev": null
+   "n": 4,
+   "winrate": 50.0,
+   "pnl_r": -1.55,
+   "ev": -0.387
   },
-  "sample": []
+  "sample": [
+   {
+    "t": 1794178014,
+    "tag": "sht5",
+    "part": "oos",
+    "win": 1,
+    "pnl": 0.136,
+    "px": 0.875
+   },
+   {
+    "t": 1794178014,
+    "tag": "sht5",
+    "part": "oos",
+    "win": 1,
+    "pnl": 0.316,
+    "px": 0.755
+   },
+   {
+    "t": 1794176330,
+    "tag": "sht15",
+    "part": "is",
+    "win": 0,
+    "pnl": -1.0,
+    "px": 0.455
+   },
+   {
+    "t": 1794176330,
+    "tag": "sht15",
+    "part": "is",
+    "win": 0,
+    "pnl": -1.0,
+    "px": 0.38
+   }
+  ]
  },
- "bins": [],
+ "bins": [
+  {
+   "lo": 0.05,
+   "hi": 0.1,
+   "n": 1,
+   "mkt": 0.065,
+   "real": 0.0,
+   "is_real": null,
+   "oos_real": null,
+   "flag": false
+  },
+  {
+   "lo": 0.1,
+   "hi": 0.15,
+   "n": 2,
+   "mkt": 0.12,
+   "real": 0.5,
+   "is_real": null,
+   "oos_real": null,
+   "flag": false
+  },
+  {
+   "lo": 0.3,
+   "hi": 0.35,
+   "n": 1,
+   "mkt": 0.315,
+   "real": 0.0,
+   "is_real": null,
+   "oos_real": null,
+   "flag": false
+  },
+  {
+   "lo": 0.35,
+   "hi": 0.4,
+   "n": 2,
+   "mkt": 0.383,
+   "real": 0.5,
+   "is_real": null,
+   "oos_real": null,
+   "flag": false
+  },
+  {
+   "lo": 0.4,
+   "hi": 0.45,
+   "n": 1,
+   "mkt": 0.41,
+   "real": 1.0,
+   "is_real": null,
+   "oos_real": null,
+   "flag": false
+  },
+  {
+   "lo": 0.45,
+   "hi": 0.5,
+   "n": 1,
+   "mkt": 0.455,
+   "real": 0.0,
+   "is_real": null,
+   "oos_real": null,
+   "flag": false
+  },
+  {
+   "lo": 0.55,
+   "hi": 0.6,
+   "n": 1,
+   "mkt": 0.55,
+   "real": 0.0,
+   "is_real": null,
+   "oos_real": null,
+   "flag": false
+  }
+ ],
  "streaks": [
   {
    "tag": "sht15",
    "k": 1,
-   "n_up": 197,
-   "p_after_up": 0.635,
-   "n_dn": 202,
-   "p_after_dn": 0.356
+   "n_up": 199,
+   "p_after_up": 0.633,
+   "n_dn": 207,
+   "p_after_dn": 0.357
   },
   {
    "tag": "sht15",
    "k": 2,
-   "n_up": 125,
-   "p_after_up": 0.552,
-   "n_dn": 129,
-   "p_after_dn": 0.388
+   "n_up": 126,
+   "p_after_up": 0.548,
+   "n_dn": 133,
+   "p_after_dn": 0.391
   },
   {
    "tag": "sht15",
    "k": 3,
    "n_up": 69,
    "p_after_up": 0.594,
-   "n_dn": 78,
-   "p_after_dn": 0.346
+   "n_dn": 81,
+   "p_after_dn": 0.358
   },
   {
    "tag": "sht5",
    "k": 1,
-   "n_up": 306,
-   "p_after_up": 0.732,
-   "n_dn": 295,
-   "p_after_dn": 0.275
+   "n_up": 322,
+   "p_after_up": 0.736,
+   "n_dn": 308,
+   "p_after_dn": 0.276
   },
   {
    "tag": "sht5",
    "k": 2,
-   "n_up": 224,
-   "p_after_up": 0.728,
-   "n_dn": 213,
-   "p_after_dn": 0.244
+   "n_up": 236,
+   "p_after_up": 0.729,
+   "n_dn": 223,
+   "p_after_dn": 0.247
   },
   {
    "tag": "sht5",
    "k": 3,
-   "n_up": 163,
-   "p_after_up": 0.693,
-   "n_dn": 161,
-   "p_after_dn": 0.242
+   "n_up": 171,
+   "p_after_up": 0.696,
+   "n_dn": 168,
+   "p_after_dn": 0.25
   }
  ],
  "hours": [
@@ -133,7 +248,7 @@
    "hour": 9,
    "n": 52,
    "up_rate": 0.404,
-   "flag": false
+   "flag": true
   },
   {
    "hour": 10,
@@ -175,7 +290,7 @@
    "hour": 16,
    "n": 52,
    "up_rate": 0.404,
-   "flag": false
+   "flag": true
   },
   {
    "hour": 17,
@@ -206,59 +321,108 @@
    "n": 60,
    "up_rate": 0.433,
    "flag": false
+  },
+  {
+   "hour": 22,
+   "n": 57,
+   "up_rate": 0.544,
+   "flag": false
   }
  ],
  "streak_edge": {
   "probs": {
-   "after_up": 0.538,
-   "after_down": 0.496
+   "after_up": 0.541,
+   "after_down": 0.499
   },
   "n_est": {
-   "up": 355,
-   "down": 341
+   "up": 370,
+   "down": 351
   },
   "oos": {
-   "n": 0,
-   "winrate": null,
-   "ev": null
+   "n": 6,
+   "winrate": 16.7,
+   "ev": -0.573
   },
-  "trades": []
+  "trades": [
+   {
+    "t": 1794176330,
+    "win": 0,
+    "pnl": -1.0,
+    "px": 0.455,
+    "tag": "sht15"
+   },
+   {
+    "t": 1794176330,
+    "win": 0,
+    "pnl": -1.0,
+    "px": 0.38,
+    "tag": "sht15"
+   },
+   {
+    "t": 1794178014,
+    "win": 0,
+    "pnl": -1.0,
+    "px": 0.125,
+    "tag": "sht5"
+   },
+   {
+    "t": 1794178161,
+    "win": 1,
+    "pnl": 1.564,
+    "px": 0.385,
+    "tag": "sht15"
+   },
+   {
+    "t": 1794178014,
+    "win": 0,
+    "pnl": -1.0,
+    "px": 0.245,
+    "tag": "sht5"
+   },
+   {
+    "t": 1794178014,
+    "win": 0,
+    "pnl": -1.0,
+    "px": 0.145,
+    "tag": "sht5"
+   }
+  ]
  },
  "hyp": [
   {
    "name": "Модель точнее монетки",
    "note": "Brier < 0.25 на обеих половинах",
-   "is_n": 0,
-   "is_v": null,
-   "oos_n": 0,
-   "oos_v": null,
+   "is_n": 5,
+   "is_v": 0.2729,
+   "oos_n": 4,
+   "oos_v": 0.1472,
    "ok": false,
    "status": "⏳ копим данные"
   },
   {
    "name": "Модель конкурирует с рынком",
    "note": "Brier модель vs рынок (тот же снимок)",
-   "is_n": 0,
-   "is_v": null,
-   "oos_n": 0,
-   "oos_v": null,
+   "is_n": 5,
+   "is_v": "мод 0.2729 / рынок 0.3058",
+   "oos_n": 4,
+   "oos_v": "мод 0.1472 / рынок 0.196",
    "ok": false,
    "status": "⏳ копим данные"
   },
   {
    "name": "Правило «эдж ≥ 5%» с положительным EV",
    "note": "бэктест по снимкам, 1 сделка на окно",
-   "is_n": 0,
-   "is_v": null,
-   "oos_n": 0,
-   "oos_v": null,
+   "is_n": 2,
+   "is_v": "EV -1.0 R",
+   "oos_n": 2,
+   "oos_v": "EV 0.226 R",
    "ok": false,
    "status": "⏳ копим данные"
   },
   {
    "name": "Есть бин рынка с системной ошибкой",
    "note": "сдвиг >= 5пп на IS и OOS",
-   "is_n": 0,
+   "is_n": 7,
    "is_v": "флагов: 0",
    "oos_n": 0,
    "oos_v": "бинов с флагом: 0",
@@ -278,30 +442,30 @@
   {
    "name": "Смесь 50/50 модели и рынка бьёт обоих",
    "note": "Brier смеси < min(модель, рынок) на обеих половинах",
-   "is_n": 0,
-   "is_v": null,
-   "oos_n": 0,
-   "oos_v": null,
+   "is_n": 5,
+   "is_v": 0.2811,
+   "oos_n": 4,
+   "oos_v": 0.1673,
    "ok": false,
    "status": "⏳ копим данные"
   },
   {
    "name": "Время суток не влияет на исход Up/Down",
-   "note": "уклонения >= 10пп от базы при n >= 50 в часе: 7:00 UTC, 11:00 UTC, 14:00 UTC",
-   "is_n": 16,
-   "is_v": "уклонений: 5",
-   "oos_n": 16,
-   "oos_v": "уклонений: 5",
+   "note": "уклонения >= 10пп от базы при n >= 50 в часе: 7:00 UTC, 9:00 UTC, 11:00 UTC",
+   "is_n": 17,
+   "is_v": "уклонений: 7",
+   "oos_n": 17,
+   "oos_v": "уклонений: 7",
    "ok": false,
    "status": "✨ паттерн: время суток влияет"
   },
   {
    "name": "Стрик-эдж: рынок недооценивает моментум",
-   "note": "вероятности из старых 70% данных, сделки только на новых 30%; P(Up|после Up)=0.538, P(Up|после Down)=0.496",
-   "is_n": 696,
-   "is_v": "P(up|up)=0.538",
-   "oos_n": 0,
-   "oos_v": null,
+   "note": "вероятности из старых 70% данных, сделки только на новых 30%; P(Up|после Up)=0.541, P(Up|после Down)=0.499",
+   "is_n": 721,
+   "is_v": "P(up|up)=0.541",
+   "oos_n": 6,
+   "oos_v": -0.573,
    "ok": false,
    "status": "⏳ копим данные"
   }
