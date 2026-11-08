@@ -25,8 +25,8 @@ jobs:
       - name: Install deps (лог в файл)
         working-directory: engines/okx
         run: |
-          pip install -r requirements.txt 2>&1 | tee pip_log.txt | tail -5
-          python -c "import pandas, requests; print('imports ok:', pandas.__version__, requests.__version__)" 2>&1 | tee -a pip_log.txt
+          pip install -r requirements.txt 2>&1 | tee pip_log.txt | tail -3
+          python -c "import pandas, requests; print('imports ok')" 2>&1 | tee -a pip_log.txt
       - name: OKX trader (live при Secrets, иначе paper на живых свечах OKX)
         working-directory: engines/okx
         env:
@@ -40,22 +40,24 @@ jobs:
         run: |
           rm -f trader_log.txt
           timeout 300 python trader.py > trader_log.txt 2>&1 || echo "TRADER FAILED (exit $?)" >> trader_log.txt
-          cat trader_log.txt | tail -40
+          tail -40 trader_log.txt
           exit 0
       - name: Unified reporter
         run: python reporter.py || true
-      - name: Commit
+      - name: Commit (устойчиво к гонкам: пауза + 6 попыток rebase)
         if: always()
         run: |
+          sleep 20
           git config user.name "omni-bot"
           git config user.email "omni-bot@users.noreply.github.com"
-          git add engines/okx/results engines/okx/trader_log.txt engines/okx/pip_log.txt results/universe.json || true
+          git add engines/okx/results engines/okx/best_params.json engines/okx/trader_log.txt engines/okx/pip_log.txt results/universe.json || true
           if ! git diff --cached --quiet; then
             git commit -m "auto: okx trader [skip ci]" || true
-            for i in 1 2 3; do
+            for i in 1 2 3 4 5 6; do
               git fetch origin || true
-              git rebase origin/main > /dev/null 2>&1 || { git rebase --abort > /dev/null 2>&1 || true; echo "rebase conflict - skip round"; break; }
+              git rebase origin/main > /dev/null 2>&1 || { git rebase --abort > /dev/null 2>&1 || true; sleep 10; continue; }
               git push origin HEAD:main && exit 0
+              sleep 10
             done
           fi
           exit 0

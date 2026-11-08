@@ -1,13 +1,13 @@
-"""OmniLab OKX trader — реальные ордера на OKX с фолбэком в paper.
+"""OmniLab OKX trader v1.1 — реальные ордера OKX с фолбэком в paper.
 
-Режим LIVE включается сам, если заданы Secrets:
-  OKX_API_KEY / OKX_API_SECRET / OKX_API_PASSPHRASE
-  OKX_DEMO=1  → демо-счёт OKX (x-simulated-trading), пусто → боевой счёт.
-Без ключей — paper-режим на живых свечах OKX: те же сигналы, те же риски.
+PAPER (по умолчанию, без Secrets): живые свечи OKX 15m, виртуальные сделки
+с теми же сигналами/рисками, что и в LIVE. Полностью автономно.
 
-Стратегия: пересечение EMA(9/21) на закрытых барах 15m,
-TP = 2.5*ATR, SL = 1.5*ATR (в LIVE прикрепляются к ордеру как attachAlgoOrds).
-Итог пишется в results/okx_live.json для единого репортёра и дашборда.
+LIVE: задай Secrets OKX_API_KEY / OKX_API_SECRET / OKX_API_PASSPHRASE
+(+ OKX_DEMO=1 → демо-счёт OKX).
+
+Саморазвитие: параметры стратегии читаются из best_params.json, который
+обновляет evolve-ядро (walk-forward оптимизация на живых данных OKX).
 """
 import json
 import os
@@ -25,6 +25,15 @@ def now():
     return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
 
+def load_best():
+    """Параметры от evolve-ядра (walk-forward оптимизация)."""
+    try:
+        with open("best_params.json") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
 def load():
     try:
         with open(RES) as f:
@@ -39,10 +48,10 @@ def save(st):
         json.dump(st, f, ensure_ascii=False, indent=1)
 
 
-def indicators(df):
+def indicators(df, fast, slow):
     df = df.copy()
-    df["ema_f"] = df["c"].ewm(span=C.EMA_FAST, adjust=False).mean()
-    df["ema_s"] = df["c"].ewm(span=C.EMA_SLOW, adjust=False).mean()
+    df["ema_f"] = df["c"].ewm(span=fast, adjust=False).mean()
+    df["ema_s"] = df["c"].ewm(span=slow, adjust=False).mean()
     prev = df["c"].shift()
     tr = pd.concat([df["h"] - df["l"], (df["h"] - prev).abs(), (df["l"] - prev).abs()], axis=1).max(axis=1)
     df["atr"] = tr.rolling(C.ATR_PERIOD).mean()
@@ -62,9 +71,10 @@ def cross_signal(df):
     return 0, None, None
 
 
-def scan(api):
-    """Свечи и сигналы по всем парам. Возвращает {inst: {sig, price, atr, err}}."""
+def scan(api, best):
     out = {}
+    fast = int(best.get("ema_fast", C.EMA_FAST))
+    slow = int(best.get("ema_slow", C.EMA_SLOW))
     for inst in C.PAIRS:
         try:
             r = api.public_get("/api/v5/market/candles",
@@ -75,13 +85,13 @@ def scan(api):
             df = pd.DataFrame([x[:5] for x in rows], columns=["ts", "o", "h", "l", "c"])
             for col in ["o", "h", "l", "c"]:
                 df[col] = df[col].astype(float)
-            df = df.iloc[::-1].reset_index(drop=True)  # старые → новые
-            df = indicators(df)
+            df = df.iloc[::-1].reset_index(drop=True)
+            df = indicators(df, fast, slow)
             sig, price, atr = cross_signal(df)
             out[inst] = {"sig": sig, "price": price, "atr": atr, "err": None}
         except Exception as e:
             out[inst] = {"sig": 0, "price": None, "atr": None, "err": str(e)[:200]}
-    return out
+    return out, {"ema_fast": fast, "ema_slow": slow}
 
 
 def add_trade(bucket, trade):
@@ -89,10 +99,11 @@ def add_trade(bucket, trade):
     del bucket[50:]
 
 
-def paper_round(sigs, st):
+def paper_round(sigs, st, best):
     p = st.setdefault("paper", {"equity": C.PAPER_EQUITY, "start": C.PAPER_EQUITY,
                                 "positions": {}, "trades": []})
-    # 1) закрытие по TP/SL
+    tp_atr = float(best.get("tp_atr", C.TP_ATR))
+    sl_atr = float(best.get("sl_atr", C.SL_ATR))
     for inst, pos in list(p["positions"].items()):
         info = sigs.get(inst) or {}
         px = info.get("price")
@@ -117,7 +128,6 @@ def paper_round(sigs, st):
                                     "entry": round(pos["entry"], 6), "exit": round(hit, 6),
                                     "pnl": round(pnl, 4), "reason": reason})
             del p["positions"][inst]
-    # 2) открытие по сигналу
     for inst, info in sigs.items():
         if len(p["positions"]) >= C.MAX_OPEN:
             break
@@ -126,17 +136,18 @@ def paper_round(sigs, st):
         side, entry, atr = info["sig"], info["price"], info["atr"]
         p["positions"][inst] = {
             "side": side, "entry": entry, "sz": C.ORDER_USDT / entry,
-            "tp": entry + side * C.TP_ATR * atr,
-            "sl": entry - side * C.SL_ATR * atr,
+            "tp": entry + side * tp_atr * atr,
+            "sl": entry - side * sl_atr * atr,
             "opened": now(),
         }
     return p
 
 
-def live_round(api, sigs, st):
+def live_round(api, sigs, st, best):
     lv = st.setdefault("live", {"positions": {}, "trades": [], "start_eq": None})
+    tp_atr = float(best.get("tp_atr", C.TP_ATR))
+    sl_atr = float(best.get("sl_atr", C.SL_ATR))
     errors = []
-    # баланс
     try:
         b = api.get("/api/v5/account/balance", {"ccy": "USDT"})
         det = (b.get("data") or [{}])[0].get("details") or []
@@ -146,7 +157,6 @@ def live_round(api, sigs, st):
     except Exception as e:
         eq = None
         errors.append("balance: " + str(e)[:150])
-    # реальные позиции SWAP
     try:
         r = api.get("/api/v5/account/positions", {"instType": "SWAP"})
         api_pos = {}
@@ -156,7 +166,6 @@ def live_round(api, sigs, st):
     except Exception as e:
         api_pos = None
         errors.append("positions: " + str(e)[:150])
-    # сверка: закрытые TP/SL
     if api_pos is not None:
         for inst, meta in list(lv["positions"].items()):
             if inst not in api_pos:
@@ -165,8 +174,6 @@ def live_round(api, sigs, st):
                                          "entry": meta.get("entry"), "exit": None,
                                          "pnl": None, "reason": "tp/sl closed"})
                 del lv["positions"][inst]
-    # закрытие по противоположному сигналу
-    if api_pos is not None:
         for inst, meta in list(lv["positions"].items()):
             info = sigs.get(inst) or {}
             if info.get("sig") and info["sig"] == -meta["side"]:
@@ -183,7 +190,6 @@ def live_round(api, sigs, st):
                         errors.append("close " + inst + ": " + str(r.get("msg") or r)[:150])
                 except Exception as e:
                     errors.append("close " + inst + ": " + str(e)[:150])
-    # открытие
     for inst, info in sigs.items():
         if len(lv["positions"]) >= C.MAX_OPEN:
             break
@@ -192,8 +198,8 @@ def live_round(api, sigs, st):
         if api_pos is not None and inst in api_pos:
             continue
         side, price, atr = info["sig"], info["price"], info["atr"]
-        tp = price + side * C.TP_ATR * atr
-        sl = price - side * C.SL_ATR * atr
+        tp = price + side * tp_atr * atr
+        sl = price - side * sl_atr * atr
         try:
             meta = api.public_get("/api/v5/public/instruments",
                                   {"instType": "SWAP", "instId": inst})
@@ -227,6 +233,7 @@ def live_round(api, sigs, st):
 
 def main():
     st = load()
+    best = load_best()
     key = os.environ.get("OKX_API_KEY", "")
     secret = os.environ.get("OKX_API_SECRET", "")
     passph = os.environ.get("OKX_API_PASSPHRASE", "")
@@ -234,11 +241,11 @@ def main():
     mode = "live" if (key and secret and passph) else "paper"
     api = Okx(key, secret, passph, demo=demo)
 
-    sigs = scan(api)
-    p = paper_round(sigs, st)
+    sigs, params = scan(api, best)
+    p = paper_round(sigs, st, best)
     eq, errors = None, []
     if mode == "live":
-        lv, eq, errors = live_round(api, sigs, st)
+        lv, eq, errors = live_round(api, sigs, st, best)
     else:
         lv = st.get("live", {"positions": {}, "trades": []})
 
@@ -259,6 +266,7 @@ def main():
         "equity": round(equity, 2) if equity is not None else None,
         "start_equity": round(start, 2) if start else None,
         "pnl_pct": pnl_pct, "trades": trades, "open": open_n,
+        "params": params, "params_source": "evolve" if best else "default",
         "signals": {k: {"sig": v["sig"], "price": v["price"], "err": v["err"]}
                     for k, v in sigs.items()},
         "errors": errors[:10], "updated": now(),
