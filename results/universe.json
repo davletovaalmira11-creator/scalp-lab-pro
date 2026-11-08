@@ -1,0 +1,52 @@
+{
+ "updated": "2026-11-08T22:10:44Z",
+ "health": {
+  "overall": "degraded",
+  "modules": {
+   "pm_worker": "stale",
+   "pm_lab": "ok",
+   "scalp_worker": "warmup"
+  }
+ },
+ "pm": {
+  "equity": null,
+  "pnl_pct": null,
+  "trades": null,
+  "winrate": null,
+  "open": null,
+  "sht_open": null,
+  "sht_trades": null,
+  "sht_pnl": null,
+  "cal": {},
+  "updated": null,
+  "age_s": null
+ },
+ "pm_lab": {
+  "status": "ready",
+  "status_note": "База достаточна. Подтверждённых OOS закономерностей: 0 из 8 гипотез.",
+  "windows": 1000,
+  "settled": 1000,
+  "snaps": 0,
+  "golden": [],
+  "updated": "2026-11-08T22:10:44Z",
+  "age_s": 1.0
+ },
+ "scalp": {
+  "done": null,
+  "total": null,
+  "errors": null,
+  "pending": null,
+  "updated": null,
+  "age_s": null,
+  "paper": {
+   "equity": null,
+   "pnl_pct": null,
+   "trades": null,
+   "winrate": null,
+   "open": null,
+   "tops": 0
+  },
+  "paper_updated": null,
+  "leaderboard": []
+ }
+}
