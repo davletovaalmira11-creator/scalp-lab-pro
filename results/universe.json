@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-09T11:33:25Z",
+ "updated": "2026-11-09T11:40:51Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "warmup",
@@ -25,7 +25,7 @@
    "acc": 23.8
   },
   "updated": "2026-11-09T11:24:12Z",
-  "age_s": 553.0
+  "age_s": 1000.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,24 +35,24 @@
   "snaps": 3210,
   "golden": [],
   "updated": "2026-11-09T11:33:25Z",
-  "age_s": 0.0
+  "age_s": 447.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-09T10:39:50Z",
-  "age_s": 3215.0,
+  "updated": "2026-11-09T11:40:32Z",
+  "age_s": 20.0,
   "paper": {
    "equity": 980.71,
    "pnl_pct": -1.93,
    "trades": 17,
    "winrate": 47.1,
-   "open": 1,
-   "tops": 5
+   "open": 2,
+   "tops": 4
   },
-  "paper_updated": "2026-11-09T10:40:12Z",
+  "paper_updated": "2026-11-09T11:40:51Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -110,25 +110,6 @@
     "monthly_pct": "0.131386",
     "trades_per_day": "14.71",
     "usd_per_month_1000": "131.39"
-   },
-   {
-    "strategy": "vol_burst_revert",
-    "symbol": "ARBUSDT",
-    "tf": "5m",
-    "oos_sharpe": "1.935",
-    "oos_pf": "1.029",
-    "oos_t": "1.84",
-    "trades": "894",
-    "param_stability": "0.26",
-    "is_sharpe_avg": "4.25",
-    "folds": "47",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.9345995554905253",
-    "maker_pf": "1.0292257515978214",
-    "daily_pct": "0.002234",
-    "monthly_pct": "0.069224",
-    "trades_per_day": "2.45",
-    "usd_per_month_1000": "69.22"
    },
    {
     "strategy": "funding_revert",
