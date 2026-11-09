@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-09T11:40:51Z",
+ "updated": "2026-11-09T12:23:48Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "stale",
+   "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "warmup",
@@ -24,8 +24,8 @@
    "brier": 0.2222,
    "acc": 23.8
   },
-  "updated": "2026-11-09T11:24:12Z",
-  "age_s": 1000.0
+  "updated": "2026-11-09T12:23:48Z",
+  "age_s": 0.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,7 +35,7 @@
   "snaps": 3210,
   "golden": [],
   "updated": "2026-11-09T11:33:25Z",
-  "age_s": 447.0
+  "age_s": 3023.0
  },
  "scalp": {
   "done": 2662,
@@ -43,7 +43,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-09T11:40:32Z",
-  "age_s": 20.0,
+  "age_s": 2596.0,
   "paper": {
    "equity": 980.71,
    "pnl_pct": -1.93,
