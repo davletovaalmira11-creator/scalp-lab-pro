@@ -1,6 +1,39 @@
 {
- "cash": 476.2493198986173,
- "positions": {},
+ "cash": 428.6243879087556,
+ "positions": {
+  "btc-updown-5m-1794265200": {
+   "kind": "sht",
+   "slug": "btc-updown-5m-1794265200",
+   "question": "Bitcoin Up or Down - November 9, 6:00PM-6:05PM ET",
+   "series": "btc-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.22,
+   "last": 0.22,
+   "shares": 108.24,
+   "usd": 23.81,
+   "opened": "2026-11-09T23:02:03Z",
+   "epoch": 1794265323.7870317,
+   "end_ts": 1794265500,
+   "fair_up": 0.3397
+  },
+  "eth-updown-5m-1794265200": {
+   "kind": "sht",
+   "slug": "eth-updown-5m-1794265200",
+   "question": "Ethereum Up or Down - November 9, 6:00PM-6:05PM ET",
+   "series": "eth-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.285,
+   "last": 0.285,
+   "shares": 83.55,
+   "usd": 23.81,
+   "opened": "2026-11-09T23:02:03Z",
+   "epoch": 1794265323.7870634,
+   "end_ts": 1794265500,
+   "fair_up": 0.3872
+  }
+ },
  "closed": [
   {
    "question": "Bitcoin Up or Down - November 8, 5:15PM-5:30PM ET",
@@ -495,9 +528,13 @@
   [
    "2026-11-09T22:15:04Z",
    476.25
+  ],
+  [
+   "2026-11-09T23:02:03Z",
+   476.25
   ]
  ],
- "runs": 26,
+ "runs": 27,
  "done_keys": {},
  "cal": [
   {
@@ -663,15 +700,15 @@
  ],
  "stats": {
   "equity": 476.25,
-  "cash": 476.25,
-  "open": 0,
+  "cash": 428.62,
+  "open": 2,
   "trades": 32,
   "wins": 11,
   "winrate": 34.4,
   "pnl_pct": -52.38,
-  "updated": "2026-11-09T22:15:04Z",
-  "runs": 26,
-  "sht_open": 0,
+  "updated": "2026-11-09T23:02:03Z",
+  "runs": 27,
+  "sht_open": 2,
   "sht_trades": 32,
   "sht_pnl": -523.2
  }
