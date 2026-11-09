@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T12:23:48Z",
+ "updated": "2026-11-09T12:38:17Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,17 +25,17 @@
    "acc": 23.8
   },
   "updated": "2026-11-09T12:23:48Z",
-  "age_s": 0.0
+  "age_s": 870.0
  },
  "pm_lab": {
   "status": "ready",
   "status_note": "База достаточна. Подтверждённых OOS закономерностей: 0 из 8 гипотез.",
-  "windows": 1840,
-  "settled": 1338,
-  "snaps": 3210,
+  "windows": 1884,
+  "settled": 1368,
+  "snaps": 3399,
   "golden": [],
-  "updated": "2026-11-09T11:33:25Z",
-  "age_s": 3023.0
+  "updated": "2026-11-09T12:38:17Z",
+  "age_s": 1.0
  },
  "scalp": {
   "done": 2662,
@@ -43,7 +43,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-09T11:40:32Z",
-  "age_s": 2596.0,
+  "age_s": 3466.0,
   "paper": {
    "equity": 980.71,
    "pnl_pct": -1.93,
