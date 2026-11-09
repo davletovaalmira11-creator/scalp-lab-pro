@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-09T08:18:11Z",
+ "updated": "2026-11-09T08:41:17Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "warmup",
    "pm_trader": "warmup"
   }
@@ -25,7 +25,7 @@
    "acc": 23.5
   },
   "updated": "2026-11-09T08:18:11Z",
-  "age_s": 1.0
+  "age_s": 1387.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,24 +35,24 @@
   "snaps": 2425,
   "golden": [],
   "updated": "2026-11-09T08:00:25Z",
-  "age_s": 1067.0
+  "age_s": 2453.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-09T04:48:16Z",
-  "age_s": 12596.0,
+  "updated": "2026-11-09T08:40:53Z",
+  "age_s": 25.0,
   "paper": {
-   "equity": 1021.11,
-   "pnl_pct": 2.11,
-   "trades": 8,
-   "winrate": 62.5,
-   "open": 2,
-   "tops": 5
+   "equity": 979.3,
+   "pnl_pct": -2.07,
+   "trades": 13,
+   "winrate": 38.5,
+   "open": 1,
+   "tops": 6
   },
-  "paper_updated": "2026-11-09T04:48:32Z",
+  "paper_updated": "2026-11-09T08:41:17Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -131,6 +131,25 @@
     "usd_per_month_1000": "69.22"
    },
    {
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
+   },
+   {
     "strategy": "funding_revert",
     "symbol": "ARBUSDT",
     "tf": "1m",
@@ -205,6 +224,25 @@
     "monthly_pct": "0.044461",
     "trades_per_day": "6.58",
     "usd_per_month_1000": "44.46"
+   },
+   {
+    "strategy": "vol_pop",
+    "symbol": "UNIUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.147",
+    "oos_pf": "1.061",
+    "oos_t": "1.49",
+    "trades": "733",
+    "param_stability": "0.27",
+    "is_sharpe_avg": "2.27",
+    "folds": "22",
+    "fee_mode": "taker",
+    "maker_sharpe": "1.4868229034636196",
+    "maker_pf": "1.0803805467531067",
+    "daily_pct": "0.001068",
+    "monthly_pct": "0.032527",
+    "trades_per_day": "1.0",
+    "usd_per_month_1000": "32.53"
    },
    {
     "strategy": "streak_vol",
