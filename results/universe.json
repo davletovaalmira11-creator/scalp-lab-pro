@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T00:29:09Z",
+ "updated": "2026-11-09T00:30:27Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 50.0
   },
   "updated": "2026-11-08T23:57:43Z",
-  "age_s": 1887.0
+  "age_s": 1965.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,14 +35,14 @@
   "snaps": 1274,
   "golden": [],
   "updated": "2026-11-09T00:15:30Z",
-  "age_s": 820.0
+  "age_s": 898.0
  },
  "scalp": {
-  "done": 2660,
+  "done": 2662,
   "total": 2662,
   "errors": 0,
-  "pending": 2,
-  "updated": "2026-11-09T00:28:52Z",
+  "pending": 0,
+  "updated": "2026-11-09T00:30:10Z",
   "age_s": 18.0,
   "paper": {
    "equity": 974.88,
@@ -52,7 +52,7 @@
    "open": 2,
    "tops": 5
   },
-  "paper_updated": "2026-11-09T00:29:09Z",
+  "paper_updated": "2026-11-09T00:30:27Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -207,23 +207,23 @@
     "usd_per_month_1000": "44.46"
    },
    {
-    "strategy": "vol_burst_revert",
-    "symbol": "SUIUSDT",
-    "tf": "5m",
-    "oos_sharpe": "1.067",
-    "oos_pf": "1.015",
-    "oos_t": "1.01",
-    "trades": "909",
-    "param_stability": "0.3",
-    "is_sharpe_avg": "1.87",
-    "folds": "47",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.066772054135089",
-    "maker_pf": "1.015109243978693",
-    "daily_pct": "0.00129",
-    "monthly_pct": "0.039445",
-    "trades_per_day": "2.49",
-    "usd_per_month_1000": "39.44"
+    "strategy": "vol_pop",
+    "symbol": "UNIUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.147",
+    "oos_pf": "1.061",
+    "oos_t": "1.49",
+    "trades": "733",
+    "param_stability": "0.27",
+    "is_sharpe_avg": "2.27",
+    "folds": "22",
+    "fee_mode": "taker",
+    "maker_sharpe": "1.4868229034636196",
+    "maker_pf": "1.0803805467531067",
+    "daily_pct": "0.001068",
+    "monthly_pct": "0.032527",
+    "trades_per_day": "1.0",
+    "usd_per_month_1000": "32.53"
    },
    {
     "strategy": "streak_vol",
