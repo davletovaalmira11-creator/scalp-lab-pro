@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T08:18:11Z",
+ "updated": "2026-11-09T09:32:53Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,27 +9,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 185881 против среднего 61062",
-   "liq": 167769,
-   "v24": 185881,
+   "note": "объём 24ч 190558 против среднего 61731",
+   "liq": 192687,
+   "v24": 190558,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 52.7,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "puffpaw-fdv-above-300m-one-day-after-launch",
-   "question": "Puffpaw FDV above $300M one day after launch?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 116620 против среднего 20733",
-   "liq": 123990,
-   "v24": 116620,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 52.7,
+   "days_left": 52.6,
    "tradeable": false
   },
   {
@@ -40,7 +25,7 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 10160 против среднего 1626",
-   "liq": 116132,
+   "liq": 131744,
    "v24": 10160,
    "z": 0.0,
    "end": "2026-11-09",
