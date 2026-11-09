@@ -1,30 +1,30 @@
 {
  "capital_start": 1000.0,
- "equity": 938.1190476379755,
+ "equity": 957.5428370225502,
  "positions": {
   "bb_regime-NEARUSDT-1m": {
    "strategy": "bb_regime",
    "symbol": "NEARUSDT",
    "tf": "1m",
-   "signal": -1.0,
-   "entry": 3.656,
-   "opened": "2026-11-09 21:35:00",
+   "signal": 1.0,
+   "entry": 3.618,
+   "opened": "2026-11-09 23:04:00",
    "fee_mode": "maker",
    "oos_sharpe": 2.77,
-   "last_ts": "2026-11-09 22:30:00",
-   "last_px": 3.651
+   "last_ts": "2026-11-09 23:25:00",
+   "last_px": 3.616
   },
   "bb_maker-NEARUSDT-1m": {
    "strategy": "bb_maker",
    "symbol": "NEARUSDT",
    "tf": "1m",
-   "signal": -1.0,
-   "entry": 3.659,
-   "opened": "2026-11-09 21:34:00",
+   "signal": 1.0,
+   "entry": 3.618,
+   "opened": "2026-11-09 23:04:00",
    "fee_mode": "maker",
    "oos_sharpe": 3.0,
-   "last_ts": "2026-11-09 22:30:00",
-   "last_px": 3.651
+   "last_ts": "2026-11-09 23:25:00",
+   "last_px": 3.616
   }
  },
  "closed": [
@@ -335,17 +335,44 @@
    "closed_ts": "2026-11-09 17:40:00",
    "fee_mode": "maker",
    "reason": "flat signal"
+  },
+  {
+   "key": "bb_regime-NEARUSDT-1m",
+   "strategy": "bb_regime",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.656,
+   "exit": 3.618,
+   "pnl_pct": 0.9894,
+   "opened": "2026-11-09 21:35:00",
+   "closed_ts": "2026-11-09 23:04:00",
+   "fee_mode": "maker",
+   "reason": "signal flip"
+  },
+  {
+   "key": "bb_maker-NEARUSDT-1m",
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.659,
+   "exit": 3.618,
+   "pnl_pct": 1.0705,
+   "opened": "2026-11-09 21:34:00",
+   "closed_ts": "2026-11-09 23:04:00",
+   "fee_mode": "maker",
+   "reason": "signal flip"
   }
  ],
- "updated": "2026-11-09T22:32:17Z",
- "runs": 24,
+ "updated": "2026-11-09T23:26:41Z",
+ "runs": 25,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-09 22:30:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-09 22:25:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-09 22:30:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-09 22:30:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-09 22:25:00",
-  "wick_vol-OPUSDT-15m": "2026-11-09 22:15:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-09 23:25:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-09 23:20:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-09 23:25:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-09 23:25:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-09 23:20:00"
  },
  "tops": [
   {
@@ -361,9 +388,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 2.77,
    "score": 2.55,
-   "signal": -1.0,
-   "sig_last": "2026-11-09 22:30:00",
-   "sig_pct": 32.3
+   "signal": 1.0,
+   "sig_last": "2026-11-09 23:25:00",
+   "sig_pct": 34.21
   },
   {
    "key": "bb_maker-NEARUSDT-1m",
@@ -377,9 +404,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 3.0,
    "score": 2.49,
-   "signal": -1.0,
-   "sig_last": "2026-11-09 22:30:00",
-   "sig_pct": 37.51
+   "signal": 1.0,
+   "sig_last": "2026-11-09 23:25:00",
+   "sig_pct": 39.42
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -412,7 +439,7 @@
    "score": 1.84,
    "signal": 0.0,
    "sig_last": "2026-11-09 17:35:00",
-   "sig_pct": 90.77
+   "sig_pct": 89.73
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -429,41 +456,24 @@
    "signal": 0.0,
    "sig_last": "2026-11-09 08:00:00",
    "sig_pct": 32.66
-  },
-  {
-   "key": "wick_vol-OPUSDT-15m",
-   "strategy": "wick_vol",
-   "symbol": "OPUSDT",
-   "tf": "15m",
-   "params": {
-    "h": 30,
-    "vz": 3.0,
-    "w": 0.4
-   },
-   "fee_mode": "maker",
-   "oos_sharpe": 1.93,
-   "score": 1.25,
-   "signal": 0.0,
-   "sig_last": "2026-11-07 19:30:00",
-   "sig_pct": 12.16
   }
  ],
  "stats": {
-  "n_trades": 22,
-  "wins": 9,
-  "winrate": 40.9,
-  "equity": 938.12,
-  "pnl_pct": -6.19,
+  "n_trades": 24,
+  "wins": 11,
+  "winrate": 45.8,
+  "equity": 957.54,
+  "pnl_pct": -4.25,
   "open": 2
  },
  "filter_stats": {
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1423,
+  "low_pf": 1424,
   "low_t": 83,
   "no_params": 0,
-  "admitted": 6
+  "admitted": 5
  },
  "candidates": [
   {
