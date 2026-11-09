@@ -1,21 +1,21 @@
 {
- "cash": 458.65516661877416,
+ "cash": 435.72240828783544,
  "positions": {
-  "eth-updown-5m-1794216600": {
+  "eth-updown-5m-1794219900": {
    "kind": "sht",
-   "slug": "eth-updown-5m-1794216600",
-   "question": "Ethereum Up or Down - November 9, 4:30AM-4:35AM ET",
+   "slug": "eth-updown-5m-1794219900",
+   "question": "Ethereum Up or Down - November 9, 5:25AM-5:30AM ET",
    "series": "eth-up-or-down-5m",
    "outcome": "Up",
    "strategy": "sht5",
-   "entry": 0.38,
-   "last": 0.38,
-   "shares": 63.53,
-   "usd": 24.14,
-   "opened": "2026-11-09T09:32:53Z",
-   "epoch": 1794216773.983713,
-   "end_ts": 1794216900,
-   "fair_up": 0.4573
+   "entry": 0.8,
+   "last": 0.8,
+   "shares": 28.67,
+   "usd": 22.93,
+   "opened": "2026-11-09T10:26:39Z",
+   "epoch": 1794219999.4834836,
+   "end_ts": 1794220200,
+   "fair_up": 0.9198
   }
  },
  "closed": [
@@ -246,6 +246,18 @@
    "opened": "2026-11-09T08:18:11Z",
    "closed": "2026-11-09T09:32:34Z",
    "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Ethereum Up or Down - November 9, 4:30AM-4:35AM ET",
+   "slug": "eth-updown-5m-1794216600",
+   "outcome": "Up",
+   "entry": 0.38,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-09T09:32:53Z",
+   "closed": "2026-11-09T10:26:19Z",
+   "reason": "расчёт рынка, проигрыш"
   }
  ],
  "curve": [
@@ -304,9 +316,13 @@
   [
    "2026-11-09T09:32:53Z",
    482.8
+  ],
+  [
+   "2026-11-09T10:26:39Z",
+   458.66
   ]
  ],
- "runs": 13,
+ "runs": 14,
  "done_keys": {},
  "cal": [
   {
@@ -403,20 +419,25 @@
    "p": 0.3392,
    "win": 0,
    "tag": "sht15"
+  },
+  {
+   "p": 0.4573,
+   "win": 0,
+   "tag": "sht5"
   }
  ],
  "stats": {
-  "equity": 482.8,
-  "cash": 458.66,
+  "equity": 458.66,
+  "cash": 435.72,
   "open": 1,
-  "trades": 19,
+  "trades": 20,
   "wins": 4,
-  "winrate": 21.1,
-  "pnl_pct": -51.72,
-  "updated": "2026-11-09T09:32:53Z",
-  "runs": 13,
+  "winrate": 20.0,
+  "pnl_pct": -54.13,
+  "updated": "2026-11-09T10:26:39Z",
+  "runs": 14,
   "sht_open": 1,
-  "sht_trades": 19,
-  "sht_pnl": -516.97
+  "sht_trades": 20,
+  "sht_pnl": -541.11
  }
 }
