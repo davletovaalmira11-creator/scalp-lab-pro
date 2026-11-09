@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T20:39:18Z",
+ "updated": "2026-11-09T21:25:24Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -11,12 +11,12 @@
   }
  },
  "pm": {
-  "equity": 501.32,
+  "equity": 501.31,
   "pnl_pct": -49.87,
   "trades": 31,
   "winrate": 35.5,
-  "open": 0,
-  "sht_open": 0,
+  "open": 1,
+  "sht_open": 1,
   "sht_trades": 31,
   "sht_pnl": -498.13,
   "cal": {
@@ -24,8 +24,8 @@
    "brier": 0.1911,
    "acc": 35.5
   },
-  "updated": "2026-11-09T20:29:05Z",
-  "age_s": 613.0
+  "updated": "2026-11-09T21:25:23Z",
+  "age_s": 1.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,7 +35,7 @@
   "snaps": 4882,
   "golden": [],
   "updated": "2026-11-09T20:33:45Z",
-  "age_s": 333.0
+  "age_s": 3099.0
  },
  "scalp": {
   "done": 2662,
@@ -43,7 +43,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-09T20:38:53Z",
-  "age_s": 25.0,
+  "age_s": 2791.0,
   "paper": {
    "equity": 938.12,
    "pnl_pct": -6.19,
