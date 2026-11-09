@@ -13,6 +13,7 @@ spike_revert,SUIUSDT,5m,2.251,1.132,2.14,147,47,0.26,365,,filtered
 spike_revert,LTCUSDT,15m,2.103,1.121,1.93,122,22,0.23,365,,filtered
 spike_bb,SOLUSDT,5m,2.081,1.123,1.98,129,47,0.19,365,,filtered
 vol_burst_revert,ARBUSDT,5m,1.935,1.029,1.84,894,47,0.26,365,,passed
+wick_vol,OPUSDT,15m,1.926,1.06,1.77,481,22,0.23,365,,passed
 spike_bb,BNBUSDT,5m,1.9,1.184,1.8,55,47,0.32,365,,filtered
 squeeze_pop,XRPUSDT,5m,1.88,1.084,1.78,183,47,0.3,365,,filtered
 spike_follow,SOLUSDT,1m,1.878,1.107,1.22,85,31,0.35,180,,filtered
@@ -224,7 +225,6 @@ vol_drift,NEARUSDT,5m,0.419,1.005,0.4,920,47,0.28,365,,filtered
 wick_vol,UNIUSDT,15m,0.417,1.015,0.77,1470,22,0.23,1460,,filtered
 flow_fade,ATOMUSDT,15m,0.412,1.013,0.38,604,22,0.59,365,,filtered
 vol_burst_revert,LTCUSDT,1m,0.409,1.003,0.27,1977,31,0.35,180,,filtered
-wick_vol,NEARUSDT,5m,0.395,1.008,0.75,5684,47,0.21,1460,,filtered
 funding_revert,OPUSDT,1m,0.394,1.005,0.26,710,31,0.39,180,,filtered
 streak_vol,FILUSDT,15m,0.39,1.012,0.36,382,22,0.23,365,,filtered
 streak_bb,APTUSDT,15m,0.39,1.006,0.36,762,22,0.32,365,,filtered
@@ -301,6 +301,7 @@ vol_burst_revert,LTCUSDT,5m,0.202,1.003,0.19,864,47,0.3,365,,filtered
 qr_revert,DOTUSDT,15m,0.201,1.004,0.18,734,22,0.36,365,,filtered
 crash_revert,LINKUSDT,1m,0.2,1.054,0.13,8,31,0.52,180,,filtered
 streak_vol,BTCUSDT,15m,0.195,1.007,0.18,345,22,0.18,365,,filtered
+wick_vol,NEARUSDT,5m,0.191,1.004,0.26,2884,47,0.15,730,,filtered
 funding_revert,OPUSDT,5m,0.19,1.002,0.18,1646,47,0.36,365,,filtered
 vwap_reversion,APTUSDT,5m,0.183,1.003,0.17,1615,47,0.26,365,,filtered
 spike_revert,BTCUSDT,15m,0.183,1.014,0.17,73,22,0.27,365,,filtered
@@ -315,7 +316,6 @@ qr_revert,SUIUSDT,1m,0.153,1.001,0.1,4072,31,0.68,180,,filtered
 bb_vol,XRPUSDT,15m,0.152,1.005,0.14,417,22,0.14,365,,filtered
 vol_drift,SOLUSDT,15m,0.15,1.003,0.14,278,22,0.36,365,,filtered
 squeeze_pop,LINKUSDT,15m,0.145,1.012,0.13,52,22,0.41,365,,filtered
-wick_vol,OPUSDT,15m,0.144,1.006,0.19,927,22,0.18,730,,filtered
 bb_regime,LTCUSDT,5m,0.144,1.002,0.27,4346,47,0.26,1460,,filtered
 bb_maker,LTCUSDT,5m,0.141,1.002,0.13,1594,47,0.34,365,,filtered
 bb_regime,AVAXUSDT,5m,0.129,1.002,0.12,1134,47,0.26,365,,filtered
