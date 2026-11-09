@@ -1,5 +1,21 @@
 {
- "updated": "2026-11-09T03:49:00Z",
+ "updated": "2026-11-09T05:47:59Z",
  "scanned": 200,
- "signals": []
+ "signals": [
+  {
+   "strategy": "vols",
+   "slug": "puffpaw-fdv-above-200m-one-day-after-launch",
+   "question": "Puffpaw FDV above $200M one day after launch?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 101049 против среднего 25184",
+   "liq": 150631,
+   "v24": 101049,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 52.8,
+   "tradeable": false
+  }
+ ]
 }
