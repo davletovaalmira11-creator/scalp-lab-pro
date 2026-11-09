@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-09T19:34:59Z",
+ "updated": "2026-11-09T20:29:05Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "puffpaw-fdv-above-300m-one-day-after-launch",
+   "question": "Puffpaw FDV above $300M one day after launch?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 77385 против среднего 22430",
+   "liq": 397110,
+   "v24": 77385,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 52.1,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-1000000-by-december-31-2026-946",
@@ -10,41 +25,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 21979 против среднего 5005",
-   "liq": 410158,
+   "liq": 397109,
    "v24": 21979,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 52.2,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "puffpaw-fdv-above-300m-one-day-after-launch",
-   "question": "Puffpaw FDV above $300M one day after launch?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 107413 против среднего 22430",
-   "liq": 399264,
-   "v24": 107413,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 52.2,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "puffpaw-fdv-above-200m-one-day-after-launch",
-   "question": "Puffpaw FDV above $200M one day after launch?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 146975 против среднего 35464",
-   "liq": 366625,
-   "v24": 146975,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 52.2,
+   "days_left": 52.1,
    "tradeable": false
   }
  ]
