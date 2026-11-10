@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T03:19:37Z",
+ "updated": "2026-11-10T03:33:54Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 32.5
   },
   "updated": "2026-11-10T03:19:37Z",
-  "age_s": 1.0
+  "age_s": 858.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,24 +35,24 @@
   "snaps": 6122,
   "golden": [],
   "updated": "2026-11-10T02:55:59Z",
-  "age_s": 1419.0
+  "age_s": 2276.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-10T02:36:42Z",
-  "age_s": 2576.0,
+  "updated": "2026-11-10T03:33:30Z",
+  "age_s": 25.0,
   "paper": {
-   "equity": 970.46,
-   "pnl_pct": -2.95,
-   "trades": 28,
-   "winrate": 53.6,
-   "open": 3,
+   "equity": 982.54,
+   "pnl_pct": -1.75,
+   "trades": 30,
+   "winrate": 56.7,
+   "open": 1,
    "tops": 5
   },
-  "paper_updated": "2026-11-10T02:37:03Z",
+  "paper_updated": "2026-11-10T03:33:54Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
