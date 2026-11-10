@@ -1,6 +1,6 @@
 {
  "capital_start": 1000.0,
- "equity": 1052.3257113610664,
+ "equity": 1058.4397381792692,
  "positions": {},
  "closed": [
   {
@@ -562,17 +562,30 @@
    "closed_ts": "2026-11-10 11:11:00",
    "fee_mode": "maker",
    "reason": "flat signal"
+  },
+  {
+   "key": "bb_maker-NEARUSDT-1m",
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.645,
+   "exit": 3.622,
+   "pnl_pct": 0.581,
+   "opened": "2026-11-10 12:15:00",
+   "closed_ts": "2026-11-10 13:15:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
   }
  ],
- "updated": "2026-11-10T12:08:55Z",
- "runs": 37,
+ "updated": "2026-11-10T13:29:27Z",
+ "runs": 38,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-10 12:07:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-10 12:00:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-10 12:07:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-10 12:07:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-10 12:00:00",
-  "wick_vol-OPUSDT-15m": "2026-11-10 11:45:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-10 13:28:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-10 13:20:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-10 13:28:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-10 13:28:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-10 13:20:00"
  },
  "tops": [
   {
@@ -590,7 +603,7 @@
    "score": 2.55,
    "signal": 0.0,
    "sig_last": "2026-11-10 11:10:00",
-   "sig_pct": 37.34
+   "sig_pct": 37.27
   },
   {
    "key": "bb_maker-NEARUSDT-1m",
@@ -605,8 +618,8 @@
    "oos_sharpe": 3.0,
    "score": 2.49,
    "signal": 0.0,
-   "sig_last": "2026-11-10 11:10:00",
-   "sig_pct": 40.36
+   "sig_last": "2026-11-10 13:14:00",
+   "sig_pct": 40.95
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -656,41 +669,24 @@
    "signal": 0.0,
    "sig_last": "2026-11-09 08:00:00",
    "sig_pct": 32.66
-  },
-  {
-   "key": "wick_vol-OPUSDT-15m",
-   "strategy": "wick_vol",
-   "symbol": "OPUSDT",
-   "tf": "15m",
-   "params": {
-    "h": 30,
-    "vz": 3.0,
-    "w": 0.4
-   },
-   "fee_mode": "maker",
-   "oos_sharpe": 1.93,
-   "score": 1.25,
-   "signal": 0.0,
-   "sig_last": "2026-11-07 19:30:00",
-   "sig_pct": 12.16
   }
  ],
  "stats": {
-  "n_trades": 40,
-  "wins": 27,
-  "winrate": 67.5,
-  "equity": 1052.33,
-  "pnl_pct": 5.23,
+  "n_trades": 41,
+  "wins": 28,
+  "winrate": 68.3,
+  "equity": 1058.44,
+  "pnl_pct": 5.84,
   "open": 0
  },
  "filter_stats": {
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1423,
+  "low_pf": 1424,
   "low_t": 83,
   "no_params": 0,
-  "admitted": 6
+  "admitted": 5
  },
  "candidates": [
   {
