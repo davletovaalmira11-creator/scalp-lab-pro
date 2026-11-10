@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T23:49:47Z",
+ "updated": "2026-11-10T23:57:49Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 45.2
   },
   "updated": "2026-11-10T23:49:46Z",
-  "age_s": 1.0
+  "age_s": 484.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,24 +37,24 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-10T23:43:37Z",
-  "age_s": 370.0
+  "age_s": 853.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-10T23:22:43Z",
-  "age_s": 1624.0,
+  "updated": "2026-11-10T23:57:26Z",
+  "age_s": 24.0,
   "paper": {
-   "equity": 1096.8,
-   "pnl_pct": 9.68,
-   "trades": 51,
-   "winrate": 70.6,
-   "open": 2,
+   "equity": 1077.47,
+   "pnl_pct": 7.75,
+   "trades": 52,
+   "winrate": 69.2,
+   "open": 1,
    "tops": 5
   },
-  "paper_updated": "2026-11-10T23:23:07Z",
+  "paper_updated": "2026-11-10T23:57:49Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -114,23 +114,23 @@
     "usd_per_month_1000": "131.39"
    },
    {
-    "strategy": "vol_burst_revert",
-    "symbol": "ARBUSDT",
-    "tf": "5m",
-    "oos_sharpe": "1.935",
-    "oos_pf": "1.029",
-    "oos_t": "1.84",
-    "trades": "894",
-    "param_stability": "0.26",
-    "is_sharpe_avg": "4.25",
-    "folds": "47",
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
     "fee_mode": "maker",
-    "maker_sharpe": "1.9345995554905253",
-    "maker_pf": "1.0292257515978214",
-    "daily_pct": "0.002234",
-    "monthly_pct": "0.069224",
-    "trades_per_day": "2.45",
-    "usd_per_month_1000": "69.22"
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
