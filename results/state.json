@@ -1,6 +1,71 @@
 {
- "cash": 2023.0392789197858,
- "positions": {},
+ "cash": 1618.4314231358285,
+ "positions": {
+  "btc-updown-5m-1794347400": {
+   "kind": "sht",
+   "slug": "btc-updown-5m-1794347400",
+   "question": "Bitcoin Up or Down - November 10, 4:50PM-4:55PM ET",
+   "series": "btc-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.28,
+   "last": 0.28,
+   "shares": 361.26,
+   "usd": 101.15,
+   "opened": "2026-11-10T21:52:00Z",
+   "epoch": 1794347520.0706336,
+   "end_ts": 1794347700,
+   "fair_up": 0.3791
+  },
+  "btc-updown-15m-1794347100": {
+   "kind": "sht",
+   "slug": "btc-updown-15m-1794347100",
+   "question": "Bitcoin Up or Down - November 10, 4:45PM-5:00PM ET",
+   "series": "btc-up-or-down-15m",
+   "outcome": "Down",
+   "strategy": "sht15",
+   "entry": 0.36,
+   "last": 0.36,
+   "shares": 280.98,
+   "usd": 101.15,
+   "opened": "2026-11-10T21:52:00Z",
+   "epoch": 1794347520.0706568,
+   "end_ts": 1794348000,
+   "fair_up": 0.5226
+  },
+  "eth-updown-5m-1794347400": {
+   "kind": "sht",
+   "slug": "eth-updown-5m-1794347400",
+   "question": "Ethereum Up or Down - November 10, 4:50PM-4:55PM ET",
+   "series": "eth-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.365,
+   "last": 0.365,
+   "shares": 277.13,
+   "usd": 101.15,
+   "opened": "2026-11-10T21:52:00Z",
+   "epoch": 1794347520.0706723,
+   "end_ts": 1794347700,
+   "fair_up": 0.468
+  },
+  "sol-updown-5m-1794347400": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794347400",
+   "question": "Solana Up or Down - November 10, 4:50PM-4:55PM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.37,
+   "last": 0.37,
+   "shares": 273.38,
+   "usd": 101.15,
+   "opened": "2026-11-10T21:52:00Z",
+   "epoch": 1794347520.0706918,
+   "end_ts": 1794347700,
+   "fair_up": 0.4777
+  }
+ },
  "closed": [
   {
    "question": "Bitcoin Up or Down - November 8, 5:15PM-5:30PM ET",
@@ -1039,9 +1104,13 @@
   [
    "2026-11-10T21:10:39Z",
    2023.04
+  ],
+  [
+   "2026-11-10T21:52:00Z",
+   2023.04
   ]
  ],
- "runs": 51,
+ "runs": 52,
  "done_keys": {},
  "cal": [
   {
@@ -1392,15 +1461,15 @@
  ],
  "stats": {
   "equity": 2023.04,
-  "cash": 2023.04,
-  "open": 0,
+  "cash": 1618.43,
+  "open": 4,
   "trades": 69,
   "wins": 32,
   "winrate": 46.4,
   "pnl_pct": 102.3,
-  "updated": "2026-11-10T21:10:39Z",
-  "runs": 51,
-  "sht_open": 0,
+  "updated": "2026-11-10T21:52:00Z",
+  "runs": 52,
+  "sht_open": 4,
   "sht_trades": 69,
   "sht_pnl": 1027.47
  }
