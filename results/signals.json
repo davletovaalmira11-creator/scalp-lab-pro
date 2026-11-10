@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T22:29:24Z",
+ "updated": "2026-11-10T23:13:28Z",
  "scanned": 200,
  "signals": [
   {
@@ -14,7 +14,7 @@
    "v24": 42857,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 51.1,
+   "days_left": 51.0,
    "tradeable": false
   }
  ]
