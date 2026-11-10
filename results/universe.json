@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-10T15:13:00Z",
+ "updated": "2026-11-10T15:30:47Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "warmup",
@@ -25,7 +25,7 @@
    "acc": 44.4
   },
   "updated": "2026-11-10T15:13:00Z",
-  "age_s": 1.0
+  "age_s": 1067.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,24 +37,24 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-10T14:59:06Z",
-  "age_s": 835.0
+  "age_s": 1901.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-10T14:37:40Z",
-  "age_s": 2121.0,
+  "updated": "2026-11-10T15:30:31Z",
+  "age_s": 16.0,
   "paper": {
-   "equity": 1084.46,
-   "pnl_pct": 8.45,
-   "trades": 43,
-   "winrate": 69.8,
+   "equity": 1098.64,
+   "pnl_pct": 9.86,
+   "trades": 45,
+   "winrate": 71.1,
    "open": 2,
    "tops": 5
   },
-  "paper_updated": "2026-11-10T14:38:04Z",
+  "paper_updated": "2026-11-10T15:30:47Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -207,6 +207,25 @@
     "monthly_pct": "0.044461",
     "trades_per_day": "6.58",
     "usd_per_month_1000": "44.46"
+   },
+   {
+    "strategy": "vol_pop",
+    "symbol": "UNIUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.147",
+    "oos_pf": "1.061",
+    "oos_t": "1.49",
+    "trades": "733",
+    "param_stability": "0.27",
+    "is_sharpe_avg": "2.27",
+    "folds": "22",
+    "fee_mode": "taker",
+    "maker_sharpe": "1.4868229034636196",
+    "maker_pf": "1.0803805467531067",
+    "daily_pct": "0.001068",
+    "monthly_pct": "0.032527",
+    "trades_per_day": "1.0",
+    "usd_per_month_1000": "32.53"
    },
    {
     "strategy": "streak_vol",
