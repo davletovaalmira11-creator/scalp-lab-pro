@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-10T16:05:11Z",
+ "updated": "2026-11-10T16:34:58Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "warmup",
@@ -25,7 +25,7 @@
    "acc": 46.2
   },
   "updated": "2026-11-10T16:05:10Z",
-  "age_s": 1.0
+  "age_s": 1789.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,24 +37,24 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-10T15:54:52Z",
-  "age_s": 619.0
+  "age_s": 2407.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-10T15:30:31Z",
-  "age_s": 2080.0,
+  "updated": "2026-11-10T16:34:34Z",
+  "age_s": 25.0,
   "paper": {
-   "equity": 1098.64,
-   "pnl_pct": 9.86,
-   "trades": 45,
-   "winrate": 71.1,
-   "open": 2,
-   "tops": 5
+   "equity": 1118.16,
+   "pnl_pct": 11.82,
+   "trades": 46,
+   "winrate": 71.7,
+   "open": 3,
+   "tops": 6
   },
-  "paper_updated": "2026-11-10T15:30:47Z",
+  "paper_updated": "2026-11-10T16:34:58Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -131,6 +131,25 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
+   },
+   {
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
