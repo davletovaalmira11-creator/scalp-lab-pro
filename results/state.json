@@ -1,6 +1,55 @@
 {
- "cash": 1130.4244619354563,
- "positions": {},
+ "cash": 960.860792645138,
+ "positions": {
+  "btc-updown-5m-1794291000": {
+   "kind": "sht",
+   "slug": "btc-updown-5m-1794291000",
+   "question": "Bitcoin Up or Down - November 10, 1:10AM-1:15AM ET",
+   "series": "btc-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.21,
+   "last": 0.21,
+   "shares": 269.15,
+   "usd": 56.52,
+   "opened": "2026-11-10T06:12:46Z",
+   "epoch": 1794291166.9148538,
+   "end_ts": 1794291300,
+   "fair_up": 0.7052
+  },
+  "eth-updown-5m-1794291000": {
+   "kind": "sht",
+   "slug": "eth-updown-5m-1794291000",
+   "question": "Ethereum Up or Down - November 10, 1:10AM-1:15AM ET",
+   "series": "eth-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.395,
+   "last": 0.395,
+   "shares": 143.09,
+   "usd": 56.52,
+   "opened": "2026-11-10T06:12:46Z",
+   "epoch": 1794291166.9148877,
+   "end_ts": 1794291300,
+   "fair_up": 0.5304
+  },
+  "sol-updown-5m-1794291000": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794291000",
+   "question": "Solana Up or Down - November 10, 1:10AM-1:15AM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.5,
+   "last": 0.5,
+   "shares": 113.04,
+   "usd": 56.52,
+   "opened": "2026-11-10T06:12:46Z",
+   "epoch": 1794291166.914908,
+   "end_ts": 1794291300,
+   "fair_up": 0.4044
+  }
+ },
  "closed": [
   {
    "question": "Bitcoin Up or Down - November 8, 5:15PM-5:30PM ET",
@@ -683,9 +732,13 @@
   [
    "2026-11-10T05:15:18Z",
    1130.42
+  ],
+  [
+   "2026-11-10T06:12:46Z",
+   1130.42
   ]
  ],
- "runs": 34,
+ "runs": 35,
  "done_keys": {},
  "cal": [
   {
@@ -916,15 +969,15 @@
  ],
  "stats": {
   "equity": 1130.42,
-  "cash": 1130.42,
-  "open": 0,
+  "cash": 960.86,
+  "open": 3,
   "trades": 45,
   "wins": 18,
   "winrate": 40.0,
   "pnl_pct": 13.04,
-  "updated": "2026-11-10T05:15:18Z",
-  "runs": 34,
-  "sht_open": 0,
+  "updated": "2026-11-10T06:12:46Z",
+  "runs": 35,
+  "sht_open": 3,
   "sht_trades": 45,
   "sht_pnl": 131.95
  }
