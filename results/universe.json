@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-10T10:15:18Z",
+ "updated": "2026-11-10T10:25:02Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "stale",
+   "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "warmup",
@@ -11,21 +11,21 @@
   }
  },
  "pm": {
-  "equity": 1532.33,
-  "pnl_pct": 53.23,
-  "trades": 50,
-  "winrate": 44.0,
-  "open": 3,
-  "sht_open": 3,
-  "sht_trades": 50,
-  "sht_pnl": 534.59,
+  "equity": 1515.09,
+  "pnl_pct": 51.51,
+  "trades": 53,
+  "winrate": 43.4,
+  "open": 0,
+  "sht_open": 0,
+  "sht_trades": 53,
+  "sht_pnl": 517.55,
   "cal": {
-   "n": 50,
-   "brier": 0.2259,
-   "acc": 44.0
+   "n": 53,
+   "brier": 0.2424,
+   "acc": 43.4
   },
-  "updated": "2026-11-10T09:26:09Z",
-  "age_s": 2949.0
+  "updated": "2026-11-10T10:25:02Z",
+  "age_s": 1.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,7 +37,7 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-10T09:33:27Z",
-  "age_s": 2511.0
+  "age_s": 3096.0
  },
  "scalp": {
   "done": 2662,
@@ -45,7 +45,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-10T10:14:58Z",
-  "age_s": 20.0,
+  "age_s": 605.0,
   "paper": {
    "equity": 1024.48,
    "pnl_pct": 2.45,
