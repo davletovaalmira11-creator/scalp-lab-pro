@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T03:19:37Z",
+ "updated": "2026-11-10T04:16:37Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 20836 против среднего 5005",
-   "liq": 409583,
-   "v24": 20836,
+   "note": "объём 24ч 21336 против среднего 5077",
+   "liq": 398556,
+   "v24": 21336,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 51.9,
+   "days_left": 51.8,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "btc-updown-15m-1794283200",
+   "question": "Bitcoin Up or Down - November 9, 11:00PM-11:15PM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 5261 против среднего 752",
+   "liq": 270947,
+   "v24": 5261,
+   "z": 0.0,
+   "end": "2026-11-10",
+   "days_left": 0.0,
    "tradeable": false
   }
  ]
