@@ -1,6 +1,23 @@
 {
- "cash": 3847.0043528943265,
- "positions": {},
+ "cash": 3654.65413524961,
+ "positions": {
+  "sol-updown-5m-1794434400": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794434400",
+   "question": "Solana Up or Down - November 11, 5:00PM-5:05PM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.105,
+   "last": 0.105,
+   "shares": 1831.91,
+   "usd": 192.35,
+   "opened": "2026-11-11T22:02:10Z",
+   "epoch": 1794434530.24985,
+   "end_ts": 1794434700,
+   "fair_up": 0.7719
+  }
+ },
  "closed": [
   {
    "question": "Bitcoin Up or Down - November 8, 5:15PM-5:30PM ET",
@@ -1655,9 +1672,13 @@
   [
    "2026-11-11T20:58:12Z",
    3847.0
+  ],
+  [
+   "2026-11-11T22:02:10Z",
+   3847.0
   ]
  ],
- "runs": 76,
+ "runs": 77,
  "done_keys": {},
  "cal": [
   {
@@ -2223,15 +2244,15 @@
  ],
  "stats": {
   "equity": 3847.0,
-  "cash": 3847.0,
-  "open": 0,
+  "cash": 3654.65,
+  "open": 1,
   "trades": 112,
   "wins": 57,
   "winrate": 50.9,
   "pnl_pct": 284.7,
-  "updated": "2026-11-11T20:58:12Z",
-  "runs": 76,
-  "sht_open": 0,
+  "updated": "2026-11-11T22:02:10Z",
+  "runs": 77,
+  "sht_open": 1,
   "sht_trades": 112,
   "sht_pnl": 2859.45
  }
