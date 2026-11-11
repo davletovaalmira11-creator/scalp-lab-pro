@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-11T17:43:04Z",
+ "updated": "2026-11-11T17:59:08Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "warmup",
@@ -25,17 +25,19 @@
    "acc": 50.0
   },
   "updated": "2026-11-11T17:31:34Z",
-  "age_s": 690.0
+  "age_s": 1654.0
  },
  "pm_lab": {
   "status": "ready",
-  "status_note": "База достаточна. Подтверждённых OOS закономерностей: 0 из 8 гипотез.",
-  "windows": 4175,
-  "settled": 2808,
-  "snaps": 13497,
-  "golden": [],
-  "updated": "2026-11-11T17:00:40Z",
-  "age_s": 2544.0
+  "status_note": "База достаточна. Подтверждённых OOS закономерностей: 1 из 8 гипотез.",
+  "windows": 4219,
+  "settled": 2838,
+  "snaps": 13677,
+  "golden": [
+   "Модель точнее монетки"
+  ],
+  "updated": "2026-11-11T17:59:07Z",
+  "age_s": 1.0
  },
  "scalp": {
   "done": 2662,
@@ -43,7 +45,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-11T17:42:44Z",
-  "age_s": 20.0,
+  "age_s": 984.0,
   "paper": {
    "equity": 1137.03,
    "pnl_pct": 13.7,
