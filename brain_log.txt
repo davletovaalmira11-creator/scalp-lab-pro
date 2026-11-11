@@ -1,0 +1,1 @@
+brain v1: acc=51.42% preds=2190 trades_total=1359 equity=-118.59% signals=10
