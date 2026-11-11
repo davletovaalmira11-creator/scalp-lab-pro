@@ -1,0 +1,83 @@
+{
+ "history": [
+  {
+   "ts": "2026-11-11T21:18:23Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 4,
+   "err": null
+  }
+ ],
+ "updated": "2026-11-11T21:18:23Z",
+ "best_okx": null,
+ "strategy_stats": [
+  {
+   "strategy": "ema_cross",
+   "is_ret": -1.35,
+   "oos_ret": -6.6,
+   "trades": 18,
+   "portfolio": false
+  },
+  {
+   "strategy": "donchian_break",
+   "is_ret": -2.32,
+   "oos_ret": -7.24,
+   "trades": 22,
+   "portfolio": false
+  },
+  {
+   "strategy": "sma_revert",
+   "is_ret": -8.56,
+   "oos_ret": -3.77,
+   "trades": 19,
+   "portfolio": false
+  }
+ ],
+ "portfolio": [],
+ "radar": [
+  {
+   "coin": "BTC",
+   "okx_mom_pct": 0.294,
+   "pm_p_up": null,
+   "divergence": null,
+   "ts": "2026-11-11T21:18:23Z"
+  },
+  {
+   "coin": "ETH",
+   "okx_mom_pct": -0.299,
+   "pm_p_up": null,
+   "divergence": null,
+   "ts": "2026-11-11T21:18:23Z"
+  },
+  {
+   "coin": "SOL",
+   "okx_mom_pct": -0.2,
+   "pm_p_up": null,
+   "divergence": null,
+   "ts": "2026-11-11T21:18:23Z"
+  }
+ ],
+ "golden": [
+  {
+   "src": "polymarket-lab",
+   "name": "Модель точнее монетки",
+   "note": "Brier < 0.25 на обеих половинах"
+  },
+  {
+   "src": "walk-forward bt",
+   "name": "bb_maker NEARUSDT 1m",
+   "note": "OOS PF 1.018, Sharpe 3.004"
+  },
+  {
+   "src": "walk-forward bt",
+   "name": "funding_revert SUIUSDT 1m",
+   "note": "OOS PF 1.034, Sharpe 2.774"
+  },
+  {
+   "src": "walk-forward bt",
+   "name": "bb_regime NEARUSDT 1m",
+   "note": "OOS PF 1.017, Sharpe 2.767"
+  }
+ ],
+ "error": null
+}

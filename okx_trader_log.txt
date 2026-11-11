@@ -1,8 +1,1 @@
-Traceback (most recent call last):
-  File "/home/runner/work/scalp-lab-pro/scalp-lab-pro/engines/okx/trader.py", line 16, in <module>
-    import config as C
-  File "/home/runner/work/scalp-lab-pro/scalp-lab-pro/engines/okx/config.py", line 17, in <module>
-    ORDER_USDT = float(os.environ.get("OKX_ORDER_USDT", "5"))   # $ на позицию
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: could not convert string to float: ''
-TRADER FAILED (exit 1)
+okx trader v2: mode=paper equity=1000.0 open=0 trades=0 strategies=['ema_cross', 'momentum', 'rsi_revert', 'donchian_break', 'sma_revert']
