@@ -42,6 +42,26 @@
     "tp": 2046.4685714285713,
     "sl": 2074.1828571428573,
     "opened": "2026-11-11T22:38:09Z"
+   },
+   "ema_cross|ETH-USDT-SWAP": {
+    "strategy": "ema_cross",
+    "inst": "ETH-USDT-SWAP",
+    "side": -1,
+    "entry": 2057.85,
+    "sz": 0.0024297203391889593,
+    "tp": 2029.2585714285713,
+    "sl": 2075.719642857143,
+    "opened": "2026-11-11T22:42:44Z"
+   },
+   "ema_cross|SOL-USDT-SWAP": {
+    "strategy": "ema_cross",
+    "inst": "SOL-USDT-SWAP",
+    "side": -1,
+    "entry": 83.76,
+    "sz": 0.05969436485195797,
+    "tp": 82.4542857142857,
+    "sl": 84.57607142857144,
+    "opened": "2026-11-11T22:42:44Z"
    }
   },
   "trades": []
@@ -58,6 +78,12 @@
    "trades": 0,
    "wins": 0,
    "open": 2
+  },
+  "ema_cross": {
+   "pnl": 0,
+   "trades": 0,
+   "wins": 0,
+   "open": 2
   }
  },
  "mode": "paper",
@@ -66,13 +92,13 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.0,
  "trades": 0,
- "open": 4,
+ "open": 6,
  "recent_trades": [],
  "params": {
-  "ema_fast": 9,
-  "ema_slow": 21
+  "ema_fast": 12,
+  "ema_slow": 34
  },
- "params_source": "default",
+ "params_source": "evolve",
  "active_strategies": [
   "ema_cross",
   "momentum",
@@ -82,8 +108,8 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 74150.0,
-   "atr": 200.96428571428467,
+   "price": 74049.9,
+   "atr": 203.82142857142753,
    "sig": {
     "ema_cross": 0,
     "momentum": -1,
@@ -94,10 +120,10 @@
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 2063.79,
-   "atr": 6.928571428571429,
+   "price": 2057.85,
+   "atr": 7.147857142857155,
    "sig": {
-    "ema_cross": 0,
+    "ema_cross": -1,
     "momentum": -1,
     "rsi_revert": 0,
     "donchian_break": -1,
@@ -106,10 +132,10 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 84.02,
-   "atr": 0.31642857142857395,
+   "price": 83.76,
+   "atr": 0.326428571428574,
    "sig": {
-    "ema_cross": 0,
+    "ema_cross": -1,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
@@ -118,5 +144,5 @@
    "err": null
   }
  },
- "updated": "2026-11-11T22:38:09Z"
+ "updated": "2026-11-11T22:42:44Z"
 }
