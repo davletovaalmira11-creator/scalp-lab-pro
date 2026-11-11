@@ -107,8 +107,8 @@ footer{margin-top:26px;text-align:center;color:var(--dim);font-size:11px}
 </header>
 
 <div class="tabs" id="tabs">
-  <button data-t="ov" class="on">◈ Обзор</button>
-  <button data-t="live">◉ Live-торговля</button>
+  <button data-t="ov">◈ Обзор</button>
+  <button data-t="live" class="on">◉ Бумажная торговля</button>
   <button data-t="pm">◇ Polymarket</button>
   <button data-t="bt">▤ Бэктесты</button>
   <button data-t="ev">✦ Эволюция</button>
@@ -180,34 +180,34 @@ function render(){
   }
   if(tab==='live'){
     var liveMode=OX.mode==='live';
+    var PTr=(OX.recent_trades)||((OX.paper&&OX.paper.trades)||[]);
+    var PPos=(OX.paper_positions)||((OX.paper&&OX.paper.positions)||{});
     h+='<div class="kpis">'
-    +kpi('Режим OKX',liveMode?'LIVE':'PAPER',liveMode?(OX.demo?'демо-счёт OKX':'БОЕВОЙ счёт!'):'живые свечи OKX 15m · без Secrets',liveMode?'grad':'')
-    +kpi('Equity','$'+(OX.equity!=null?OX.equity.toFixed(2):'—'),pct(OX.pnl_pct||0)+' от $1000','grad '+cls(OX.pnl_pct))
-    +kpi('Открытых позиций',OX.open||0,'лимит: 2 · по сигналу EMA×ATR')
-    +kpi('Сделок',OX.trades||0,'параметры: '+(OX.params_source==='evolve'?'от evolve-ядра ✦':'базовые'))
-    +kpi('Polymarket CLOB',CB.mode==='live'?'LIVE':'OFF',esc((CB.note||'нет POLY_PRIVATE_KEY — paper остаётся в pm-worker').slice(0,44)),CB.mode==='live'?'grad':'')
+    +kpi('Режим OKX',liveMode?'LIVE':'PAPER (симуляция)',liveMode?(OX.demo?'демо-счёт OKX':'БОЕВОЙ счёт!'):'живые свечи OKX 15m · без Secrets — полная симуляция','grad')
+    +kpi('OKX Paper Equity','$'+(OX.equity!=null?OX.equity.toFixed(2):'—'),pct(OX.pnl_pct||0)+' от $1000','grad '+cls(OX.pnl_pct))
+    +kpi('Открытых позиций',OX.open||0,'каждая подписана стратегией и монетой')
+    +kpi('Сделок закрыто',OX.trades||0,'журнал: время · стратегия · монета · PnL')
+    +kpi('Активные стратегии',(OX.active_strategies||[]).length||'—','отобраны эволюцией: '+(OX.active_strategies||[]).slice(0,3).join(', '))
     +'</div>';
-    h+='<div class="panel"><h3><span class="ic">📈</span>Кривая paper-equity OKX (по сделкам)</h3>';
-    var tr=(OX.paper&&OX.paper.trades)||[];
-    h+=sparkline(tr.map(function(t){return t.pnl}).reverse());
-    h+='<div class="dim" style="font-size:11px;margin-top:2px">'+(tr.length?'последних сделок: '+Math.min(tr.length,30):'первая сделка появится при пересечении EMA')+'</div></div>';
-    h+='<div class="panel"><h3><span class="ic">◉</span>Сигналы движка (закрытые бары 15m, живые котировки OKX)</h3>';
-    var sg=Object.keys(OX.signals||{}).map(function(k){var s=OX.signals[k];return [esc(k),(s.sig>0?'<span class="pos">▲ LONG</span>':(s.sig<0?'<span class="neg">▼ SHORT</span>':'<span class="dim">— ждём</span>')),(s.price!=null?('$'+s.price):'—'),s.err?'<span class="neg">'+esc(s.err.slice(0,44))+'</span>':'<span class="pos">API ok</span>']});
-    h+=table(['Инструмент','Сигнал','Цена','OKX API'],sg);
-    var pp=OX.paper_positions||{},lp=OX.live_positions||{};
-    var rows=Object.keys(pp).map(function(k){var p=pp[k];return [esc(k),p.side>0?'<span class="pos">LONG</span>':'<span class="neg">SHORT</span>','$'+p.entry.toFixed(2),'$'+p.tp.toFixed(2),'$'+p.sl.toFixed(2),dt(p.opened),'<span class="badge b-acc">paper</span>']})
-    .concat(Object.keys(lp).map(function(k){var p=lp[k];return [esc(k),p.side>0?'<span class="pos">LONG</span>':'<span class="neg">SHORT</span>','$'+p.entry,'$'+(p.tp||'—'),'$'+(p.sl||'—'),dt(p.opened),'<span class="badge b-live">LIVE</span>']}))
-    h+='</div><div class="panel"><h3><span class="ic">⬓</span>Позиции OKX</h3>'+table(['Инструмент','Направление','Вход','TP','SL','Открыто','Режим'],rows)+'</div>';
-    var lg=(OX.paper&&OX.paper.trades||[]);
-    h+='<div class="panel"><h3><span class="ic">≡</span>Журнал сделок (paper)</h3>'+table(['Время','Инструмент','Направление','Вход','Выход','PnL','$ эквити','Причина'],
-    lg.slice(0,20).map(function(t){return [dt(t.ts),esc(t.inst),t.side==='long'?'<span class="pos">LONG</span>':'<span class="neg">SHORT</span>','$'+t.entry,'$'+t.exit,'<span class="'+cls(t.pnl)+'">'+(t.pnl>=0?'+':'')+t.pnl.toFixed(3)+'</span>','',''+t.reason]}))+'</div>';
-    h+='<div class="panel"><h3><span class="ic">◇</span>Polymarket CLOB — последний прогон</h3>'+table(['Параметр','Значение'],[
-    ['Режим','<span class="badge '+(CB.mode==='live'?'b-live':'b-acc')+'">'+(CB.mode==='live'?'LIVE':'OFF')+'</span>'],
-    ['Сигнал',CB.picked?esc(CB.picked.question||CB.picked.slug):'—'],
-    ['Edge',CB.picked?CB.picked.edge:'—'],
-    ['Ордер',CB.order?esc(JSON.stringify(CB.order).slice(0,90)):'—'],
-    ['Ошибка',CB.error?'<span class="neg">'+esc(CB.error.slice(0,70))+'</span>':'нет'],
-    ['Обновлено',dt(CB.updated)]])+'</div>';
+    h+='<div class="panel"><h3><span class="ic">📈</span>Кривая OKX paper-equity</h3>';
+    h+=sparkline(PTr.map(function(x){return x.pnl}).reverse());
+    h+='<div class="dim" style="font-size:11px;margin-top:2px">'+(PTr.length?'сделок в журнале: '+PTr.length:'сделки появятся при первых сигналах стратегий (EMA, momentum, RSI, Donchian, SMA-revert)')+'</div></div>';
+    var okxRows=PTr.slice(0,25).map(function(x){return [dt(x.ts),'<span class="badge b-acc">OKX</span>','<b>'+esc(x.strategy)+'</b>',esc((x.inst||'').split('-')[0]),x.side==='long'?'<span class="pos">LONG</span>':'<span class="neg">SHORT</span>','$'+x.entry,'$'+x.exit,'<span class="'+cls(x.pnl)+'">'+(x.pnl>=0?'+':'')+x.pnl.toFixed(3)+'</span>','<span class="dim">'+x.reason+'</span>']});
+    var pmRows=(S.settled||[]).map(function(c){return [dt(c.closed),'<span class="badge b-gold">POLY</span>','<b>'+esc(c.series||'окно')+'</b>',esc((c.question||'').slice(0,34)),esc(c.outcome),c.entry+' → '+c.exit,'<span class="'+cls(c.ret_pct)+'">'+pct(c.ret_pct)+'</span>','<span class="dim">'+esc(c.reason||'')+'</span>']});
+    h+='<div class="panel"><h3><span class="ic">≡</span>Закрытые сделки — обе площадки, всё видно (стратегия · монета · вход · выход · PnL)</h3>';
+    h+='<div style="font-size:11px;color:var(--mut);margin-bottom:4px">OKX — фьючерсы, paper-симуляция на живых котировках</div>'+table(['Время','Площадка','Стратегия','Монета','Направление','Вход','Выход','PnL $','Причина'],okxRows);
+    h+='<div style="height:14px"></div><div style="font-size:11px;color:var(--mut);margin-bottom:4px">Polymarket — бинарные окна BTC/ETH/SOL, paper на живых рынках</div>'+table(['Время','Площадка','Стратегия','Рынок','Исход','Вход→Выход','PnL','Причина'],pmRows);
+    h+='</div>';
+    var openRows=Object.keys(PPos).map(function(k){var p=PPos[k];return [dt(p.opened),'<span class="badge b-acc">OKX</span>','<b>'+esc(p.strategy||'')+'</b>',esc((p.inst||'').split('-')[0]),p.side===1||p.side==='long'?'<span class="pos">LONG</span>':'<span class="neg">SHORT</span>','$'+(p.entry!=null?p.entry.toFixed?p.entry.toFixed(2):p.entry:'—'),'$'+(p.tp!=null?(p.tp.toFixed?p.tp.toFixed(2):p.tp):'—'),'$'+(p.sl!=null?(p.sl.toFixed?p.sl.toFixed(2):p.sl):'—')]})
+    .concat((S.live||[]).map(function(w){return [dt(w.opened||w.start),'<span class="badge b-gold">POLY</span>','<b>'+esc(w.series||'окно')+'</b>',esc((w.title||'').slice(0,30)),esc(w.outcome||'UP'),'p='+w.p_up,'—','—']}));
+    h+='<div class="panel"><h3><span class="ic">⬓</span>Открытые позиции сейчас</h3>'+table(['Открыто','Площадка','Стратегия','Монета/Рынок','Направление','Вход/Цена','TP','SL'],openRows)+'</div>';
+    var strats=(OX.strategies)||{};
+    var srows=Object.keys(strats).map(function(nm){var s=strats[nm];return ['<b>'+esc(nm)+'</b>',(EV.portfolio||[]).indexOf(nm)>=0?'<span class="badge b-ok">в портфеле ✦</span>':'<span class="badge b-warn">наблюдение</span>','<span class="'+cls(s.pnl)+'">'+(s.pnl>=0?'+':'')+s.pnl.toFixed(3)+'</span>',s.trades||0,(s.trades?s.wins/(s.trades)*100:0).toFixed(0)+'%',s.open||0]});
+    if(!srows.length)h+='<div></div>'; else h+='<div class="panel"><h3><span class="ic">⚔</span>Стратегии OKX — статистика paper-сражения</h3>'+table(['Стратегия','Эволюция','PnL $','Сделок','Winrate','Открыто'],srows)+'</div>';
+    var evs=(EV.strategy_stats||[]).map(function(x){return ['<b>'+esc(x.strategy)+'</b>','<span class="'+cls(x.is_ret)+'">'+x.is_ret+'%</span>','<span class="'+cls(x.oos_ret)+'">'+x.oos_ret+'%</span>',x.trades,x.portfolio?'<span class="badge b-ok">✦ отобрана</span>':'<span class="badge b-warn">мимо OOS</span>']});
+    if(evs.length)h+='<div class="panel"><h3><span class="ic">⚗</span>Отбор эволюции: каждая стратегия проходит IS + OOS на живых свечах (без подгонки)</h3>'+table(['Стратегия','IS %','OOS %','Сделок','Вердикт'],evs)+'</div>';
+    var rd=(EV.radar||[]).map(function(x){return ['<b>'+esc(x.coin)+'</b>','<span class="'+cls(x.okx_mom_pct)+'">'+(x.okx_mom_pct>=0?'+':'')+x.okx_mom_pct+'%</span>',x.pm_p_up!=null?x.pm_p_up:'—',x.divergence!=null?'<span class="'+cls(x.divergence)+'">'+x.divergence+'</span>':'<span class="dim">нет окна PM</span>']});
+    if(rd.length)h+='<div class="panel"><h3><span class="ic">📡</span>Кросс-веномный радар: импульс OKX vs вероятность Polymarket (расхождение = кандидат edge)</h3>'+table(['Монета','OKX импульс 3ч','PM P(Up)','Расхождение'],rd)+'</div>';
   }
   if(tab==='pm'){
     h+='<div class="kpis">'
