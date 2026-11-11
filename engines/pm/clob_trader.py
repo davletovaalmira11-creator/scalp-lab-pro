@@ -27,8 +27,14 @@ def main():
     res = {"updated": now()}
     key = os.environ.get("POLY_PRIVATE_KEY", "").strip()
     funder = os.environ.get("POLY_ADDRESS", "").strip()
-    usdc = float(os.environ.get("POLY_ORDER_USDC", "1"))
-    min_edge = float(os.environ.get("POLY_MIN_EDGE", "0.05"))
+    try:
+        usdc = float((os.environ.get("POLY_ORDER_USDC") or "1").strip())
+    except Exception:
+        usdc = 1.0
+    try:
+        min_edge = float((os.environ.get("POLY_MIN_EDGE") or "0.05").strip())
+    except Exception:
+        min_edge = 0.05
 
     if not key or not funder:
         res.update({"mode": "off", "note": "нет POLY_PRIVATE_KEY/POLY_ADDRESS — реальная торговля выключена"})
