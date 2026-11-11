@@ -1,0 +1,78 @@
+name: omni-core
+on:
+  schedule:
+    - cron: "3,13,23,33,43,53 * * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["engines/okx/**", "engines/pm/**", "engines/evolve/**", ".github/workflows/omni-core.yml"]
+concurrency:
+  group: omni-core
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 13
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: Install deps
+        run: pip install -r engines/okx/requirements.txt 2>&1 | tail -3
+        continue-on-error: true
+      - name: OKX trader
+        env:
+          OKX_API_KEY: ${{ secrets.OKX_API_KEY }}
+          OKX_API_SECRET: ${{ secrets.OKX_API_SECRET }}
+          OKX_API_PASSPHRASE: ${{ secrets.OKX_API_PASSPHRASE }}
+          OKX_DEMO: ${{ secrets.OKX_DEMO }}
+          OKX_ORDER_USDT: ${{ vars.OKX_ORDER_USDT }}
+          OKX_LEVERAGE: ${{ vars.OKX_LEVERAGE }}
+          OKX_MAX_OPEN: ${{ vars.OKX_MAX_OPEN }}
+        run: |
+          rm -f okx_trader_log.txt
+          ( cd engines/okx && timeout 240 python trader.py ) > okx_trader_log.txt 2>&1 || echo "TRADER FAILED (exit $?)" >> okx_trader_log.txt
+          tail -30 okx_trader_log.txt
+        continue-on-error: true
+      - name: Polymarket CLOB trader
+        env:
+          POLY_PRIVATE_KEY: ${{ secrets.POLY_PRIVATE_KEY }}
+          POLY_ADDRESS: ${{ secrets.POLY_ADDRESS }}
+          POLY_ORDER_USDC: ${{ secrets.POLY_ORDER_USDC }}
+          POLY_MIN_EDGE: ${{ secrets.POLY_MIN_EDGE }}
+        run: |
+          rm -f pm_clob_log.txt
+          timeout 120 python engines/pm/clob_trader.py > pm_clob_log.txt 2>&1 || echo "CLOB FAILED (exit $?)" >> pm_clob_log.txt
+          tail -10 pm_clob_log.txt
+        continue-on-error: true
+      - name: Evolve
+        run: |
+          rm -f evolve_log.txt
+          timeout 420 python engines/evolve/researcher.py > evolve_log.txt 2>&1 || echo "EVOLVE FAILED (exit $?)" >> evolve_log.txt
+          tail -10 evolve_log.txt
+        continue-on-error: true
+      - name: Unified reporter
+        run: python reporter.py
+        continue-on-error: true
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "omni-bot"
+          git config user.email "omni-bot@users.noreply.github.com"
+          git add results/ || true
+          git add engines/okx/results/ || true
+          git add engines/okx/best_params.json || true
+          git add okx_trader_log.txt || true
+          git add pm_clob_log.txt || true
+          git add evolve_log.txt || true
+          if ! git diff --cached --quiet; then
+            git commit -m "auto: omni core [skip ci]" || true
+            for i in 1 2 3; do
+              git fetch origin || true
+              git rebase origin/main > /dev/null 2>&1 || { git rebase --abort > /dev/null 2>&1 || true; echo "rebase conflict - skip round"; break; }
+              git push origin HEAD:main && exit 0
+            done
+          fi
+          exit 0
