@@ -792,7 +792,6 @@ bb_maker,FILUSDT,5m,-0.7,0.991,-0.66,1902,47,0.3,365,,filtered
 vol_burst_revert,PEPEUSDT,1m,-0.701,0.995,-0.46,1966,31,0.23,180,,filtered
 bb_regime,BNBUSDT,5m,-0.702,0.991,-0.67,1091,47,0.17,365,,filtered
 vwap_reversion,ADAUSDT,15m,-0.702,0.979,-0.65,545,22,0.41,365,,filtered
-streak_reversion,ATOMUSDT,15m,-0.704,0.989,-0.91,2785,22,0.32,730,,filtered
 bb_regime,OPUSDT,15m,-0.711,0.985,-0.65,349,22,0.27,365,,filtered
 bollinger_reversion,LINKUSDT,5m,-0.715,0.99,-0.68,2618,47,0.21,365,,filtered
 spike_follow,NEARUSDT,5m,-0.716,0.98,-0.68,377,47,0.32,365,,filtered
@@ -874,6 +873,7 @@ bb_maker,UNIUSDT,5m,-0.897,0.988,-0.85,1844,47,0.36,365,,filtered
 squeeze_pop,FILUSDT,5m,-0.902,0.944,-0.86,85,47,0.4,365,,filtered
 vol_burst_revert,LINKUSDT,5m,-0.903,0.988,-0.86,978,47,0.26,365,,filtered
 bb_regime,DOTUSDT,15m,-0.905,0.98,-0.83,387,22,0.32,365,,filtered
+streak_reversion,ATOMUSDT,15m,-0.905,0.985,-1.66,6017,22,0.36,1460,,filtered
 flow_fade,LTCUSDT,5m,-0.908,0.984,-0.86,2092,47,0.38,365,,filtered
 squeeze_pop,BNBUSDT,15m,-0.909,0.923,-0.84,48,22,0.55,365,,filtered
 spike_bb,AVAXUSDT,15m,-0.912,0.961,-0.84,172,22,0.18,365,,filtered
