@@ -1,6 +1,55 @@
 {
- "cash": 2510.679203136764,
- "positions": {},
+ "cash": 2134.07732266625,
+ "positions": {
+  "btc-updown-5m-1794405300": {
+   "kind": "sht",
+   "slug": "btc-updown-5m-1794405300",
+   "question": "Bitcoin Up or Down - November 11, 8:55AM-9:00AM ET",
+   "series": "btc-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.385,
+   "last": 0.385,
+   "shares": 326.06,
+   "usd": 125.53,
+   "opened": "2026-11-11T13:56:24Z",
+   "epoch": 1794405384.277521,
+   "end_ts": 1794405600,
+   "fair_up": 0.2941
+  },
+  "eth-updown-5m-1794405300": {
+   "kind": "sht",
+   "slug": "eth-updown-5m-1794405300",
+   "question": "Ethereum Up or Down - November 11, 8:55AM-9:00AM ET",
+   "series": "eth-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.21,
+   "last": 0.21,
+   "shares": 597.78,
+   "usd": 125.53,
+   "opened": "2026-11-11T13:56:24Z",
+   "epoch": 1794405384.2775583,
+   "end_ts": 1794405600,
+   "fair_up": 0.4382
+  },
+  "sol-updown-5m-1794405300": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794405300",
+   "question": "Solana Up or Down - November 11, 8:55AM-9:00AM ET",
+   "series": "sol-up-or-down-5m",
+   "outcome": "Down",
+   "strategy": "sht5",
+   "entry": 0.36,
+   "last": 0.36,
+   "shares": 348.71,
+   "usd": 125.53,
+   "opened": "2026-11-11T13:56:24Z",
+   "epoch": 1794405384.2775834,
+   "end_ts": 1794405600,
+   "fair_up": 0.2972
+  }
+ },
  "closed": [
   {
    "question": "Bitcoin Up or Down - November 8, 5:15PM-5:30PM ET",
@@ -1491,9 +1540,13 @@
   [
    "2026-11-11T12:40:11Z",
    2510.68
+  ],
+  [
+   "2026-11-11T13:56:24Z",
+   2510.68
   ]
  ],
- "runs": 68,
+ "runs": 69,
  "done_keys": {},
  "cal": [
   {
@@ -2004,15 +2057,15 @@
  ],
  "stats": {
   "equity": 2510.68,
-  "cash": 2510.68,
-  "open": 0,
+  "cash": 2134.08,
+  "open": 3,
   "trades": 101,
   "wins": 49,
   "winrate": 48.5,
   "pnl_pct": 151.07,
-  "updated": "2026-11-11T12:40:11Z",
-  "runs": 68,
-  "sht_open": 0,
+  "updated": "2026-11-11T13:56:24Z",
+  "runs": 69,
+  "sht_open": 3,
   "sht_trades": 101,
   "sht_pnl": 1520.21
  }
