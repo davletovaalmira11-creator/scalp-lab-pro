@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T20:05:10Z",
+ "updated": "2026-11-11T20:17:39Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 50.9
   },
   "updated": "2026-11-11T19:30:04Z",
-  "age_s": 2106.0
+  "age_s": 2856.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,7 +37,7 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-11T20:05:10Z",
-  "age_s": 0.0
+  "age_s": 750.0
  },
  "scalp": {
   "done": 2662,
@@ -45,7 +45,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-11T19:44:52Z",
-  "age_s": 1218.0,
+  "age_s": 1968.0,
   "paper": {
    "equity": 1137.03,
    "pnl_pct": 13.7,
