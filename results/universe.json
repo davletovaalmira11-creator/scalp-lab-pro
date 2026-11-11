@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T03:31:39Z",
+ "updated": "2026-11-11T03:37:55Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 49.4
   },
   "updated": "2026-11-11T03:23:52Z",
-  "age_s": 467.0
+  "age_s": 844.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,24 +37,24 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-11T03:31:39Z",
-  "age_s": 0.0
+  "age_s": 377.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-11T02:32:51Z",
-  "age_s": 3528.0,
+  "updated": "2026-11-11T03:37:37Z",
+  "age_s": 19.0,
   "paper": {
    "equity": 1097.35,
    "pnl_pct": 9.73,
    "trades": 55,
    "winrate": 69.1,
    "open": 1,
-   "tops": 5
+   "tops": 4
   },
-  "paper_updated": "2026-11-11T02:33:13Z",
+  "paper_updated": "2026-11-11T03:37:55Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -112,25 +112,6 @@
     "monthly_pct": "0.131386",
     "trades_per_day": "14.71",
     "usd_per_month_1000": "131.39"
-   },
-   {
-    "strategy": "vol_burst_revert",
-    "symbol": "ARBUSDT",
-    "tf": "5m",
-    "oos_sharpe": "1.935",
-    "oos_pf": "1.029",
-    "oos_t": "1.84",
-    "trades": "894",
-    "param_stability": "0.26",
-    "is_sharpe_avg": "4.25",
-    "folds": "47",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.9345995554905253",
-    "maker_pf": "1.0292257515978214",
-    "daily_pct": "0.002234",
-    "monthly_pct": "0.069224",
-    "trades_per_day": "2.45",
-    "usd_per_month_1000": "69.22"
    },
    {
     "strategy": "funding_revert",
