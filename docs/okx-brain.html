@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- build v1.0 okx-brain panel -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🧠 Мозг OKX — OmniLab</title>
+<style>
+:root{--bg:#0b0e14;--card:#121722;--line:#232b3b;--txt:#e8ecf4;--mut:#8b96ab;--up:#22c55e;--dn:#ef4444;--wa:#f59e0b;--ac:#6d5efc;--ac2:#00d4ff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;padding:22px}
+.wrap{max-width:1080px;margin:0 auto}
+h1{font-size:22px;margin:0 0 4px}.sub{color:var(--mut);margin:0 0 20px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.k{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+.v{font-size:22px;font-weight:700;margin-top:4px}
+.s{color:var(--mut);font-size:11px;margin-top:2px}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:16px}
+.sec h2{font-size:15px;margin:0 0 12px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{color:var(--mut);text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;padding:7px 8px;border-bottom:1px solid var(--line)}
+td{padding:7px 8px;border-bottom:1px solid var(--line)}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;font-size:11px;font-weight:700;margin:2px}
+.long{background:rgba(34,197,94,.15);color:var(--up)}
+.short{background:rgba(239,68,68,.15);color:var(--dn)}
+.wait{background:rgba(139,150,171,.15);color:var(--mut)}
+.bar{height:6px;border-radius:4px;background:var(--line);position:relative;overflow:hidden;min-width:70px}
+.bar i{position:absolute;top:0;bottom:0;background:var(--ac2)}
+.pill{display:inline-block;background:rgba(109,94,252,.15);color:var(--ac2);padding:3px 10px;border-radius:8px;font-size:12px;margin:2px}
+a.back{color:var(--ac2);text-decoration:none;font-size:13px}
+.up{color:var(--up)}.dn{color:var(--dn)}.mut{color:var(--mut)}
+svg{width:100%;height:120px;display:block}
+@media(max-width:640px){td,th{padding:5px 4px;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="index.html">← Дашборд OmniLab</a>
+<h1>🧠 Мозг OKX <span class="pill">paper · адаптивный</span></h1>
+<p class="sub">Система сама находит самые ликвидные монеты OKX · качает таймфреймы 5m–4H · читает стаканы · обучается онлайн (walk-forward, без подгонки) · эволюция отбирает параметры честным IS/OOS. Обновление каждые 60 сек, прогоны каждые 20 мин.</p>
+<div class="grid" id="kpis"></div>
+<div class="sec"><h2>⚡ Сигналы мозга прямо сейчас</h2><div id="signals"></div></div>
+<div class="sec"><h2>📈 Online-ML — кривая paper-PnL мозга</h2><div id="curve"></div><div id="mlstats" class="mut" style="font-size:12px;margin-top:8px"></div></div>
+<div class="sec"><h2>🪙 Вселенная — что система нашла сама (по ликвидности)</h2><div style="overflow:auto"><table id="uni"></table></div></div>
+<div class="sec"><h2>⏱ Мультитаймфрейм-тренды + стакан (топ-10)</h2><div style="overflow:auto"><table id="mtf"></table></div></div>
+<div class="sec"><h2>⚗ Эволюция v2 — честный walk-forward отбор параметров</h2><div id="ev2"></div></div>
+<div class="sec"><h2>🔵 Rule-трейдер (ema/momentum/rsi/donchian/sma) — paper</h2><div id="rt"></div></div>
+<p class="mut" style="font-size:11px">Все результаты — бумажная симуляция на живых данных. Прошлые результаты не гарантируют будущих.</p>
+</div>
+<script>
+var F='https://raw.githubusercontent.com/davletovaalmira11-creator/scalp-lab-pro/main/';
+function $(id){return document.getElementById(id)}
+function fmtUSD(n){return n==null?'—':n.toLocaleString('en-US')}
+function kpi(k,v,s){return '<div class="card"><div class="k">'+k+'</div><div class="v">'+v+'</div>'+(s?'<div class="s">'+s+'</div>':'')+'</div>'}
+function cls(x){return x>0?'up':(x<0?'dn':'mut')}
+function j(p){return fetch(F+p,{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+function spark(pts){
+ if(!pts||pts.length<2){return '<div class="mut">нет данных — кривая копится с каждым прогоном (каждые 20 минут)</div>'}
+ var w=900,h=120,mn=Math.min.apply(null,pts),mx=Math.max.apply(null,pts),sp=(mx-mn)||1;
+ var d=pts.map(function(p,i){return [(i/(pts.length-1))*w, h-((p-mn)/sp)*(h-10)-5]});
+ var path=d.map(function(q,i){return (i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)}).join(' ');
+ var up=pts[pts.length-1]>=pts[0];
+ return '<svg viewBox="0 0 '+w+' '+h+'" preserveAspectRatio="none"><path d="'+path+'" fill="none" stroke="'+(up?'#22c55e':'#ef4444')+'" stroke-width="2.5"/></svg>';
+}
+function load(){
+ Promise.all([j('engines/okx/results/universe_okx.json'),j('engines/okx/results/feed_okx.json'),j('engines/okx/results/brain_okx.json'),j('engines/okx/results/evolve2_okx.json'),j('engines/okx/best_params.json'),j('engines/okx/results/okx_live.json')]).then(function(r){
+  var uni=r[0],feed=r[1],brain=r[2],ev2=r[3],bp=r[4],live=r[5];
+  var k='';
+  k+=kpi('Вселенная',uni?((uni.top||[]).length+' монет'):'—','сканирует все свопы OKX по обороту');
+  k+=kpi('Точность ML',brain&&brain.accuracy!=null?(brain.accuracy+'%'):'—',brain?('walk-forward прогнозов: '+brain.preds_total):'');
+  k+=kpi('Мозг PnL',brain?((brain.equity_pct>=0?'+':'')+brain.equity_pct+'%'):'—',brain?('сделок: '+brain.trades+(brain.winrate!=null?' · win '+brain.winrate+'%':'')):'');
+  k+=kpi('Параметры',ev2?(ev2.promoted?'✅ отобраны':'⏳ ищет'):'—',bp?('ema '+bp.ema_fast+'/'+bp.ema_slow+' · oos '+bp.oos_ret+'%'):'пока дефолтные');
+  k+=kpi('Rule-трейдер',live?('$'+fmtUSD(Math.round(live.equity||0))):'—',live?('сделок: '+(((live.recent_trades)||[]).length)):'');
+  $('kpis').innerHTML=k;
+  if(brain&&brain.signals&&brain.signals.length){
+   $('signals').innerHTML=brain.signals.map(function(s){return '<span class="chip '+s.side+'">'+(s.side==='long'?'▲ LONG':(s.side==='short'?'▼ SHORT':'● ждёт'))+' '+String(s.instId).replace('-USDT-SWAP','')+' · p='+s.p+' · стакан '+(s.imbalance>0?'+':'')+s.imbalance+'</span>'}).join(' ');
+  }else{$('signals').innerHTML='<span class="mut">нет данных — мозг стартует в ближайшем прогоне</span>'}
+  $('curve').innerHTML=spark((brain&&brain.curve||[]).map(function(c){return c.pct}));
+  if(brain){$('mlstats').textContent='движок: '+brain.engine+' · пороги long≥'+brain.long_p+' / short≤'+brain.short_p+' · издержки '+brain.cost_pct+'% круг · веса учатся между прогонами (никакой подгонки)'}
+  if(uni&&uni.top&&uni.top.length){
+   var t='<tr><th>#</th><th>Монета</th><th>Цена</th><th>Оборот 24ч $</th><th>Спред %</th><th>24ч %</th></tr>';
+   uni.top.forEach(function(x,i){t+='<tr><td class="mut">'+(i+1)+'</td><td><b>'+x.coin+'</b></td><td>'+x.last+'</td><td>'+fmtUSD(x.vol24h_usd)+'</td><td>'+x.spread_pct+'</td><td class="'+cls(x.open24h_pct)+'">'+(x.open24h_pct>0?'+':'')+x.open24h_pct+'%</td></tr>'});
+   $('uni').innerHTML=t;
+  }else{$('uni').innerHTML='<tr><td class="mut">нет данных</td></tr>'}
+  if(feed&&feed.coins&&feed.coins.length){
+   var tfs=feed.tfs||['5m','15m','1H','4H'];
+   var t='<tr><th>Монета</th><th>Цена</th><th>5m</th><th>15m</th><th>1H</th><th>4H</th><th>Стакан-дисбаланс (±)</th></tr>';
+   feed.coins.forEach(function(c){
+    var row='<tr><td><b>'+c.coin+'</b></td><td>'+c.last+'</td>';
+    tfs.forEach(function(tf){var d=(c.tf||{})[tf]||{};var tr=d.trend;
+     row+='<td class="'+(tr==='up'?'up':(tr==='down'?'dn':'mut'))+'">'+(tr==='up'?'▲':(tr==='down'?'▼':'→'))+' '+(d.ret12!=null?((d.ret12>0?'+':'')+d.ret12+'%'):'')+'</td>'});
+    var im=(c.book||{}).imbalance||0;
+    var w2=Math.min(Math.abs(im)*100,50)/2;
+    row+='<td><div class="bar"><i style="'+(im>=0?('left:50%;width:'+w2+'%'):('width:'+w2+'%;left:'+(50-w2)+'%'))+'"></i></div> <span class="'+cls(im)+'">'+(im>0?'+':'')+im+'</span></td></tr>';
+    t+=row});
+   $('mtf').innerHTML=t;
+  }else{$('mtf').innerHTML='<tr><td class="mut">нет данных</td></tr>'}
+  if(ev2){
+   var b=ev2.best||{};
+   $('ev2').innerHTML='<div>'+(ev2.promoted?'<span class="chip long">✅ OOS прошёл отбор — параметры применены к трейдеру</span>':'<span class="chip wait">⏳ прибыльная конфигурация ещё не найдена — честный отбор, без подгонки</span>')+
+   ' <span class="pill">проверено комбинаций: '+(ev2.tried||0)+'</span> <span class="pill">монет: '+(ev2.coins_used||0)+'</span></div>'+
+   '<table style="margin-top:10px"><tr><th>Схема</th><th>EMA</th><th>SL × ATR</th><th>TP × ATR</th><th>IS PnL</th><th>OOS PnL</th><th>OOS сделок</th><th>OOS win</th></tr>'+
+   '<tr><td>walk-forward 55/45</td><td>'+(b.ema_fast||'—')+'/'+(b.ema_slow||'—')+'</td><td>'+(b.sl_atr||'—')+'</td><td>'+(b.tp_atr||'—')+'</td><td class="'+cls(b.is_pnl)+'">'+(b.is_pnl||0)+'%</td><td class="'+cls(b.oos_pnl)+'">'+(b.oos_pnl||0)+'%</td><td>'+(b.oos_trades||0)+'</td><td>'+(b.oos_winrate||'—')+'</td></tr></table>'+
+   '<p class="mut" style="font-size:11px;margin:8px 0 0">'+(ev2.note||'')+'</p>';
+  }else{$('ev2').innerHTML='<span class="mut">нет данных — эволюция v2 стартует в ближайшем прогоне</span>'}
+  if(live){
+   var trades=live.recent_trades||[];
+   $('rt').innerHTML='<span class="pill">капитал $'+(live.equity||0)+'</span> <span class="pill">открыто '+((live.positions||[]).length)+'</span> <span class="pill">стратегий '+((live.strategies&&live.strategies.length)||5)+'</span>'+
+   (trades.length?'<table style="margin-top:10px"><tr><th>Время</th><th>Стратегия</th><th>Монета</th><th>Направление</th><th>PnL</th></tr>'+
+    trades.slice(-10).reverse().map(function(x){return '<tr><td class="mut">'+(x.time||x.ts||'')+'</td><td>'+(x.strategy||'')+'</td><td>'+(x.symbol||x.instId||'')+'</td><td>'+(x.side||'')+'</td><td class="'+cls(x.pnl)+'">'+(x.pnl!=null?x.pnl:'')+'</td></tr>'}).join('')+'</table>'
+   :'<p class="mut" style="margin:8px 0 0">сделок ещё нет — движок ждёт первых сигналов на живых свечах</p>');
+  }else{$('rt').innerHTML='<span class="mut">нет данных</span>'}
+ });
+}
+load();
+setInterval(load,60000);
+</script>
+</body>
+</html>
