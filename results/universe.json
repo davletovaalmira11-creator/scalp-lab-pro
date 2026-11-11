@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-11T15:33:12Z",
+ "updated": "2026-11-11T15:33:50Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "stale",
+   "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "warmup",
@@ -11,21 +11,21 @@
   }
  },
  "pm": {
-  "equity": 2808.18,
-  "pnl_pct": 180.82,
-  "trades": 104,
-  "winrate": 49.0,
+  "equity": 2782.39,
+  "pnl_pct": 178.24,
+  "trades": 106,
+  "winrate": 49.1,
   "open": 2,
   "sht_open": 2,
-  "sht_trades": 104,
-  "sht_pnl": 1818.39,
+  "sht_trades": 106,
+  "sht_pnl": 1792.86,
   "cal": {
-   "n": 104,
-   "brier": 0.2168,
-   "acc": 49.0
+   "n": 106,
+   "brier": 0.2182,
+   "acc": 49.1
   },
-  "updated": "2026-11-11T14:49:16Z",
-  "age_s": 2637.0
+  "updated": "2026-11-11T15:33:50Z",
+  "age_s": 1.0
  },
  "pm_lab": {
   "status": "ready",
@@ -35,7 +35,7 @@
   "snaps": 13132,
   "golden": [],
   "updated": "2026-11-11T14:57:48Z",
-  "age_s": 2125.0
+  "age_s": 2163.0
  },
  "scalp": {
   "done": 2662,
@@ -43,7 +43,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-11T15:32:51Z",
-  "age_s": 22.0,
+  "age_s": 60.0,
   "paper": {
    "equity": 1137.03,
    "pnl_pct": 13.7,
