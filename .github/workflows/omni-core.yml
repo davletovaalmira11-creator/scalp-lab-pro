@@ -1,7 +1,7 @@
 name: omni-core
 on:
   schedule:
-    - cron: "3,13,23,33,43,53 * * * *"
+    - cron: "7,27,47 * * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -14,7 +14,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 13
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,8 +33,32 @@ jobs:
           OKX_MAX_OPEN: ${{ vars.OKX_MAX_OPEN }}
         run: |
           rm -f okx_trader_log.txt
-          ( cd engines/okx && timeout 240 python trader.py ) > okx_trader_log.txt 2>&1 || echo "TRADER FAILED (exit $?)" >> okx_trader_log.txt
+          ( cd engines/okx && timeout 200 python trader.py ) > okx_trader_log.txt 2>&1 || echo "TRADER FAILED (exit $?)" >> okx_trader_log.txt
           tail -30 okx_trader_log.txt
+        continue-on-error: true
+      - name: Universe scan (auto-discovery ликвидных монет)
+        run: |
+          rm -f universe_log.txt
+          timeout 60 python engines/okx/universe.py > universe_log.txt 2>&1 || echo "UNIVERSE FAILED (exit $?)" >> universe_log.txt
+          tail -5 universe_log.txt
+        continue-on-error: true
+      - name: Multi-TF feed + order books
+        run: |
+          rm -f feed_log.txt
+          timeout 150 python engines/okx/feed.py > feed_log.txt 2>&1 || echo "FEED FAILED (exit $?)" >> feed_log.txt
+          tail -12 feed_log.txt
+        continue-on-error: true
+      - name: Adaptive brain (online ML walk-forward)
+        run: |
+          rm -f brain_log.txt
+          timeout 90 python engines/okx/brain.py > brain_log.txt 2>&1 || echo "BRAIN FAILED (exit $?)" >> brain_log.txt
+          tail -10 brain_log.txt
+        continue-on-error: true
+      - name: Evolve2 (анти-оверфит walk-forward отбор параметров)
+        run: |
+          rm -f evolve2_log.txt
+          timeout 150 python engines/evolve/evolve2.py > evolve2_log.txt 2>&1 || echo "EVOLVE2 FAILED (exit $?)" >> evolve2_log.txt
+          tail -10 evolve2_log.txt
         continue-on-error: true
       - name: Polymarket CLOB trader
         env:
@@ -44,13 +68,13 @@ jobs:
           POLY_MIN_EDGE: ${{ secrets.POLY_MIN_EDGE }}
         run: |
           rm -f pm_clob_log.txt
-          timeout 120 python engines/pm/clob_trader.py > pm_clob_log.txt 2>&1 || echo "CLOB FAILED (exit $?)" >> pm_clob_log.txt
+          timeout 60 python engines/pm/clob_trader.py > pm_clob_log.txt 2>&1 || echo "CLOB FAILED (exit $?)" >> pm_clob_log.txt
           tail -10 pm_clob_log.txt
         continue-on-error: true
       - name: Evolve
         run: |
           rm -f evolve_log.txt
-          timeout 420 python engines/evolve/researcher.py > evolve_log.txt 2>&1 || echo "EVOLVE FAILED (exit $?)" >> evolve_log.txt
+          timeout 240 python engines/evolve/researcher.py > evolve_log.txt 2>&1 || echo "EVOLVE FAILED (exit $?)" >> evolve_log.txt
           tail -10 evolve_log.txt
         continue-on-error: true
       - name: Unified reporter
@@ -65,6 +89,10 @@ jobs:
           git add engines/okx/results/ || true
           git add engines/okx/best_params.json || true
           git add okx_trader_log.txt || true
+          git add universe_log.txt || true
+          git add feed_log.txt || true
+          git add brain_log.txt || true
+          git add evolve2_log.txt || true
           git add pm_clob_log.txt || true
           git add evolve_log.txt || true
           if ! git diff --cached --quiet; then
