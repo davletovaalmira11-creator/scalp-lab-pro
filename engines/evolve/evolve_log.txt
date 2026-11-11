@@ -1,1 +1,1 @@
-evolve v2: portfolio=[] stats=3 golden=4 err=None
+evolve v2: portfolio=['rsi_revert'] stats=5 golden=4 err=None
