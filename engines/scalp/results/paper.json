@@ -11,8 +11,8 @@
    "opened": "2026-11-11 04:15:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-11 09:10:00",
-   "last_px": 0.824
+   "last_ts": "2026-11-11 10:15:00",
+   "last_px": 0.8275
   },
   "vol_burst_revert-ARBUSDT-5m": {
    "strategy": "vol_burst_revert",
@@ -23,8 +23,8 @@
    "opened": "2026-11-11 05:45:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.93,
-   "last_ts": "2026-11-11 09:10:00",
-   "last_px": 0.159
+   "last_ts": "2026-11-11 10:15:00",
+   "last_px": 0.1586
   }
  },
  "closed": [
@@ -897,15 +897,14 @@
    "reason": "flat signal"
   }
  ],
- "updated": "2026-11-11T09:17:07Z",
- "runs": 57,
+ "updated": "2026-11-11T10:21:19Z",
+ "runs": 58,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-11 09:15:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-11 09:10:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-11 09:15:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-11 09:15:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-11 09:10:00",
-  "wick_vol-APTUSDT-15m": "2026-11-11 09:00:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-11 10:19:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-11 10:15:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-11 10:19:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-11 10:20:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-11 10:15:00"
  },
  "tops": [
   {
@@ -939,7 +938,7 @@
    "score": 2.49,
    "signal": 0.0,
    "sig_last": "2026-11-11 08:29:00",
-   "sig_pct": 33.24
+   "sig_pct": 32.16
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -971,8 +970,8 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": 1.0,
-   "sig_last": "2026-11-11 09:10:00",
-   "sig_pct": 87.2
+   "sig_last": "2026-11-11 10:15:00",
+   "sig_pct": 87.79
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -987,25 +986,8 @@
    "oos_sharpe": 1.93,
    "score": 1.41,
    "signal": 1.0,
-   "sig_last": "2026-11-11 09:10:00",
-   "sig_pct": 34.59
-  },
-  {
-   "key": "wick_vol-APTUSDT-15m",
-   "strategy": "wick_vol",
-   "symbol": "APTUSDT",
-   "tf": "15m",
-   "params": {
-    "h": 15,
-    "vz": 3.0,
-    "w": 0.5
-   },
-   "fee_mode": "maker",
-   "oos_sharpe": 1.19,
-   "score": 1.19,
-   "signal": 0.0,
-   "sig_last": "2026-11-10 20:15:00",
-   "sig_pct": 12.16
+   "sig_last": "2026-11-11 10:15:00",
+   "sig_pct": 35.24
   }
  ],
  "stats": {
@@ -1020,10 +1002,10 @@
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1423,
+  "low_pf": 1424,
   "low_t": 83,
   "no_params": 0,
-  "admitted": 6
+  "admitted": 5
  },
  "candidates": [
   {
