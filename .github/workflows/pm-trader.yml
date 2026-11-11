@@ -5,7 +5,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["engines/pm/**"]
+    paths: ["engines/pm/**", ".github/workflows/pm-trader.yml"]
 concurrency:
   group: pm-trader
   cancel-in-progress: false
@@ -42,7 +42,11 @@ jobs:
           sleep 20
           git config user.name "omni-bot"
           git config user.email "omni-bot@users.noreply.github.com"
-          git add results/clob.json pm_clob_log.txt pm_pip_log.txt results/universe.json || true
+          git add results/clob.json || true
+          git add pm_clob_log.txt || true
+          git add pm_pip_log.txt || true
+          git add results/universe.json || true
+          git add results/ || true
           if ! git diff --cached --quiet; then
             git commit -m "auto: pm clob trader [skip ci]" || true
             for i in 1 2 3 4 5 6; do
