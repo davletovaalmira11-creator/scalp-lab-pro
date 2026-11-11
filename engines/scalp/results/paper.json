@@ -1,19 +1,7 @@
 {
  "capital_start": 1000.0,
- "equity": 1090.2273530408283,
+ "equity": 1097.3450628759615,
  "positions": {
-  "bb_maker-NEARUSDT-1m": {
-   "strategy": "bb_maker",
-   "symbol": "NEARUSDT",
-   "tf": "1m",
-   "signal": -1.0,
-   "entry": 3.638,
-   "opened": "2026-11-11 00:33:00",
-   "fee_mode": "maker",
-   "oos_sharpe": 3.0,
-   "last_ts": "2026-11-11 01:27:00",
-   "last_px": 3.637
-  },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
    "symbol": "SUIUSDT",
@@ -23,8 +11,8 @@
    "opened": "2026-11-11 00:00:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-11 01:20:00",
-   "last_px": 0.8275
+   "last_ts": "2026-11-11 02:25:00",
+   "last_px": 0.8246
   }
  },
  "closed": [
@@ -769,17 +757,44 @@
    "closed_ts": "2026-11-11 00:00:00",
    "fee_mode": "maker",
    "reason": "signal flip"
+  },
+  {
+   "key": "bb_regime-NEARUSDT-1m",
+   "strategy": "bb_regime",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.686,
+   "exit": 3.648,
+   "pnl_pct": 0.9809,
+   "opened": "2026-11-11 01:34:00",
+   "closed_ts": "2026-11-11 02:25:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
+  },
+  {
+   "key": "bb_maker-NEARUSDT-1m",
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.638,
+   "exit": 3.648,
+   "pnl_pct": -0.3249,
+   "opened": "2026-11-11 00:33:00",
+   "closed_ts": "2026-11-11 02:25:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
   }
  ],
- "updated": "2026-11-11T01:28:40Z",
- "runs": 50,
+ "updated": "2026-11-11T02:33:13Z",
+ "runs": 51,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-11 01:27:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-11 01:20:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-11 01:27:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-11 01:27:00",
-  "wick_vol-OPUSDT-15m": "2026-11-11 01:00:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-11 01:20:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-11 02:31:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-11 02:25:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-11 02:31:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-11 02:31:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-11 02:25:00"
  },
  "tops": [
   {
@@ -796,8 +811,8 @@
    "oos_sharpe": 2.77,
    "score": 2.55,
    "signal": 0.0,
-   "sig_last": "2026-11-10 19:20:00",
-   "sig_pct": 27.72
+   "sig_last": "2026-11-11 02:24:00",
+   "sig_pct": 25.7
   },
   {
    "key": "bb_maker-NEARUSDT-1m",
@@ -811,9 +826,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 3.0,
    "score": 2.49,
-   "signal": -1.0,
-   "sig_last": "2026-11-11 01:27:00",
-   "sig_pct": 37.86
+   "signal": 0.0,
+   "sig_last": "2026-11-11 02:24:00",
+   "sig_pct": 39.28
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -845,8 +860,8 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": -1.0,
-   "sig_last": "2026-11-11 01:20:00",
-   "sig_pct": 87.79
+   "sig_last": "2026-11-11 02:25:00",
+   "sig_pct": 87.39
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -863,41 +878,24 @@
    "signal": 0.0,
    "sig_last": "2026-11-10 23:30:00",
    "sig_pct": 32.51
-  },
-  {
-   "key": "wick_vol-OPUSDT-15m",
-   "strategy": "wick_vol",
-   "symbol": "OPUSDT",
-   "tf": "15m",
-   "params": {
-    "h": 30,
-    "vz": 3.0,
-    "w": 0.4
-   },
-   "fee_mode": "maker",
-   "oos_sharpe": 1.93,
-   "score": 1.25,
-   "signal": 0.0,
-   "sig_last": "2026-11-07 19:30:00",
-   "sig_pct": 12.16
   }
  ],
  "stats": {
-  "n_trades": 53,
-  "wins": 37,
-  "winrate": 69.8,
-  "equity": 1090.23,
-  "pnl_pct": 9.02,
-  "open": 2
+  "n_trades": 55,
+  "wins": 38,
+  "winrate": 69.1,
+  "equity": 1097.35,
+  "pnl_pct": 9.73,
+  "open": 1
  },
  "filter_stats": {
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1423,
+  "low_pf": 1424,
   "low_t": 83,
   "no_params": 0,
-  "admitted": 6
+  "admitted": 5
  },
  "candidates": [
   {
