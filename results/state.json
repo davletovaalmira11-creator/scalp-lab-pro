@@ -1,53 +1,69 @@
 {
- "cash": 3380.140025282213,
+ "cash": 2704.11202022577,
  "positions": {
-  "btc-updown-5m-1794374700": {
+  "btc-updown-5m-1794378300": {
    "kind": "sht",
-   "slug": "btc-updown-5m-1794374700",
-   "question": "Bitcoin Up or Down - November 11, 12:25AM-12:30AM ET",
+   "slug": "btc-updown-5m-1794378300",
+   "question": "Bitcoin Up or Down - November 11, 1:25AM-1:30AM ET",
    "series": "btc-up-or-down-5m",
    "outcome": "Up",
    "strategy": "sht5",
-   "entry": 0.24,
-   "last": 0.24,
-   "shares": 828.47,
-   "usd": 198.83,
-   "opened": "2026-11-11T05:28:06Z",
-   "epoch": 1794374886.003647,
-   "end_ts": 1794375000,
-   "fair_up": 0.5461
+   "entry": 0.35,
+   "last": 0.35,
+   "shares": 482.88,
+   "usd": 169.01,
+   "opened": "2026-11-11T06:28:09Z",
+   "epoch": 1794378489.5447152,
+   "end_ts": 1794378600,
+   "fair_up": 0.729
   },
-  "eth-updown-5m-1794374700": {
+  "btc-updown-15m-1794377700": {
    "kind": "sht",
-   "slug": "eth-updown-5m-1794374700",
-   "question": "Ethereum Up or Down - November 11, 12:25AM-12:30AM ET",
+   "slug": "btc-updown-15m-1794377700",
+   "question": "Bitcoin Up or Down - November 11, 1:15AM-1:30AM ET",
+   "series": "btc-up-or-down-15m",
+   "outcome": "Up",
+   "strategy": "sht15",
+   "entry": 0.26,
+   "last": 0.26,
+   "shares": 650.03,
+   "usd": 169.01,
+   "opened": "2026-11-11T06:28:09Z",
+   "epoch": 1794378489.5447385,
+   "end_ts": 1794378600,
+   "fair_up": 0.4212
+  },
+  "eth-updown-5m-1794378300": {
+   "kind": "sht",
+   "slug": "eth-updown-5m-1794378300",
+   "question": "Ethereum Up or Down - November 11, 1:25AM-1:30AM ET",
    "series": "eth-up-or-down-5m",
+   "outcome": "Up",
+   "strategy": "sht5",
+   "entry": 0.47,
+   "last": 0.47,
+   "shares": 359.59,
+   "usd": 169.01,
+   "opened": "2026-11-11T06:28:09Z",
+   "epoch": 1794378489.5447533,
+   "end_ts": 1794378600,
+   "fair_up": 0.5292
+  },
+  "sol-updown-5m-1794378300": {
+   "kind": "sht",
+   "slug": "sol-updown-5m-1794378300",
+   "question": "Solana Up or Down - November 11, 1:25AM-1:30AM ET",
+   "series": "sol-up-or-down-5m",
    "outcome": "Up",
    "strategy": "sht5",
    "entry": 0.54,
    "last": 0.54,
-   "shares": 368.21,
-   "usd": 198.83,
-   "opened": "2026-11-11T05:28:06Z",
-   "epoch": 1794374886.0036814,
-   "end_ts": 1794375000,
-   "fair_up": 0.7281
-  },
-  "sol-updown-5m-1794374700": {
-   "kind": "sht",
-   "slug": "sol-updown-5m-1794374700",
-   "question": "Solana Up or Down - November 11, 12:25AM-12:30AM ET",
-   "series": "sol-up-or-down-5m",
-   "outcome": "Up",
-   "strategy": "sht5",
-   "entry": 0.51,
-   "last": 0.51,
-   "shares": 389.87,
-   "usd": 198.83,
-   "opened": "2026-11-11T05:28:06Z",
-   "epoch": 1794374886.0036993,
-   "end_ts": 1794375000,
-   "fair_up": 0.6846
+   "shares": 312.98,
+   "usd": 169.01,
+   "opened": "2026-11-11T06:28:09Z",
+   "epoch": 1794378489.5447736,
+   "end_ts": 1794378600,
+   "fair_up": 0.6987
   }
  },
  "closed": [
@@ -1058,6 +1074,42 @@
    "opened": "2026-11-11T04:26:26Z",
    "closed": "2026-11-11T05:27:52Z",
    "reason": "расчёт рынка, выигрыш"
+  },
+  {
+   "question": "Bitcoin Up or Down - November 11, 12:25AM-12:30AM ET",
+   "slug": "btc-updown-5m-1794374700",
+   "outcome": "Up",
+   "entry": 0.24,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-11T05:28:06Z",
+   "closed": "2026-11-11T06:27:51Z",
+   "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Ethereum Up or Down - November 11, 12:25AM-12:30AM ET",
+   "slug": "eth-updown-5m-1794374700",
+   "outcome": "Up",
+   "entry": 0.54,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-11T05:28:06Z",
+   "closed": "2026-11-11T06:27:51Z",
+   "reason": "расчёт рынка, проигрыш"
+  },
+  {
+   "question": "Solana Up or Down - November 11, 12:25AM-12:30AM ET",
+   "slug": "sol-updown-5m-1794374700",
+   "outcome": "Up",
+   "entry": 0.51,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-11T05:28:06Z",
+   "closed": "2026-11-11T06:27:52Z",
+   "reason": "расчёт рынка, проигрыш"
   }
  ],
  "curve": [
@@ -1308,9 +1360,13 @@
   [
    "2026-11-11T05:28:06Z",
    3976.64
+  ],
+  [
+   "2026-11-11T06:28:09Z",
+   3380.14
   ]
  ],
- "runs": 61,
+ "runs": 62,
  "done_keys": {},
  "cal": [
   {
@@ -1732,20 +1788,35 @@
    "p": 0.8118,
    "win": 1,
    "tag": "sht5"
+  },
+  {
+   "p": 0.5461,
+   "win": 0,
+   "tag": "sht5"
+  },
+  {
+   "p": 0.7281,
+   "win": 0,
+   "tag": "sht5"
+  },
+  {
+   "p": 0.6846,
+   "win": 0,
+   "tag": "sht5"
   }
  ],
  "stats": {
-  "equity": 3976.64,
-  "cash": 3380.14,
-  "open": 3,
-  "trades": 84,
+  "equity": 3380.14,
+  "cash": 2704.11,
+  "open": 4,
+  "trades": 87,
   "wins": 44,
-  "winrate": 52.4,
-  "pnl_pct": 297.66,
-  "updated": "2026-11-11T05:28:06Z",
-  "runs": 61,
-  "sht_open": 3,
-  "sht_trades": 84,
-  "sht_pnl": 2984.92
+  "winrate": 50.6,
+  "pnl_pct": 238.01,
+  "updated": "2026-11-11T06:28:09Z",
+  "runs": 62,
+  "sht_open": 4,
+  "sht_trades": 87,
+  "sht_pnl": 2388.43
  }
 }
