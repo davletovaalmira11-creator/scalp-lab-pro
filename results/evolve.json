@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-12T02:55:17Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-12T02:16:40Z",
    "best": {},
    "portfolio": [],
@@ -130,28 +137,28 @@
    "err": null
   }
  ],
- "updated": "2026-11-12T02:16:40Z",
+ "updated": "2026-11-12T02:55:17Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
    "is_ret": 2.32,
-   "oos_ret": -7.3,
-   "trades": 20,
+   "oos_ret": -5.36,
+   "trades": 18,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
    "is_ret": 3.72,
-   "oos_ret": -2.3,
+   "oos_ret": -2.14,
    "trades": 28,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -5.85,
-   "oos_ret": -1.18,
-   "trades": 23,
+   "is_ret": -3.92,
+   "oos_ret": 0.33,
+   "trades": 19,
    "portfolio": false
   },
   {
@@ -166,24 +173,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.057,
+   "okx_mom_pct": -0.229,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T02:16:40Z"
+   "ts": "2026-11-12T02:55:17Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.406,
+   "okx_mom_pct": 0.096,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T02:16:40Z"
+   "ts": "2026-11-12T02:55:17Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 0.603,
+   "okx_mom_pct": 0.132,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T02:16:40Z"
+   "ts": "2026-11-12T02:55:17Z"
   }
  ],
  "golden": [
@@ -191,6 +198,11 @@
    "src": "polymarket-lab",
    "name": "Модель точнее монетки",
    "note": "Brier < 0.25 на обеих половинах"
+  },
+  {
+   "src": "polymarket-lab",
+   "name": "Смесь 50/50 модели и рынка бьёт обоих",
+   "note": "Brier смеси < min(модель, рынок) на обеих половинах"
   },
   {
    "src": "walk-forward bt",
