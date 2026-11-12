@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-12T16:07:14Z",
+ "updated": "2026-11-12T16:24:49Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
-   "pm_worker": "stale",
+   "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
@@ -24,8 +24,8 @@
    "brier": 0.2138,
    "acc": 51.2
   },
-  "updated": "2026-11-12T15:17:23Z",
-  "age_s": 2991.0
+  "updated": "2026-11-12T16:24:49Z",
+  "age_s": 0.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,7 +37,7 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-12T16:07:13Z",
-  "age_s": 1.0
+  "age_s": 1056.0
  },
  "scalp": {
   "done": 2662,
@@ -45,7 +45,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-12T15:17:56Z",
-  "age_s": 2958.0,
+  "age_s": 4013.0,
   "paper": {
    "equity": 1100.26,
    "pnl_pct": 10.03,
@@ -316,7 +316,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-12T16:04:06Z",
-  "age_s": 188.0
+  "age_s": 1243.0
  },
  "clob": {
   "mode": "off",
@@ -325,6 +325,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-12T16:04:23Z",
-  "age_s": 171.0
+  "age_s": 1226.0
  }
 }
