@@ -1,98 +1,24 @@
 {
- "updated": "2026-11-12T11:56:13Z",
- "live": [
-  {
-   "series": "btc-up-or-down-5m",
-   "tag": "sht5",
-   "slug": "btc-updown-5m-1794484500",
-   "title": "Bitcoin Up or Down - November 12, 6:55AM-7:00AM ET",
-   "sym": "BTCUSDT",
-   "win_s": 300,
-   "start": 1794484500,
-   "end": 1794484800,
-   "p_up": 0.265,
-   "p_down": 0.735,
-   "liq": 15693,
-   "fair_up": 0.2345,
-   "edge_up": -0.0305,
-   "edge_down": 0.0305,
-   "tau_s": 237
-  },
-  {
-   "series": "btc-up-or-down-15m",
-   "tag": "sht15",
-   "slug": "btc-updown-15m-1794483900",
-   "title": "Bitcoin Up or Down - November 12, 6:45AM-7:00AM ET",
-   "sym": "BTCUSDT",
-   "win_s": 900,
-   "start": 1794483900,
-   "end": 1794484800,
-   "p_up": 0.015,
-   "p_down": 0.985,
-   "liq": 12618,
-   "fair_up": 0.02,
-   "edge_up": 0.005,
-   "edge_down": -0.005,
-   "tau_s": 234
-  },
-  {
-   "series": "eth-up-or-down-5m",
-   "tag": "sht5",
-   "slug": "eth-updown-5m-1794484500",
-   "title": "Ethereum Up or Down - November 12, 6:55AM-7:00AM ET",
-   "sym": "ETHUSDT",
-   "win_s": 300,
-   "start": 1794484500,
-   "end": 1794484800,
-   "p_up": 0.345,
-   "p_down": 0.655,
-   "liq": 3233,
-   "fair_up": 0.13,
-   "edge_up": -0.215,
-   "edge_down": 0.215,
-   "tau_s": 232
-  },
-  {
-   "series": "eth-up-or-down-15m",
-   "tag": "sht15",
-   "slug": "eth-updown-15m-1794483900",
-   "title": "Ethereum Up or Down - November 12, 6:45AM-7:00AM ET",
-   "sym": "ETHUSDT",
-   "win_s": 900,
-   "start": 1794483900,
-   "end": 1794484800,
-   "p_up": 0.006,
-   "p_down": 0.994,
-   "liq": 2929,
-   "fair_up": 0.02,
-   "edge_up": 0.014,
-   "edge_down": -0.014,
-   "tau_s": 229
-  },
-  {
-   "series": "sol-up-or-down-5m",
-   "tag": "sht5",
-   "slug": "sol-updown-5m-1794484500",
-   "title": "Solana Up or Down - November 12, 6:55AM-7:00AM ET",
-   "sym": "SOLUSDT",
-   "win_s": 300,
-   "start": 1794484500,
-   "end": 1794484800,
-   "p_up": 0.335,
-   "p_down": 0.665,
-   "liq": 3691,
-   "fair_up": 0.3568,
-   "edge_up": 0.0218,
-   "edge_down": -0.0218,
-   "tau_s": 228
-  }
- ],
+ "updated": "2026-11-12T12:58:10Z",
+ "live": [],
  "cal": {
-  "n": 124,
-  "brier": 0.2094,
-  "acc": 51.6
+  "n": 125,
+  "brier": 0.2138,
+  "acc": 51.2
  },
  "settled": [
+  {
+   "question": "Ethereum Up or Down - November 12, 6:55AM-7:00AM ET",
+   "slug": "eth-updown-5m-1794484500",
+   "outcome": "Down",
+   "entry": 0.66,
+   "exit": 0.0,
+   "ret_pct": -100.0,
+   "strategy": "sht5",
+   "opened": "2026-11-12T11:56:13Z",
+   "closed": "2026-11-12T12:58:08Z",
+   "reason": "расчёт рынка, проигрыш"
+  },
   {
    "question": "Ethereum Up or Down - November 12, 4:45AM-5:00AM ET",
    "slug": "eth-updown-15m-1794476700",
@@ -223,18 +149,6 @@
    "strategy": "sht5",
    "opened": "2026-11-11T22:53:00Z",
    "closed": "2026-11-11T23:40:14Z",
-   "reason": "расчёт рынка, проигрыш"
-  },
-  {
-   "question": "Solana Up or Down - November 11, 5:00PM-5:05PM ET",
-   "slug": "sol-updown-5m-1794434400",
-   "outcome": "Down",
-   "entry": 0.105,
-   "exit": 0.0,
-   "ret_pct": -100.0,
-   "strategy": "sht5",
-   "opened": "2026-11-11T22:02:10Z",
-   "closed": "2026-11-11T22:52:39Z",
    "reason": "расчёт рынка, проигрыш"
   }
  ]
