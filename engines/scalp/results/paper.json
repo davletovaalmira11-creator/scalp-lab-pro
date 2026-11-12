@@ -11,8 +11,8 @@
    "opened": "2026-11-11 21:40:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-12 00:00:00",
-   "last_px": 0.8234
+   "last_ts": "2026-11-12 01:30:00",
+   "last_px": 0.8218
   },
   "vol_burst_revert-ARBUSDT-5m": {
    "strategy": "vol_burst_revert",
@@ -23,8 +23,8 @@
    "opened": "2026-11-12 00:00:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.93,
-   "last_ts": "2026-11-12 00:00:00",
-   "last_px": 0.1525
+   "last_ts": "2026-11-12 01:30:00",
+   "last_px": 0.1514
   }
  },
  "closed": [
@@ -1093,15 +1093,15 @@
    "reason": "flat signal"
   }
  ],
- "updated": "2026-11-12T00:05:15Z",
- "runs": 71,
+ "updated": "2026-11-12T01:39:02Z",
+ "runs": 72,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-12 00:03:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-12 00:00:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-12 00:03:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-12 00:03:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-12 00:00:00",
-  "wick_vol-OPUSDT-15m": "2026-11-11 23:45:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-12 01:37:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-12 01:30:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-12 01:37:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-12 01:37:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-12 01:30:00",
+  "wick_vol-OPUSDT-15m": "2026-11-12 01:15:00"
  },
  "tops": [
   {
@@ -1119,7 +1119,7 @@
    "score": 2.55,
    "signal": 0.0,
    "sig_last": "2026-11-11 23:55:00",
-   "sig_pct": 22.72
+   "sig_pct": 21.88
   },
   {
    "key": "bb_maker-NEARUSDT-1m",
@@ -1135,7 +1135,7 @@
    "score": 2.49,
    "signal": 0.0,
    "sig_last": "2026-11-11 23:55:00",
-   "sig_pct": 35.95
+   "sig_pct": 34.35
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -1167,8 +1167,8 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": 1.0,
-   "sig_last": "2026-11-12 00:00:00",
-   "sig_pct": 87.49
+   "sig_last": "2026-11-12 01:30:00",
+   "sig_pct": 88.39
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -1183,8 +1183,8 @@
    "oos_sharpe": 1.93,
    "score": 1.41,
    "signal": 1.0,
-   "sig_last": "2026-11-12 00:00:00",
-   "sig_pct": 36.13
+   "sig_last": "2026-11-12 01:30:00",
+   "sig_pct": 37.02
   },
   {
    "key": "wick_vol-OPUSDT-15m",
