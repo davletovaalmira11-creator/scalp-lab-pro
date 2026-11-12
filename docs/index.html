@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- OmniLab v5 — единый живой дашборд: OKX + Polymarket paper в реальном времени -->
+<!-- OmniLab v5.1 — единый живой дашборд: OKX + Polymarket paper в реальном времени -->
 <html lang="ru">
 <head>
 <meta charset="utf-8">
@@ -48,12 +48,13 @@ td.q{white-space:normal;min-width:160px}
 .long{background:rgba(34,197,94,.15);color:var(--up)}
 .short{background:rgba(239,68,68,.15);color:var(--dn)}
 .wait{background:rgba(139,150,171,.13);color:var(--mut)}
+.warn{background:rgba(245,158,11,.15);color:var(--wa)}
 .up{color:var(--up)}.dn{color:var(--dn)}.mut{color:var(--mut)}
 .pill{display:inline-block;background:rgba(109,94,252,.14);color:#b3a7ff;padding:2px 9px;border-radius:8px;font-size:11px;margin:2px;font-weight:600}
 svg{width:100%;height:90px;display:block;margin-top:6px}
 .empty{color:var(--mut);font-size:12.5px;padding:6px 2px}
+.mini{font-size:13px;font-weight:600;display:block;margin:10px 0 4px}
 .foot{color:var(--mut);font-size:11px;text-align:center;margin-top:8px}
-a{color:var(--ac2)}
 </style>
 </head>
 <body>
@@ -83,7 +84,7 @@ a{color:var(--ac2)}
         <div class="cell"><div class="k">Winrate</div><div class="n" id="pmwr">—</div></div>
         <div class="cell"><div class="k">Сделок</div><div class="n" id="pmtr">—</div></div>
       </div>
-      <div class="row"><span class="pill" id="pmbrier">—</span><span class="pill">Brier — качество прогноза</span></div>
+      <div class="row"><span class="pill" id="pmbrier">—</span></div>
     </div>
   </div>
 </div>
@@ -102,8 +103,12 @@ a{color:var(--ac2)}
 <div class="card">
   <h2>🟣 Polymarket — торговля в реальном времени</h2>
   <div id="pmpos"></div>
-  <div style="margin-top:12px"><b style="font-size:13px">Последние исходы</b><div class="tblwrap" id="pmsettled" style="margin-top:6px"></div></div>
-  <div style="margin-top:12px"><b style="font-size:13px">Кривая капитала</b><div id="pmcurve"></div></div>
+  <span class="mini">Что сканирует сейчас</span>
+  <div id="pmscan"></div>
+  <span class="mini">Последние исходы</span>
+  <div class="tblwrap" id="pmsettled"></div>
+  <span class="mini">Кривая капитала</span>
+  <div id="pmcurve"></div>
 </div>
 
 <div class="card">
@@ -134,28 +139,24 @@ function cls(x){return x>0?'up':(x<0?'dn':'mut')}
 function sign(x){return (x>0?'+':'')+x}
 function j(p){return fetch(F+p,{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
 function age(iso,el){
- if(!iso){el.textContent='нет данных';el.className='tag dn';return}
+ if(!iso){el.textContent='нет данных';return}
  var m=(Date.now()-Date.parse(iso))/60000;
- var col=m<50?'g':(m<120?'y':'r');
  var txt=m<1?'только что':(m<60?Math.round(m)+' мин назад':Math.round(m/60)+' ч назад');
- el.innerHTML='<span class="dot '+col+'"></span> '+txt;
+ el.innerHTML='<span class="dot '+(m<50?'g':(m<120?'y':'r'))+'"></span> '+txt;
 }
-function spark(pts,fillUp){
+function spark(pts){
  if(!pts||pts.length<2)return '<div class="empty">данных пока мало — копятся с каждым прогоном</div>';
  var w=600,h=90,mn=Math.min.apply(null,pts),mx=Math.max.apply(null,pts),sp=(mx-mn)||1;
  var d=pts.map(function(p,i){return [(i/(pts.length-1))*w, h-((p-mn)/sp)*(h-12)-6]});
  var path=d.map(function(q,i){return (i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)}).join(' ');
- var lastUp=pts[pts.length-1]>=pts[0];
- var col=lastUp?'#22c55e':'#ef4444';
- var area=path+' L'+w+' '+h+' L0 '+h+' Z';
- return '<svg viewBox="0 0 '+w+' '+h+'" preserveAspectRatio="none"><path d="'+area+'" fill="'+col+'" opacity="0.08"/><path d="'+path+'" fill="none" stroke="'+col+'" stroke-width="2.5"/></svg>';
+ var col=pts[pts.length-1]>=pts[0]?'#22c55e':'#ef4444';
+ return '<svg viewBox="0 0 '+w+' '+h+'" preserveAspectRatio="none"><path d="'+path+' L'+w+' '+h+' L0 '+h+' Z" fill="'+col+'" opacity="0.08"/><path d="'+path+'" fill="none" stroke="'+col+'" stroke-width="2.5"/></svg>';
 }
 function load(){
  Promise.all([j('engines/okx/results/okx_live.json'),j('results/state.json'),j('results/sht.json'),j('engines/okx/results/brain_okx.json'),j('engines/okx/results/evolve2_okx.json'),j('engines/okx/results/universe_okx.json'),j('engines/okx/results/feed_okx.json')]).then(function(r){
   var OX=r[0],ST=r[1],SHT=r[2],BR=r[3],EV=r[4],UNI=r[5],FD=r[6];
   $('ts').textContent=new Date().toLocaleTimeString('ru-RU');
 
-  // venues
   if(OX){
    $('okxeq').textContent=fmtUSD(OX.equity);
    $('okxpnl').innerHTML='<span class="'+cls(OX.pnl_pct)+'">'+sign(OX.pnl_pct)+'%</span>';
@@ -174,9 +175,8 @@ function load(){
    age(S.updated,$('pmupd'));
   }
   var C=SHT&&SHT.cal;
-  $('pmbrier').textContent=C?('Brier '+C.brier+' · '+C.n+' ставок'):'—';
+  $('pmbrier').textContent=C?('Brier '+C.brier+' · '+C.n+' ставок (лучше 0.25 = есть край)'):'—';
 
-  // stages
   var st=[
    ['Торговля OKX',OX&&OX.updated],
    ['Торговля Polymarket',S&&S.updated],
@@ -192,25 +192,33 @@ function load(){
    return '<div class="stage"><span class="dot '+col+'"></span><div><div class="t">'+x[0]+'</div><div class="a">'+a+' назад</div></div></div>';
   }).join('');
 
-  // OKX positions + trades
   if(OX){
    var pos=OX.paper&&OX.paper.positions?Object.values(OX.paper.positions):[];
-   $('okxpos').innerHTML=pos.length?
+   var nsh=pos.filter(function(p){return p.side<0}).length;
+   var nlo=pos.length-nsh;
+   var risk=pos.length>1&&((nsh===0)||(nlo===0))?'<span class="chip warn">⚠ коррелированный риск: все позиции '+(nsh===0?'в лонг':'в шорт')+' ('+pos.length+')</span> ':'<span class="pill">книга: '+nlo+' лонг · '+nsh+' шорт</span> ';
+   $('okxpos').innerHTML=(pos.length?risk:'')+(pos.length?
     '<div class="tblwrap"><table><tr><th>Стратегия</th><th>Монета</th><th>Напр.</th><th>Вход</th><th>TP</th><th>SL</th><th>Открыта</th></tr>'+
     pos.map(function(p){return '<tr><td>'+p.strategy+'</td><td><b>'+String(p.inst).replace('-USDT-SWAP','')+'</b></td><td class="'+(p.side>0?'up':'dn')+'">'+(p.side>0?'▲ long':'▼ short')+'</td><td>'+fmt(p.entry)+'</td><td class="up">'+fmt(p.tp)+'</td><td class="dn">'+fmt(p.sl)+'</td><td class="mut">'+String(p.opened).slice(11,16)+'</td></tr>'}).join('')+'</table></div>'
-   :'<div class="empty">открытых позиций нет — ждёт сигналов на живых свечах</div>';
+   :'<div class="empty">открытых позиций нет — ждёт сигналов на живых свечах</div>');
    var tr=OX.recent_trades||[];
    $('okxtrades').innerHTML=tr.length?
-    '<div class="tblwrap"><table><tr><th>Время</th><th>Стратегия</th><th>Монета</th><th>Напр.</th><th>PnL</th></tr>'+
-    tr.slice(-15).reverse().map(function(t){return '<tr><td class="mut">'+(t.closed||t.time||'').slice(5,16)+'</td><td>'+t.strategy+'</td><td>'+String(t.inst||t.symbol||'').replace('-USDT-SWAP','')+'</td><td>'+(t.side>0?'▲':'▼')+'</td><td class="'+cls(t.pnl)+'">'+sign(t.pnl)+'</td></tr>'}).join('')+'</table></div>'
-   :'<div class="empty">закрытых сделок пока нет — первые позиции открыты, ждём TP/SL</div>';
+    '<div class="tblwrap"><table><tr><th>Время</th><th>Стратегия</th><th>Монета</th><th>Напр.</th><th>Вход→Выход</th><th>PnL</th><th>Причина</th></tr>'+
+    tr.slice(-15).reverse().map(function(t){return '<tr><td class="mut">'+String(t.ts||t.time||'').slice(5,16)+'</td><td>'+t.strategy+'</td><td>'+String(t.inst||t.symbol||'').replace('-USDT-SWAP','')+'</td><td class="'+(t.side==='long'?'up':'dn')+'">'+(t.side==='long'?'▲':(t.side==='short'?'▼':'•'))+'</td><td class="mut">'+fmt(t.entry)+' → '+fmt(t.exit)+'</td><td class="'+cls(t.pnl)+'">'+sign(t.pnl)+'$</td><td class="mut">'+(t.reason||'')+'</td></tr>'}).join('')+'</table></div>'
+   :'<div class="empty">закрытых сделок пока нет — позиции открыты, ждём TP/SL</div>';
   }
 
-  // PM positions + settled + curve
   var pmpos=ST&&ST.positions?Object.values(ST.positions):[];
   $('pmpos').innerHTML=pmpos.length?
-   pmpos.map(function(p){return '<div class="chip long">открыто: '+p.outcome+' @ '+(p.entry*100).toFixed(0)+'¢ · '+p.strategy+' · $'+fmt(p.usd)+'</div> '}).join('')
+   pmpos.map(function(p){return '<span class="chip long">открыто: '+p.outcome+' @ '+(p.entry*100).toFixed(0)+'¢ · '+p.strategy+' · $'+fmt(p.usd)+'</span> '}).join('')
   :'<div class="empty">открытых ставок нет — ждёт окон с edge</div>';
+  var live=SHT&&SHT.live?SHT.live:[];
+  $('pmscan').innerHTML=live.length?
+   live.map(function(w){
+    var coin=String(w.series||'').split('-')[0].toUpperCase();
+    var e=w.edge_up||0;
+    return '<span class="chip '+(e>0.05?'long':(e<-0.05?'short':'wait'))+'">'+coin+' '+(w.win_s/60)+'м · рынок p↑ '+Math.round(w.p_up*100)+'% · модель '+Math.round((w.fair_up||0)*100)+'% · edge '+(e>0?'+':'')+Math.round(e*100)+'% · '+Math.round(w.tau_s/60)+' мин до расчёта</span>'}).join(' ')
+  :'<div class="empty">окна не сканируются</div>';
   var set=ST&&ST.closed?ST.closed:[];
   $('pmsettled').innerHTML=set.length?
    '<table><tr><th>Когда</th><th>Рынок</th><th>Ставка</th><th>Исход</th><th>PnL</th></tr>'+
@@ -221,7 +229,6 @@ function load(){
   var curve=ST&&ST.curve?ST.curve.map(function(x){return x[1]}):[];
   $('pmcurve').innerHTML=spark(curve);
 
-  // Brain
   if(BR){
    $('bracc').textContent=BR.accuracy!=null?BR.accuracy+'%':'—';
    $('brtr').textContent=BR.trades!=null?BR.trades:'—';
@@ -231,11 +238,10 @@ function load(){
    $('brcurve').innerHTML=spark((BR.curve||[]).map(function(c){return c.pct}));
   }
 
-  // Evolve
   if(EV){
    var b=EV.best||{};
    $('ev2').innerHTML=
-   '<div style="margin-bottom:8px">'+(EV.promoted?'<span class="chip long">✅ нашла прибыльные параметры — применены к трейдеру</span>':'<span class="chip wait">⏳ ищет — в честную работу пускает только прошедшие OOS</span>')+'</div>'+
+   '<div style="margin-bottom:8px">'+(EV.promoted?'<span class="chip long">✅ нашла прибыльные параметры — применены к трейдеру</span>':'<span class="chip wait">⏳ ищет — в работу пускает только прошедшие OOS</span>')+'</div>'+
    '<div class="row"><span class="pill">проверила комбинаций: '+EV.tried+'</span><span class="pill">монет: '+EV.coins_used+'</span>'+
    '<span class="pill">ema '+b.ema_fast+'/'+b.ema_slow+'</span><span class="pill">SL '+b.sl_atr+'×ATR · TP '+b.tp_atr+'×ATR</span></div>'+
    '<div class="row"><div class="cell"><div class="k">IS PnL (подбор)</div><div class="n">'+sign(b.is_pnl||0)+'%</div></div>'+
