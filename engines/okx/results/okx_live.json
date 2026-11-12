@@ -2,7 +2,28 @@
  "paper": {
   "equity": 1000.8707778404325,
   "start": 1000.0,
-  "positions": {},
+  "positions": {
+   "rsi_revert|BTC-USDT-SWAP": {
+    "strategy": "rsi_revert",
+    "inst": "BTC-USDT-SWAP",
+    "side": 1,
+    "entry": 71512.2,
+    "sz": 6.991813984187314e-05,
+    "tp": 73216.22857142857,
+    "sl": 70873.18928571428,
+    "opened": "2026-11-12T16:44:12Z"
+   },
+   "momentum|ETH-USDT-SWAP": {
+    "strategy": "momentum",
+    "inst": "ETH-USDT-SWAP",
+    "side": -1,
+    "entry": 2000.05,
+    "sz": 0.002499937501562461,
+    "tp": 1937.3814285714284,
+    "sl": 2023.5507142857143,
+    "opened": "2026-11-12T16:44:12Z"
+   }
+  },
   "trades": [
    {
     "ts": "2026-11-12T14:49:50Z",
@@ -198,7 +219,7 @@
    "pnl": 0.155,
    "trades": 3,
    "wins": 3,
-   "open": 0
+   "open": 1
   },
   "donchian_break": {
    "pnl": 0.2396,
@@ -216,7 +237,7 @@
    "pnl": 0.1532,
    "trades": 4,
    "wins": 2,
-   "open": 0
+   "open": 1
   },
   "sma_revert": {
    "pnl": 0.1758,
@@ -231,7 +252,7 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.087,
  "trades": 17,
- "open": 0,
+ "open": 2,
  "recent_trades": [
   {
    "ts": "2026-11-12T14:49:50Z",
@@ -435,23 +456,23 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 71670.1,
-   "atr": 411.25714285714326,
+   "price": 71512.2,
+   "atr": 426.00714285714326,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
-    "rsi_revert": 0,
+    "rsi_revert": 1,
     "donchian_break": 0,
     "sma_revert": 0
    },
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 2010.21,
-   "atr": 15.765714285714305,
+   "price": 2000.05,
+   "atr": 15.667142857142883,
    "sig": {
     "ema_cross": 0,
-    "momentum": 0,
+    "momentum": -1,
     "rsi_revert": 0,
     "donchian_break": 0,
     "sma_revert": 0
@@ -459,8 +480,8 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 81.67,
-   "atr": 0.6607142857142847,
+   "price": 81.16,
+   "atr": 0.6135714285714278,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -471,5 +492,5 @@
    "err": null
   }
  },
- "updated": "2026-11-12T16:04:06Z"
+ "updated": "2026-11-12T16:44:12Z"
 }
