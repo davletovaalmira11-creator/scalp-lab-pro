@@ -1,19 +1,7 @@
 {
  "capital_start": 1000.0,
- "equity": 1100.259797283624,
+ "equity": 1096.0931301508017,
  "positions": {
-  "streak_bb-SUIUSDT-5m": {
-   "strategy": "streak_bb",
-   "symbol": "SUIUSDT",
-   "tf": "5m",
-   "signal": 1.0,
-   "entry": 0.8102,
-   "opened": "2026-11-12 11:25:00",
-   "fee_mode": "maker",
-   "oos_sharpe": 1.84,
-   "last_ts": "2026-11-12 15:10:00",
-   "last_px": 0.7858
-  },
   "vol_burst_revert-ARBUSDT-5m": {
    "strategy": "vol_burst_revert",
    "symbol": "ARBUSDT",
@@ -23,8 +11,20 @@
    "opened": "2026-11-12 13:40:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.93,
-   "last_ts": "2026-11-12 15:10:00",
-   "last_px": 0.1444
+   "last_ts": "2026-11-12 17:30:00",
+   "last_px": 0.1459
+  },
+  "streak_bb-SUIUSDT-5m": {
+   "strategy": "streak_bb",
+   "symbol": "SUIUSDT",
+   "tf": "5m",
+   "signal": -1.0,
+   "entry": 0.7944,
+   "opened": "2026-11-12 15:50:00",
+   "fee_mode": "maker",
+   "oos_sharpe": 1.84,
+   "last_ts": "2026-11-12 17:30:00",
+   "last_px": 0.7966
   }
  },
  "closed": [
@@ -1357,16 +1357,58 @@
    "closed_ts": "2026-11-12 13:40:00",
    "fee_mode": "maker",
    "reason": "signal flip"
+  },
+  {
+   "key": "bb_regime-NEARUSDT-1m",
+   "strategy": "bb_regime",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.433,
+   "exit": 3.403,
+   "pnl_pct": 0.8239,
+   "opened": "2026-11-12 16:05:00",
+   "closed_ts": "2026-11-12 16:42:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
+  },
+  {
+   "key": "bb_maker-NEARUSDT-1m",
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.433,
+   "exit": 3.403,
+   "pnl_pct": 0.8239,
+   "opened": "2026-11-12 16:05:00",
+   "closed_ts": "2026-11-12 16:42:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
+  },
+  {
+   "key": "streak_bb-SUIUSDT-5m",
+   "strategy": "streak_bb",
+   "symbol": "SUIUSDT",
+   "tf": "5m",
+   "side": "long",
+   "entry": 0.8102,
+   "exit": 0.7944,
+   "pnl_pct": -2.0001,
+   "opened": "2026-11-12 11:25:00",
+   "closed_ts": "2026-11-12 15:50:00",
+   "fee_mode": "maker",
+   "reason": "signal flip"
   }
  ],
- "updated": "2026-11-12T15:18:15Z",
- "runs": 81,
+ "updated": "2026-11-12T17:40:01Z",
+ "runs": 82,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-12 15:16:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-12 15:10:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-12 15:16:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-12 15:16:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-12 15:10:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-12 17:38:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-12 17:30:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-12 17:38:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-12 17:38:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-12 17:30:00"
  },
  "tops": [
   {
@@ -1383,8 +1425,8 @@
    "oos_sharpe": 2.77,
    "score": 2.55,
    "signal": 0.0,
-   "sig_last": "2026-11-12 15:00:00",
-   "sig_pct": 23.97
+   "sig_last": "2026-11-12 16:41:00",
+   "sig_pct": 25.25
   },
   {
    "key": "bb_maker-NEARUSDT-1m",
@@ -1399,8 +1441,8 @@
    "oos_sharpe": 3.0,
    "score": 2.49,
    "signal": 0.0,
-   "sig_last": "2026-11-12 15:00:00",
-   "sig_pct": 35.71
+   "sig_last": "2026-11-12 16:41:00",
+   "sig_pct": 34.7
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -1431,9 +1473,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
    "score": 1.84,
-   "signal": 1.0,
-   "sig_last": "2026-11-12 15:10:00",
-   "sig_pct": 87.64
+   "signal": -1.0,
+   "sig_last": "2026-11-12 17:30:00",
+   "sig_pct": 89.03
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -1448,16 +1490,16 @@
    "oos_sharpe": 1.93,
    "score": 1.41,
    "signal": -1.0,
-   "sig_last": "2026-11-12 15:10:00",
-   "sig_pct": 34.84
+   "sig_last": "2026-11-12 17:30:00",
+   "sig_pct": 36.23
   }
  ],
  "stats": {
-  "n_trades": 95,
-  "wins": 58,
-  "winrate": 61.1,
-  "equity": 1100.26,
-  "pnl_pct": 10.03,
+  "n_trades": 98,
+  "wins": 60,
+  "winrate": 61.2,
+  "equity": 1096.09,
+  "pnl_pct": 9.61,
   "open": 2
  },
  "filter_stats": {

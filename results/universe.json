@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-12T17:38:25Z",
+ "updated": "2026-11-12T17:40:01Z",
  "health": {
   "overall": "degraded",
   "modules": {
    "pm_worker": "stale",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "ok"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-12T17:22:36Z",
-  "age_s": 950.0
+  "age_s": 1045.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,24 +37,24 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-12T17:11:07Z",
-  "age_s": 1639.0
+  "age_s": 1734.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-12T15:17:56Z",
-  "age_s": 8430.0,
+  "updated": "2026-11-12T17:39:43Z",
+  "age_s": 18.0,
   "paper": {
-   "equity": 1100.26,
-   "pnl_pct": 10.03,
-   "trades": 95,
-   "winrate": 61.1,
+   "equity": 1096.09,
+   "pnl_pct": 9.61,
+   "trades": 98,
+   "winrate": 61.2,
    "open": 2,
    "tops": 5
   },
-  "paper_updated": "2026-11-12T15:18:15Z",
+  "paper_updated": "2026-11-12T17:40:01Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -337,7 +337,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-12T17:38:25Z",
-  "age_s": 1.0
+  "age_s": 96.0
  },
  "clob": {
   "mode": "off",
@@ -346,6 +346,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-12T17:34:22Z",
-  "age_s": 244.0
+  "age_s": 339.0
  }
 }
