@@ -1,6 +1,6 @@
-"""OmniLab Feed v1 - мультитаймфрейм-фид OKX: свечи 5m/15m/1H/4H + стаканы.
-Система сама находит самые ликвидные монеты (universe_okx.json), качает любые
-нужные ей таймфреймы и снимки стакана (дисбаланс покупатели/продавцы).
+"""OmniLab Feed v2 - мультитаймфрейм-фид OKX: свечи 5m/15m/1H/4H + стаканы.
+v2: теперь сохраняет и время каждой свечи (ts) - мозг учится инкрементально,
+каждый бар ровно один раз, без повторной обработки истории.
 Выход: results/feed_okx.json. Только stdlib, только публичные API."""
 import json, os, time, urllib.request
 
@@ -35,15 +35,18 @@ def ema(vals, n):
 def candles(inst, bar):
     rows = api("/api/v5/market/candles?instId=" + inst + "&bar=" + bar + "&limit=300")
     if not rows:
-        return []
-    out = []
+        return [], []
+    ts = []
+    closes = []
     for r in rows:
         try:
-            out.append(float(r[4]))
+            ts.append(int(r[0]))
+            closes.append(float(r[4]))
         except Exception:
             continue
-    out.reverse()
-    return out
+    ts.reverse()
+    closes.reverse()
+    return ts, closes
 
 def book(inst):
     d = api("/api/v5/market/books?instId=" + inst + "&sz=50")
@@ -65,15 +68,16 @@ def book(inst):
     except Exception:
         return None
 
-def tf_block(c):
+def tf_block(ts, c):
     n = len(c)
     if n < 25:
-        return {"bars": n, "trend": "n/a", "ret12": None, "closes": c}
+        return {"bars": n, "trend": "n/a", "ret12": None, "ts": ts, "closes": c}
     e9 = ema(c[-30:], 9)
     e21 = ema(c[-30:], 21)
     trend = "up" if e9 > e21 else "down"
     ret12 = round((c[-1] / c[-13] - 1) * 100, 2) if n >= 13 else None
-    return {"bars": n, "trend": trend, "ret12": ret12, "closes": c[-KEEP:]}
+    return {"bars": n, "trend": trend, "ret12": ret12,
+            "ts": ts[-KEEP:], "closes": c[-KEEP:]}
 
 def main():
     upath = os.path.join(HERE, "results", "universe_okx.json")
@@ -88,7 +92,8 @@ def main():
         inst = u["instId"]
         entry = {"instId": inst, "coin": u["coin"], "vol24h_usd": u["vol24h_usd"], "tf": {}}
         for tf in TFS:
-            entry["tf"][tf] = tf_block(candles(inst, tf))
+            ts, c = candles(inst, tf)
+            entry["tf"][tf] = tf_block(ts, c)
             time.sleep(0.12)
         entry["book"] = book(inst)
         entry["last"] = u["last"]

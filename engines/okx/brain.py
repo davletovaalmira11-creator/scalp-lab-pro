@@ -1,10 +1,10 @@
-"""OmniLab Brain v1 - адаптивный онлайн-мозг OKX.
-Онлайн-логистическая регрессия: на каждом баре СНАЧАЛА прогноз (walk-forward,
-без подглядывания в будущее), ЗАТЕМ SGD-обновление весов. Веса и статистика
-сохраняются между прогонами - система учится непрерывно, адаптируется под
-любой рынок. Никакой подгонки: в зачёт идут только честные walk-forward
-прогнозы. Вход: results/feed_okx.json. Выход: results/brain_okx.json + веса.
-Только stdlib. Только PAPER."""
+"""OmniLab Brain v2 - адаптивный онлайн-мозг OKX.
+v2 - два критических исправления:
+  1) ИНКРЕМЕНТАЛЬНОСТЬ: каждый бар обрабатывается ровно один раз (watermark
+     по времени свечи) - история больше не пересчитывается каждый прогон.
+  2) ПОРОГИ 0.60/0.40 вместо 0.56/0.44 - меньше сделок, издержки не сжигают PnL.
+Walk-forward честно: прогноз ВСЕГДА до обновления весов. Веса персистентны.
+Вход: results/feed_okx.json. Выход: results/brain_okx.json. Только PAPER."""
 import json, math, os, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -16,11 +16,11 @@ STATE = os.path.join(R, "brain_state.json")
 
 LR = 0.05
 L2 = 1e-4
-LONG_P = 0.56
-SHORT_P = 0.44
+LONG_P = 0.60
+SHORT_P = 0.40
 COST_PCT = 0.10
-WARMUP = 35
-MIN_BARS = 60
+MIN_BARS = 40
+STATE_V = 2
 
 def clip(x, lim):
     return max(-lim, min(lim, x))
@@ -83,7 +83,13 @@ def main():
         print("brain: FAIL - feed_okx.json пуст, запусти feed.py первым")
         return
     w = load_json(WTS, {}).get("w") or [0.0] * 8
-    st = load_json(STATE, {"equity_pct": 0.0, "trades": 0, "wins": 0, "curve": []})
+    st = load_json(STATE, {})
+    if st.get("v") != STATE_V:
+        st = {"v": STATE_V, "equity_pct": 0.0, "trades": 0, "wins": 0, "curve": [],
+              "watermarks": {}}
+    if "watermarks" not in st:
+        st["watermarks"] = {}
+    wm = st["watermarks"]
 
     preds = correct = 0
     trades_run = 0
@@ -93,13 +99,23 @@ def main():
     signals = []
 
     for coin in feed["coins"]:
-        c = (coin.get("tf") or {}).get("15m", {}).get("closes") or []
+        inst = coin.get("instId")
+        tf = (coin.get("tf") or {}).get("15m", {})
+        c = tf.get("closes") or []
+        ts = tf.get("ts") or []
         imb = (coin.get("book") or {}).get("imbalance") or 0.0
         if len(c) < MIN_BARS:
             continue
+        last_wm = wm.get(inst)
+        start = 25
+        if last_wm is not None and ts:
+            start = 25
+            while start < len(ts) and ts[start] <= last_wm:
+                start += 1
         cc = cp = ct = cw = 0
         cpnl = 0.0
-        for i in range(25, len(c) - 1):
+        new_bars = 0
+        for i in range(start, len(c) - 1):
             x = features(c[:i + 1])
             if x is None:
                 continue
@@ -107,32 +123,34 @@ def main():
             p = sigmoid(z)
             nxt = (c[i + 1] / c[i] - 1) * 100
             y = 1 if nxt > 0.03 else 0
-            if i >= 25 + WARMUP:
-                preds += 1
-                cc += 1
-                if (p >= 0.5) == (nxt > 0):
-                    correct += 1
-                    cp += 1
-                if p >= LONG_P or p <= SHORT_P:
-                    trades_run += 1
-                    ct += 1
-                    pnl = nxt - COST_PCT if p >= LONG_P else -nxt - COST_PCT
-                    pnl_run += pnl
-                    cpnl += pnl
-                    if pnl > 0:
-                        wins_run += 1
-                        cw += 1
+            preds += 1
+            cc += 1
+            new_bars += 1
+            if (p >= 0.5) == (nxt > 0):
+                correct += 1
+                cp += 1
+            if p >= LONG_P or p <= SHORT_P:
+                trades_run += 1
+                ct += 1
+                pnl = nxt - COST_PCT if p >= LONG_P else -nxt - COST_PCT
+                pnl_run += pnl
+                cpnl += pnl
+                if pnl > 0:
+                    wins_run += 1
+                    cw += 1
             err = y - p
             for j in range(len(x)):
                 w[j] += LR * err * x[j] - L2 * w[j]
+        if ts:
+            wm[inst] = ts[-1]
         x = features(c)
         if x:
             z = sum(w[j] * x[j] for j in range(len(x)))
             p = sigmoid(z)
             side = "long" if p >= LONG_P else ("short" if p <= SHORT_P else "wait")
-            signals.append({"instId": coin.get("instId"), "p": round(p, 3), "side": side,
+            signals.append({"instId": inst, "p": round(p, 3), "side": side,
                             "imbalance": round(imb, 3)})
-        per_coin.append({"instId": coin.get("instId"),
+        per_coin.append({"instId": inst, "new_bars": new_bars,
                          "preds": cc, "acc": round(100.0 * cp / cc, 1) if cc else None,
                          "trades": ct, "pnl_pct": round(cpnl, 2)})
 
@@ -145,7 +163,8 @@ def main():
     save_json(WTS, {"w": w, "updated": now})
     save_json(STATE, st)
     out = {
-        "updated": now, "mode": "paper-online-ml", "engine": "logreg-sgd-walkforward",
+        "updated": now, "v": STATE_V, "mode": "paper-online-ml",
+        "engine": "logreg-sgd-incremental-walkforward",
         "equity_pct": st["equity_pct"], "trades": st["trades"],
         "winrate": round(100.0 * st["wins"] / st["trades"], 1) if st["trades"] else None,
         "accuracy": round(100.0 * correct / preds, 2) if preds else None,
@@ -154,8 +173,8 @@ def main():
         "signals": signals, "per_coin": per_coin, "curve": curve,
     }
     save_json(OUT, out)
-    print("brain v1: acc=%s%% preds=%d trades_total=%d equity=%+.2f%% signals=%d" % (
-        out["accuracy"], preds, st["trades"], st["equity_pct"], len(signals)))
+    print("brain v2: new_bars_preds=%d acc=%s%% trades_total=%d equity=%+.2f%% signals=%d" % (
+        preds, out["accuracy"], st["trades"], st["equity_pct"], len(signals)))
 
 if __name__ == "__main__":
     main()
