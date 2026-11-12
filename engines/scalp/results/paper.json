@@ -11,8 +11,20 @@
    "opened": "2026-11-12 04:30:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-12 05:40:00",
-   "last_px": 0.8161
+   "last_ts": "2026-11-12 06:40:00",
+   "last_px": 0.8124
+  },
+  "vol_burst_revert-ARBUSDT-5m": {
+   "strategy": "vol_burst_revert",
+   "symbol": "ARBUSDT",
+   "tf": "5m",
+   "signal": 1.0,
+   "entry": 0.1498,
+   "opened": "2026-11-12 06:40:00",
+   "fee_mode": "maker",
+   "oos_sharpe": 1.93,
+   "last_ts": "2026-11-12 06:40:00",
+   "last_px": 0.1498
   }
  },
  "closed": [
@@ -1179,14 +1191,15 @@
    "reason": "flat signal"
   }
  ],
- "updated": "2026-11-12T05:45:28Z",
- "runs": 76,
+ "updated": "2026-11-12T06:49:31Z",
+ "runs": 77,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-12 05:44:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-12 05:40:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-12 05:44:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-12 05:44:00",
-  "wick_vol-OPUSDT-15m": "2026-11-12 05:30:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-12 06:48:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-12 06:40:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-12 06:48:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-12 06:48:00",
+  "wick_vol-OPUSDT-15m": "2026-11-12 06:30:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-12 06:40:00"
  },
  "tops": [
   {
@@ -1220,7 +1233,7 @@
    "score": 2.49,
    "signal": 0.0,
    "sig_last": "2026-11-12 04:43:00",
-   "sig_pct": 36.51
+   "sig_pct": 35.81
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -1252,8 +1265,24 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": 1.0,
-   "sig_last": "2026-11-12 05:40:00",
-   "sig_pct": 87.39
+   "sig_last": "2026-11-12 06:40:00",
+   "sig_pct": 87.99
+  },
+  {
+   "key": "vol_burst_revert-ARBUSDT-5m",
+   "strategy": "vol_burst_revert",
+   "symbol": "ARBUSDT",
+   "tf": "5m",
+   "params": {
+    "h": 120,
+    "vz": 6.0
+   },
+   "fee_mode": "maker",
+   "oos_sharpe": 1.93,
+   "score": 1.41,
+   "signal": 1.0,
+   "sig_last": "2026-11-12 06:40:00",
+   "sig_pct": 40.1
   },
   {
    "key": "wick_vol-OPUSDT-15m",
@@ -1279,16 +1308,16 @@
   "winrate": 63.9,
   "equity": 1093.11,
   "pnl_pct": 9.31,
-  "open": 1
+  "open": 2
  },
  "filter_stats": {
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1424,
+  "low_pf": 1423,
   "low_t": 83,
   "no_params": 0,
-  "admitted": 5
+  "admitted": 6
  },
  "candidates": [
   {
