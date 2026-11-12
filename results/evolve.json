@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-12T05:02:08Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 4,
+   "err": null
+  },
+  {
    "ts": "2026-11-12T03:56:51Z",
    "best": {},
    "portfolio": [],
@@ -144,28 +151,28 @@
    "err": null
   }
  ],
- "updated": "2026-11-12T03:56:51Z",
+ "updated": "2026-11-12T05:02:08Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": 2.32,
-   "oos_ret": -5.36,
+   "is_ret": 2.29,
+   "oos_ret": -5.33,
    "trades": 18,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -2.66,
-   "oos_ret": -8.42,
-   "trades": 29,
+   "is_ret": 0.98,
+   "oos_ret": -7.67,
+   "trades": 32,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -3.36,
-   "oos_ret": -1.34,
-   "trades": 28,
+   "is_ret": -4.87,
+   "oos_ret": -2.87,
+   "trades": 31,
    "portfolio": false
   },
   {
@@ -177,9 +184,9 @@
   },
   {
    "strategy": "sma_revert",
-   "is_ret": -0.78,
+   "is_ret": 1.7,
    "oos_ret": -3.32,
-   "trades": 23,
+   "trades": 26,
    "portfolio": false
   }
  ],
@@ -187,24 +194,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.431,
+   "okx_mom_pct": -0.216,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T03:56:51Z"
+   "ts": "2026-11-12T05:02:08Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.397,
+   "okx_mom_pct": -0.433,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T03:56:51Z"
+   "ts": "2026-11-12T05:02:08Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.395,
+   "okx_mom_pct": -0.54,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T03:56:51Z"
+   "ts": "2026-11-12T05:02:08Z"
   }
  ],
  "golden": [
@@ -212,11 +219,6 @@
    "src": "polymarket-lab",
    "name": "Модель точнее монетки",
    "note": "Brier < 0.25 на обеих половинах"
-  },
-  {
-   "src": "polymarket-lab",
-   "name": "Смесь 50/50 модели и рынка бьёт обоих",
-   "note": "Brier смеси < min(модель, рынок) на обеих половинах"
   },
   {
    "src": "walk-forward bt",
