@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-12T20:52:56Z",
+ "updated": "2026-11-12T20:53:52Z",
  "health": {
   "overall": "degraded",
   "modules": {
    "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
-   "pm_trader": "stale"
+   "okx_trader": "ok",
+   "pm_trader": "ok"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-12T20:10:07Z",
-  "age_s": 2569.0
+  "age_s": 2626.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,7 +39,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-12T19:59:30Z",
-  "age_s": 3206.0
+  "age_s": 3263.0
  },
  "scalp": {
   "done": 2662,
@@ -47,7 +47,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-12T20:34:59Z",
-  "age_s": 1077.0,
+  "age_s": 1134.0,
   "paper": {
    "equity": 1096.09,
    "pnl_pct": 9.61,
@@ -297,8 +297,8 @@
   "open": 4,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 71602.0,
-    "atr": 227.1571428571437,
+    "price": 71551.0,
+    "atr": 204.43571428571573,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -309,20 +309,20 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 2021.3,
-    "atr": 7.633571428571453,
+    "price": 2019.78,
+    "atr": 7.02928571428572,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
-     "rsi_revert": -1,
+     "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
     },
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 81.57,
-    "atr": 0.36857142857142833,
+    "price": 81.45,
+    "atr": 0.336428571428572,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -377,8 +377,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-12T20:25:46Z",
-  "age_s": 1630.0
+  "updated": "2026-11-12T20:53:36Z",
+  "age_s": 17.0
  },
  "clob": {
   "mode": "off",
@@ -386,7 +386,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-12T20:14:13Z",
-  "age_s": 2323.0
+  "updated": "2026-11-12T20:53:51Z",
+  "age_s": 2.0
  }
 }
