@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T05:41:03Z",
+ "updated": "2026-11-12T05:45:29Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-12T05:39:46Z",
-  "age_s": 77.0
+  "age_s": 343.0
  },
  "pm_lab": {
   "status": "ready",
@@ -37,24 +37,24 @@
    "Модель точнее монетки"
   ],
   "updated": "2026-11-12T05:41:03Z",
-  "age_s": 0.0
+  "age_s": 266.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-12T04:42:53Z",
-  "age_s": 3490.0,
+  "updated": "2026-11-12T05:45:01Z",
+  "age_s": 28.0,
   "paper": {
-   "equity": 1084.3,
-   "pnl_pct": 8.43,
-   "trades": 80,
-   "winrate": 63.8,
-   "open": 4,
+   "equity": 1093.11,
+   "pnl_pct": 9.31,
+   "trades": 83,
+   "winrate": 63.9,
+   "open": 1,
    "tops": 5
   },
-  "paper_updated": "2026-11-12T04:43:14Z",
+  "paper_updated": "2026-11-12T05:45:28Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -114,23 +114,23 @@
     "usd_per_month_1000": "131.39"
    },
    {
-    "strategy": "vol_burst_revert",
-    "symbol": "ARBUSDT",
-    "tf": "5m",
-    "oos_sharpe": "1.935",
-    "oos_pf": "1.029",
-    "oos_t": "1.84",
-    "trades": "894",
-    "param_stability": "0.26",
-    "is_sharpe_avg": "4.25",
-    "folds": "47",
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
     "fee_mode": "maker",
-    "maker_sharpe": "1.9345995554905253",
-    "maker_pf": "1.0292257515978214",
-    "daily_pct": "0.002234",
-    "monthly_pct": "0.069224",
-    "trades_per_day": "2.45",
-    "usd_per_month_1000": "69.22"
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
@@ -377,7 +377,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-12T05:33:42Z",
-  "age_s": 441.0
+  "age_s": 707.0
  },
  "clob": {
   "mode": "off",
@@ -386,6 +386,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-12T05:25:16Z",
-  "age_s": 947.0
+  "age_s": 1213.0
  }
 }
