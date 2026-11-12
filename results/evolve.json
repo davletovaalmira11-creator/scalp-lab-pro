@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-12T19:56:56Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 6,
+   "err": null
+  },
+  {
    "ts": "2026-11-12T18:57:50Z",
    "best": {},
    "portfolio": [],
@@ -326,42 +333,35 @@
    "err": null
   }
  ],
- "updated": "2026-11-12T18:57:50Z",
+ "updated": "2026-11-12T19:56:56Z",
  "best_okx": null,
  "strategy_stats": [
   {
-   "strategy": "ema_cross",
-   "is_ret": -4.13,
-   "oos_ret": -0.08,
-   "trades": 16,
-   "portfolio": false
-  },
-  {
    "strategy": "momentum",
-   "is_ret": 1.81,
-   "oos_ret": -3.52,
-   "trades": 26,
+   "is_ret": 3.65,
+   "oos_ret": -3.03,
+   "trades": 24,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
    "is_ret": -5.06,
-   "oos_ret": -5.01,
-   "trades": 29,
+   "oos_ret": -5.46,
+   "trades": 28,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -7.96,
-   "oos_ret": -0.22,
-   "trades": 27,
+   "is_ret": -7.45,
+   "oos_ret": 0.54,
+   "trades": 25,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
-   "is_ret": 2.56,
+   "is_ret": 4.37,
    "oos_ret": 1.42,
-   "trades": 24,
+   "trades": 21,
    "portfolio": true
   }
  ],
@@ -369,24 +369,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.04,
+   "okx_mom_pct": 0.001,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T18:57:50Z"
+   "ts": "2026-11-12T19:56:56Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.336,
+   "okx_mom_pct": 0.558,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T18:57:50Z"
+   "ts": "2026-11-12T19:56:56Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.196,
+   "okx_mom_pct": 0.356,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-12T18:57:50Z"
+   "ts": "2026-11-12T19:56:56Z"
   }
  ],
  "golden": [
@@ -394,6 +394,16 @@
    "src": "polymarket-lab",
    "name": "Модель точнее монетки",
    "note": "Brier < 0.25 на обеих половинах"
+  },
+  {
+   "src": "polymarket-lab",
+   "name": "Правило «эдж ≥ 5%» с положительным EV",
+   "note": "бэктест по снимкам, 1 сделка на окно"
+  },
+  {
+   "src": "polymarket-lab",
+   "name": "Смесь 50/50 модели и рынка бьёт обоих",
+   "note": "Brier смеси < min(модель, рынок) на обеих половинах"
   },
   {
    "src": "walk-forward bt",
