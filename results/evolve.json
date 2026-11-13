@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-13T10:43:46Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-13T10:00:28Z",
    "best": {},
    "portfolio": [],
@@ -342,23 +349,23 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-12T02:16:40Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 4,
-   "err": null
   }
  ],
- "updated": "2026-11-13T10:00:28Z",
+ "updated": "2026-11-13T10:43:46Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": 4.85,
-   "oos_ret": -2.53,
-   "trades": 18,
+   "is_ret": 5.12,
+   "oos_ret": -3.95,
+   "trades": 20,
+   "portfolio": false
+  },
+  {
+   "strategy": "rsi_revert",
+   "is_ret": 3.41,
+   "oos_ret": -6.85,
+   "trades": 20,
    "portfolio": false
   },
   {
@@ -367,37 +374,30 @@
    "oos_ret": -1.1,
    "trades": 28,
    "portfolio": false
-  },
-  {
-   "strategy": "sma_revert",
-   "is_ret": -2.35,
-   "oos_ret": 6.69,
-   "trades": 17,
-   "portfolio": false
   }
  ],
  "portfolio": [],
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.012,
+   "okx_mom_pct": 0.705,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-13T10:00:28Z"
+   "ts": "2026-11-13T10:43:46Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.079,
+   "okx_mom_pct": 0.476,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-13T10:00:28Z"
+   "ts": "2026-11-13T10:43:46Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.323,
+   "okx_mom_pct": 0.3,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-13T10:00:28Z"
+   "ts": "2026-11-13T10:43:46Z"
   }
  ],
  "golden": [
@@ -410,11 +410,6 @@
    "src": "polymarket-lab",
    "name": "Правило «эдж ≥ 5%» с положительным EV",
    "note": "бэктест по снимкам, 1 сделка на окно"
-  },
-  {
-   "src": "polymarket-lab",
-   "name": "Смесь 50/50 модели и рынка бьёт обоих",
-   "note": "Brier смеси < min(модель, рынок) на обеих половинах"
   },
   {
    "src": "walk-forward bt",
