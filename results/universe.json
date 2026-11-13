@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T13:46:04Z",
+ "updated": "2026-11-13T13:55:10Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,21 +25,21 @@
    "acc": 51.2
   },
   "updated": "2026-11-13T12:43:28Z",
-  "age_s": 3756.0
+  "age_s": 4303.0
  },
  "pm_lab": {
   "status": "ready",
   "status_note": "База достаточна. Подтверждённых OOS закономерностей: 3 из 8 гипотез.",
   "windows": 5030,
-  "settled": 3978,
+  "settled": 4008,
   "snaps": 16995,
   "golden": [
    "Модель точнее монетки",
    "Правило «эдж ≥ 5%» с положительным EV",
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
-  "updated": "2026-11-13T12:39:01Z",
-  "age_s": 4023.0
+  "updated": "2026-11-13T13:55:10Z",
+  "age_s": 1.0
  },
  "scalp": {
   "done": 2662,
@@ -47,7 +47,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-13T13:34:10Z",
-  "age_s": 714.0,
+  "age_s": 1261.0,
   "paper": {
    "equity": 888.83,
    "pnl_pct": -11.12,
@@ -349,7 +349,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-13T12:40:29Z",
-  "age_s": 3935.0
+  "age_s": 4482.0
  },
  "clob": {
   "mode": "off",
@@ -358,6 +358,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-13T13:46:04Z",
-  "age_s": 0.0
+  "age_s": 547.0
  }
 }
