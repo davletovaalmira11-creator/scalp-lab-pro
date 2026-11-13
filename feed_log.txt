@@ -6,6 +6,6 @@ feed: ZEC-USDT-SWAP ok (15m bars=300)
 feed: NVDA-USDT-SWAP ok (15m bars=300)
 feed: SOL-USDT-SWAP ok (15m bars=300)
 feed: XAU-USDT-SWAP ok (15m bars=300)
-feed: XRP-USDT-SWAP ok (15m bars=300)
 feed: PEPE-USDT-SWAP ok (15m bars=300)
+feed: XRP-USDT-SWAP ok (15m bars=300)
 feed: done coins=10 tfs=5m/15m/1H/4H
