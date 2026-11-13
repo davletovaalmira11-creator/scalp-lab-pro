@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-13T08:44:35Z",
+ "updated": "2026-11-13T08:57:18Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
-   "pm_worker": "stale",
+   "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
@@ -24,8 +24,8 @@
    "brier": 0.2138,
    "acc": 51.2
   },
-  "updated": "2026-11-13T08:00:11Z",
-  "age_s": 2665.0
+  "updated": "2026-11-13T08:57:18Z",
+  "age_s": 0.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,7 +39,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-13T08:37:43Z",
-  "age_s": 413.0
+  "age_s": 1175.0
  },
  "scalp": {
   "done": 2662,
@@ -47,7 +47,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-13T08:02:38Z",
-  "age_s": 2518.0,
+  "age_s": 3280.0,
   "paper": {
    "equity": 967.11,
    "pnl_pct": -3.29,
@@ -359,7 +359,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-13T08:44:35Z",
-  "age_s": 1.0
+  "age_s": 763.0
  },
  "clob": {
   "mode": "off",
@@ -368,6 +368,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-13T08:39:42Z",
-  "age_s": 294.0
+  "age_s": 1056.0
  }
 }
