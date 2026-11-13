@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-13T10:00:29Z",
+ "updated": "2026-11-13T10:23:03Z",
  "health": {
-  "overall": "ok",
+  "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "ok",
-   "pm_trader": "ok"
+   "okx_trader": "stale",
+   "pm_trader": "stale"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-13T09:55:16Z",
-  "age_s": 313.0
+  "age_s": 1668.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,24 +39,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-13T09:38:11Z",
-  "age_s": 1338.0
+  "age_s": 2693.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-13T09:20:20Z",
-  "age_s": 2409.0,
+  "updated": "2026-11-13T10:22:39Z",
+  "age_s": 25.0,
   "paper": {
-   "equity": 895.58,
-   "pnl_pct": -10.44,
-   "trades": 115,
-   "winrate": 58.3,
-   "open": 3,
-   "tops": 6
+   "equity": 892.27,
+   "pnl_pct": -10.77,
+   "trades": 116,
+   "winrate": 57.8,
+   "open": 2,
+   "tops": 5
   },
-  "paper_updated": "2026-11-13T09:20:47Z",
+  "paper_updated": "2026-11-13T10:23:03Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -133,25 +133,6 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
-   },
-   {
-    "strategy": "wick_vol",
-    "symbol": "OPUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.926",
-    "oos_pf": "1.06",
-    "oos_t": "1.77",
-    "trades": "481",
-    "param_stability": "0.23",
-    "is_sharpe_avg": "4.68",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.925813634658203",
-    "maker_pf": "1.0600588209386734",
-    "daily_pct": "0.001777",
-    "monthly_pct": "0.054707",
-    "trades_per_day": "1.32",
-    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
@@ -388,7 +369,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-13T09:42:53Z",
-  "age_s": 1056.0
+  "age_s": 2411.0
  },
  "clob": {
   "mode": "off",
@@ -397,6 +378,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-13T09:43:07Z",
-  "age_s": 1042.0
+  "age_s": 2397.0
  }
 }
