@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-13T02:54:44Z",
+ "updated": "2026-11-13T03:44:55Z",
  "scanned": 200,
  "signals": [
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-dip-to-70k-in-november-2026",
-   "question": "Will Bitcoin dip to $70,000 in November?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 201572 против среднего 44146",
-   "liq": 200420,
-   "v24": 201572,
-   "z": 0.0,
-   "end": "2026-12-01",
-   "days_left": 17.9,
-   "tradeable": false
-  },
   {
    "strategy": "vols",
    "slug": "bitcoin-above-82k-on-november-13-2026",
@@ -25,26 +10,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 36676 против среднего 6716",
-   "liq": 135495,
+   "liq": 135504,
    "v24": 36676,
    "z": 0.0,
    "end": "2026-11-13",
    "days_left": 0.0,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-dip-to-70k-november-9-15-2026",
-   "question": "Will Bitcoin dip to $70,000 November 9-15?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 40947 против среднего 8935",
-   "liq": 132254,
-   "v24": 40947,
-   "z": 0.0,
-   "end": "2026-11-16",
-   "days_left": 2.9,
    "tradeable": false
   }
  ]
