@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T20:18:14Z",
+ "updated": "2026-11-13T21:12:11Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,27 +9,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 64652 против среднего 17048",
-   "liq": 182212,
-   "v24": 64652,
+   "note": "объём 24ч 63011 против среднего 17047",
+   "liq": 171290,
+   "v24": 63011,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 48.2,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-reach-90000-by-december-31-2026-113-862-581-343",
-   "question": "Will Bitcoin reach $90,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 122917 против среднего 38700",
-   "liq": 166766,
-   "v24": 122917,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 48.2,
+   "days_left": 48.1,
    "tradeable": false
   },
   {
@@ -39,12 +24,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 133359 против среднего 39598",
-   "liq": 164759,
-   "v24": 133359,
+   "note": "объём 24ч 138873 против среднего 40385",
+   "liq": 151784,
+   "v24": 138873,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 48.2,
+   "days_left": 48.1,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-reach-90000-by-december-31-2026-113-862-581-343",
+   "question": "Will Bitcoin reach $90,000 by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 125853 против среднего 39086",
+   "liq": 147925,
+   "v24": 125853,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 48.1,
    "tradeable": false
   },
   {
@@ -55,26 +55,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 10172 против среднего 2140",
-   "liq": 148681,
+   "liq": 134235,
    "v24": 10172,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 48.2,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-dip-to-60k-by-december-31-2026-from-july-21",
-   "question": "Will Bitcoin dip to $60,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 154420 против среднего 45834",
-   "liq": 125347,
-   "v24": 154420,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 48.2,
+   "days_left": 48.1,
    "tradeable": false
   }
  ]
