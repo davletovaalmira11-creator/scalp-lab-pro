@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T17:27:23Z",
+ "updated": "2026-11-13T17:37:13Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -7,7 +7,7 @@
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
-   "pm_trader": "ok"
+   "pm_trader": "stale"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-13T16:31:58Z",
-  "age_s": 3326.0
+  "age_s": 3915.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,24 +39,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-13T16:59:38Z",
-  "age_s": 1666.0
+  "age_s": 2255.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-13T16:38:13Z",
-  "age_s": 2951.0,
+  "updated": "2026-11-13T17:36:50Z",
+  "age_s": 23.0,
   "paper": {
    "equity": 903.54,
    "pnl_pct": -9.65,
    "trades": 127,
    "winrate": 56.7,
    "open": 1,
-   "tops": 6
+   "tops": 5
   },
-  "paper_updated": "2026-11-13T16:38:38Z",
+  "paper_updated": "2026-11-13T17:37:12Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -133,25 +133,6 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
-   },
-   {
-    "strategy": "wick_vol",
-    "symbol": "OPUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.926",
-    "oos_pf": "1.06",
-    "oos_t": "1.77",
-    "trades": "481",
-    "param_stability": "0.23",
-    "is_sharpe_avg": "4.68",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.925813634658203",
-    "maker_pf": "1.0600588209386734",
-    "daily_pct": "0.001777",
-    "monthly_pct": "0.054707",
-    "trades_per_day": "1.32",
-    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
@@ -358,7 +339,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-13T17:27:23Z",
-  "age_s": 1.0
+  "age_s": 590.0
  },
  "clob": {
   "mode": "off",
@@ -367,6 +348,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-13T17:05:51Z",
-  "age_s": 1293.0
+  "age_s": 1882.0
  }
 }
