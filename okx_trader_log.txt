@@ -1,1 +1,1 @@
-okx trader v2: mode=paper equity=1000.91 open=3 trades=30 strategies=['donchian_break']
+okx trader v2: mode=paper equity=1001.04 open=0 trades=33 strategies=['donchian_break']
