@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-13T02:54:44Z",
+ "updated": "2026-11-13T03:09:24Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "ok"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-13T02:54:44Z",
-  "age_s": 1.0
+  "age_s": 880.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,24 +39,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-13T02:28:21Z",
-  "age_s": 1584.0
+  "age_s": 2463.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-12T23:26:42Z",
-  "age_s": 12483.0,
+  "updated": "2026-11-13T03:08:58Z",
+  "age_s": 26.0,
   "paper": {
-   "equity": 1088.32,
-   "pnl_pct": 8.83,
-   "trades": 103,
-   "winrate": 60.2,
-   "open": 2,
-   "tops": 5
+   "equity": 1076.95,
+   "pnl_pct": 7.69,
+   "trades": 109,
+   "winrate": 61.5,
+   "open": 4,
+   "tops": 6
   },
-  "paper_updated": "2026-11-12T23:27:07Z",
+  "paper_updated": "2026-11-13T03:09:23Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -211,6 +211,25 @@
     "usd_per_month_1000": "44.46"
    },
    {
+    "strategy": "wick_vol",
+    "symbol": "APTUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.186",
+    "oos_pf": "1.057",
+    "oos_t": "2.18",
+    "trades": "1753",
+    "param_stability": "0.5",
+    "is_sharpe_avg": "1.64",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.1859517047972608",
+    "maker_pf": "1.057189890449977",
+    "daily_pct": "0.000743",
+    "monthly_pct": "0.022529",
+    "trades_per_day": "1.2",
+    "usd_per_month_1000": "22.53"
+   },
+   {
     "strategy": "vol_pop",
     "symbol": "UNIUSDT",
     "tf": "15m",
@@ -329,7 +348,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-13T02:51:49Z",
-  "age_s": 176.0
+  "age_s": 1055.0
  },
  "clob": {
   "mode": "off",
@@ -338,6 +357,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-13T02:52:04Z",
-  "age_s": 161.0
+  "age_s": 1040.0
  }
 }
