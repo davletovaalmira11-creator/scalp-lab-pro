@@ -1,1 +1,1 @@
-evolve v2: portfolio=['donchian_break'] stats=4 golden=6 err=None
+evolve v2: portfolio=[] stats=4 golden=6 err=None
