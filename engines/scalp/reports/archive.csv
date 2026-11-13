@@ -13,6 +13,7 @@ spike_revert,SUIUSDT,5m,2.251,1.132,2.14,147,47,0.26,365,,filtered
 spike_revert,LTCUSDT,15m,2.103,1.121,1.93,122,22,0.23,365,,filtered
 spike_bb,SOLUSDT,5m,2.081,1.123,1.98,129,47,0.19,365,,filtered
 vol_burst_revert,ARBUSDT,5m,1.935,1.029,1.84,894,47,0.26,365,,passed
+wick_vol,OPUSDT,15m,1.926,1.06,1.77,481,22,0.23,365,,passed
 spike_bb,BNBUSDT,5m,1.9,1.184,1.8,55,47,0.32,365,,filtered
 squeeze_pop,XRPUSDT,5m,1.88,1.084,1.78,183,47,0.3,365,,filtered
 spike_follow,SOLUSDT,1m,1.878,1.107,1.22,85,31,0.35,180,,filtered
@@ -315,7 +316,6 @@ qr_revert,SUIUSDT,1m,0.153,1.001,0.1,4072,31,0.68,180,,filtered
 bb_vol,XRPUSDT,15m,0.152,1.005,0.14,417,22,0.14,365,,filtered
 vol_drift,SOLUSDT,15m,0.15,1.003,0.14,278,22,0.36,365,,filtered
 squeeze_pop,LINKUSDT,15m,0.145,1.012,0.13,52,22,0.41,365,,filtered
-wick_vol,OPUSDT,15m,0.144,1.006,0.19,927,22,0.18,730,,filtered
 bb_regime,LTCUSDT,5m,0.144,1.002,0.27,4346,47,0.26,1460,,filtered
 bb_maker,LTCUSDT,5m,0.141,1.002,0.13,1594,47,0.34,365,,filtered
 bb_regime,AVAXUSDT,5m,0.129,1.002,0.12,1134,47,0.26,365,,filtered
@@ -696,7 +696,6 @@ bb_vol,APTUSDT,5m,-0.431,0.993,-0.41,1207,47,0.13,365,,filtered
 level_fade,NEARUSDT,15m,-0.433,0.992,-0.4,950,22,0.41,365,,filtered
 squeeze_pop,DOGEUSDT,5m,-0.439,0.983,-0.42,194,47,0.51,365,,filtered
 spike_revert,ARBUSDT,15m,-0.444,0.975,-0.58,332,22,0.18,730,,filtered
-vol_burst_revert,UNIUSDT,1m,-0.444,0.997,-0.41,3827,31,0.29,360,,filtered
 bb_maker,NEARUSDT,15m,-0.446,0.991,-0.41,664,22,0.32,365,,filtered
 streak_vol,UNIUSDT,5m,-0.447,0.992,-0.42,1194,47,0.19,365,,filtered
 spike_follow,LTCUSDT,5m,-0.448,0.973,-0.43,124,47,0.28,365,,filtered
@@ -1103,6 +1102,7 @@ vol_drift,BNBUSDT,5m,-1.584,0.981,-1.5,680,47,0.6,365,,filtered
 squeeze_pop,APTUSDT,15m,-1.585,0.855,-1.46,32,22,0.45,365,,filtered
 bb_vol,SUIUSDT,1m,-1.586,0.987,-1.03,2351,31,0.19,180,,filtered
 vol_drift,DOGEUSDT,5m,-1.587,0.981,-1.51,843,47,0.36,365,,filtered
+vol_burst_revert,UNIUSDT,1m,-1.588,0.989,-2.07,8828,31,0.39,720,,filtered
 bb_fast,OPUSDT,5m,-1.588,0.977,-1.51,3428,47,0.32,365,,filtered
 streak_bb,BNBUSDT,5m,-1.595,0.984,-1.51,2477,47,0.34,365,,filtered
 vol_burst_revert,NEARUSDT,15m,-1.6,0.96,-1.47,241,22,0.23,365,,filtered
