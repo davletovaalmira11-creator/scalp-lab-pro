@@ -11,8 +11,8 @@
    "opened": "2026-11-14 07:15:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-14 10:20:00",
-   "last_px": 0.7721
+   "last_ts": "2026-11-14 11:55:00",
+   "last_px": 0.7726
   }
  },
  "closed": [
@@ -2047,14 +2047,14 @@
    "reason": "flat signal"
   }
  ],
- "updated": "2026-11-14T10:26:25Z",
- "runs": 115,
+ "updated": "2026-11-14T12:03:47Z",
+ "runs": 116,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-14 10:24:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-14 10:20:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-14 10:24:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-14 10:24:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-14 10:20:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-14 12:02:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-14 11:55:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-14 12:02:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-14 12:02:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-14 11:55:00"
  },
  "tops": [
   {
@@ -2088,7 +2088,7 @@
    "score": 2.49,
    "signal": 0.0,
    "sig_last": "2026-11-14 10:20:00",
-   "sig_pct": 45.85
+   "sig_pct": 41.68
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -2120,7 +2120,7 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": 1.0,
-   "sig_last": "2026-11-14 10:20:00",
+   "sig_last": "2026-11-14 11:55:00",
    "sig_pct": 89.23
   },
   {
@@ -2152,8 +2152,8 @@
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1424,
-  "low_t": 83,
+  "low_pf": 1425,
+  "low_t": 82,
   "no_params": 0,
   "admitted": 5
  },
