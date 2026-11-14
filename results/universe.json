@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T19:58:21Z",
+ "updated": "2026-11-14T20:02:37Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-14T19:55:38Z",
-  "age_s": 163.0
+  "age_s": 419.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-14T19:47:51Z",
-  "age_s": 630.0
+  "age_s": 886.0
  },
  "scalp": {
   "done": 2662,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-14T19:57:56Z",
-  "age_s": 25.0,
+  "age_s": 281.0,
   "paper": {
    "equity": 830.8,
    "pnl_pct": -16.92,
@@ -220,11 +220,11 @@
   "open": 7,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 65657.5,
-    "atr": 361.8428571428553,
+    "price": 65794.0,
+    "atr": 354.4499999999986,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -232,11 +232,11 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1832.9,
-    "atr": 15.039285714285727,
+    "price": 1836.22,
+    "atr": 14.222142857142883,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": -1,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -244,12 +244,12 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 72.22,
-    "atr": 0.6421428571428598,
+    "price": 72.29,
+    "atr": 0.5935714285714317,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
-     "rsi_revert": 1,
+     "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
     },
@@ -330,8 +330,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-14T19:43:22Z",
-  "age_s": 899.0
+  "updated": "2026-11-14T20:02:21Z",
+  "age_s": 16.0
  },
  "clob": {
   "mode": "off",
@@ -339,7 +339,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-14T19:53:37Z",
-  "age_s": 284.0
+  "updated": "2026-11-14T20:02:35Z",
+  "age_s": 2.0
  }
 }
