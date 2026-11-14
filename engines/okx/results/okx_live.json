@@ -32,6 +32,26 @@
     "tp": 1883.655714285714,
     "sl": 1926.5842857142857,
     "opened": "2026-11-14T09:11:54Z"
+   },
+   "momentum|ETH-USDT-SWAP": {
+    "strategy": "momentum",
+    "inst": "ETH-USDT-SWAP",
+    "side": 1,
+    "entry": 1913.46,
+    "sz": 0.0026130674275919017,
+    "tp": 1934.4617857142857,
+    "sl": 1892.4582142857143,
+    "opened": "2026-11-14T09:56:40Z"
+   },
+   "donchian_break|ETH-USDT-SWAP": {
+    "strategy": "donchian_break",
+    "inst": "ETH-USDT-SWAP",
+    "side": 1,
+    "entry": 1913.46,
+    "sz": 0.0026130674275919017,
+    "tp": 1934.4617857142857,
+    "sl": 1892.4582142857143,
+    "opened": "2026-11-14T09:56:40Z"
    }
   },
   "trades": [
@@ -416,13 +436,13 @@
    "pnl": 0.3581,
    "trades": 7,
    "wins": 6,
-   "open": 1
+   "open": 2
   },
   "donchian_break": {
    "pnl": 0.1895,
    "trades": 6,
    "wins": 5,
-   "open": 0
+   "open": 1
   },
   "ema_cross": {
    "pnl": 0.1852,
@@ -449,7 +469,7 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.11,
  "trades": 34,
- "open": 3,
+ "open": 5,
  "recent_trades": [
   {
    "ts": "2026-11-14T02:51:05Z",
@@ -840,35 +860,35 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 67106.2,
-   "atr": 217.34999999999647,
+   "price": 67400.4,
+   "atr": 227.29285714285444,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
-    "sma_revert": 0
+    "sma_revert": -1
    },
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1903.38,
-   "atr": 8.172857142857149,
+   "price": 1913.46,
+   "atr": 8.400714285714296,
    "sig": {
     "ema_cross": 0,
-    "momentum": 0,
+    "momentum": 1,
     "rsi_revert": 0,
-    "donchian_break": 0,
+    "donchian_break": 1,
     "sma_revert": 0
    },
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 75.66,
-   "atr": 0.3764285714285701,
+   "price": 75.96,
+   "atr": 0.38928571428571346,
    "sig": {
     "ema_cross": 0,
-    "momentum": 0,
+    "momentum": 1,
     "rsi_revert": 0,
     "donchian_break": 0,
     "sma_revert": 0
@@ -876,5 +896,5 @@
    "err": null
   }
  },
- "updated": "2026-11-14T09:28:49Z"
+ "updated": "2026-11-14T09:56:40Z"
 }
