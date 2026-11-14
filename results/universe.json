@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T17:12:01Z",
+ "updated": "2026-11-14T17:23:19Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-14T17:12:01Z",
-  "age_s": 1.0
+  "age_s": 678.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,7 +39,7 @@
    "Время суток не влияет на исход Up/Down"
   ],
   "updated": "2026-11-14T16:47:19Z",
-  "age_s": 1483.0
+  "age_s": 2160.0
  },
  "scalp": {
   "done": 2662,
@@ -47,7 +47,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-14T16:58:58Z",
-  "age_s": 784.0,
+  "age_s": 1461.0,
   "paper": {
    "equity": 916.05,
    "pnl_pct": -8.39,
@@ -329,7 +329,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-14T17:06:57Z",
-  "age_s": 305.0
+  "age_s": 982.0
  },
  "clob": {
   "mode": "off",
@@ -337,7 +337,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-14T17:07:14Z",
-  "age_s": 288.0
+  "updated": "2026-11-14T17:23:19Z",
+  "age_s": 0.0
  }
 }
