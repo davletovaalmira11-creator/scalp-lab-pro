@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-14T10:25:17Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 6,
+   "err": null
+  },
+  {
    "ts": "2026-11-14T09:48:44Z",
    "best": {},
    "portfolio": [],
@@ -554,23 +561,16 @@
    "portfolio": [],
    "golden_n": 6,
    "err": null
-  },
-  {
-   "ts": "2026-11-13T01:53:52Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 6,
-   "err": null
   }
  ],
- "updated": "2026-11-14T09:48:44Z",
+ "updated": "2026-11-14T10:25:17Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": -2.51,
+   "is_ret": -1.62,
    "oos_ret": 2.4,
-   "trades": 22,
+   "trades": 21,
    "portfolio": false
   },
   {
@@ -599,24 +599,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.178,
+   "okx_mom_pct": 0.033,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-14T09:48:44Z"
+   "ts": "2026-11-14T10:25:17Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.63,
+   "okx_mom_pct": 0.524,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-14T09:48:44Z"
+   "ts": "2026-11-14T10:25:17Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 0.581,
+   "okx_mom_pct": 0.411,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-14T09:48:44Z"
+   "ts": "2026-11-14T10:25:17Z"
   }
  ],
  "golden": [
@@ -629,11 +629,6 @@
    "src": "polymarket-lab",
    "name": "Правило «эдж ≥ 5%» с положительным EV",
    "note": "бэктест по снимкам, 1 сделка на окно"
-  },
-  {
-   "src": "polymarket-lab",
-   "name": "Смесь 50/50 модели и рынка бьёт обоих",
-   "note": "Brier смеси < min(модель, рынок) на обеих половинах"
   },
   {
    "src": "polymarket-lab",
