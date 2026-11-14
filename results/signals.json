@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-14T07:29:20Z",
+ "updated": "2026-11-14T08:22:47Z",
  "scanned": 200,
  "signals": [
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-dip-to-50000-by-december-31-2026-454-325-222-878-949-487-451-853-523-111",
-   "question": "Will Bitcoin dip to $50,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 157028 против среднего 49000",
-   "liq": 146513,
-   "v24": 157028,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 47.7,
-   "tradeable": false
-  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-140000-by-december-31-2026-131-829-299",
@@ -24,8 +9,8 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 10957 против среднего 2196",
-   "liq": 138874,
+   "note": "объём 24ч 10957 против среднего 2124",
+   "liq": 138775,
    "v24": 10957,
    "z": 0.0,
    "end": "2027-01-01",
