@@ -11,8 +11,8 @@
    "opened": "2026-11-14 00:05:00",
    "fee_mode": "maker",
    "oos_sharpe": 2.77,
-   "last_ts": "2026-11-14 00:25:00",
-   "last_px": 3.465
+   "last_ts": "2026-11-14 01:48:00",
+   "last_px": 3.432
   },
   "bb_maker-NEARUSDT-1m": {
    "strategy": "bb_maker",
@@ -23,8 +23,8 @@
    "opened": "2026-11-14 00:05:00",
    "fee_mode": "maker",
    "oos_sharpe": 3.0,
-   "last_ts": "2026-11-14 00:25:00",
-   "last_px": 3.465
+   "last_ts": "2026-11-14 01:48:00",
+   "last_px": 3.432
   },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
@@ -35,8 +35,8 @@
    "opened": "2026-11-14 00:00:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-14 00:20:00",
-   "last_px": 0.7962
+   "last_ts": "2026-11-14 01:40:00",
+   "last_px": 0.7927
   }
  },
  "closed": [
@@ -1903,14 +1903,14 @@
    "reason": "signal flip"
   }
  ],
- "updated": "2026-11-14T00:26:29Z",
- "runs": 108,
+ "updated": "2026-11-14T01:49:33Z",
+ "runs": 109,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-14 00:25:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-14 00:20:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-14 00:25:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-14 00:25:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-14 00:20:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-14 01:48:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-14 01:40:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-14 01:48:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-14 01:48:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-14 01:40:00"
  },
  "tops": [
   {
@@ -1927,8 +1927,8 @@
    "oos_sharpe": 2.77,
    "score": 2.55,
    "signal": -1.0,
-   "sig_last": "2026-11-14 00:25:00",
-   "sig_pct": 37.62
+   "sig_last": "2026-11-14 01:48:00",
+   "sig_pct": 40.19
   },
   {
    "key": "bb_maker-NEARUSDT-1m",
@@ -1943,8 +1943,8 @@
    "oos_sharpe": 3.0,
    "score": 2.49,
    "signal": -1.0,
-   "sig_last": "2026-11-14 00:25:00",
-   "sig_pct": 43.49
+   "sig_last": "2026-11-14 01:48:00",
+   "sig_pct": 42.97
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -1976,8 +1976,8 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": -1.0,
-   "sig_last": "2026-11-14 00:20:00",
-   "sig_pct": 89.78
+   "sig_last": "2026-11-14 01:40:00",
+   "sig_pct": 89.98
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
