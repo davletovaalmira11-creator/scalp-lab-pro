@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-14T17:45:00Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-14T17:39:58Z",
    "best": {},
    "portfolio": [],
@@ -554,16 +561,9 @@
    "portfolio": [],
    "golden_n": 6,
    "err": null
-  },
-  {
-   "ts": "2026-11-13T11:57:30Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 6,
-   "err": null
   }
  ],
- "updated": "2026-11-14T17:39:58Z",
+ "updated": "2026-11-14T17:45:00Z",
  "best_okx": null,
  "strategy_stats": [
   {
@@ -599,24 +599,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.033,
+   "okx_mom_pct": -0.019,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-14T17:39:58Z"
+   "ts": "2026-11-14T17:45:00Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.108,
+   "okx_mom_pct": -0.17,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-14T17:39:58Z"
+   "ts": "2026-11-14T17:45:00Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.919,
+   "okx_mom_pct": -1.216,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-14T17:39:58Z"
+   "ts": "2026-11-14T17:45:00Z"
   }
  ],
  "golden": [
@@ -629,11 +629,6 @@
    "src": "polymarket-lab",
    "name": "Смесь 50/50 модели и рынка бьёт обоих",
    "note": "Brier смеси < min(модель, рынок) на обеих половинах"
-  },
-  {
-   "src": "polymarket-lab",
-   "name": "Время суток не влияет на исход Up/Down",
-   "note": "уклонения >= 10пп от базы при n >= 50 в часе"
   },
   {
    "src": "walk-forward bt",
