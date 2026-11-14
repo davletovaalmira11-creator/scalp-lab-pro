@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-14T10:25:17Z",
+ "updated": "2026-11-14T10:26:26Z",
  "health": {
   "overall": "degraded",
   "modules": {
    "pm_worker": "stale",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "ok"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-14T10:02:30Z",
-  "age_s": 1367.0
+  "age_s": 1436.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,24 +39,24 @@
    "Время суток не влияет на исход Up/Down"
   ],
   "updated": "2026-11-14T09:52:05Z",
-  "age_s": 1992.0
+  "age_s": 2061.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-14T08:34:37Z",
-  "age_s": 6640.0,
+  "updated": "2026-11-14T10:25:53Z",
+  "age_s": 33.0,
   "paper": {
-   "equity": 930.32,
-   "pnl_pct": -6.97,
-   "trades": 141,
-   "winrate": 57.4,
-   "open": 3,
-   "tops": 6
+   "equity": 933.48,
+   "pnl_pct": -6.65,
+   "trades": 145,
+   "winrate": 57.2,
+   "open": 1,
+   "tops": 5
   },
-  "paper_updated": "2026-11-14T08:35:05Z",
+  "paper_updated": "2026-11-14T10:26:25Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -133,25 +133,6 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
-   },
-   {
-    "strategy": "wick_vol",
-    "symbol": "OPUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.926",
-    "oos_pf": "1.06",
-    "oos_t": "1.77",
-    "trades": "481",
-    "param_stability": "0.23",
-    "is_sharpe_avg": "4.68",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.925813634658203",
-    "maker_pf": "1.0600588209386734",
-    "daily_pct": "0.001777",
-    "monthly_pct": "0.054707",
-    "trades_per_day": "1.32",
-    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
@@ -388,7 +369,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-14T10:24:59Z",
-  "age_s": 18.0
+  "age_s": 87.0
  },
  "clob": {
   "mode": "off",
@@ -397,6 +378,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-14T10:25:15Z",
-  "age_s": 2.0
+  "age_s": 71.0
  }
 }
