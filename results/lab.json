@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-14T18:49:58Z",
+ "updated": "2026-11-14T19:47:51Z",
  "status": "ready",
  "status_note": "База достаточна. Подтверждённых OOS закономерностей: 2 из 8 гипотез.",
  "settled_this_run": 30,
  "backfilled": 0,
- "base_up_rate": 0.482,
+ "base_up_rate": 0.481,
  "data": {
   "windows": 5030,
-  "settled": 4878,
+  "settled": 4908,
   "snaps": 16995,
-  "span_h": 138.2,
+  "span_h": 138.8,
   "hist": 1008
  },
  "model": {
@@ -375,48 +375,48 @@
    "k": 1,
    "n_up": 534,
    "p_after_up": 0.642,
-   "n_dn": 571,
-   "p_after_dn": 0.335
+   "n_dn": 575,
+   "p_after_dn": 0.334
   },
   {
    "tag": "sht15",
    "k": 2,
    "n_up": 343,
    "p_after_up": 0.557,
-   "n_dn": 379,
-   "p_after_dn": 0.388
+   "n_dn": 383,
+   "p_after_dn": 0.386
   },
   {
    "tag": "sht15",
    "k": 3,
    "n_up": 191,
    "p_after_up": 0.602,
-   "n_dn": 231,
-   "p_after_dn": 0.333
+   "n_dn": 235,
+   "p_after_dn": 0.332
   },
   {
    "tag": "sht5",
    "k": 1,
-   "n_up": 1818,
+   "n_up": 1828,
    "p_after_up": 0.732,
-   "n_dn": 1953,
-   "p_after_dn": 0.249
+   "n_dn": 1969,
+   "p_after_dn": 0.248
   },
   {
    "tag": "sht5",
    "k": 2,
-   "n_up": 1330,
+   "n_up": 1338,
    "p_after_up": 0.727,
-   "n_dn": 1465,
-   "p_after_dn": 0.251
+   "n_dn": 1479,
+   "p_after_dn": 0.249
   },
   {
    "tag": "sht5",
    "k": 3,
-   "n_up": 967,
+   "n_up": 973,
    "p_after_up": 0.69,
-   "n_dn": 1097,
-   "p_after_dn": 0.285
+   "n_dn": 1109,
+   "p_after_dn": 0.284
   }
  ],
  "hours": [
@@ -506,8 +506,8 @@
   },
   {
    "hour": 14,
-   "n": 193,
-   "up_rate": 0.554,
+   "n": 223,
+   "up_rate": 0.529,
    "flag": false
   },
   {
@@ -567,12 +567,12 @@
  ],
  "streak_edge": {
   "probs": {
-   "after_up": 0.493,
-   "after_down": 0.488
+   "after_up": 0.495,
+   "after_down": 0.489
   },
   "n_est": {
-   "up": 1664,
-   "down": 1745
+   "up": 1674,
+   "down": 1756
   },
   "oos": {
    "n": 20,
@@ -739,9 +739,9 @@
   },
   {
    "name": "Стрик-эдж: рынок недооценивает моментум",
-   "note": "вероятности из старых 70% данных, сделки только на новых 30%; P(Up|после Up)=0.493, P(Up|после Down)=0.488",
-   "is_n": 3409,
-   "is_v": "P(up|up)=0.493",
+   "note": "вероятности из старых 70% данных, сделки только на новых 30%; P(Up|после Up)=0.495, P(Up|после Down)=0.489",
+   "is_n": 3430,
+   "is_v": "P(up|up)=0.495",
    "oos_n": 20,
    "oos_v": -0.323,
    "ok": false,
