@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T02:09:09Z",
+ "updated": "2026-11-14T02:59:20Z",
  "rule_v2": {
   "status": "✅ подтверждено OOS",
   "ev_oos": 0.035,
@@ -18,7 +18,7 @@
   "status": "⏳ копим данные",
   "probs": {
    "after_up": 0.495,
-   "after_down": 0.49
+   "after_down": 0.493
   },
   "oos": {
    "n": 23,
