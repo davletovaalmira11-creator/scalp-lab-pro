@@ -1,31 +1,7 @@
 {
  "capital_start": 1000.0,
- "equity": 884.7998686272256,
+ "equity": 902.6844926995432,
  "positions": {
-  "bb_regime-NEARUSDT-1m": {
-   "strategy": "bb_regime",
-   "symbol": "NEARUSDT",
-   "tf": "1m",
-   "signal": -1.0,
-   "entry": 3.47,
-   "opened": "2026-11-14 00:05:00",
-   "fee_mode": "maker",
-   "oos_sharpe": 2.77,
-   "last_ts": "2026-11-14 02:32:00",
-   "last_px": 3.394
-  },
-  "bb_maker-NEARUSDT-1m": {
-   "strategy": "bb_maker",
-   "symbol": "NEARUSDT",
-   "tf": "1m",
-   "signal": 1.0,
-   "entry": 3.397,
-   "opened": "2026-11-14 02:20:00",
-   "fee_mode": "maker",
-   "oos_sharpe": 3.0,
-   "last_ts": "2026-11-14 02:32:00",
-   "last_px": 3.394
-  },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
    "symbol": "SUIUSDT",
@@ -35,8 +11,8 @@
    "opened": "2026-11-14 02:05:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-14 02:25:00",
-   "last_px": 0.7741
+   "last_ts": "2026-11-14 04:30:00",
+   "last_px": 0.7724
   }
  },
  "closed": [
@@ -1929,16 +1905,45 @@
    "closed_ts": "2026-11-14 02:05:00",
    "fee_mode": "maker",
    "reason": "signal flip"
+  },
+  {
+   "key": "bb_regime-NEARUSDT-1m",
+   "strategy": "bb_regime",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "short",
+   "entry": 3.47,
+   "exit": 3.414,
+   "pnl_pct": 1.5638,
+   "opened": "2026-11-14 00:05:00",
+   "closed_ts": "2026-11-14 02:54:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
+  },
+  {
+   "key": "bb_maker-NEARUSDT-1m",
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "long",
+   "entry": 3.397,
+   "exit": 3.414,
+   "pnl_pct": 0.4504,
+   "opened": "2026-11-14 02:20:00",
+   "closed_ts": "2026-11-14 02:54:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
   }
  ],
- "updated": "2026-11-14T02:34:16Z",
- "runs": 110,
+ "updated": "2026-11-14T04:37:46Z",
+ "runs": 111,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-14 02:32:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-14 02:25:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-14 02:32:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-14 02:32:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-14 02:25:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-14 04:36:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-14 04:30:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-14 04:36:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-14 04:36:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-14 04:30:00",
+  "wick_vol-OPUSDT-15m": "2026-11-14 04:15:00"
  },
  "tops": [
   {
@@ -1954,9 +1959,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 2.77,
    "score": 2.55,
-   "signal": -1.0,
-   "sig_last": "2026-11-14 02:32:00",
-   "sig_pct": 41.72
+   "signal": 0.0,
+   "sig_last": "2026-11-14 02:53:00",
+   "sig_pct": 41.54
   },
   {
    "key": "bb_maker-NEARUSDT-1m",
@@ -1970,9 +1975,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 3.0,
    "score": 2.49,
-   "signal": 1.0,
-   "sig_last": "2026-11-14 02:32:00",
-   "sig_pct": 44.49
+   "signal": 0.0,
+   "sig_last": "2026-11-14 02:53:00",
+   "sig_pct": 44.91
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -2004,8 +2009,8 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": 1.0,
-   "sig_last": "2026-11-14 02:25:00",
-   "sig_pct": 88.98
+   "sig_last": "2026-11-14 04:30:00",
+   "sig_pct": 89.43
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -2022,24 +2027,41 @@
    "signal": 0.0,
    "sig_last": "2026-11-13 11:30:00",
    "sig_pct": 45.91
+  },
+  {
+   "key": "wick_vol-OPUSDT-15m",
+   "strategy": "wick_vol",
+   "symbol": "OPUSDT",
+   "tf": "15m",
+   "params": {
+    "h": 30,
+    "vz": 3.0,
+    "w": 0.4
+   },
+   "fee_mode": "maker",
+   "oos_sharpe": 1.93,
+   "score": 1.25,
+   "signal": 0.0,
+   "sig_last": "2026-11-13 11:15:00",
+   "sig_pct": 8.25
   }
  ],
  "stats": {
-  "n_trades": 135,
-  "wins": 76,
-  "winrate": 56.3,
-  "equity": 884.8,
-  "pnl_pct": -11.52,
-  "open": 3
+  "n_trades": 137,
+  "wins": 78,
+  "winrate": 56.9,
+  "equity": 902.68,
+  "pnl_pct": -9.73,
+  "open": 1
  },
  "filter_stats": {
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1424,
+  "low_pf": 1423,
   "low_t": 83,
   "no_params": 0,
-  "admitted": 5
+  "admitted": 6
  },
  "candidates": [
   {
