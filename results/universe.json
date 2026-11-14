@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-14T12:47:38Z",
+ "updated": "2026-11-14T12:50:24Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
-   "pm_worker": "stale",
+   "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
@@ -24,8 +24,8 @@
    "brier": 0.2138,
    "acc": 51.2
   },
-  "updated": "2026-11-14T12:01:28Z",
-  "age_s": 2771.0
+  "updated": "2026-11-14T12:50:24Z",
+  "age_s": 0.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,7 +39,7 @@
    "Время суток не влияет на исход Up/Down"
   ],
   "updated": "2026-11-14T11:46:25Z",
-  "age_s": 3674.0
+  "age_s": 3839.0
  },
  "scalp": {
   "done": 2662,
@@ -47,7 +47,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-14T12:03:26Z",
-  "age_s": 2653.0,
+  "age_s": 2818.0,
   "paper": {
    "equity": 933.48,
    "pnl_pct": -6.65,
@@ -380,7 +380,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-14T12:32:43Z",
-  "age_s": 896.0
+  "age_s": 1061.0
  },
  "clob": {
   "mode": "off",
@@ -389,6 +389,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-14T12:47:38Z",
-  "age_s": 1.0
+  "age_s": 166.0
  }
 }

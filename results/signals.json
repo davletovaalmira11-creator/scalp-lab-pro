@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T12:01:28Z",
+ "updated": "2026-11-14T12:50:24Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,9 +9,24 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 11952 против среднего 2211",
-   "liq": 140952,
+   "note": "объём 24ч 11952 против среднего 2188",
+   "liq": 141334,
    "v24": 11952,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 47.5,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-dip-to-5000-by-december-31-2026-jy3n-991-141-345-117-196-482-674-487-176-555",
+   "question": "Will Bitcoin dip to $5,000 by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 8676 против среднего 1299",
+   "liq": 130970,
+   "v24": 8676,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 47.5,
