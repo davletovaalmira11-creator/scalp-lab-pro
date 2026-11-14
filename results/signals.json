@@ -1,20 +1,50 @@
 {
- "updated": "2026-11-14T15:11:41Z",
+ "updated": "2026-11-14T15:52:21Z",
  "scanned": 200,
  "signals": [
   {
    "strategy": "vols",
-   "slug": "will-bitcoin-reach-140000-by-december-31-2026-131-829-299",
-   "question": "Will Bitcoin reach $140,000 by December 31, 2026?",
+   "slug": "btc-updown-5m-1794671100",
+   "question": "Bitcoin Up or Down - November 14, 10:45AM-10:50AM ET",
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 11954 против среднего 2188",
-   "liq": 140554,
-   "v24": 11954,
+   "note": "объём 24ч 75487 против среднего 10784",
+   "liq": 306624,
+   "v24": 75487,
    "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 47.4,
+   "end": "2026-11-14",
+   "days_left": 0.0,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "eth-updown-5m-1794671100",
+   "question": "Ethereum Up or Down - November 14, 10:45AM-10:50AM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 3281 против среднего 469",
+   "liq": 186933,
+   "v24": 3281,
+   "z": 0.0,
+   "end": "2026-11-14",
+   "days_left": 0.0,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "bitcoin-above-74k-on-november-14-2026",
+   "question": "Will the price of Bitcoin be above $74,000 on November 14?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 76218 против среднего 13474",
+   "liq": 134969,
+   "v24": 76218,
+   "z": 0.0,
+   "end": "2026-11-14",
+   "days_left": 0.0,
    "tradeable": false
   },
   {
@@ -29,22 +59,7 @@
    "v24": 9134,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 47.4,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "bitcoin-above-72k-on-november-14-2026",
-   "question": "Will the price of Bitcoin be above $72,000 on November 14?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 74806 против среднего 16319",
-   "liq": 120655,
-   "v24": 74806,
-   "z": 0.0,
-   "end": "2026-11-14",
-   "days_left": 0.0,
+   "days_left": 47.3,
    "tradeable": false
   }
  ]
