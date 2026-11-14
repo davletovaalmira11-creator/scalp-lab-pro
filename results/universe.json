@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T06:34:18Z",
+ "updated": "2026-11-14T06:35:46Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-14T06:18:17Z",
-  "age_s": 962.0
+  "age_s": 1050.0
  },
  "pm_lab": {
   "status": "ready",
@@ -39,24 +39,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-14T05:55:51Z",
-  "age_s": 2308.0
+  "age_s": 2396.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-14T05:35:21Z",
-  "age_s": 3538.0,
+  "updated": "2026-11-14T06:35:28Z",
+  "age_s": 19.0,
   "paper": {
-   "equity": 902.68,
-   "pnl_pct": -9.73,
-   "trades": 137,
-   "winrate": 56.9,
-   "open": 1,
-   "tops": 6
+   "equity": 899.83,
+   "pnl_pct": -10.02,
+   "trades": 138,
+   "winrate": 56.5,
+   "open": 3,
+   "tops": 5
   },
-  "paper_updated": "2026-11-14T05:35:46Z",
+  "paper_updated": "2026-11-14T06:35:46Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -133,25 +133,6 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
-   },
-   {
-    "strategy": "wick_vol",
-    "symbol": "OPUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.926",
-    "oos_pf": "1.06",
-    "oos_t": "1.77",
-    "trades": "481",
-    "param_stability": "0.23",
-    "is_sharpe_avg": "4.68",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.925813634658203",
-    "maker_pf": "1.0600588209386734",
-    "daily_pct": "0.001777",
-    "monthly_pct": "0.054707",
-    "trades_per_day": "1.32",
-    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
@@ -337,7 +318,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-14T06:34:00Z",
-  "age_s": 19.0
+  "age_s": 107.0
  },
  "clob": {
   "mode": "off",
@@ -346,6 +327,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-14T06:34:16Z",
-  "age_s": 3.0
+  "age_s": 91.0
  }
 }
