@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-15T09:15:29Z",
+ "updated": "2026-11-15T09:28:15Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
+   "okx_trader": "ok",
    "pm_trader": "ok"
   }
  },
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-15T09:15:29Z",
-  "age_s": 0.0
+  "age_s": 767.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-15T08:56:21Z",
-  "age_s": 1148.0
+  "age_s": 1915.0
  },
  "scalp": {
   "done": 2662,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-15T08:38:54Z",
-  "age_s": 2195.0,
+  "age_s": 2962.0,
   "paper": {
    "equity": 879.14,
    "pnl_pct": -12.09,
@@ -277,11 +277,11 @@
   "open": 10,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 64692.1,
-    "atr": 338.692857142858,
+    "price": 65561.6,
+    "atr": 429.3571428571434,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -289,11 +289,11 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1802.02,
-    "atr": 10.898571428571424,
+    "price": 1829.45,
+    "atr": 14.258571428571404,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -301,11 +301,11 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 70.76,
-    "atr": 0.52857142857143,
+    "price": 72.03,
+    "atr": 0.6507142857142857,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -417,8 +417,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-15T08:33:14Z",
-  "age_s": 2535.0
+  "updated": "2026-11-15T09:28:15Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -427,6 +427,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-15T09:09:51Z",
-  "age_s": 338.0
+  "age_s": 1105.0
  }
 }
