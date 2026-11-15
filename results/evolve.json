@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-15T16:08:40Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-15T15:42:59Z",
    "best": {},
    "portfolio": [],
@@ -342,51 +349,44 @@
    "portfolio": [],
    "golden_n": 6,
    "err": null
-  },
-  {
-   "ts": "2026-11-14T15:42:03Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 6,
-   "err": null
   }
  ],
- "updated": "2026-11-15T15:42:59Z",
+ "updated": "2026-11-15T16:08:40Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -2.39,
-   "oos_ret": -6.65,
+   "is_ret": -2.54,
+   "oos_ret": -5.19,
    "trades": 20,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": 6.39,
-   "oos_ret": 0.08,
-   "trades": 31,
+   "is_ret": 4.71,
+   "oos_ret": 0.36,
+   "trades": 33,
    "portfolio": true
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": 1.11,
+   "is_ret": -1.75,
    "oos_ret": -0.42,
-   "trades": 31,
+   "trades": 32,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": 3.16,
-   "oos_ret": -2.14,
+   "is_ret": 2.26,
+   "oos_ret": -1.32,
    "trades": 33,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
-   "is_ret": -4.87,
-   "oos_ret": 3.17,
-   "trades": 20,
+   "is_ret": -3.04,
+   "oos_ret": 2.48,
+   "trades": 21,
    "portfolio": false
   }
  ],
@@ -394,24 +394,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -1.297,
+   "okx_mom_pct": -1.252,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-15T15:42:59Z"
+   "ts": "2026-11-15T16:08:40Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -1.206,
+   "okx_mom_pct": -1.29,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-15T15:42:59Z"
+   "ts": "2026-11-15T16:08:40Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -2.337,
+   "okx_mom_pct": -2.207,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-15T15:42:59Z"
+   "ts": "2026-11-15T16:08:40Z"
   }
  ],
  "golden": [
