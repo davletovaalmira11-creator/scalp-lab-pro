@@ -62,6 +62,46 @@
     "tp": 61395.37857142857,
     "sl": 64576.021428571425,
     "opened": "2026-11-15T01:07:22Z"
+   },
+   "momentum|BTC-USDT-SWAP": {
+    "strategy": "momentum",
+    "inst": "BTC-USDT-SWAP",
+    "side": 1,
+    "entry": 64027.5,
+    "sz": 7.809144508219124e-05,
+    "tp": 65756.78571428571,
+    "sl": 62298.21428571428,
+    "opened": "2026-11-15T02:13:58Z"
+   },
+   "momentum|ETH-USDT-SWAP": {
+    "strategy": "momentum",
+    "inst": "ETH-USDT-SWAP",
+    "side": 1,
+    "entry": 1779.42,
+    "sz": 0.0028099043508558966,
+    "tp": 1837.6182142857144,
+    "sl": 1721.2217857142857,
+    "opened": "2026-11-15T02:13:58Z"
+   },
+   "sma_revert|ETH-USDT-SWAP": {
+    "strategy": "sma_revert",
+    "inst": "ETH-USDT-SWAP",
+    "side": -1,
+    "entry": 1779.42,
+    "sz": 0.0028099043508558966,
+    "tp": 1721.2217857142857,
+    "sl": 1837.6182142857144,
+    "opened": "2026-11-15T02:13:58Z"
+   },
+   "sma_revert|SOL-USDT-SWAP": {
+    "strategy": "sma_revert",
+    "inst": "SOL-USDT-SWAP",
+    "side": -1,
+    "entry": 70.18,
+    "sz": 0.07124536905101168,
+    "tp": 67.8157142857143,
+    "sl": 72.54428571428572,
+    "opened": "2026-11-15T02:13:58Z"
    }
   },
   "trades": [
@@ -622,7 +662,7 @@
    "pnl": 0.127,
    "trades": 11,
    "wins": 7,
-   "open": 1
+   "open": 3
   },
   "donchian_break": {
    "pnl": 0.235,
@@ -646,7 +686,7 @@
    "pnl": 0.2737,
    "trades": 8,
    "wins": 6,
-   "open": 1
+   "open": 3
   }
  },
  "mode": "paper",
@@ -655,7 +695,7 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.065,
  "trades": 50,
- "open": 6,
+ "open": 10,
  "recent_trades": [
   {
    "ts": "2026-11-14T22:04:01Z",
@@ -1222,41 +1262,41 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 62848.8,
-   "atr": 638.1857142857147,
+   "price": 64027.5,
+   "atr": 691.7142857142862,
    "sig": {
     "ema_cross": 0,
-    "momentum": 0,
+    "momentum": 1,
     "rsi_revert": 0,
     "donchian_break": 0,
-    "sma_revert": 0
+    "sma_revert": -1
    },
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1734.5,
-   "atr": 21.620000000000037,
+   "price": 1779.42,
+   "atr": 23.279285714285752,
    "sig": {
     "ema_cross": 0,
-    "momentum": 0,
-    "rsi_revert": 1,
+    "momentum": 1,
+    "rsi_revert": 0,
     "donchian_break": 0,
-    "sma_revert": 0
+    "sma_revert": -1
    },
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 68.97,
-   "atr": 0.808571428571429,
+   "price": 70.18,
+   "atr": 0.9457142857142874,
    "sig": {
     "ema_cross": 0,
-    "momentum": 0,
+    "momentum": 1,
     "rsi_revert": 0,
     "donchian_break": 0,
-    "sma_revert": 0
+    "sma_revert": -1
    },
    "err": null
   }
  },
- "updated": "2026-11-15T01:21:17Z"
+ "updated": "2026-11-15T02:13:58Z"
 }
