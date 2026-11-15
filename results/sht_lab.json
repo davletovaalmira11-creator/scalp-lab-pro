@@ -156855,7 +156855,7 @@
     12833
    ]
   ],
-  "outcome": null
+  "outcome": 0
  },
  "eth-updown-5m-1794494400": {
   "series": "eth-up-or-down-5m",
@@ -157110,7 +157110,7 @@
     6769
    ]
   ],
-  "outcome": null
+  "outcome": 0
  },
  "sol-updown-5m-1794494700": {
   "series": "sol-up-or-down-5m",
