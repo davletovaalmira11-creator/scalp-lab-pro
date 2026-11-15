@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T10:27:44Z",
+ "updated": "2026-11-15T10:31:54Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-15T10:05:57Z",
-  "age_s": 1308.0
+  "age_s": 1558.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-15T09:52:43Z",
-  "age_s": 2102.0
+  "age_s": 2352.0
  },
  "scalp": {
   "done": 2662,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-15T08:38:54Z",
-  "age_s": 6531.0,
+  "age_s": 6781.0,
   "paper": {
    "equity": 879.14,
    "pnl_pct": -12.09,
@@ -418,7 +418,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-15T10:27:26Z",
-  "age_s": 19.0
+  "age_s": 269.0
  },
  "clob": {
   "mode": "off",
@@ -426,7 +426,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-15T10:27:43Z",
-  "age_s": 2.0
+  "updated": "2026-11-15T10:31:54Z",
+  "age_s": 1.0
  }
 }
