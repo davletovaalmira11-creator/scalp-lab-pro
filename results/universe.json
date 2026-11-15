@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-15T12:23:02Z",
+ "updated": "2026-11-15T12:26:32Z",
  "health": {
   "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "stale"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-15T12:09:46Z",
-  "age_s": 797.0
+  "age_s": 1007.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-15T11:48:00Z",
-  "age_s": 2103.0
+  "age_s": 2313.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-15T08:38:54Z",
-  "age_s": 13449.0,
+  "updated": "2026-11-15T12:26:07Z",
+  "age_s": 26.0,
   "paper": {
-   "equity": 879.14,
-   "pnl_pct": -12.09,
-   "trades": 173,
-   "winrate": 56.1,
+   "equity": 904.64,
+   "pnl_pct": -9.54,
+   "trades": 179,
+   "winrate": 56.4,
    "open": 1,
-   "tops": 5
+   "tops": 6
   },
-  "paper_updated": "2026-11-15T08:39:16Z",
+  "paper_updated": "2026-11-15T12:26:32Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -132,6 +132,25 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
+   },
+   {
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
@@ -418,7 +437,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-15T12:23:02Z",
-  "age_s": 1.0
+  "age_s": 211.0
  },
  "clob": {
   "mode": "off",
@@ -427,6 +446,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-15T11:53:49Z",
-  "age_s": 1754.0
+  "age_s": 1964.0
  }
 }
