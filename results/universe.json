@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T03:30:24Z",
+ "updated": "2026-11-15T03:37:05Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-15T03:22:08Z",
-  "age_s": 496.0
+  "age_s": 897.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,15 +38,15 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-15T03:30:24Z",
-  "age_s": 0.0
+  "age_s": 401.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-15T02:36:33Z",
-  "age_s": 3231.0,
+  "updated": "2026-11-15T03:36:36Z",
+  "age_s": 29.0,
   "paper": {
    "equity": 824.84,
    "pnl_pct": -17.52,
@@ -55,7 +55,7 @@
    "open": 4,
    "tops": 6
   },
-  "paper_updated": "2026-11-15T02:37:01Z",
+  "paper_updated": "2026-11-15T03:37:05Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -227,6 +227,25 @@
     "monthly_pct": "0.044461",
     "trades_per_day": "6.58",
     "usd_per_month_1000": "44.46"
+   },
+   {
+    "strategy": "vol_pop",
+    "symbol": "UNIUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.147",
+    "oos_pf": "1.061",
+    "oos_t": "1.49",
+    "trades": "733",
+    "param_stability": "0.27",
+    "is_sharpe_avg": "2.27",
+    "folds": "22",
+    "fee_mode": "taker",
+    "maker_sharpe": "1.4868229034636196",
+    "maker_pf": "1.0803805467531067",
+    "daily_pct": "0.001068",
+    "monthly_pct": "0.032527",
+    "trades_per_day": "1.0",
+    "usd_per_month_1000": "32.53"
    },
    {
     "strategy": "streak_vol",
@@ -418,7 +437,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-15T03:14:55Z",
-  "age_s": 929.0
+  "age_s": 1330.0
  },
  "clob": {
   "mode": "off",
@@ -427,6 +446,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-15T03:15:10Z",
-  "age_s": 914.0
+  "age_s": 1315.0
  }
 }
