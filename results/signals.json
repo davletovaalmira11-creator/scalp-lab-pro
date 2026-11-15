@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T15:21:22Z",
+ "updated": "2026-11-15T16:03:46Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,27 +9,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 342681 против среднего 101471",
-   "liq": 206579,
-   "v24": 342681,
+   "note": "объём 24ч 329614 против среднего 101506",
+   "liq": 206578,
+   "v24": 329614,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 46.4,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-dip-to-35000-by-december-31-2026-744-877-748-219-467-465-646-211-122-947-537-552-555-361-972-954-635-887-657-996-643",
-   "question": "Will Bitcoin dip to $35,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 69462 против среднего 19541",
-   "liq": 165914,
-   "v24": 69462,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 46.4,
+   "days_left": 46.3,
    "tradeable": false
   },
   {
@@ -40,11 +25,26 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 37167 против среднего 7425",
-   "liq": 128322,
+   "liq": 128313,
    "v24": 37167,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 46.4,
+   "days_left": 46.3,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-dip-to-30000-by-december-31-2026-971-191-116-343-999-758-299-813-237",
+   "question": "Will Bitcoin dip to $30,000 by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 12046 против среднего 3340",
+   "liq": 118779,
+   "v24": 12046,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 46.3,
    "tradeable": false
   }
  ]
