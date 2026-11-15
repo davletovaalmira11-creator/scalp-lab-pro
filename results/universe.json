@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T02:14:15Z",
+ "updated": "2026-11-15T02:20:03Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-15T01:34:02Z",
-  "age_s": 2414.0
+  "age_s": 2761.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-15T01:12:12Z",
-  "age_s": 3724.0
+  "age_s": 4071.0
  },
  "scalp": {
   "done": 2662,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-14T23:54:07Z",
-  "age_s": 8409.0,
+  "age_s": 8756.0,
   "paper": {
    "equity": 782.46,
    "pnl_pct": -21.75,
@@ -296,38 +296,38 @@
   "open": 10,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 64027.5,
-    "atr": 691.7142857142862,
+    "price": 64297.8,
+    "atr": 712.4571428571429,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
-     "sma_revert": -1
+     "sma_revert": 0
     },
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1779.42,
-    "atr": 23.279285714285752,
+    "price": 1795.41,
+    "atr": 23.950714285714316,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
-     "donchian_break": 0,
-     "sma_revert": -1
+     "donchian_break": 1,
+     "sma_revert": 0
     },
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 70.18,
-    "atr": 0.9457142857142874,
+    "price": 70.61,
+    "atr": 0.9685714285714307,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
-     "sma_revert": -1
+     "sma_revert": 0
     },
     "err": null
    }
@@ -436,8 +436,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-15T02:13:58Z",
-  "age_s": 18.0
+  "updated": "2026-11-15T02:20:03Z",
+  "age_s": 0.0
  },
  "clob": {
   "mode": "off",
@@ -446,6 +446,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-15T02:14:14Z",
-  "age_s": 2.0
+  "age_s": 349.0
  }
 }
