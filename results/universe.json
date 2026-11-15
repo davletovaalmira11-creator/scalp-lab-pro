@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-15T02:33:07Z",
+ "updated": "2026-11-15T02:37:02Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "ok"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-15T02:29:34Z",
-  "age_s": 213.0
+  "age_s": 448.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-15T02:31:33Z",
-  "age_s": 94.0
+  "age_s": 329.0
  },
  "scalp": {
   "done": 2662,
   "total": 2662,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-14T23:54:07Z",
-  "age_s": 9540.0,
+  "updated": "2026-11-15T02:36:33Z",
+  "age_s": 29.0,
   "paper": {
-   "equity": 782.46,
-   "pnl_pct": -21.75,
-   "trades": 159,
-   "winrate": 55.3,
+   "equity": 824.84,
+   "pnl_pct": -17.52,
+   "trades": 165,
+   "winrate": 55.2,
    "open": 4,
    "tops": 6
   },
-  "paper_updated": "2026-11-14T23:54:34Z",
+  "paper_updated": "2026-11-15T02:37:01Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -227,25 +227,6 @@
     "monthly_pct": "0.044461",
     "trades_per_day": "6.58",
     "usd_per_month_1000": "44.46"
-   },
-   {
-    "strategy": "vol_pop",
-    "symbol": "UNIUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.147",
-    "oos_pf": "1.061",
-    "oos_t": "1.49",
-    "trades": "733",
-    "param_stability": "0.27",
-    "is_sharpe_avg": "2.27",
-    "folds": "22",
-    "fee_mode": "taker",
-    "maker_sharpe": "1.4868229034636196",
-    "maker_pf": "1.0803805467531067",
-    "daily_pct": "0.001068",
-    "monthly_pct": "0.032527",
-    "trades_per_day": "1.0",
-    "usd_per_month_1000": "32.53"
    },
    {
     "strategy": "streak_vol",
@@ -437,7 +418,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-15T02:20:03Z",
-  "age_s": 784.0
+  "age_s": 1019.0
  },
  "clob": {
   "mode": "off",
@@ -446,6 +427,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-15T02:33:07Z",
-  "age_s": 0.0
+  "age_s": 235.0
  }
 }
