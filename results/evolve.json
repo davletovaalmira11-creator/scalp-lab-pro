@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-16T15:07:41Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-16T12:17:31Z",
    "best": {},
    "portfolio": [],
@@ -342,37 +349,37 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-15T06:20:45Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-16T12:17:31Z",
+ "updated": "2026-11-16T15:07:41Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": -2.36,
-   "oos_ret": -6.05,
-   "trades": 30,
+   "is_ret": -1.07,
+   "oos_ret": -14.78,
+   "trades": 34,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -20.34,
-   "oos_ret": 1.88,
-   "trades": 33,
+   "is_ret": -21.67,
+   "oos_ret": -0.13,
+   "trades": 32,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
    "is_ret": 6.28,
-   "oos_ret": -13.75,
+   "oos_ret": -13.03,
    "trades": 32,
+   "portfolio": false
+  },
+  {
+   "strategy": "sma_revert",
+   "is_ret": 16.55,
+   "oos_ret": -11.68,
+   "trades": 21,
    "portfolio": false
   }
  ],
@@ -380,24 +387,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.505,
+   "okx_mom_pct": 1.097,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T12:17:31Z"
+   "ts": "2026-11-16T15:07:41Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.29,
+   "okx_mom_pct": 1.362,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T12:17:31Z"
+   "ts": "2026-11-16T15:07:41Z"
   },
   {
    "coin": "SOL",
    "okx_mom_pct": -0.099,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T12:17:31Z"
+   "ts": "2026-11-16T15:07:41Z"
   }
  ],
  "golden": [
@@ -419,12 +426,12 @@
   {
    "src": "walk-forward bt",
    "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "note": "OOS PF 1.034, Sharpe 2.774"
   },
   {
    "src": "walk-forward bt",
-   "name": "wick_vol AVAXUSDT 15m",
-   "note": "OOS PF 1.08, Sharpe 2.418"
+   "name": "bb_regime NEARUSDT 1m",
+   "note": "OOS PF 1.017, Sharpe 2.767"
   }
  ],
  "error": null
