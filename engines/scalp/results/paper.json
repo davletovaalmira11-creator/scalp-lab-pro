@@ -11,8 +11,8 @@
    "opened": "2026-11-16 14:35:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.67,
-   "last_ts": "2026-11-16 18:30:00",
-   "last_px": 0.7208
+   "last_ts": "2026-11-16 19:35:00",
+   "last_px": 0.7198
   },
   "vol_burst_revert-ARBUSDT-5m": {
    "strategy": "vol_burst_revert",
@@ -23,8 +23,8 @@
    "opened": "2026-11-16 14:30:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.93,
-   "last_ts": "2026-11-16 18:30:00",
-   "last_px": 0.1326
+   "last_ts": "2026-11-16 19:35:00",
+   "last_px": 0.132
   }
  },
  "closed": [
@@ -2899,15 +2899,15 @@
    "reason": "signal flip"
   }
  ],
- "updated": "2026-11-16T18:39:12Z",
- "runs": 158,
+ "updated": "2026-11-16T19:45:02Z",
+ "runs": 159,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-16 18:37:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-16 18:30:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-16 18:37:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-16 18:30:00",
-  "bb_regime-NEARUSDT-1m": "2026-11-16 18:37:00",
-  "wick_vol-AVAXUSDT-15m": "2026-11-16 18:15:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-16 19:43:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-16 19:35:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-16 19:43:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-16 19:35:00",
+  "bb_regime-NEARUSDT-1m": "2026-11-16 19:43:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-16 19:15:00"
  },
  "tops": [
   {
@@ -2941,7 +2941,7 @@
    "score": 2.49,
    "signal": 0.0,
    "sig_last": "2026-11-16 15:01:00",
-   "sig_pct": 43.07
+   "sig_pct": 38.94
   },
   {
    "key": "funding_revert-SUIUSDT-1m",
@@ -2990,8 +2990,8 @@
    "oos_sharpe": 1.67,
    "score": 1.67,
    "signal": -1.0,
-   "sig_last": "2026-11-16 18:30:00",
-   "sig_pct": 90.77
+   "sig_last": "2026-11-16 19:35:00",
+   "sig_pct": 91.41
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -3006,8 +3006,8 @@
    "oos_sharpe": 1.93,
    "score": 1.41,
    "signal": -1.0,
-   "sig_last": "2026-11-16 18:30:00",
-   "sig_pct": 46.3
+   "sig_last": "2026-11-16 19:35:00",
+   "sig_pct": 46.95
   }
  ],
  "stats": {
