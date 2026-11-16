@@ -92,6 +92,16 @@
     "tp": 69.47821428571429,
     "sl": 73.18178571428571,
     "opened": "2026-11-16T17:00:03Z"
+   },
+   "ema_cross|SOL-USDT-SWAP": {
+    "strategy": "ema_cross",
+    "inst": "SOL-USDT-SWAP",
+    "side": -1,
+    "entry": 70.95,
+    "sz": 0.07047216349541931,
+    "tp": 70.0125,
+    "sl": 71.8875,
+    "opened": "2026-11-16T19:48:53Z"
    }
   },
   "trades": [
@@ -829,7 +839,7 @@
    "pnl": 0.0117,
    "trades": 8,
    "wins": 4,
-   "open": 2
+   "open": 3
   },
   "rsi_revert": {
    "pnl": 0.4024,
@@ -850,7 +860,7 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.036,
  "trades": 65,
- "open": 9,
+ "open": 10,
  "recent_trades": [
   {
    "ts": "2026-11-16T16:58:41Z",
@@ -1417,8 +1427,8 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 65030.7,
-   "atr": 300.32142857142804,
+   "price": 64762.8,
+   "atr": 229.79999999999927,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1429,10 +1439,10 @@
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1821.02,
-   "atr": 10.394285714285745,
+   "price": 1811.99,
+   "atr": 7.822142857142857,
    "sig": {
-    "ema_cross": 0,
+    "ema_cross": -1,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
@@ -1441,10 +1451,10 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 71.45,
-   "atr": 0.5128571428571423,
+   "price": 70.95,
+   "atr": 0.375,
    "sig": {
-    "ema_cross": 0,
+    "ema_cross": -1,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
@@ -1453,5 +1463,5 @@
    "err": null
   }
  },
- "updated": "2026-11-16T18:58:52Z"
+ "updated": "2026-11-16T19:48:53Z"
 }
