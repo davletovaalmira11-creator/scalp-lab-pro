@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-16T04:16:08Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-16T03:33:43Z",
    "best": {},
    "portfolio": [],
@@ -342,35 +349,28 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-15T01:07:41Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-16T03:33:43Z",
+ "updated": "2026-11-16T04:16:08Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -3.0,
+   "is_ret": -2.24,
    "oos_ret": -12.17,
-   "trades": 24,
+   "trades": 23,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": 1.23,
+   "is_ret": 4.29,
    "oos_ret": -0.15,
-   "trades": 29,
+   "trades": 31,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -15.97,
+   "is_ret": -15.81,
    "oos_ret": 7.95,
    "trades": 34,
    "portfolio": false
@@ -387,24 +387,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.295,
+   "okx_mom_pct": 0.085,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T03:33:43Z"
+   "ts": "2026-11-16T04:16:08Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.47,
+   "okx_mom_pct": 0.439,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T03:33:43Z"
+   "ts": "2026-11-16T04:16:08Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 0.56,
+   "okx_mom_pct": 0.575,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T03:33:43Z"
+   "ts": "2026-11-16T04:16:08Z"
   }
  ],
  "golden": [
@@ -420,18 +420,18 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "bb_maker NEARUSDT 1m",
-   "note": "OOS PF 1.018, Sharpe 3.004"
-  },
-  {
-   "src": "walk-forward bt",
    "name": "funding_revert SUIUSDT 1m",
    "note": "OOS PF 1.036, Sharpe 2.885"
   },
   {
    "src": "walk-forward bt",
-   "name": "wick_vol AVAXUSDT 15m",
-   "note": "OOS PF 1.08, Sharpe 2.418"
+   "name": "bb_regime NEARUSDT 1m",
+   "note": "OOS PF 1.017, Sharpe 2.767"
+  },
+  {
+   "src": "walk-forward bt",
+   "name": "bb_maker NEARUSDT 1m",
+   "note": "OOS PF 1.016, Sharpe 2.739"
   }
  ],
  "error": null
