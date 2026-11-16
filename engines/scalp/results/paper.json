@@ -1,30 +1,30 @@
 {
  "capital_start": 1000.0,
- "equity": 902.046859086005,
+ "equity": 908.5118579075495,
  "positions": {
   "bb_maker-NEARUSDT-1m": {
    "strategy": "bb_maker",
    "symbol": "NEARUSDT",
    "tf": "1m",
-   "signal": 1.0,
-   "entry": 3.154,
-   "opened": "2026-11-16 00:41:00",
+   "signal": -1.0,
+   "entry": 3.193,
+   "opened": "2026-11-16 02:23:00",
    "fee_mode": "maker",
-   "oos_sharpe": 2.74,
-   "last_ts": "2026-11-16 01:50:00",
-   "last_px": 3.13
+   "oos_sharpe": 3.0,
+   "last_ts": "2026-11-16 02:41:00",
+   "last_px": 3.206
   },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
    "symbol": "SUIUSDT",
    "tf": "5m",
-   "signal": 1.0,
-   "entry": 0.7264,
-   "opened": "2026-11-16 00:35:00",
+   "signal": -1.0,
+   "entry": 0.7328,
+   "opened": "2026-11-16 02:25:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.67,
-   "last_ts": "2026-11-16 01:45:00",
-   "last_px": 0.7208
+   "last_ts": "2026-11-16 02:35:00",
+   "last_px": 0.7338
   }
  },
  "closed": [
@@ -2729,17 +2729,44 @@
    "closed_ts": "2026-11-16 00:35:00",
    "fee_mode": "maker",
    "reason": "signal flip"
+  },
+  {
+   "key": "bb_maker-NEARUSDT-1m",
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "long",
+   "entry": 3.154,
+   "exit": 3.152,
+   "pnl_pct": -0.1134,
+   "opened": "2026-11-16 00:41:00",
+   "closed_ts": "2026-11-16 02:04:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
+  },
+  {
+   "key": "streak_bb-SUIUSDT-5m",
+   "strategy": "streak_bb",
+   "symbol": "SUIUSDT",
+   "tf": "5m",
+   "side": "long",
+   "entry": 0.7264,
+   "exit": 0.7328,
+   "pnl_pct": 0.8311,
+   "opened": "2026-11-16 00:35:00",
+   "closed_ts": "2026-11-16 02:25:00",
+   "fee_mode": "maker",
+   "reason": "signal flip"
   }
  ],
- "updated": "2026-11-16T01:51:51Z",
- "runs": 148,
+ "updated": "2026-11-16T02:42:56Z",
+ "runs": 149,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-16 01:50:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-16 01:45:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-16 01:50:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-16 01:45:00",
-  "wick_vol-OPUSDT-15m": "2026-11-16 01:30:00",
-  "wick_vol-AVAXUSDT-15m": "2026-11-16 01:30:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-16 02:41:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-16 02:35:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-16 02:41:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-16 02:35:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-16 02:15:00"
  },
  "tops": [
   {
@@ -2765,14 +2792,14 @@
    "tf": "1m",
    "params": {
     "k": 2.5,
-    "n": 200
+    "n": 100
    },
    "fee_mode": "maker",
-   "oos_sharpe": 2.74,
-   "score": 2.27,
-   "signal": 1.0,
-   "sig_last": "2026-11-16 01:50:00",
-   "sig_pct": 47.03
+   "oos_sharpe": 3.0,
+   "score": 2.49,
+   "signal": -1.0,
+   "sig_last": "2026-11-16 02:41:00",
+   "sig_pct": 46.89
   },
   {
    "key": "wick_vol-AVAXUSDT-15m",
@@ -2804,9 +2831,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 1.67,
    "score": 1.67,
-   "signal": 1.0,
-   "sig_last": "2026-11-16 01:45:00",
-   "sig_pct": 88.44
+   "signal": -1.0,
+   "sig_last": "2026-11-16 02:35:00",
+   "sig_pct": 88.93
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -2823,41 +2850,24 @@
    "signal": 0.0,
    "sig_last": "2026-11-15 06:50:00",
    "sig_pct": 43.87
-  },
-  {
-   "key": "wick_vol-OPUSDT-15m",
-   "strategy": "wick_vol",
-   "symbol": "OPUSDT",
-   "tf": "15m",
-   "params": {
-    "h": 30,
-    "vz": 3.0,
-    "w": 0.4
-   },
-   "fee_mode": "maker",
-   "oos_sharpe": 1.93,
-   "score": 1.25,
-   "signal": 0.0,
-   "sig_last": "2026-11-13 11:15:00",
-   "sig_pct": 8.25
   }
  ],
  "stats": {
-  "n_trades": 193,
-  "wins": 108,
-  "winrate": 56.0,
-  "equity": 902.05,
-  "pnl_pct": -9.8,
+  "n_trades": 195,
+  "wins": 109,
+  "winrate": 55.9,
+  "equity": 908.51,
+  "pnl_pct": -9.15,
   "open": 2
  },
  "filter_stats": {
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
-  "low_pf": 1423,
+  "low_pf": 1424,
   "low_t": 83,
   "no_params": 0,
-  "admitted": 6
+  "admitted": 5
  },
  "candidates": [
   {
