@@ -1,21 +1,5 @@
 {
- "updated": "2026-11-16T02:49:13Z",
+ "updated": "2026-11-16T05:18:46Z",
  "scanned": 200,
- "signals": [
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-dip-to-10000-by-december-31-2026-888-644-567-258-946-853-325-494-356-991",
-   "question": "Will Bitcoin dip to $10,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 37095 против среднего 7431",
-   "liq": 123696,
-   "v24": 37095,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 45.9,
-   "tradeable": false
-  }
- ]
+ "signals": []
 }
