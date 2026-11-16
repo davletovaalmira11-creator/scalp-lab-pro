@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T23:51:23Z",
+ "updated": "2026-11-16T00:01:03Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -7,7 +7,7 @@
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
-   "pm_trader": "ok"
+   "pm_trader": "stale"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-15T23:31:06Z",
-  "age_s": 1217.0
+  "age_s": 1797.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-15T23:51:23Z",
-  "age_s": 0.0
+  "age_s": 580.0
  },
  "scalp": {
   "done": 2662,
-  "total": 2662,
+  "total": 2672,
   "errors": 0,
-  "pending": 0,
-  "updated": "2026-11-15T22:56:59Z",
-  "age_s": 3264.0,
+  "pending": 10,
+  "updated": "2026-11-16T00:00:38Z",
+  "age_s": 25.0,
   "paper": {
-   "equity": 896.76,
-   "pnl_pct": -10.32,
-   "trades": 190,
-   "winrate": 55.8,
-   "open": 3,
-   "tops": 5
+   "equity": 906.76,
+   "pnl_pct": -9.32,
+   "trades": 192,
+   "winrate": 56.2,
+   "open": 1,
+   "tops": 6
   },
-  "paper_updated": "2026-11-15T22:57:35Z",
+  "paper_updated": "2026-11-16T00:01:02Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -132,6 +132,25 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
+   },
+   {
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "funding_revert",
@@ -418,7 +437,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-15T23:46:07Z",
-  "age_s": 316.0
+  "age_s": 896.0
  },
  "clob": {
   "mode": "off",
@@ -427,6 +446,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-15T23:30:24Z",
-  "age_s": 1259.0
+  "age_s": 1839.0
  }
 }
