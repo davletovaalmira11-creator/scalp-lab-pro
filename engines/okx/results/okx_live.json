@@ -1,6 +1,6 @@
 {
  "paper": {
-  "equity": 1000.5671458839541,
+  "equity": 1000.5623824495987,
   "start": 1000.0,
   "positions": {
    "rsi_revert|BTC-USDT-SWAP": {
@@ -73,26 +73,6 @@
     "sl": 1842.1617857142858,
     "opened": "2026-11-15T14:56:46Z"
    },
-   "donchian_break|SOL-USDT-SWAP": {
-    "strategy": "donchian_break",
-    "inst": "SOL-USDT-SWAP",
-    "side": 1,
-    "entry": 72.26,
-    "sz": 0.0691945751453086,
-    "tp": 73.15642857142858,
-    "sl": 71.36357142857143,
-    "opened": "2026-11-15T22:20:41Z"
-   },
-   "rsi_revert|SOL-USDT-SWAP": {
-    "strategy": "rsi_revert",
-    "inst": "SOL-USDT-SWAP",
-    "side": -1,
-    "entry": 72.19,
-    "sz": 0.06926167059149467,
-    "tp": 71.36321428571428,
-    "sl": 73.01678571428572,
-    "opened": "2026-11-15T22:44:21Z"
-   },
    "rsi_revert|ETH-USDT-SWAP": {
     "strategy": "rsi_revert",
     "inst": "ETH-USDT-SWAP",
@@ -105,6 +85,28 @@
    }
   },
   "trades": [
+   {
+    "ts": "2026-11-16T05:11:15Z",
+    "venue": "OKX",
+    "strategy": "rsi_revert",
+    "inst": "SOL-USDT-SWAP",
+    "side": "short",
+    "entry": 72.19,
+    "exit": 71.363214,
+    "pnl": 0.0573,
+    "reason": "tp"
+   },
+   {
+    "ts": "2026-11-16T05:11:15Z",
+    "venue": "OKX",
+    "strategy": "donchian_break",
+    "inst": "SOL-USDT-SWAP",
+    "side": "long",
+    "entry": 72.26,
+    "exit": 71.363571,
+    "pnl": -0.062,
+    "reason": "sl"
+   },
    {
     "ts": "2026-11-16T02:03:53Z",
     "venue": "OKX",
@@ -775,10 +777,10 @@
    "open": 2
   },
   "donchian_break": {
-   "pnl": 0.0069,
-   "trades": 10,
+   "pnl": -0.0551,
+   "trades": 11,
    "wins": 6,
-   "open": 1
+   "open": 0
   },
   "ema_cross": {
    "pnl": 0.0819,
@@ -787,10 +789,10 @@
    "open": 2
   },
   "rsi_revert": {
-   "pnl": 0.3451,
-   "trades": 19,
-   "wins": 10,
-   "open": 3
+   "pnl": 0.4024,
+   "trades": 20,
+   "wins": 11,
+   "open": 2
   },
   "sma_revert": {
    "pnl": 0.032,
@@ -801,12 +803,34 @@
  },
  "mode": "paper",
  "demo": null,
- "equity": 1000.57,
+ "equity": 1000.56,
  "start_equity": 1000.0,
- "pnl_pct": 0.057,
- "trades": 60,
- "open": 10,
+ "pnl_pct": 0.056,
+ "trades": 62,
+ "open": 8,
  "recent_trades": [
+  {
+   "ts": "2026-11-16T05:11:15Z",
+   "venue": "OKX",
+   "strategy": "rsi_revert",
+   "inst": "SOL-USDT-SWAP",
+   "side": "short",
+   "entry": 72.19,
+   "exit": 71.363214,
+   "pnl": 0.0573,
+   "reason": "tp"
+  },
+  {
+   "ts": "2026-11-16T05:11:15Z",
+   "venue": "OKX",
+   "strategy": "donchian_break",
+   "inst": "SOL-USDT-SWAP",
+   "side": "long",
+   "entry": 72.26,
+   "exit": 71.363571,
+   "pnl": -0.062,
+   "reason": "sl"
+  },
   {
    "ts": "2026-11-16T02:03:53Z",
    "venue": "OKX",
@@ -1334,28 +1358,6 @@
    "exit": 81.858571,
    "pnl": 0.0658,
    "reason": "tp"
-  },
-  {
-   "ts": "2026-11-12T13:56:47Z",
-   "venue": "OKX",
-   "strategy": "momentum",
-   "inst": "SOL-USDT-SWAP",
-   "side": "short",
-   "entry": 82.93,
-   "exit": 81.618571,
-   "pnl": 0.0791,
-   "reason": "tp"
-  },
-  {
-   "ts": "2026-11-12T13:56:47Z",
-   "venue": "OKX",
-   "strategy": "rsi_revert",
-   "inst": "SOL-USDT-SWAP",
-   "side": "short",
-   "entry": 83.33,
-   "exit": 81.578571,
-   "pnl": 0.1051,
-   "reason": "tp"
   }
  ],
  "params": {
@@ -1372,8 +1374,8 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 64842.5,
-   "atr": 306.6999999999997,
+   "price": 64627.0,
+   "atr": 274.12142857142834,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1384,10 +1386,10 @@
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1817.98,
-   "atr": 11.040714285714298,
+   "price": 1812.35,
+   "atr": 9.946428571428571,
    "sig": {
-    "ema_cross": 0,
+    "ema_cross": -1,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
@@ -1396,8 +1398,8 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 71.7,
-   "atr": 0.5335714285714295,
+   "price": 71.31,
+   "atr": 0.4678571428571437,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1408,5 +1410,5 @@
    "err": null
   }
  },
- "updated": "2026-11-16T04:12:41Z"
+ "updated": "2026-11-16T05:11:15Z"
 }
