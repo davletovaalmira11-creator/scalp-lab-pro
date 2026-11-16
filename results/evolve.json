@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-16T12:17:31Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-16T11:27:15Z",
    "best": {},
    "portfolio": [],
@@ -342,37 +349,30 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-15T05:55:12Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-16T11:27:15Z",
+ "updated": "2026-11-16T12:17:31Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
    "is_ret": -2.36,
-   "oos_ret": 0.31,
-   "trades": 31,
+   "oos_ret": -6.05,
+   "trades": 30,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -19.2,
-   "oos_ret": 4.93,
-   "trades": 32,
+   "is_ret": -20.34,
+   "oos_ret": 1.88,
+   "trades": 33,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": 3.01,
+   "is_ret": 6.28,
    "oos_ret": -13.75,
-   "trades": 30,
+   "trades": 32,
    "portfolio": false
   }
  ],
@@ -380,24 +380,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.141,
+   "okx_mom_pct": -0.505,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T11:27:15Z"
+   "ts": "2026-11-16T12:17:31Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.127,
+   "okx_mom_pct": -0.29,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T11:27:15Z"
+   "ts": "2026-11-16T12:17:31Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 1.075,
+   "okx_mom_pct": -0.099,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-16T11:27:15Z"
+   "ts": "2026-11-16T12:17:31Z"
   }
  ],
  "golden": [
@@ -413,13 +413,13 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "name": "bb_maker NEARUSDT 1m",
+   "note": "OOS PF 1.018, Sharpe 3.004"
   },
   {
    "src": "walk-forward bt",
-   "name": "bb_maker NEARUSDT 1m",
-   "note": "OOS PF 1.016, Sharpe 2.739"
+   "name": "funding_revert SUIUSDT 1m",
+   "note": "OOS PF 1.036, Sharpe 2.885"
   },
   {
    "src": "walk-forward bt",
