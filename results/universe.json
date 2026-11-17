@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T22:33:08Z",
+ "updated": "2026-11-17T22:39:43Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-17T21:51:06Z",
-  "age_s": 2523.0
+  "age_s": 2918.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,15 +38,15 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-17T22:33:08Z",
-  "age_s": 1.0
+  "age_s": 396.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-17T21:37:38Z",
-  "age_s": 3331.0,
+  "updated": "2026-11-17T22:39:00Z",
+  "age_s": 44.0,
   "paper": {
    "equity": 985.84,
    "pnl_pct": -1.42,
@@ -55,7 +55,7 @@
    "open": 4,
    "tops": 6
   },
-  "paper_updated": "2026-11-17T21:38:06Z",
+  "paper_updated": "2026-11-17T22:39:43Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -80,20 +80,20 @@
     "strategy": "funding_revert",
     "symbol": "SUIUSDT",
     "tf": "1m",
-    "oos_sharpe": "2.885",
-    "oos_pf": "1.036",
-    "oos_t": "1.88",
-    "trades": "752",
-    "param_stability": "0.32",
-    "is_sharpe_avg": "4.37",
+    "oos_sharpe": "2.774",
+    "oos_pf": "1.034",
+    "oos_t": "1.81",
+    "trades": "788",
+    "param_stability": "0.29",
+    "is_sharpe_avg": "4.49",
     "folds": "31",
     "fee_mode": "maker",
-    "maker_sharpe": "2.8852393906909355",
-    "maker_pf": "1.0355128146028323",
-    "daily_pct": "0.001691",
-    "monthly_pct": "0.051997",
-    "trades_per_day": "4.18",
-    "usd_per_month_1000": "52.0"
+    "maker_sharpe": "2.7743331954397203",
+    "maker_pf": "1.033574008505993",
+    "daily_pct": "0.001693",
+    "monthly_pct": "0.052047",
+    "trades_per_day": "4.38",
+    "usd_per_month_1000": "52.05"
    },
    {
     "strategy": "bb_regime",
@@ -156,20 +156,20 @@
     "strategy": "vol_burst_revert",
     "symbol": "ARBUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.951",
+    "oos_sharpe": "1.935",
     "oos_pf": "1.029",
-    "oos_t": "1.85",
-    "trades": "881",
-    "param_stability": "0.28",
-    "is_sharpe_avg": "4.17",
+    "oos_t": "1.84",
+    "trades": "894",
+    "param_stability": "0.26",
+    "is_sharpe_avg": "4.25",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.951493983041779",
-    "maker_pf": "1.0294067257872943",
-    "daily_pct": "0.002252",
-    "monthly_pct": "0.069814",
-    "trades_per_day": "2.41",
-    "usd_per_month_1000": "69.81"
+    "maker_sharpe": "1.9345995554905253",
+    "maker_pf": "1.0292257515978214",
+    "daily_pct": "0.002234",
+    "monthly_pct": "0.069224",
+    "trades_per_day": "2.45",
+    "usd_per_month_1000": "69.22"
    },
    {
     "strategy": "streak_bb",
@@ -360,7 +360,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-17T22:28:12Z",
-  "age_s": 297.0
+  "age_s": 692.0
  },
  "clob": {
   "mode": "off",
@@ -369,6 +369,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-17T22:22:40Z",
-  "age_s": 629.0
+  "age_s": 1024.0
  }
 }
