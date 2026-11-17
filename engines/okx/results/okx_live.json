@@ -1518,7 +1518,7 @@
  ],
  "params": {
   "ema_fast": 5,
-  "ema_slow": 13
+  "ema_slow": 26
  },
  "params_source": "evolve",
  "active_strategies": [
@@ -1530,8 +1530,8 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 64979.9,
-   "atr": 256.4071428571437,
+   "price": 64941.1,
+   "atr": 262.9571428571435,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1542,8 +1542,8 @@
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1824.39,
-   "atr": 10.067142857142844,
+   "price": 1824.8,
+   "atr": 10.187142857142849,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1554,8 +1554,8 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 75.12,
-   "atr": 0.5200000000000001,
+   "price": 75.18,
+   "atr": 0.5307142857142862,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1566,5 +1566,5 @@
    "err": null
   }
  },
- "updated": "2026-11-17T23:20:03Z"
+ "updated": "2026-11-17T23:25:35Z"
 }
