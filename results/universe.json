@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-17T11:05:44Z",
+ "updated": "2026-11-17T11:36:55Z",
  "health": {
-  "overall": "ok",
+  "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "ok",
-   "pm_trader": "ok"
+   "okx_trader": "stale",
+   "pm_trader": "stale"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-17T11:05:44Z",
-  "age_s": 1.0
+  "age_s": 1872.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-17T10:42:37Z",
-  "age_s": 1388.0
+  "age_s": 3259.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-17T10:48:15Z",
-  "age_s": 1050.0,
+  "updated": "2026-11-17T11:36:20Z",
+  "age_s": 36.0,
   "paper": {
-   "equity": 996.45,
-   "pnl_pct": -0.36,
-   "trades": 217,
-   "winrate": 56.7,
-   "open": 1,
+   "equity": 1004.24,
+   "pnl_pct": 0.42,
+   "trades": 218,
+   "winrate": 56.9,
+   "open": 3,
    "tops": 6
   },
-  "paper_updated": "2026-11-17T10:48:47Z",
+  "paper_updated": "2026-11-17T11:36:55Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -156,20 +156,20 @@
     "strategy": "vol_burst_revert",
     "symbol": "ARBUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.951",
+    "oos_sharpe": "1.935",
     "oos_pf": "1.029",
-    "oos_t": "1.85",
-    "trades": "881",
-    "param_stability": "0.28",
-    "is_sharpe_avg": "4.17",
+    "oos_t": "1.84",
+    "trades": "894",
+    "param_stability": "0.26",
+    "is_sharpe_avg": "4.25",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.951493983041779",
-    "maker_pf": "1.0294067257872943",
-    "daily_pct": "0.002252",
-    "monthly_pct": "0.069814",
-    "trades_per_day": "2.41",
-    "usd_per_month_1000": "69.81"
+    "maker_sharpe": "1.9345995554905253",
+    "maker_pf": "1.0292257515978214",
+    "daily_pct": "0.002234",
+    "monthly_pct": "0.069224",
+    "trades_per_day": "2.45",
+    "usd_per_month_1000": "69.22"
    },
    {
     "strategy": "streak_bb",
@@ -380,7 +380,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-17T11:04:39Z",
-  "age_s": 66.0
+  "age_s": 1937.0
  },
  "clob": {
   "mode": "off",
@@ -389,6 +389,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-17T11:00:31Z",
-  "age_s": 314.0
+  "age_s": 2185.0
  }
 }
