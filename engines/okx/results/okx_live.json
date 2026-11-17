@@ -1505,8 +1505,8 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 63668.7,
-   "atr": 434.95714285714297,
+   "price": 63741.2,
+   "atr": 484.5142857142855,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1517,8 +1517,8 @@
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1774.29,
-   "atr": 15.530714285714257,
+   "price": 1782.86,
+   "atr": 17.28357142857138,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1529,8 +1529,8 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 72.0,
-   "atr": 0.7328571428571432,
+   "price": 72.26,
+   "atr": 0.7778571428571439,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1541,5 +1541,5 @@
    "err": null
   }
  },
- "updated": "2026-11-17T16:45:59Z"
+ "updated": "2026-11-17T17:46:36Z"
 }
