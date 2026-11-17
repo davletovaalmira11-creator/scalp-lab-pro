@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-17T19:02:17Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-17T18:02:45Z",
    "best": {},
    "portfolio": [],
@@ -386,29 +393,22 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-16T02:58:41Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-17T18:02:45Z",
+ "updated": "2026-11-17T19:02:17Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -12.16,
-   "oos_ret": -4.29,
-   "trades": 28,
+   "is_ret": -14.39,
+   "oos_ret": -3.28,
+   "trades": 29,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -0.15,
-   "oos_ret": -7.12,
+   "is_ret": -2.28,
+   "oos_ret": -3.25,
    "trades": 35,
    "portfolio": false
   },
@@ -424,24 +424,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -1.26,
+   "okx_mom_pct": -0.736,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-17T18:02:45Z"
+   "ts": "2026-11-17T19:02:17Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.762,
+   "okx_mom_pct": 0.119,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-17T18:02:45Z"
+   "ts": "2026-11-17T19:02:17Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -1.176,
+   "okx_mom_pct": -0.331,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-17T18:02:45Z"
+   "ts": "2026-11-17T19:02:17Z"
   }
  ],
  "golden": [
@@ -457,18 +457,18 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "bb_maker NEARUSDT 1m",
-   "note": "OOS PF 1.018, Sharpe 3.004"
-  },
-  {
-   "src": "walk-forward bt",
    "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.034, Sharpe 2.774"
+   "note": "OOS PF 1.036, Sharpe 2.885"
   },
   {
    "src": "walk-forward bt",
-   "name": "bb_regime NEARUSDT 1m",
-   "note": "OOS PF 1.017, Sharpe 2.767"
+   "name": "bb_maker NEARUSDT 1m",
+   "note": "OOS PF 1.016, Sharpe 2.739"
+  },
+  {
+   "src": "walk-forward bt",
+   "name": "wick_vol AVAXUSDT 15m",
+   "note": "OOS PF 1.08, Sharpe 2.418"
   }
  ],
  "error": null
