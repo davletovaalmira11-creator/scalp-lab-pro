@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-17T01:57:44Z",
+ "updated": "2026-11-17T01:58:54Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "ok"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-17T01:51:47Z",
-  "age_s": 358.0
+  "age_s": 428.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-17T01:16:43Z",
-  "age_s": 2462.0
+  "age_s": 2532.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-16T23:28:30Z",
-  "age_s": 8955.0,
+  "updated": "2026-11-17T01:58:25Z",
+  "age_s": 30.0,
   "paper": {
-   "equity": 998.3,
-   "pnl_pct": -0.17,
-   "trades": 208,
-   "winrate": 57.7,
-   "open": 2,
-   "tops": 7
+   "equity": 1024.88,
+   "pnl_pct": 2.49,
+   "trades": 210,
+   "winrate": 58.1,
+   "open": 1,
+   "tops": 6
   },
-  "paper_updated": "2026-11-16T23:29:02Z",
+  "paper_updated": "2026-11-17T01:58:54Z",
   "leaderboard": [
    {
     "strategy": "funding_revert",
@@ -75,25 +75,6 @@
     "monthly_pct": "0.052047",
     "trades_per_day": "4.38",
     "usd_per_month_1000": "52.05"
-   },
-   {
-    "strategy": "bb_regime",
-    "symbol": "NEARUSDT",
-    "tf": "1m",
-    "oos_sharpe": "2.767",
-    "oos_pf": "1.017",
-    "oos_t": "1.8",
-    "trades": "2648",
-    "param_stability": "0.32",
-    "is_sharpe_avg": "5.04",
-    "folds": "31",
-    "fee_mode": "maker",
-    "maker_sharpe": "2.7665372539292243",
-    "maker_pf": "1.0172181236265705",
-    "daily_pct": "0.004123",
-    "monthly_pct": "0.131386",
-    "trades_per_day": "14.71",
-    "usd_per_month_1000": "131.39"
    },
    {
     "strategy": "bb_maker",
@@ -189,6 +170,25 @@
     "monthly_pct": "0.054707",
     "trades_per_day": "1.32",
     "usd_per_month_1000": "54.71"
+   },
+   {
+    "strategy": "bb_regime",
+    "symbol": "NEARUSDT",
+    "tf": "1m",
+    "oos_sharpe": "1.696",
+    "oos_pf": "1.01",
+    "oos_t": "1.11",
+    "trades": "2580",
+    "param_stability": "0.26",
+    "is_sharpe_avg": "4.92",
+    "folds": "31",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.6963227156739213",
+    "maker_pf": "1.0104573891435058",
+    "daily_pct": "0.002725",
+    "monthly_pct": "0.085074",
+    "trades_per_day": "14.33",
+    "usd_per_month_1000": "85.07"
    },
    {
     "strategy": "streak_bb",
@@ -399,7 +399,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-17T01:57:25Z",
-  "age_s": 20.0
+  "age_s": 90.0
  },
  "clob": {
   "mode": "off",
@@ -408,6 +408,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-17T01:57:42Z",
-  "age_s": 3.0
+  "age_s": 73.0
  }
 }
