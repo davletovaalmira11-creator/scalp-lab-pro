@@ -1,1 +1,1 @@
-okx trader v2: mode=paper equity=1000.17 open=10 trades=69 strategies=['ema_cross', 'momentum', 'rsi_revert', 'donchian_break', 'sma_revert']
+okx trader v2: mode=paper equity=1000.11 open=10 trades=71 strategies=['ema_cross', 'momentum', 'rsi_revert', 'donchian_break', 'sma_revert']
