@@ -1,21 +1,5 @@
 {
- "updated": "2026-11-17T11:55:50Z",
+ "updated": "2026-11-17T12:55:27Z",
  "scanned": 200,
- "signals": [
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-reach-250000-by-december-31-2026-579-442",
-   "question": "Will Bitcoin reach $250,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 2769 против среднего 753",
-   "liq": 272273,
-   "v24": 2769,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 44.5,
-   "tradeable": false
-  }
- ]
+ "signals": []
 }
