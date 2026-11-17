@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-17T22:57:18Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-17T22:22:42Z",
    "best": {},
    "portfolio": [],
@@ -386,35 +393,35 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-16T07:04:28Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-17T22:22:42Z",
+ "updated": "2026-11-17T22:57:18Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -13.27,
-   "oos_ret": -4.88,
-   "trades": 27,
+   "is_ret": -12.2,
+   "oos_ret": -5.85,
+   "trades": 28,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": 3.13,
-   "oos_ret": -10.36,
-   "trades": 29,
+   "is_ret": 1.09,
+   "oos_ret": -5.72,
+   "trades": 28,
+   "portfolio": false
+  },
+  {
+   "strategy": "rsi_revert",
+   "is_ret": 4.93,
+   "oos_ret": -2.48,
+   "trades": 32,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -11.99,
+   "is_ret": -10.96,
    "oos_ret": -5.77,
    "trades": 26,
    "portfolio": false
@@ -424,24 +431,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 1.232,
+   "okx_mom_pct": 1.567,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-17T22:22:42Z"
+   "ts": "2026-11-17T22:57:18Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.989,
+   "okx_mom_pct": 1.41,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-17T22:22:42Z"
+   "ts": "2026-11-17T22:57:18Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 1.698,
+   "okx_mom_pct": 1.718,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-17T22:22:42Z"
+   "ts": "2026-11-17T22:57:18Z"
   }
  ],
  "golden": [
@@ -463,7 +470,7 @@
   {
    "src": "walk-forward bt",
    "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "note": "OOS PF 1.034, Sharpe 2.774"
   },
   {
    "src": "walk-forward bt",
