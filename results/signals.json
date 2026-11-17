@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-17T03:36:25Z",
+ "updated": "2026-11-17T04:37:27Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "btc-updown-5m-1794889800",
+   "question": "Bitcoin Up or Down - November 16, 11:30PM-11:35PM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 75132 против среднего 10733",
+   "liq": 426255,
+   "v24": 75132,
+   "z": 0.0,
+   "end": "2026-11-17",
+   "days_left": 0.0,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-250000-by-december-31-2026-579-442",
@@ -9,12 +24,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 4536 против среднего 753",
-   "liq": 271757,
-   "v24": 4536,
+   "note": "объём 24ч 4512 против среднего 753",
+   "liq": 271756,
+   "v24": 4512,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 44.8,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "eth-updown-5m-1794889800",
+   "question": "Ethereum Up or Down - November 16, 11:30PM-11:35PM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 4921 против среднего 703",
+   "liq": 171248,
+   "v24": 4921,
+   "z": 0.0,
+   "end": "2026-11-17",
+   "days_left": 0.0,
    "tradeable": false
   }
  ]
