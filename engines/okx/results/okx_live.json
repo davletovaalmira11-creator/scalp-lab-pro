@@ -1,6 +1,6 @@
 {
  "paper": {
-  "equity": 1000.0728875295335,
+  "equity": 1000.1039455717838,
   "start": 1000.0,
   "positions": {
    "rsi_revert|BTC-USDT-SWAP": {
@@ -73,26 +73,6 @@
     "sl": 73.64285714285714,
     "opened": "2026-11-18T01:50:01Z"
    },
-   "rsi_revert|ETH-USDT-SWAP": {
-    "strategy": "rsi_revert",
-    "inst": "ETH-USDT-SWAP",
-    "side": 1,
-    "entry": 1807.68,
-    "sz": 0.002765976278987431,
-    "tp": 1825.7532142857144,
-    "sl": 1796.8360714285716,
-    "opened": "2026-11-18T03:37:53Z"
-   },
-   "rsi_revert|SOL-USDT-SWAP": {
-    "strategy": "rsi_revert",
-    "inst": "SOL-USDT-SWAP",
-    "side": -1,
-    "entry": 75.17,
-    "sz": 0.06651589729945456,
-    "tp": 74.25214285714286,
-    "sl": 75.72071428571428,
-    "opened": "2026-11-18T05:44:14Z"
-   },
    "momentum|SOL-USDT-SWAP": {
     "strategy": "momentum",
     "inst": "SOL-USDT-SWAP",
@@ -105,6 +85,28 @@
    }
   },
   "trades": [
+   {
+    "ts": "2026-11-18T12:45:57Z",
+    "venue": "OKX",
+    "strategy": "rsi_revert",
+    "inst": "SOL-USDT-SWAP",
+    "side": "short",
+    "entry": 75.17,
+    "exit": 74.252143,
+    "pnl": 0.0611,
+    "reason": "tp"
+   },
+   {
+    "ts": "2026-11-18T12:45:57Z",
+    "venue": "OKX",
+    "strategy": "rsi_revert",
+    "inst": "ETH-USDT-SWAP",
+    "side": "long",
+    "entry": 1807.68,
+    "exit": 1796.836071,
+    "pnl": -0.03,
+    "reason": "sl"
+   },
    {
     "ts": "2026-11-18T05:44:14Z",
     "venue": "OKX",
@@ -996,10 +998,10 @@
    "open": 1
   },
   "rsi_revert": {
-   "pnl": 0.2673,
-   "trades": 22,
-   "wins": 11,
-   "open": 3
+   "pnl": 0.2984,
+   "trades": 24,
+   "wins": 12,
+   "open": 1
   },
   "sma_revert": {
    "pnl": 0.032,
@@ -1010,12 +1012,34 @@
  },
  "mode": "paper",
  "demo": null,
- "equity": 1000.07,
+ "equity": 1000.1,
  "start_equity": 1000.0,
- "pnl_pct": 0.007,
- "trades": 79,
- "open": 10,
+ "pnl_pct": 0.01,
+ "trades": 81,
+ "open": 8,
  "recent_trades": [
+  {
+   "ts": "2026-11-18T12:45:57Z",
+   "venue": "OKX",
+   "strategy": "rsi_revert",
+   "inst": "SOL-USDT-SWAP",
+   "side": "short",
+   "entry": 75.17,
+   "exit": 74.252143,
+   "pnl": 0.0611,
+   "reason": "tp"
+  },
+  {
+   "ts": "2026-11-18T12:45:57Z",
+   "venue": "OKX",
+   "strategy": "rsi_revert",
+   "inst": "ETH-USDT-SWAP",
+   "side": "long",
+   "entry": 1807.68,
+   "exit": 1796.836071,
+   "pnl": -0.03,
+   "reason": "sl"
+  },
   {
    "ts": "2026-11-18T05:44:14Z",
    "venue": "OKX",
@@ -1543,28 +1567,6 @@
    "exit": 1926.290357,
    "pnl": 0.056,
    "reason": "tp"
-  },
-  {
-   "ts": "2026-11-13T23:24:25Z",
-   "venue": "OKX",
-   "strategy": "rsi_revert",
-   "inst": "BTC-USDT-SWAP",
-   "side": "short",
-   "entry": 68967.8,
-   "exit": 68380.317857,
-   "pnl": 0.0426,
-   "reason": "tp"
-  },
-  {
-   "ts": "2026-11-13T22:44:06Z",
-   "venue": "OKX",
-   "strategy": "ema_cross",
-   "inst": "SOL-USDT-SWAP",
-   "side": "long",
-   "entry": 80.06,
-   "exit": 79.233929,
-   "pnl": -0.0516,
-   "reason": "sl"
   }
  ],
  "params": {
@@ -1581,8 +1583,8 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 64205.4,
-   "atr": 178.93571428571417,
+   "price": 64059.3,
+   "atr": 164.59285714285735,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1593,11 +1595,11 @@
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1800.51,
-   "atr": 5.950000000000013,
+   "price": 1793.11,
+   "atr": 6.299999999999987,
    "sig": {
     "ema_cross": 0,
-    "momentum": -1,
+    "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
     "sma_revert": 0
@@ -1605,11 +1607,11 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 74.4,
-   "atr": 0.3192857142857152,
+   "price": 74.24,
+   "atr": 0.297857142857142,
    "sig": {
     "ema_cross": 0,
-    "momentum": -1,
+    "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
     "sma_revert": 0
@@ -1617,5 +1619,5 @@
    "err": null
   }
  },
- "updated": "2026-11-18T11:06:34Z"
+ "updated": "2026-11-18T12:45:57Z"
 }
