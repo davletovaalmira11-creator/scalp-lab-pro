@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T16:34:05Z",
+ "updated": "2026-11-18T17:34:29Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,42 +9,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 134014 против среднего 34998",
-   "liq": 428777,
+   "note": "объём 24ч 134014 против среднего 34995",
+   "liq": 428506,
    "v24": 134014,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 43.3,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "bitcoin-all-time-high-by-december-31-2026",
-   "question": "Bitcoin all time high by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 9892 против среднего 2891",
-   "liq": 277619,
-   "v24": 9892,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 43.3,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "bitcoin-above-70k-on-november-18-2026",
-   "question": "Will the price of Bitcoin be above $70,000 on November 18?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 66867 против среднего 13467",
-   "liq": 117020,
-   "v24": 66867,
-   "z": 0.0,
-   "end": "2026-11-18",
-   "days_left": 0.0,
    "tradeable": false
   }
  ]
