@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T04:20:23Z",
+ "updated": "2026-11-18T04:42:16Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -7,7 +7,7 @@
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
-   "pm_trader": "ok"
+   "pm_trader": "stale"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-18T03:39:31Z",
-  "age_s": 2452.0
+  "age_s": 3765.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-18T04:00:14Z",
-  "age_s": 1209.0
+  "age_s": 2522.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-18T04:20:00Z",
-  "age_s": 23.0,
+  "age_s": 1336.0,
   "paper": {
    "equity": 899.87,
    "pnl_pct": -10.01,
@@ -239,8 +239,8 @@
   "open": 9,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 64437.4,
-    "atr": 210.18571428571522,
+    "price": 64458.8,
+    "atr": 213.22857142857123,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -251,8 +251,8 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1804.57,
-    "atr": 7.084285714285703,
+    "price": 1802.46,
+    "atr": 7.181428571428569,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -263,11 +263,11 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 74.78,
-    "atr": 0.3678571428571412,
+    "price": 74.9,
+    "atr": 0.36214285714285666,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -369,8 +369,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-18T03:59:18Z",
-  "age_s": 1265.0
+  "updated": "2026-11-18T04:42:15Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -379,6 +379,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-18T04:06:01Z",
-  "age_s": 862.0
+  "age_s": 2175.0
  }
 }
