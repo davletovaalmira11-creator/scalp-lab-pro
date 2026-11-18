@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T16:07:46Z",
+ "updated": "2026-11-18T16:23:22Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-18T15:29:17Z",
-  "age_s": 2310.0
+  "age_s": 3245.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-18T16:07:46Z",
-  "age_s": 1.0
+  "age_s": 936.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-18T15:18:38Z",
-  "age_s": 2949.0,
+  "updated": "2026-11-18T16:22:55Z",
+  "age_s": 27.0,
   "paper": {
    "equity": 954.2,
    "pnl_pct": -4.58,
    "trades": 245,
    "winrate": 57.6,
    "open": 4,
-   "tops": 7
+   "tops": 6
   },
-  "paper_updated": "2026-11-18T15:19:19Z",
+  "paper_updated": "2026-11-18T16:23:22Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -210,25 +210,6 @@
     "usd_per_month_1000": "44.33"
    },
    {
-    "strategy": "wick_vol",
-    "symbol": "APTUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.186",
-    "oos_pf": "1.057",
-    "oos_t": "2.18",
-    "trades": "1753",
-    "param_stability": "0.5",
-    "is_sharpe_avg": "1.64",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.1859517047972608",
-    "maker_pf": "1.057189890449977",
-    "daily_pct": "0.000743",
-    "monthly_pct": "0.022529",
-    "trades_per_day": "1.2",
-    "usd_per_month_1000": "22.53"
-   },
-   {
     "strategy": "bb_maker",
     "symbol": "NEARUSDT",
     "tf": "5m",
@@ -359,7 +340,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-18T16:03:42Z",
-  "age_s": 245.0
+  "age_s": 1180.0
  },
  "clob": {
   "mode": "off",
@@ -368,6 +349,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-18T16:03:57Z",
-  "age_s": 230.0
+  "age_s": 1165.0
  }
 }
