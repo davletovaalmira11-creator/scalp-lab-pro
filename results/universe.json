@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T21:25:00Z",
+ "updated": "2026-11-18T21:39:22Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-18T21:25:00Z",
-  "age_s": 0.0
+  "age_s": 862.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-18T20:59:35Z",
-  "age_s": 1525.0
+  "age_s": 2387.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-18T20:39:49Z",
-  "age_s": 2711.0,
+  "age_s": 3573.0,
   "paper": {
    "equity": 904.03,
    "pnl_pct": -9.6,
@@ -254,12 +254,12 @@
   "demo": null,
   "equity": 999.8,
   "pnl_pct": -0.02,
-  "trades": 88,
-  "open": 10,
+  "trades": 90,
+  "open": 8,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 62558.1,
-    "atr": 207.0,
+    "price": 62358.9,
+    "atr": 213.25714285714224,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -270,20 +270,20 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1758.57,
-    "atr": 6.641428571428589,
+    "price": 1761.65,
+    "atr": 6.8321428571428475,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
-     "rsi_revert": 1,
+     "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
     },
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 73.09,
-    "atr": 0.3285714285714292,
+    "price": 73.0,
+    "atr": 0.32285714285714356,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -295,26 +295,6 @@
    }
   },
   "paper_positions": {
-   "rsi_revert|BTC-USDT-SWAP": {
-    "strategy": "rsi_revert",
-    "inst": "BTC-USDT-SWAP",
-    "side": 1,
-    "entry": 64129.9,
-    "sz": 7.796675185833753e-05,
-    "tp": 65784.00714285714,
-    "sl": 62475.79285714286,
-    "opened": "2026-11-14T23:59:15Z"
-   },
-   "sma_revert|BTC-USDT-SWAP": {
-    "strategy": "sma_revert",
-    "inst": "BTC-USDT-SWAP",
-    "side": -1,
-    "entry": 64129.9,
-    "sz": 7.796675185833753e-05,
-    "tp": 62475.79285714286,
-    "sl": 65784.00714285714,
-    "opened": "2026-11-14T23:59:15Z"
-   },
    "momentum|BTC-USDT-SWAP": {
     "strategy": "momentum",
     "inst": "BTC-USDT-SWAP",
@@ -398,8 +378,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-18T21:18:12Z",
-  "age_s": 408.0
+  "updated": "2026-11-18T21:39:05Z",
+  "age_s": 17.0
  },
  "clob": {
   "mode": "off",
@@ -407,7 +387,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-18T21:15:12Z",
-  "age_s": 588.0
+  "updated": "2026-11-18T21:39:20Z",
+  "age_s": 2.0
  }
 }
