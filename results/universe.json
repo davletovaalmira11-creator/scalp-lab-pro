@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T04:06:01Z",
+ "updated": "2026-11-18T04:20:23Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-18T03:39:31Z",
-  "age_s": 1590.0
+  "age_s": 2452.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-18T04:00:14Z",
-  "age_s": 347.0
+  "age_s": 1209.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-18T03:12:41Z",
-  "age_s": 3200.0,
+  "updated": "2026-11-18T04:20:00Z",
+  "age_s": 23.0,
   "paper": {
    "equity": 899.87,
    "pnl_pct": -10.01,
    "trades": 235,
    "winrate": 56.2,
    "open": 2,
-   "tops": 7
+   "tops": 6
   },
-  "paper_updated": "2026-11-18T03:13:05Z",
+  "paper_updated": "2026-11-18T04:20:22Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -208,25 +208,6 @@
     "monthly_pct": "0.044328",
     "trades_per_day": "6.67",
     "usd_per_month_1000": "44.33"
-   },
-   {
-    "strategy": "wick_vol",
-    "symbol": "APTUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.186",
-    "oos_pf": "1.057",
-    "oos_t": "2.18",
-    "trades": "1753",
-    "param_stability": "0.5",
-    "is_sharpe_avg": "1.64",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.1859517047972608",
-    "maker_pf": "1.057189890449977",
-    "daily_pct": "0.000743",
-    "monthly_pct": "0.022529",
-    "trades_per_day": "1.2",
-    "usd_per_month_1000": "22.53"
    },
    {
     "strategy": "bb_maker",
@@ -389,7 +370,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-18T03:59:18Z",
-  "age_s": 403.0
+  "age_s": 1265.0
  },
  "clob": {
   "mode": "off",
@@ -398,6 +379,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-18T04:06:01Z",
-  "age_s": 0.0
+  "age_s": 862.0
  }
 }
