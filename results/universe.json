@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T14:00:26Z",
+ "updated": "2026-11-18T14:24:32Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-18T13:31:26Z",
-  "age_s": 1741.0
+  "age_s": 3187.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-18T13:55:38Z",
-  "age_s": 289.0
+  "age_s": 1735.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-18T11:44:02Z",
-  "age_s": 8185.0,
+  "age_s": 9631.0,
   "paper": {
    "equity": 947.37,
    "pnl_pct": -5.26,
@@ -255,14 +255,14 @@
   "equity": 1000.1,
   "pnl_pct": 0.01,
   "trades": 81,
-  "open": 9,
+  "open": 10,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 63900.1,
-    "atr": 171.01428571428656,
+    "price": 63933.2,
+    "atr": 175.0214285714293,
     "sig": {
      "ema_cross": 0,
-     "momentum": -1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -270,24 +270,24 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1789.38,
-    "atr": 6.737857142857089,
+    "price": 1790.83,
+    "atr": 6.7421428571428,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
-     "rsi_revert": 1,
+     "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
     },
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 74.16,
-    "atr": 0.288571428571427,
+    "price": 74.34,
+    "atr": 0.29785714285713993,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
-     "rsi_revert": 0,
+     "rsi_revert": 1,
      "donchian_break": 0,
      "sma_revert": 0
     },
@@ -384,12 +384,22 @@
     "tp": 1815.6982142857141,
     "sl": 1787.8610714285714,
     "opened": "2026-11-18T13:12:32Z"
+   },
+   "rsi_revert|SOL-USDT-SWAP": {
+    "strategy": "rsi_revert",
+    "inst": "SOL-USDT-SWAP",
+    "side": 1,
+    "entry": 74.34,
+    "sz": 0.06725854183481302,
+    "tp": 75.08464285714285,
+    "sl": 73.8932142857143,
+    "opened": "2026-11-18T14:24:32Z"
    }
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-18T14:00:09Z",
-  "age_s": 18.0
+  "updated": "2026-11-18T14:24:32Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -398,6 +408,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-18T14:00:25Z",
-  "age_s": 2.0
+  "age_s": 1448.0
  }
 }
