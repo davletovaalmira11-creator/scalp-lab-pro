@@ -11,8 +11,8 @@
    "opened": "2026-11-18 11:35:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.93,
-   "last_ts": "2026-11-18 18:30:00",
-   "last_px": 0.1275
+   "last_ts": "2026-11-18 19:40:00",
+   "last_px": 0.1281
   },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
@@ -23,8 +23,8 @@
    "opened": "2026-11-18 17:25:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.67,
-   "last_ts": "2026-11-18 18:30:00",
-   "last_px": 0.7156
+   "last_ts": "2026-11-18 19:40:00",
+   "last_px": 0.7201
   }
  },
  "closed": [
@@ -3529,15 +3529,15 @@
    "reason": "signal flip"
   }
  ],
- "updated": "2026-11-18T18:37:30Z",
- "runs": 196,
+ "updated": "2026-11-18T19:45:52Z",
+ "runs": 197,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-18 18:36:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-18 18:30:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-18 18:36:00",
-  "wick_vol-AVAXUSDT-15m": "2026-11-18 18:15:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-18 18:30:00",
-  "wick_vol-OPUSDT-15m": "2026-11-18 18:15:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-18 19:44:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-18 19:40:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-18 19:44:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-18 19:30:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-18 19:40:00",
+  "wick_vol-OPUSDT-15m": "2026-11-18 19:30:00"
  },
  "tops": [
   {
@@ -3550,8 +3550,8 @@
     "z": 2.5
    },
    "fee_mode": "maker",
-   "oos_sharpe": 2.89,
-   "score": 2.66,
+   "oos_sharpe": 2.77,
+   "score": 2.3,
    "signal": 0.0,
    "sig_last": "",
    "sig_pct": 0.0
@@ -3603,8 +3603,8 @@
    "oos_sharpe": 1.67,
    "score": 1.67,
    "signal": -1.0,
-   "sig_last": "2026-11-18 18:30:00",
-   "sig_pct": 94.44
+   "sig_last": "2026-11-18 19:40:00",
+   "sig_pct": 95.14
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -3616,11 +3616,11 @@
     "vz": 6.0
    },
    "fee_mode": "maker",
-   "oos_sharpe": 1.95,
-   "score": 1.54,
+   "oos_sharpe": 1.93,
+   "score": 1.41,
    "signal": 1.0,
-   "sig_last": "2026-11-18 18:30:00",
-   "sig_pct": 35.93
+   "sig_last": "2026-11-18 19:40:00",
+   "sig_pct": 36.63
   },
   {
    "key": "wick_vol-OPUSDT-15m",
