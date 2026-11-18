@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-18T02:20:30Z",
+ "updated": "2026-11-18T02:37:43Z",
  "health": {
   "overall": "degraded",
   "modules": {
    "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
+   "okx_trader": "ok",
    "pm_trader": "ok"
   }
  },
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-18T01:52:17Z",
-  "age_s": 1693.0
+  "age_s": 2727.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-18T01:57:17Z",
-  "age_s": 1393.0
+  "age_s": 2427.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-18T02:02:16Z",
-  "age_s": 1094.0,
+  "age_s": 2128.0,
   "paper": {
    "equity": 891.18,
    "pnl_pct": -10.88,
@@ -239,10 +239,10 @@
   "open": 8,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 64416.5,
-    "atr": 212.55000000000084,
+    "price": 64433.9,
+    "atr": 219.69285714285797,
     "sig": {
-     "ema_cross": 0,
+     "ema_cross": -1,
      "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
@@ -251,8 +251,8 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1807.0,
-    "atr": 7.517142857142874,
+    "price": 1806.77,
+    "atr": 7.1257142857142854,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -263,14 +263,14 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 74.29,
-    "atr": 0.4314285714285739,
+    "price": 74.62,
+    "atr": 0.3700000000000005,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
-     "sma_revert": 1
+     "sma_revert": 0
     },
     "err": null
    }
@@ -359,8 +359,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-18T01:50:01Z",
-  "age_s": 1829.0
+  "updated": "2026-11-18T02:37:43Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -369,6 +369,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-18T02:20:30Z",
-  "age_s": 0.0
+  "age_s": 1034.0
  }
 }
