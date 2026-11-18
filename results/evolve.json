@@ -1,6 +1,35 @@
 {
  "history": [
   {
+   "ts": "2026-11-18T22:38:43Z",
+   "best": {
+    "ema_fast": 5,
+    "ema_slow": 13,
+    "sl_atr": 1.5,
+    "tp_atr": 3.0,
+    "is_ret": 3.0,
+    "oos_ret": 1.9,
+    "trades": 23,
+    "active_strategies": [
+     "ema_cross",
+     "momentum",
+     "rsi_revert",
+     "donchian_break",
+     "sma_revert"
+    ],
+    "updated": "2026-11-18T22:38:43Z"
+   },
+   "portfolio": [
+    "ema_cross",
+    "momentum",
+    "rsi_revert",
+    "donchian_break",
+    "sma_revert"
+   ],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-18T21:55:15Z",
    "best": {},
    "portfolio": [],
@@ -364,30 +393,69 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-17T14:23:12Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-18T21:55:15Z",
- "best_okx": null,
+ "updated": "2026-11-18T22:38:43Z",
+ "best_okx": {
+  "ema_fast": 5,
+  "ema_slow": 13,
+  "sl_atr": 1.5,
+  "tp_atr": 3.0,
+  "is_ret": 3.0,
+  "oos_ret": 1.9,
+  "trades": 23,
+  "active_strategies": [
+   "ema_cross",
+   "momentum",
+   "rsi_revert",
+   "donchian_break",
+   "sma_revert"
+  ],
+  "strategy_stats": [
+   {
+    "strategy": "ema_cross",
+    "is_ret": -4.22,
+    "oos_ret": 1.36,
+    "trades": 19,
+    "portfolio": false
+   },
+   {
+    "strategy": "momentum",
+    "is_ret": -13.07,
+    "oos_ret": -4.74,
+    "trades": 34,
+    "portfolio": false
+   },
+   {
+    "strategy": "donchian_break",
+    "is_ret": -9.31,
+    "oos_ret": -3.43,
+    "trades": 24,
+    "portfolio": false
+   },
+   {
+    "strategy": "sma_revert",
+    "is_ret": -10.02,
+    "oos_ret": -1.21,
+    "trades": 20,
+    "portfolio": false
+   }
+  ],
+  "updated": "2026-11-18T22:38:43Z"
+ },
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -11.9,
+   "is_ret": -4.22,
    "oos_ret": 1.36,
-   "trades": 22,
+   "trades": 19,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -17.73,
+   "is_ret": -13.07,
    "oos_ret": -4.74,
-   "trades": 35,
+   "trades": 34,
    "portfolio": false
   },
   {
@@ -399,34 +467,40 @@
   },
   {
    "strategy": "sma_revert",
-   "is_ret": -9.05,
+   "is_ret": -10.02,
    "oos_ret": -1.21,
-   "trades": 19,
+   "trades": 20,
    "portfolio": false
   }
  ],
- "portfolio": [],
+ "portfolio": [
+  "ema_cross",
+  "momentum",
+  "rsi_revert",
+  "donchian_break",
+  "sma_revert"
+ ],
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -1.335,
+   "okx_mom_pct": -0.214,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-18T21:55:15Z"
+   "ts": "2026-11-18T22:38:43Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.316,
+   "okx_mom_pct": 0.409,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-18T21:55:15Z"
+   "ts": "2026-11-18T22:38:43Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -1.219,
+   "okx_mom_pct": -0.437,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-18T21:55:15Z"
+   "ts": "2026-11-18T22:38:43Z"
   }
  ],
  "golden": [
