@@ -11,8 +11,8 @@
    "opened": "2026-11-18 11:35:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.93,
-   "last_ts": "2026-11-18 19:40:00",
-   "last_px": 0.1281
+   "last_ts": "2026-11-18 20:35:00",
+   "last_px": 0.1273
   },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
@@ -23,8 +23,8 @@
    "opened": "2026-11-18 17:25:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.67,
-   "last_ts": "2026-11-18 19:40:00",
-   "last_px": 0.7201
+   "last_ts": "2026-11-18 20:35:00",
+   "last_px": 0.7172
   }
  },
  "closed": [
@@ -3529,15 +3529,15 @@
    "reason": "signal flip"
   }
  ],
- "updated": "2026-11-18T19:45:52Z",
- "runs": 197,
+ "updated": "2026-11-18T20:40:17Z",
+ "runs": 198,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-18 19:44:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-18 19:40:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-18 19:44:00",
-  "wick_vol-AVAXUSDT-15m": "2026-11-18 19:30:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-18 19:40:00",
-  "wick_vol-OPUSDT-15m": "2026-11-18 19:30:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-18 20:39:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-18 20:35:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-18 20:38:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-18 20:15:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-18 20:35:00",
+  "wick_vol-OPUSDT-15m": "2026-11-18 20:15:00"
  },
  "tops": [
   {
@@ -3570,7 +3570,7 @@
    "score": 2.27,
    "signal": 0.0,
    "sig_last": "2026-11-18 17:18:00",
-   "sig_pct": 41.92
+   "sig_pct": 37.51
   },
   {
    "key": "wick_vol-AVAXUSDT-15m",
@@ -3603,8 +3603,8 @@
    "oos_sharpe": 1.67,
    "score": 1.67,
    "signal": -1.0,
-   "sig_last": "2026-11-18 19:40:00",
-   "sig_pct": 95.14
+   "sig_last": "2026-11-18 20:35:00",
+   "sig_pct": 95.19
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -3619,8 +3619,8 @@
    "oos_sharpe": 1.93,
    "score": 1.41,
    "signal": 1.0,
-   "sig_last": "2026-11-18 19:40:00",
-   "sig_pct": 36.63
+   "sig_last": "2026-11-18 20:35:00",
+   "sig_pct": 36.87
   },
   {
    "key": "wick_vol-OPUSDT-15m",
