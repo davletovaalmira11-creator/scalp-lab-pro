@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T17:34:29Z",
+ "updated": "2026-11-18T18:26:43Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 134014 против среднего 34995",
-   "liq": 428506,
-   "v24": 134014,
+   "note": "объём 24ч 195245 против среднего 43744",
+   "liq": 365999,
+   "v24": 195245,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 43.3,
+   "days_left": 43.2,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-ethereum-reach-7000-by-december-31-2026",
+   "question": "Will Ethereum reach $7,000 by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 3456 против среднего 553",
+   "liq": 106380,
+   "v24": 3456,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 43.2,
    "tradeable": false
   }
  ]
