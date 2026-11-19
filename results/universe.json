@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:00:15Z",
+ "updated": "2026-11-19T08:08:34Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-19T07:56:10Z",
-  "age_s": 245.0
+  "age_s": 745.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-19T07:35:33Z",
-  "age_s": 1482.0
+  "age_s": 1982.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-19T06:48:46Z",
-  "age_s": 4289.0,
+  "updated": "2026-11-19T08:07:57Z",
+  "age_s": 38.0,
   "paper": {
    "equity": 945.46,
    "pnl_pct": -5.45,
    "trades": 260,
    "winrate": 57.3,
-   "open": 1,
-   "tops": 6
+   "open": 2,
+   "tops": 7
   },
-  "paper_updated": "2026-11-19T06:49:09Z",
+  "paper_updated": "2026-11-19T08:08:34Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -156,20 +156,39 @@
     "strategy": "vol_burst_revert",
     "symbol": "ARBUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.951",
+    "oos_sharpe": "1.935",
     "oos_pf": "1.029",
-    "oos_t": "1.85",
-    "trades": "881",
-    "param_stability": "0.28",
-    "is_sharpe_avg": "4.17",
+    "oos_t": "1.84",
+    "trades": "894",
+    "param_stability": "0.26",
+    "is_sharpe_avg": "4.25",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.951493983041779",
-    "maker_pf": "1.0294067257872943",
-    "daily_pct": "0.002252",
-    "monthly_pct": "0.069814",
-    "trades_per_day": "2.41",
-    "usd_per_month_1000": "69.81"
+    "maker_sharpe": "1.9345995554905253",
+    "maker_pf": "1.0292257515978214",
+    "daily_pct": "0.002234",
+    "monthly_pct": "0.069224",
+    "trades_per_day": "2.45",
+    "usd_per_month_1000": "69.22"
+   },
+   {
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "streak_bb",
@@ -350,7 +369,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-19T07:53:22Z",
-  "age_s": 413.0
+  "age_s": 913.0
  },
  "clob": {
   "mode": "off",
@@ -359,6 +378,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-19T08:00:15Z",
-  "age_s": 0.0
+  "age_s": 500.0
  }
 }
