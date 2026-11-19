@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-19T17:09:53Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-19T16:48:20Z",
    "best": {},
    "portfolio": [],
@@ -386,51 +393,44 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-18T09:44:04Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-19T16:48:20Z",
+ "updated": "2026-11-19T17:09:53Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -9.71,
+   "is_ret": -8.92,
    "oos_ret": -0.77,
-   "trades": 22,
+   "trades": 21,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -11.4,
-   "oos_ret": -6.66,
-   "trades": 35,
+   "is_ret": -12.37,
+   "oos_ret": -5.31,
+   "trades": 37,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
    "is_ret": 2.01,
-   "oos_ret": -14.39,
-   "trades": 41,
+   "oos_ret": -17.42,
+   "trades": 44,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -4.54,
-   "oos_ret": -3.55,
-   "trades": 30,
+   "is_ret": -3.63,
+   "oos_ret": -1.57,
+   "trades": 31,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
    "is_ret": -7.47,
-   "oos_ret": -1.94,
-   "trades": 26,
+   "oos_ret": 0.35,
+   "trades": 28,
    "portfolio": false
   }
  ],
@@ -438,24 +438,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -1.357,
+   "okx_mom_pct": -2.198,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-19T16:48:20Z"
+   "ts": "2026-11-19T17:09:53Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -1.758,
+   "okx_mom_pct": -2.9,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-19T16:48:20Z"
+   "ts": "2026-11-19T17:09:53Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -1.89,
+   "okx_mom_pct": -2.732,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-19T16:48:20Z"
+   "ts": "2026-11-19T17:09:53Z"
   }
  ],
  "golden": [
