@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T11:43:03Z",
+ "updated": "2026-11-19T11:44:38Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-19T11:00:47Z",
-  "age_s": 2537.0
+  "age_s": 2632.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-19T11:33:50Z",
-  "age_s": 554.0
+  "age_s": 649.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-19T11:42:37Z",
-  "age_s": 27.0,
+  "age_s": 122.0,
   "paper": {
    "equity": 968.49,
    "pnl_pct": -3.15,
@@ -271,26 +271,26 @@
  "okx": {
   "mode": "paper",
   "demo": null,
-  "equity": 999.85,
-  "pnl_pct": -0.015,
-  "trades": 95,
-  "open": 7,
+  "equity": 999.82,
+  "pnl_pct": -0.018,
+  "trades": 96,
+  "open": 8,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 63923.4,
-    "atr": 168.57142857142858,
+    "price": 63962.3,
+    "atr": 168.75714285714275,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
      "rsi_revert": 0,
-     "donchian_break": 0,
+     "donchian_break": 1,
      "sma_revert": 0
     },
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1807.94,
-    "atr": 6.476428571428577,
+    "price": 1809.26,
+    "atr": 6.559999999999994,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -301,7 +301,7 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 74.84,
+    "price": 74.94,
     "atr": 0.2799999999999991,
     "sig": {
      "ema_cross": 0,
@@ -374,21 +374,31 @@
     "sl": 72.47428571428571,
     "opened": "2026-11-18T18:22:55Z"
    },
+   "donchian_break|BTC-USDT-SWAP": {
+    "strategy": "donchian_break",
+    "inst": "BTC-USDT-SWAP",
+    "side": 1,
+    "entry": 63962.3,
+    "sz": 7.817104763274616e-05,
+    "tp": 64637.328571428574,
+    "sl": 63709.16428571429,
+    "opened": "2026-11-19T11:44:38Z"
+   },
    "momentum|SOL-USDT-SWAP": {
     "strategy": "momentum",
     "inst": "SOL-USDT-SWAP",
-    "side": -1,
-    "entry": 74.44,
-    "sz": 0.06716818914562063,
-    "tp": 73.21714285714286,
-    "sl": 74.89857142857143,
-    "opened": "2026-11-19T10:28:53Z"
+    "side": 1,
+    "entry": 74.94,
+    "sz": 0.06672004270082733,
+    "tp": 76.05999999999999,
+    "sl": 74.52,
+    "opened": "2026-11-19T11:44:38Z"
    }
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-19T11:40:40Z",
-  "age_s": 144.0
+  "updated": "2026-11-19T11:44:38Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -397,6 +407,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-19T11:40:58Z",
-  "age_s": 126.0
+  "age_s": 221.0
  }
 }
