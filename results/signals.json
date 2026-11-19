@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T02:24:21Z",
+ "updated": "2026-11-19T03:21:39Z",
  "scanned": 200,
  "signals": [
   {
@@ -15,21 +15,6 @@
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 42.9,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "bitcoin-above-72k-on-november-19-2026",
-   "question": "Will the price of Bitcoin be above $72,000 on November 19?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 5428 против среднего 1544",
-   "liq": 114620,
-   "v24": 5428,
-   "z": 0.0,
-   "end": "2026-11-19",
-   "days_left": 0.0,
    "tradeable": false
   }
  ]
