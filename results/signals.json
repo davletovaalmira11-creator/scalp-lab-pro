@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T12:04:20Z",
+ "updated": "2026-11-20T13:15:50Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,42 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 373791 против среднего 59353",
-   "liq": 315520,
-   "v24": 373791,
+   "note": "объём 24ч 378369 против среднего 60025",
+   "liq": 302786,
+   "v24": 378369,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 41.5,
+   "days_left": 41.4,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "bitcoin-all-time-high-by-december-31-2026",
+   "question": "Bitcoin all time high by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 26968 против среднего 7541",
+   "liq": 263670,
+   "v24": 26968,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 41.4,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "btc-updown-15m-1795179600",
+   "question": "Bitcoin Up or Down - November 20, 8:00AM-8:15AM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 5564 против среднего 795",
+   "liq": 257929,
+   "v24": 5564,
+   "z": 0.0,
+   "end": "2026-11-20",
+   "days_left": 0.0,
    "tradeable": false
   },
   {
@@ -25,11 +55,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 64578 против среднего 16156",
-   "liq": 135177,
+   "liq": 135118,
    "v24": 64578,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 41.5,
+   "days_left": 41.4,
    "tradeable": false
   },
   {
@@ -39,27 +69,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 23487 против среднего 4139",
-   "liq": 127966,
-   "v24": 23487,
+   "note": "объём 24ч 23257 против среднего 4139",
+   "liq": 128816,
+   "v24": 23257,
    "z": 0.0,
    "end": "2026-12-01",
-   "days_left": 10.5,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-reach-170000-by-december-31-2026-335-688-943",
-   "question": "Will Bitcoin reach $170,000 by December 31, 2026?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 3410 против среднего 1068",
-   "liq": 124058,
-   "v24": 3410,
-   "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 41.5,
+   "days_left": 10.4,
    "tradeable": false
   }
  ]
