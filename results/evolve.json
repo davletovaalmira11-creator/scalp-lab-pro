@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-20T04:44:04Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-20T03:56:18Z",
    "best": {},
    "portfolio": [],
@@ -364,51 +371,44 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-18T20:57:09Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-20T03:56:18Z",
+ "updated": "2026-11-20T04:44:04Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -8.1,
+   "is_ret": -5.98,
    "oos_ret": -1.9,
    "trades": 21,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -10.17,
-   "oos_ret": -7.73,
-   "trades": 36,
+   "is_ret": -13.02,
+   "oos_ret": -5.72,
+   "trades": 35,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": 4.15,
-   "oos_ret": -10.14,
-   "trades": 31,
+   "is_ret": 3.97,
+   "oos_ret": -11.42,
+   "trades": 34,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -2.49,
+   "is_ret": -3.75,
    "oos_ret": -6.33,
-   "trades": 30,
+   "trades": 31,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
-   "is_ret": -4.7,
+   "is_ret": -3.65,
    "oos_ret": 4.09,
-   "trades": 27,
+   "trades": 29,
    "portfolio": false
   }
  ],
@@ -416,24 +416,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.049,
+   "okx_mom_pct": -0.743,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-20T03:56:18Z"
+   "ts": "2026-11-20T04:44:04Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.551,
+   "okx_mom_pct": -1.619,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-20T03:56:18Z"
+   "ts": "2026-11-20T04:44:04Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.096,
+   "okx_mom_pct": -0.729,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-20T03:56:18Z"
+   "ts": "2026-11-20T04:44:04Z"
   }
  ],
  "golden": [
@@ -455,12 +455,12 @@
   {
    "src": "walk-forward bt",
    "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "note": "OOS PF 1.034, Sharpe 2.774"
   },
   {
    "src": "walk-forward bt",
-   "name": "wick_vol AVAXUSDT 15m",
-   "note": "OOS PF 1.08, Sharpe 2.418"
+   "name": "bb_regime NEARUSDT 1m",
+   "note": "OOS PF 1.017, Sharpe 2.767"
   }
  ],
  "error": null
