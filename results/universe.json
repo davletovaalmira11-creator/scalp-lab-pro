@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-20T00:03:41Z",
+ "updated": "2026-11-20T00:11:32Z",
  "health": {
-  "overall": "ok",
+  "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-19T23:52:07Z",
-  "age_s": 694.0
+  "age_s": 1166.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-19T23:51:30Z",
-  "age_s": 731.0
+  "age_s": 1203.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-19T23:29:40Z",
-  "age_s": 2041.0,
+  "age_s": 2513.0,
   "paper": {
    "equity": 945.27,
    "pnl_pct": -5.47,
@@ -239,11 +239,11 @@
   "open": 8,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 61965.8,
-    "atr": 304.9857142857145,
+    "price": 62031.4,
+    "atr": 286.721428571429,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -251,11 +251,11 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1757.39,
-    "atr": 10.232142857142842,
+    "price": 1759.51,
+    "atr": 9.828571428571422,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -263,8 +263,8 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 73.09,
-    "atr": 0.42071428571428476,
+    "price": 73.22,
+    "atr": 0.3999999999999996,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -359,8 +359,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-19T23:57:34Z",
-  "age_s": 367.0
+  "updated": "2026-11-20T00:11:14Z",
+  "age_s": 19.0
  },
  "clob": {
   "mode": "off",
@@ -368,7 +368,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-20T00:03:41Z",
-  "age_s": 0.0
+  "updated": "2026-11-20T00:11:30Z",
+  "age_s": 3.0
  }
 }
