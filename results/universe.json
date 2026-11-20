@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-20T06:48:50Z",
+ "updated": "2026-11-20T06:51:52Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
+   "okx_trader": "ok",
    "pm_trader": "ok"
   }
  },
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-20T06:44:24Z",
-  "age_s": 266.0
+  "age_s": 448.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-20T05:45:02Z",
-  "age_s": 3828.0
+  "age_s": 4010.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-20T06:48:15Z",
-  "age_s": 35.0,
+  "age_s": 217.0,
   "paper": {
    "equity": 879.02,
    "pnl_pct": -12.1,
@@ -236,14 +236,14 @@
   "equity": 999.34,
   "pnl_pct": -0.066,
   "trades": 100,
-  "open": 9,
+  "open": 10,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 61944.1,
-    "atr": 333.0857142857146,
+    "price": 61914.4,
+    "atr": 240.9857142857145,
     "sig": {
      "ema_cross": 0,
-     "momentum": 0,
+     "momentum": 1,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -251,10 +251,10 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1739.48,
-    "atr": 12.049285714285734,
+    "price": 1746.34,
+    "atr": 9.274285714285709,
     "sig": {
-     "ema_cross": 0,
+     "ema_cross": 1,
      "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
@@ -263,11 +263,11 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 72.79,
-    "atr": 0.529285714285715,
+    "price": 72.75,
+    "atr": 0.394285714285715,
     "sig": {
-     "ema_cross": 0,
-     "momentum": 0,
+     "ema_cross": 1,
+     "momentum": 1,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -365,12 +365,22 @@
     "tp": 71.01428571428572,
     "sl": 73.78607142857142,
     "opened": "2026-11-20T01:42:50Z"
+   },
+   "ema_cross|ETH-USDT-SWAP": {
+    "strategy": "ema_cross",
+    "inst": "ETH-USDT-SWAP",
+    "side": 1,
+    "entry": 1746.34,
+    "sz": 0.002863130890891808,
+    "tp": 1783.4371428571428,
+    "sl": 1732.4285714285713,
+    "opened": "2026-11-20T06:51:52Z"
    }
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-20T05:50:38Z",
-  "age_s": 3492.0
+  "updated": "2026-11-20T06:51:52Z",
+  "age_s": 0.0
  },
  "clob": {
   "mode": "off",
@@ -379,6 +389,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-20T06:40:53Z",
-  "age_s": 477.0
+  "age_s": 659.0
  }
 }
