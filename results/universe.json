@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-20T12:45:24Z",
+ "updated": "2026-11-20T12:46:35Z",
  "health": {
   "overall": "degraded",
   "modules": {
    "pm_worker": "stale",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "ok"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-20T12:04:20Z",
-  "age_s": 2465.0
+  "age_s": 2535.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-20T12:39:15Z",
-  "age_s": 370.0
+  "age_s": 440.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-20T10:46:29Z",
-  "age_s": 7136.0,
+  "updated": "2026-11-20T12:46:07Z",
+  "age_s": 28.0,
   "paper": {
-   "equity": 880.64,
-   "pnl_pct": -11.94,
-   "trades": 287,
-   "winrate": 56.8,
+   "equity": 885.02,
+   "pnl_pct": -11.5,
+   "trades": 289,
+   "winrate": 57.1,
    "open": 4,
    "tops": 6
   },
-  "paper_updated": "2026-11-20T10:46:59Z",
+  "paper_updated": "2026-11-20T12:46:35Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -156,20 +156,20 @@
     "strategy": "vol_burst_revert",
     "symbol": "ARBUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.951",
+    "oos_sharpe": "1.935",
     "oos_pf": "1.029",
-    "oos_t": "1.85",
-    "trades": "881",
-    "param_stability": "0.28",
-    "is_sharpe_avg": "4.17",
+    "oos_t": "1.84",
+    "trades": "894",
+    "param_stability": "0.26",
+    "is_sharpe_avg": "4.25",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.951493983041779",
-    "maker_pf": "1.0294067257872943",
-    "daily_pct": "0.002252",
-    "monthly_pct": "0.069814",
-    "trades_per_day": "2.41",
-    "usd_per_month_1000": "69.81"
+    "maker_sharpe": "1.9345995554905253",
+    "maker_pf": "1.0292257515978214",
+    "daily_pct": "0.002234",
+    "monthly_pct": "0.069224",
+    "trades_per_day": "2.45",
+    "usd_per_month_1000": "69.22"
    },
    {
     "strategy": "streak_bb",
@@ -370,7 +370,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-20T12:45:08Z",
-  "age_s": 17.0
+  "age_s": 87.0
  },
  "clob": {
   "mode": "off",
@@ -379,6 +379,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-20T12:45:22Z",
-  "age_s": 3.0
+  "age_s": 73.0
  }
 }
