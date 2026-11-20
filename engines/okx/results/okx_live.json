@@ -22,6 +22,26 @@
     "tp": 1664.6414285714288,
     "sl": 1572.2257142857143,
     "opened": "2026-11-20T20:55:23Z"
+   },
+   "sma_revert|BTC-USDT-SWAP": {
+    "strategy": "sma_revert",
+    "inst": "BTC-USDT-SWAP",
+    "side": -1,
+    "entry": 59092.1,
+    "sz": 8.4613679324309e-05,
+    "tp": 57026.72857142857,
+    "sl": 59866.614285714284,
+    "opened": "2026-11-20T22:13:37Z"
+   },
+   "ema_cross|SOL-USDT-SWAP": {
+    "strategy": "ema_cross",
+    "inst": "SOL-USDT-SWAP",
+    "side": 1,
+    "entry": 69.07,
+    "sz": 0.07239032865209209,
+    "tp": 71.95285714285714,
+    "sl": 67.98892857142856,
+    "opened": "2026-11-20T22:13:37Z"
    }
   },
   "trades": [
@@ -1144,7 +1164,7 @@
    "pnl": -0.2443,
    "trades": 17,
    "wins": 6,
-   "open": 0
+   "open": 1
   },
   "rsi_revert": {
    "pnl": 0.068,
@@ -1156,7 +1176,7 @@
    "pnl": 0.1479,
    "trades": 15,
    "wins": 8,
-   "open": 0
+   "open": 1
   }
  },
  "mode": "paper",
@@ -1165,7 +1185,7 @@
  "start_equity": 1000.0,
  "pnl_pct": -0.03,
  "trades": 100,
- "open": 2,
+ "open": 4,
  "recent_trades": [
   {
    "ts": "2026-11-20T16:33:57Z",
@@ -1732,20 +1752,20 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 58208.0,
-   "atr": 477.9071428571427,
+   "price": 59092.1,
+   "atr": 516.3428571428574,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
-    "sma_revert": 0
+    "sma_revert": -1
    },
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1595.22,
-   "atr": 16.26571428571432,
+   "price": 1622.8,
+   "atr": 17.571428571428605,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1756,10 +1776,10 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 67.25,
-   "atr": 0.6657142857142853,
+   "price": 69.07,
+   "atr": 0.720714285714287,
    "sig": {
-    "ema_cross": 0,
+    "ema_cross": 1,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
@@ -1768,5 +1788,5 @@
    "err": null
   }
  },
- "updated": "2026-11-20T21:17:53Z"
+ "updated": "2026-11-20T22:13:37Z"
 }
