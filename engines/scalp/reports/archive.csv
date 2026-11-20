@@ -5,7 +5,6 @@ funding_revert,SUIUSDT,1m,2.885,1.036,1.88,752,31,0.32,180,,passed
 crash_revert,PEPEUSDT,15m,2.512,1.144,2.31,117,22,0.23,365,,filtered
 crash_revert,XRPUSDT,15m,2.45,1.211,2.25,52,22,0.18,365,,filtered
 spike_bb,FILUSDT,1m,2.441,1.142,1.59,84,31,0.39,180,,filtered
-wick_vol,AVAXUSDT,15m,2.418,1.08,2.22,483,22,0.27,365,,passed
 crash_revert,ARBUSDT,1m,2.378,1.394,1.55,16,31,0.32,180,,filtered
 funding_revert,ARBUSDT,1m,2.263,1.027,1.48,796,31,0.39,180,,passed
 crash_revert,SUIUSDT,1m,2.26,1.499,1.47,14,31,0.45,180,,filtered
@@ -36,6 +35,7 @@ funding_revert,AVAXUSDT,1m,1.529,1.017,1.0,782,31,0.32,180,,filtered
 crash_revert,DOTUSDT,1m,1.526,1.231,0.99,16,31,0.39,180,,filtered
 crash_revert,BTCUSDT,1m,1.488,1.95,0.97,2,31,1.0,180,,filtered
 squeeze_pop,ADAUSDT,5m,1.469,1.082,1.39,106,47,0.38,365,,filtered
+wick_vol,AVAXUSDT,15m,1.443,1.05,1.33,474,22,0.18,365,,passed
 crash_revert,ARBUSDT,5m,1.44,1.125,1.37,53,47,0.19,365,,filtered
 bb_maker,SUIUSDT,1m,1.416,1.009,0.92,2620,31,0.42,180,,filtered
 streak_bb,LTCUSDT,5m,1.38,1.014,1.31,2401,47,0.4,365,,passed
