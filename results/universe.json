@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T18:02:03Z",
+ "updated": "2026-11-20T18:17:38Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-20T17:25:56Z",
-  "age_s": 2168.0
+  "age_s": 3102.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-20T18:02:03Z",
-  "age_s": 1.0
+  "age_s": 935.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-20T17:18:32Z",
-  "age_s": 2612.0,
+  "updated": "2026-11-20T18:17:05Z",
+  "age_s": 33.0,
   "paper": {
-   "equity": 931.55,
-   "pnl_pct": -6.84,
-   "trades": 297,
+   "equity": 923.85,
+   "pnl_pct": -7.61,
+   "trades": 299,
    "winrate": 57.2,
-   "open": 3,
-   "tops": 6
+   "open": 2,
+   "tops": 5
   },
-  "paper_updated": "2026-11-20T17:19:05Z",
+  "paper_updated": "2026-11-20T18:17:38Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -96,25 +96,6 @@
     "usd_per_month_1000": "52.0"
    },
    {
-    "strategy": "wick_vol",
-    "symbol": "AVAXUSDT",
-    "tf": "15m",
-    "oos_sharpe": "2.418",
-    "oos_pf": "1.08",
-    "oos_t": "2.22",
-    "trades": "483",
-    "param_stability": "0.27",
-    "is_sharpe_avg": "4.57",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "2.4179565633603253",
-    "maker_pf": "1.0797398208129176",
-    "daily_pct": "0.001725",
-    "monthly_pct": "0.053063",
-    "trades_per_day": "1.32",
-    "usd_per_month_1000": "53.06"
-   },
-   {
     "strategy": "funding_revert",
     "symbol": "ARBUSDT",
     "tf": "1m",
@@ -151,6 +132,25 @@
     "monthly_pct": "0.069224",
     "trades_per_day": "2.45",
     "usd_per_month_1000": "69.22"
+   },
+   {
+    "strategy": "wick_vol",
+    "symbol": "OPUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.926",
+    "oos_pf": "1.06",
+    "oos_t": "1.77",
+    "trades": "481",
+    "param_stability": "0.23",
+    "is_sharpe_avg": "4.68",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.925813634658203",
+    "maker_pf": "1.0600588209386734",
+    "daily_pct": "0.001777",
+    "monthly_pct": "0.054707",
+    "trades_per_day": "1.32",
+    "usd_per_month_1000": "54.71"
    },
    {
     "strategy": "streak_bb",
@@ -191,6 +191,25 @@
     "usd_per_month_1000": "85.07"
    },
    {
+    "strategy": "wick_vol",
+    "symbol": "AVAXUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.443",
+    "oos_pf": "1.05",
+    "oos_t": "1.33",
+    "trades": "474",
+    "param_stability": "0.18",
+    "is_sharpe_avg": "4.78",
+    "folds": "22",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.4432749215141845",
+    "maker_pf": "1.050285349871476",
+    "daily_pct": "0.0011",
+    "monthly_pct": "0.033531",
+    "trades_per_day": "1.3",
+    "usd_per_month_1000": "33.53"
+   },
+   {
     "strategy": "streak_bb",
     "symbol": "LTCUSDT",
     "tf": "5m",
@@ -227,25 +246,6 @@
     "monthly_pct": "0.047914",
     "trades_per_day": "21.85",
     "usd_per_month_1000": "47.91"
-   },
-   {
-    "strategy": "wick_vol",
-    "symbol": "OPUSDT",
-    "tf": "15m",
-    "oos_sharpe": "1.116",
-    "oos_pf": "1.04",
-    "oos_t": "2.05",
-    "trades": "1798",
-    "param_stability": "0.36",
-    "is_sharpe_avg": "2.27",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "1.1157849573403054",
-    "maker_pf": "1.0403511102668785",
-    "daily_pct": "0.000807",
-    "monthly_pct": "0.0245",
-    "trades_per_day": "1.23",
-    "usd_per_month_1000": "24.5"
    },
    {
     "strategy": "bb_maker",
@@ -317,7 +317,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-20T17:33:01Z",
-  "age_s": 1743.0
+  "age_s": 2677.0
  },
  "clob": {
   "mode": "off",
@@ -326,6 +326,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-20T17:30:18Z",
-  "age_s": 1906.0
+  "age_s": 2840.0
  }
 }
