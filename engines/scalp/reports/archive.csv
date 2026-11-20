@@ -586,7 +586,6 @@ crash_revert,ADAUSDT,1m,-0.179,0.952,-0.12,8,31,0.58,180,,filtered
 funding_revert,BTCUSDT,15m,-0.183,0.996,-0.17,406,22,0.32,365,,filtered
 bollinger_reversion,APTUSDT,5m,-0.183,0.997,-0.17,2670,47,0.26,365,,filtered
 spike_follow,DOTUSDT,5m,-0.184,0.991,-0.35,1012,47,0.32,1460,,filtered
-streak_vol,ETHUSDT,15m,-0.187,0.994,-0.24,687,22,0.27,730,,filtered
 ema_snap,OPUSDT,5m,-0.191,0.996,-0.18,1850,47,0.4,365,,filtered
 streak_bb,BTCUSDT,15m,-0.194,0.997,-0.18,725,22,0.45,365,,filtered
 bb_maker,PEPEUSDT,5m,-0.195,0.997,-0.19,1665,47,0.26,365,,filtered
@@ -982,6 +981,7 @@ bb_regime,XRPUSDT,5m,-1.181,0.984,-1.12,1246,47,0.26,365,,filtered
 vwap_reversion,XRPUSDT,15m,-1.182,0.962,-1.09,521,22,0.41,365,,filtered
 vol_pop,OPUSDT,15m,-1.183,0.956,-1.09,416,22,0.32,365,,filtered
 bb_maker,BTCUSDT,5m,-1.184,0.984,-1.12,1693,47,0.28,365,,filtered
+streak_vol,ETHUSDT,15m,-1.197,0.962,-2.2,1480,22,0.18,1460,,filtered
 bb_regime,NEARUSDT,15m,-1.201,0.974,-1.1,314,22,0.23,365,,filtered
 vol_drift,LINKUSDT,5m,-1.202,0.985,-1.14,830,47,0.38,365,,filtered
 funding_revert,BNBUSDT,15m,-1.203,0.967,-1.1,289,22,0.32,365,,filtered
