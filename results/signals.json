@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-21T15:25:34Z",
+ "updated": "2026-11-21T16:15:34Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "btc-updown-15m-1795276800",
+   "question": "Bitcoin Up or Down - November 21, 11:00AM-11:15AM ET",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 3783 против среднего 540",
+   "liq": 183816,
+   "v24": 3783,
+   "z": 0.0,
+   "end": "2026-11-21",
+   "days_left": 0.0,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "bitcoin-all-time-high-by-december-31-2026",
@@ -9,12 +24,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 122742 против среднего 24518",
-   "liq": 145602,
-   "v24": 122742,
+   "note": "объём 24ч 84699 против среднего 24518",
+   "liq": 145597,
+   "v24": 84699,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.4,
+   "days_left": 40.3,
    "tradeable": false
   },
   {
@@ -24,12 +39,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 138719 против среднего 23719",
-   "liq": 142760,
+   "note": "объём 24ч 138719 против среднего 23718",
+   "liq": 142547,
    "v24": 138719,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.4,
+   "days_left": 40.3,
    "tradeable": false
   },
   {
@@ -39,12 +54,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 21893 против среднего 5577",
-   "liq": 117002,
-   "v24": 21893,
+   "note": "объём 24ч 23266 против среднего 5677",
+   "liq": 116486,
+   "v24": 23266,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.4,
+   "days_left": 40.3,
    "tradeable": false
   }
  ]
