@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-21T03:55:02Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-21T03:20:46Z",
    "best": {},
    "portfolio": [],
@@ -342,51 +349,44 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-19T20:56:43Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-21T03:20:46Z",
+ "updated": "2026-11-21T03:55:02Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -0.32,
+   "is_ret": -0.36,
    "oos_ret": -8.35,
    "trades": 17,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -5.3,
-   "oos_ret": -5.93,
-   "trades": 30,
+   "is_ret": -4.23,
+   "oos_ret": -9.22,
+   "trades": 33,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
    "is_ret": -16.15,
-   "oos_ret": -6.72,
-   "trades": 33,
+   "oos_ret": -13.11,
+   "trades": 34,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -4.12,
-   "oos_ret": 0.35,
-   "trades": 22,
+   "is_ret": -3.01,
+   "oos_ret": 6.01,
+   "trades": 26,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
-   "is_ret": -0.16,
-   "oos_ret": 8.67,
-   "trades": 18,
+   "is_ret": -0.13,
+   "oos_ret": 13.37,
+   "trades": 20,
    "portfolio": false
   }
  ],
@@ -394,24 +394,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -1.154,
+   "okx_mom_pct": -4.395,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T03:20:46Z"
+   "ts": "2026-11-21T03:55:02Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.795,
+   "okx_mom_pct": -3.535,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T03:20:46Z"
+   "ts": "2026-11-21T03:55:02Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -1.464,
+   "okx_mom_pct": -4.585,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T03:20:46Z"
+   "ts": "2026-11-21T03:55:02Z"
   }
  ],
  "golden": [
