@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21T14:05:08Z",
+ "updated": "2026-11-21T14:31:50Z",
  "health": {
   "overall": "degraded",
   "modules": {
    "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
+   "okx_trader": "ok",
    "pm_trader": "stale"
   }
  },
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-21T13:48:05Z",
-  "age_s": 1023.0
+  "age_s": 2626.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-21T14:05:08Z",
-  "age_s": 1.0
+  "age_s": 1603.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-21T13:45:02Z",
-  "age_s": 1207.0,
+  "age_s": 2809.0,
   "paper": {
    "equity": 788.72,
    "pnl_pct": -21.13,
@@ -258,8 +258,8 @@
   "open": 2,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 60543.3,
-    "atr": 446.5500000000003,
+    "price": 60341.3,
+    "atr": 499.0071428571438,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -270,25 +270,25 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1703.76,
-    "atr": 13.745714285714323,
+    "price": 1692.39,
+    "atr": 14.723571428571452,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
      "rsi_revert": 0,
-     "donchian_break": 1,
+     "donchian_break": 0,
      "sma_revert": 0
     },
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 70.46,
-    "atr": 0.5142857142857145,
+    "price": 70.5,
+    "atr": 0.5628571428571435,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
      "rsi_revert": 0,
-     "donchian_break": 1,
+     "donchian_break": 0,
      "sma_revert": 0
     },
     "err": null
@@ -318,8 +318,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-21T13:40:06Z",
-  "age_s": 1503.0
+  "updated": "2026-11-21T14:31:50Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -328,6 +328,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-21T13:07:52Z",
-  "age_s": 3437.0
+  "age_s": 5039.0
  }
 }
