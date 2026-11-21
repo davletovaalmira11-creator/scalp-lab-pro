@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T05:32:21Z",
+ "updated": "2026-11-21T06:32:59Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,27 +9,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 496304 против среднего 76782",
-   "liq": 241822,
-   "v24": 496304,
+   "note": "объём 24ч 496585 против среднего 76804",
+   "liq": 243372,
+   "v24": 496585,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.8,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "btc-updown-15m-1795238100",
-   "question": "Bitcoin Up or Down - November 21, 12:15AM-12:30AM ET",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 6397 против среднего 914",
-   "liq": 237777,
-   "v24": 6397,
-   "z": 0.0,
-   "end": "2026-11-21",
-   "days_left": 0.0,
+   "days_left": 40.7,
    "tradeable": false
   },
   {
@@ -39,12 +24,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 141338 против среднего 22785",
-   "liq": 160638,
+   "note": "объём 24ч 141338 против среднего 22671",
+   "liq": 160406,
    "v24": 141338,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.8,
+   "days_left": 40.7,
    "tradeable": false
   },
   {
@@ -55,26 +40,26 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 137514 против среднего 24342",
-   "liq": 147145,
+   "liq": 147055,
    "v24": 137514,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.8,
+   "days_left": 40.7,
    "tradeable": false
   },
   {
    "strategy": "vols",
-   "slug": "will-chainlink-dip-to-8-by-december-31-2026-from-august-25",
-   "question": "Will Chainlink dip to $8 by December 31, 2026?",
+   "slug": "will-solana-reach-170-in-november-2026",
+   "question": "Will Solana reach $170 in November?",
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 84190 против среднего 12107",
-   "liq": 134318,
-   "v24": 84190,
+   "note": "объём 24ч 30033 против среднего 4716",
+   "liq": 114449,
+   "v24": 30033,
    "z": 0.0,
-   "end": "2027-01-01",
-   "days_left": 40.8,
+   "end": "2026-12-01",
+   "days_left": 9.7,
    "tradeable": false
   }
  ]
