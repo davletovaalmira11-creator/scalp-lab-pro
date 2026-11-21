@@ -11,8 +11,8 @@
    "opened": "2026-11-21 21:15:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-21 22:20:00",
-   "last_px": 0.6462
+   "last_ts": "2026-11-21 23:20:00",
+   "last_px": 0.6466
   }
  },
  "closed": [
@@ -4217,14 +4217,14 @@
    "reason": "flat signal"
   }
  ],
- "updated": "2026-11-21T22:25:35Z",
- "runs": 258,
+ "updated": "2026-11-21T23:25:37Z",
+ "runs": 259,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-21 22:24:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-21 22:20:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-21 22:24:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-21 22:20:00",
-  "wick_vol-OPUSDT-15m": "2026-11-21 22:00:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-21 23:24:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-21 23:20:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-21 23:24:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-21 23:20:00",
+  "wick_vol-OPUSDT-15m": "2026-11-21 23:00:00"
  },
  "tops": [
   {
@@ -4257,7 +4257,7 @@
    "score": 2.49,
    "signal": 0.0,
    "sig_last": "2026-11-21 22:22:00",
-   "sig_pct": 53.18
+   "sig_pct": 52.38
   },
   {
    "key": "streak_bb-SUIUSDT-5m",
@@ -4273,8 +4273,8 @@
    "oos_sharpe": 1.84,
    "score": 1.84,
    "signal": -1.0,
-   "sig_last": "2026-11-21 22:20:00",
-   "sig_pct": 94.74
+   "sig_last": "2026-11-21 23:20:00",
+   "sig_pct": 95.33
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
