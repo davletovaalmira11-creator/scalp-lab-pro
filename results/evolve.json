@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-21T02:14:34Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-21T01:12:40Z",
    "best": {},
    "portfolio": [],
@@ -342,23 +349,16 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-19T19:01:52Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-21T01:12:40Z",
+ "updated": "2026-11-21T02:14:34Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": -8.12,
-   "oos_ret": -4.23,
-   "trades": 33,
+   "is_ret": -7.32,
+   "oos_ret": -4.12,
+   "trades": 32,
    "portfolio": false
   },
   {
@@ -370,16 +370,16 @@
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -5.71,
+   "is_ret": -4.71,
    "oos_ret": -2.95,
-   "trades": 25,
+   "trades": 26,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
-   "is_ret": 0.82,
-   "oos_ret": 9.19,
-   "trades": 16,
+   "is_ret": 0.17,
+   "oos_ret": 7.83,
+   "trades": 18,
    "portfolio": true
   }
  ],
@@ -387,24 +387,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.142,
+   "okx_mom_pct": -0.188,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T01:12:40Z"
+   "ts": "2026-11-21T02:14:34Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.07,
+   "okx_mom_pct": 0.046,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T01:12:40Z"
+   "ts": "2026-11-21T02:14:34Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.231,
+   "okx_mom_pct": -0.965,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T01:12:40Z"
+   "ts": "2026-11-21T02:14:34Z"
   }
  ],
  "golden": [
@@ -426,12 +426,12 @@
   {
    "src": "walk-forward bt",
    "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "note": "OOS PF 1.034, Sharpe 2.774"
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert ARBUSDT 1m",
-   "note": "OOS PF 1.027, Sharpe 2.263"
+   "name": "bb_regime NEARUSDT 1m",
+   "note": "OOS PF 1.017, Sharpe 2.767"
   }
  ],
  "error": null
