@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T12:52:23Z",
+ "updated": "2026-11-21T13:48:05Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,12 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 121892 против среднего 24392",
-   "liq": 145763,
-   "v24": 121892,
+   "note": "объём 24ч 121957 против среднего 24401",
+   "liq": 145757,
+   "v24": 121957,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.5,
+   "days_left": 40.4,
    "tradeable": false
   },
   {
@@ -25,11 +25,11 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 137377 против среднего 23397",
-   "liq": 138476,
+   "liq": 138830,
    "v24": 137377,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.5,
+   "days_left": 40.4,
    "tradeable": false
   },
   {
@@ -39,12 +39,42 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 22061 против среднего 5563",
-   "liq": 116278,
-   "v24": 22061,
+   "note": "объём 24ч 22161 против среднего 5577",
+   "liq": 118527,
+   "v24": 22161,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 40.5,
+   "days_left": 40.4,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-ethereum-reach-1700-in-november-2026",
+   "question": "Will Ethereum reach $1,700 in November?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 8638 против среднего 1234",
+   "liq": 116499,
+   "v24": 8638,
+   "z": 0.0,
+   "end": "2026-12-01",
+   "days_left": 9.4,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-reach-60k-on-november-21-2026",
+   "question": "Will Bitcoin reach $60,000 on November 21?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 33009 против среднего 4716",
+   "liq": 114679,
+   "v24": 33009,
+   "z": 0.0,
+   "end": "2026-11-22",
+   "days_left": 0.4,
    "tradeable": false
   }
  ]
