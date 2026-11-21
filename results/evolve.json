@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-21T07:10:43Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-21T06:28:37Z",
    "best": {},
    "portfolio": [],
@@ -342,51 +349,44 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-20T00:11:32Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-21T06:28:37Z",
+ "updated": "2026-11-21T07:10:43Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -0.77,
+   "is_ret": -1.9,
    "oos_ret": -8.35,
-   "trades": 16,
+   "trades": 17,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -5.49,
+   "is_ret": -6.66,
    "oos_ret": -6.92,
-   "trades": 35,
-   "portfolio": false
-  },
-  {
-   "strategy": "rsi_revert",
-   "is_ret": -17.42,
-   "oos_ret": -7.69,
    "trades": 36,
    "portfolio": false
   },
   {
+   "strategy": "rsi_revert",
+   "is_ret": -16.78,
+   "oos_ret": -7.69,
+   "trades": 35,
+   "portfolio": false
+  },
+  {
    "strategy": "donchian_break",
-   "is_ret": -1.57,
-   "oos_ret": 6.01,
-   "trades": 29,
+   "is_ret": -5.05,
+   "oos_ret": 3.17,
+   "trades": 34,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
-   "is_ret": -4.32,
-   "oos_ret": 10.72,
-   "trades": 21,
+   "is_ret": -2.03,
+   "oos_ret": 5.75,
+   "trades": 22,
    "portfolio": false
   }
  ],
@@ -394,24 +394,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -3.719,
+   "okx_mom_pct": 4.692,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T06:28:37Z"
+   "ts": "2026-11-21T07:10:43Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -2.438,
+   "okx_mom_pct": 5.655,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T06:28:37Z"
+   "ts": "2026-11-21T07:10:43Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -2.948,
+   "okx_mom_pct": 3.872,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-21T06:28:37Z"
+   "ts": "2026-11-21T07:10:43Z"
   }
  ],
  "golden": [
