@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T17:28:34Z",
+ "updated": "2026-11-22T17:29:26Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-22T16:51:53Z",
-  "age_s": 2201.0
+  "age_s": 2254.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,44 +38,25 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-22T16:54:01Z",
-  "age_s": 2073.0
+  "age_s": 2126.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-22T16:30:01Z",
-  "age_s": 3513.0,
+  "updated": "2026-11-22T17:28:58Z",
+  "age_s": 29.0,
   "paper": {
-   "equity": 763.41,
-   "pnl_pct": -23.66,
+   "equity": 761.5,
+   "pnl_pct": -23.85,
    "trades": 300,
-   "winrate": 54.3,
-   "open": 2,
+   "winrate": 54.0,
+   "open": 1,
    "tops": 5
   },
-  "paper_updated": "2026-11-22T16:30:30Z",
+  "paper_updated": "2026-11-22T17:29:26Z",
   "leaderboard": [
-   {
-    "strategy": "bb_maker",
-    "symbol": "NEARUSDT",
-    "tf": "1m",
-    "oos_sharpe": "3.004",
-    "oos_pf": "1.018",
-    "oos_t": "1.96",
-    "trades": "3533",
-    "param_stability": "0.29",
-    "is_sharpe_avg": "5.43",
-    "folds": "31",
-    "fee_mode": "maker",
-    "maker_sharpe": "3.0038831475868513",
-    "maker_pf": "1.0180674488920978",
-    "daily_pct": "0.004493",
-    "monthly_pct": "0.143936",
-    "trades_per_day": "19.63",
-    "usd_per_month_1000": "143.94"
-   },
    {
     "strategy": "funding_revert",
     "symbol": "SUIUSDT",
@@ -94,6 +75,25 @@
     "monthly_pct": "0.051997",
     "trades_per_day": "4.18",
     "usd_per_month_1000": "52.0"
+   },
+   {
+    "strategy": "bb_maker",
+    "symbol": "NEARUSDT",
+    "tf": "1m",
+    "oos_sharpe": "2.739",
+    "oos_pf": "1.016",
+    "oos_t": "1.78",
+    "trades": "3420",
+    "param_stability": "0.29",
+    "is_sharpe_avg": "5.41",
+    "folds": "31",
+    "fee_mode": "maker",
+    "maker_sharpe": "2.738578362326969",
+    "maker_pf": "1.0162945633540266",
+    "daily_pct": "0.004031",
+    "monthly_pct": "0.128282",
+    "trades_per_day": "19.0",
+    "usd_per_month_1000": "128.28"
    },
    {
     "strategy": "funding_revert",
@@ -398,7 +398,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-22T17:28:13Z",
-  "age_s": 21.0
+  "age_s": 74.0
  },
  "clob": {
   "mode": "off",
@@ -407,6 +407,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-22T17:28:32Z",
-  "age_s": 2.0
+  "age_s": 55.0
  }
 }

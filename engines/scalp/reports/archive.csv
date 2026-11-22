@@ -1,7 +1,7 @@
 strategy,symbol,tf,oos_sharpe,oos_pf,oos_t,trades,folds,param_stability,days,wave,verdict
 spike_bb,ATOMUSDT,1m,4.666,1.306,3.04,67,31,0.52,180,,filtered
-bb_maker,NEARUSDT,1m,3.004,1.018,1.96,3533,31,0.29,180,,passed
 funding_revert,SUIUSDT,1m,2.885,1.036,1.88,752,31,0.32,180,,passed
+bb_maker,NEARUSDT,1m,2.739,1.016,1.78,3420,31,0.29,180,,passed
 crash_revert,PEPEUSDT,15m,2.512,1.144,2.31,117,22,0.23,365,,filtered
 crash_revert,XRPUSDT,15m,2.45,1.211,2.25,52,22,0.18,365,,filtered
 spike_bb,FILUSDT,1m,2.441,1.142,1.59,84,31,0.39,180,,filtered
