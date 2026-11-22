@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-22T19:52:24Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-22T19:27:12Z",
    "best": {},
    "portfolio": [],
@@ -342,23 +349,16 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-21T16:48:46Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-22T19:27:12Z",
+ "updated": "2026-11-22T19:52:24Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -8.35,
+   "is_ret": -10.14,
    "oos_ret": 4.29,
-   "trades": 16,
+   "trades": 18,
    "portfolio": false
   },
   {
@@ -378,8 +378,8 @@
   {
    "strategy": "donchian_break",
    "is_ret": 6.01,
-   "oos_ret": -5.61,
-   "trades": 26,
+   "oos_ret": -2.42,
+   "trades": 25,
    "portfolio": false
   }
  ],
@@ -387,24 +387,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.787,
+   "okx_mom_pct": -0.846,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-22T19:27:12Z"
+   "ts": "2026-11-22T19:52:24Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.328,
+   "okx_mom_pct": -0.438,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-22T19:27:12Z"
+   "ts": "2026-11-22T19:52:24Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.241,
+   "okx_mom_pct": -0.566,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-22T19:27:12Z"
+   "ts": "2026-11-22T19:52:24Z"
   }
  ],
  "golden": [
@@ -420,18 +420,18 @@
   },
   {
    "src": "walk-forward bt",
+   "name": "bb_maker NEARUSDT 1m",
+   "note": "OOS PF 1.018, Sharpe 3.004"
+  },
+  {
+   "src": "walk-forward bt",
    "name": "funding_revert SUIUSDT 1m",
    "note": "OOS PF 1.036, Sharpe 2.885"
   },
   {
    "src": "walk-forward bt",
-   "name": "bb_maker NEARUSDT 1m",
-   "note": "OOS PF 1.016, Sharpe 2.739"
-  },
-  {
-   "src": "walk-forward bt",
-   "name": "funding_revert ARBUSDT 1m",
-   "note": "OOS PF 1.027, Sharpe 2.263"
+   "name": "wick_vol AVAXUSDT 15m",
+   "note": "OOS PF 1.08, Sharpe 2.418"
   }
  ],
  "error": null
