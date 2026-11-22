@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-22T22:26:49Z",
+ "updated": "2026-11-22T22:29:59Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
-   "scalp_worker": "stale",
+   "scalp_worker": "ok",
    "okx_trader": "ok",
    "pm_trader": "ok"
   }
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-22T22:18:49Z",
-  "age_s": 481.0
+  "age_s": 671.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-22T21:50:35Z",
-  "age_s": 2175.0
+  "age_s": 2365.0
  },
  "scalp": {
   "done": 2672,
   "total": 2672,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-22T20:30:47Z",
-  "age_s": 6963.0,
+  "updated": "2026-11-22T22:29:23Z",
+  "age_s": 37.0,
   "paper": {
-   "equity": 761.5,
-   "pnl_pct": -23.85,
+   "equity": 774.84,
+   "pnl_pct": -22.52,
    "trades": 300,
-   "winrate": 54.0,
+   "winrate": 54.3,
    "open": 2,
-   "tops": 6
+   "tops": 5
   },
-  "paper_updated": "2026-11-22T20:31:19Z",
+  "paper_updated": "2026-11-22T22:29:59Z",
   "leaderboard": [
    {
     "strategy": "bb_maker",
@@ -96,25 +96,6 @@
     "usd_per_month_1000": "52.0"
    },
    {
-    "strategy": "wick_vol",
-    "symbol": "AVAXUSDT",
-    "tf": "15m",
-    "oos_sharpe": "2.418",
-    "oos_pf": "1.08",
-    "oos_t": "2.22",
-    "trades": "483",
-    "param_stability": "0.27",
-    "is_sharpe_avg": "4.57",
-    "folds": "22",
-    "fee_mode": "maker",
-    "maker_sharpe": "2.4179565633603253",
-    "maker_pf": "1.0797398208129176",
-    "daily_pct": "0.001725",
-    "monthly_pct": "0.053063",
-    "trades_per_day": "1.32",
-    "usd_per_month_1000": "53.06"
-   },
-   {
     "strategy": "funding_revert",
     "symbol": "ARBUSDT",
     "tf": "1m",
@@ -137,20 +118,39 @@
     "strategy": "vol_burst_revert",
     "symbol": "ARBUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.951",
+    "oos_sharpe": "1.935",
     "oos_pf": "1.029",
-    "oos_t": "1.85",
-    "trades": "881",
-    "param_stability": "0.28",
-    "is_sharpe_avg": "4.17",
+    "oos_t": "1.84",
+    "trades": "894",
+    "param_stability": "0.26",
+    "is_sharpe_avg": "4.25",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.951493983041779",
-    "maker_pf": "1.0294067257872943",
-    "daily_pct": "0.002252",
-    "monthly_pct": "0.069814",
-    "trades_per_day": "2.41",
-    "usd_per_month_1000": "69.81"
+    "maker_sharpe": "1.9345995554905253",
+    "maker_pf": "1.0292257515978214",
+    "daily_pct": "0.002234",
+    "monthly_pct": "0.069224",
+    "trades_per_day": "2.45",
+    "usd_per_month_1000": "69.22"
+   },
+   {
+    "strategy": "streak_bb",
+    "symbol": "SUIUSDT",
+    "tf": "5m",
+    "oos_sharpe": "1.839",
+    "oos_pf": "1.018",
+    "oos_t": "1.75",
+    "trades": "2537",
+    "param_stability": "0.36",
+    "is_sharpe_avg": "3.02",
+    "folds": "47",
+    "fee_mode": "maker",
+    "maker_sharpe": "1.8385225030642918",
+    "maker_pf": "1.0182821444892423",
+    "daily_pct": "0.002395",
+    "monthly_pct": "0.074388",
+    "trades_per_day": "6.95",
+    "usd_per_month_1000": "74.39"
    },
    {
     "strategy": "bb_regime",
@@ -172,42 +172,42 @@
     "usd_per_month_1000": "85.07"
    },
    {
-    "strategy": "streak_bb",
-    "symbol": "SUIUSDT",
-    "tf": "5m",
-    "oos_sharpe": "1.672",
-    "oos_pf": "1.017",
-    "oos_t": "1.59",
-    "trades": "2503",
-    "param_stability": "0.38",
-    "is_sharpe_avg": "2.99",
-    "folds": "47",
+    "strategy": "wick_vol",
+    "symbol": "AVAXUSDT",
+    "tf": "15m",
+    "oos_sharpe": "1.443",
+    "oos_pf": "1.05",
+    "oos_t": "1.33",
+    "trades": "474",
+    "param_stability": "0.18",
+    "is_sharpe_avg": "4.78",
+    "folds": "22",
     "fee_mode": "maker",
-    "maker_sharpe": "1.6722308240456765",
-    "maker_pf": "1.016633335054208",
-    "daily_pct": "0.002243",
-    "monthly_pct": "0.069511",
-    "trades_per_day": "6.86",
-    "usd_per_month_1000": "69.51"
+    "maker_sharpe": "1.4432749215141845",
+    "maker_pf": "1.050285349871476",
+    "daily_pct": "0.0011",
+    "monthly_pct": "0.033531",
+    "trades_per_day": "1.3",
+    "usd_per_month_1000": "33.53"
    },
    {
     "strategy": "streak_bb",
     "symbol": "LTCUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.374",
+    "oos_sharpe": "1.38",
     "oos_pf": "1.014",
-    "oos_t": "1.3",
-    "trades": "2433",
-    "param_stability": "0.38",
-    "is_sharpe_avg": "4.02",
+    "oos_t": "1.31",
+    "trades": "2401",
+    "param_stability": "0.4",
+    "is_sharpe_avg": "4.12",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.3735210550032224",
-    "maker_pf": "1.0138771830763522",
-    "daily_pct": "0.001447",
-    "monthly_pct": "0.044328",
-    "trades_per_day": "6.67",
-    "usd_per_month_1000": "44.33"
+    "maker_sharpe": "1.3796454760628332",
+    "maker_pf": "1.0138965522534376",
+    "daily_pct": "0.001451",
+    "monthly_pct": "0.044461",
+    "trades_per_day": "6.58",
+    "usd_per_month_1000": "44.46"
    },
    {
     "strategy": "bb_maker",
@@ -408,7 +408,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-22T22:23:58Z",
-  "age_s": 172.0
+  "age_s": 362.0
  },
  "clob": {
   "mode": "off",
@@ -417,6 +417,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-22T22:26:49Z",
-  "age_s": 1.0
+  "age_s": 191.0
  }
 }
