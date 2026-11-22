@@ -11,8 +11,20 @@
    "opened": "2026-11-22 12:30:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.84,
-   "last_ts": "2026-11-22 19:30:00",
-   "last_px": 0.6561
+   "last_ts": "2026-11-22 20:25:00",
+   "last_px": 0.6541
+  },
+  "bb_maker-NEARUSDT-1m": {
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "signal": 1.0,
+   "entry": 2.969,
+   "opened": "2026-11-22 20:16:00",
+   "fee_mode": "maker",
+   "oos_sharpe": 3.0,
+   "last_ts": "2026-11-22 20:30:00",
+   "last_px": 2.969
   }
  },
  "closed": [
@@ -4217,15 +4229,15 @@
    "reason": "flat signal"
   }
  ],
- "updated": "2026-11-22T19:38:55Z",
- "runs": 275,
+ "updated": "2026-11-22T20:31:19Z",
+ "runs": 276,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-22 19:37:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-22 19:30:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-22 19:37:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-22 19:30:00",
-  "wick_vol-OPUSDT-15m": "2026-11-22 19:15:00",
-  "wick_vol-AVAXUSDT-15m": "2026-11-22 19:15:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-22 20:30:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-22 20:25:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-22 20:29:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-22 20:25:00",
+  "wick_vol-OPUSDT-15m": "2026-11-22 20:15:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-22 20:15:00"
  },
  "tops": [
   {
@@ -4256,9 +4268,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 3.0,
    "score": 2.49,
-   "signal": 0.0,
-   "sig_last": "2026-11-22 18:20:00",
-   "sig_pct": 55.44
+   "signal": 1.0,
+   "sig_last": "2026-11-22 20:30:00",
+   "sig_pct": 55.96
   },
   {
    "key": "wick_vol-AVAXUSDT-15m",
@@ -4291,8 +4303,8 @@
    "oos_sharpe": 1.67,
    "score": 1.67,
    "signal": 1.0,
-   "sig_last": "2026-11-22 19:30:00",
-   "sig_pct": 93.7
+   "sig_last": "2026-11-22 20:25:00",
+   "sig_pct": 94.24
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -4334,7 +4346,7 @@
   "winrate": 54.0,
   "equity": 761.5,
   "pnl_pct": -23.85,
-  "open": 1
+  "open": 2
  },
  "filter_stats": {
   "total": 1860,
