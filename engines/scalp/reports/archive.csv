@@ -12,7 +12,6 @@ spike_follow,BTCUSDT,15m,2.258,1.164,2.07,85,22,0.27,365,,filtered
 spike_revert,SUIUSDT,5m,2.251,1.132,2.14,147,47,0.26,365,,filtered
 spike_revert,LTCUSDT,15m,2.103,1.121,1.93,122,22,0.23,365,,filtered
 spike_bb,SOLUSDT,5m,2.081,1.123,1.98,129,47,0.19,365,,filtered
-vol_burst_revert,ARBUSDT,5m,1.951,1.029,1.85,881,47,0.28,365,,passed
 spike_bb,BNBUSDT,5m,1.9,1.184,1.8,55,47,0.32,365,,filtered
 squeeze_pop,XRPUSDT,5m,1.88,1.084,1.78,183,47,0.3,365,,filtered
 spike_follow,SOLUSDT,1m,1.878,1.107,1.22,85,31,0.35,180,,filtered
@@ -108,7 +107,6 @@ funding_revert,UNIUSDT,5m,0.841,1.01,0.8,1708,47,0.28,365,,filtered
 crash_revert,UNIUSDT,5m,0.839,1.072,0.8,58,47,0.17,365,,filtered
 crash_revert,BNBUSDT,5m,0.829,1.168,0.79,15,47,0.57,365,,filtered
 vol_pop,UNIUSDT,15m,0.826,1.036,0.76,347,22,0.59,365,,filtered
-streak_vol,APTUSDT,15m,0.824,1.027,0.76,352,22,0.23,365,,filtered
 spike_revert,BTCUSDT,5m,0.82,1.049,0.78,91,47,0.28,365,,filtered
 vol_burst_revert,XRPUSDT,5m,0.811,1.013,0.77,1069,47,0.28,365,,filtered
 spike_revert,DOTUSDT,15m,0.806,1.047,0.74,103,22,0.23,365,,filtered
@@ -251,6 +249,7 @@ ema_snap,DOTUSDT,15m,0.315,1.011,0.29,601,22,0.32,365,,filtered
 bb_vol,UNIUSDT,1m,0.314,1.002,0.2,2390,31,0.16,180,,filtered
 bb_vol,LTCUSDT,5m,0.313,1.005,0.3,1124,47,0.15,365,,filtered
 bb_maker,OPUSDT,5m,0.313,1.004,0.3,1621,47,0.38,365,,filtered
+streak_vol,APTUSDT,15m,0.311,1.011,0.4,707,22,0.23,730,,filtered
 bb_fast,BNBUSDT,15m,0.307,1.009,0.28,877,22,0.55,365,,filtered
 crash_revert,OPUSDT,15m,0.306,1.027,0.28,49,22,0.14,365,,filtered
 wick_vol,SUIUSDT,15m,0.306,1.009,0.28,389,22,0.32,365,,filtered
@@ -306,6 +305,7 @@ spike_revert,BTCUSDT,15m,0.183,1.014,0.17,73,22,0.27,365,,filtered
 qr_revert,NEARUSDT,1m,0.182,1.001,0.12,4895,31,0.39,180,,filtered
 spike_follow,LTCUSDT,1m,0.18,1.016,0.12,49,31,0.35,180,,filtered
 bb_maker,OPUSDT,15m,0.178,1.004,0.16,694,22,0.41,365,,filtered
+vol_burst_revert,ARBUSDT,5m,0.174,1.003,0.32,3157,43,0.26,1460,,filtered
 ema_snap,SUIUSDT,5m,0.172,1.004,0.16,2010,47,0.43,365,,filtered
 level_fade,LINKUSDT,15m,0.167,1.003,0.15,995,22,0.55,365,,filtered
 funding_revert,ATOMUSDT,15m,0.16,1.004,0.15,415,22,0.41,365,,filtered
