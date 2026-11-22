@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-22T12:31:58Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-22T11:46:28Z",
    "best": {},
    "portfolio": [],
@@ -342,44 +349,37 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-21T08:16:28Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-22T11:46:28Z",
+ "updated": "2026-11-22T12:31:58Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
    "is_ret": -3.72,
-   "oos_ret": 8.93,
+   "oos_ret": 5.97,
    "trades": 25,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -13.83,
-   "oos_ret": 9.14,
-   "trades": 22,
+   "is_ret": -11.8,
+   "oos_ret": -4.0,
+   "trades": 20,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -6.54,
-   "oos_ret": 3.9,
-   "trades": 29,
+   "is_ret": -2.95,
+   "oos_ret": 1.71,
+   "trades": 28,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
    "is_ret": 7.83,
-   "oos_ret": -10.07,
-   "trades": 16,
+   "oos_ret": -4.08,
+   "trades": 13,
    "portfolio": false
   }
  ],
@@ -387,24 +387,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 1.996,
+   "okx_mom_pct": 0.868,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-22T11:46:28Z"
+   "ts": "2026-11-22T12:31:58Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 1.246,
+   "okx_mom_pct": 0.665,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-22T11:46:28Z"
+   "ts": "2026-11-22T12:31:58Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 1.246,
+   "okx_mom_pct": 0.472,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-22T11:46:28Z"
+   "ts": "2026-11-22T12:31:58Z"
   }
  ],
  "golden": [
