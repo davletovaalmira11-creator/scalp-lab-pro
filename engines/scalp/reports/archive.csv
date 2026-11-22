@@ -230,6 +230,7 @@ streak_vol,FILUSDT,15m,0.39,1.012,0.36,382,22,0.23,365,,filtered
 streak_bb,APTUSDT,15m,0.39,1.006,0.36,762,22,0.32,365,,filtered
 wick_vol,ATOMUSDT,15m,0.389,1.011,0.36,481,22,0.18,365,,filtered
 bb_maker,LTCUSDT,15m,0.388,1.009,0.36,578,22,0.32,365,,filtered
+vwap_reversion,NEARUSDT,5m,0.387,1.007,0.74,9178,47,0.43,1460,,filtered
 streak_vol,NEARUSDT,5m,0.379,1.008,0.36,1186,47,0.21,365,,filtered
 bb_maker,APTUSDT,5m,0.374,1.005,0.36,1770,47,0.26,365,,filtered
 bb_fast,SUIUSDT,15m,0.372,1.009,0.34,1249,22,0.41,365,,filtered
@@ -586,6 +587,7 @@ crash_revert,ADAUSDT,1m,-0.179,0.952,-0.12,8,31,0.58,180,,filtered
 funding_revert,BTCUSDT,15m,-0.183,0.996,-0.17,406,22,0.32,365,,filtered
 bollinger_reversion,APTUSDT,5m,-0.183,0.997,-0.17,2670,47,0.26,365,,filtered
 spike_follow,DOTUSDT,5m,-0.184,0.991,-0.35,1012,47,0.32,1460,,filtered
+streak_vol,ETHUSDT,15m,-0.187,0.994,-0.24,687,22,0.27,730,,filtered
 ema_snap,OPUSDT,5m,-0.191,0.996,-0.18,1850,47,0.4,365,,filtered
 streak_bb,BTCUSDT,15m,-0.194,0.997,-0.18,725,22,0.45,365,,filtered
 bb_maker,PEPEUSDT,5m,-0.195,0.997,-0.19,1665,47,0.26,365,,filtered
@@ -634,7 +636,6 @@ squeeze_pop,UNIUSDT,5m,-0.279,0.985,-0.27,120,47,0.38,365,,filtered
 bb_fast,FILUSDT,5m,-0.281,0.996,-0.27,3205,47,0.4,365,,filtered
 bb_maker,ATOMUSDT,5m,-0.285,0.997,-0.27,1777,47,0.26,365,,filtered
 wick_vol,BTCUSDT,5m,-0.289,0.995,-0.27,1251,47,0.23,365,,filtered
-vwap_reversion,NEARUSDT,5m,-0.293,0.995,-0.39,4473,47,0.36,730,,filtered
 flow_fade,SUIUSDT,15m,-0.303,0.992,-0.28,699,22,0.45,365,,filtered
 spike_revert,SOLUSDT,5m,-0.304,0.986,-0.29,165,47,0.26,365,,filtered
 vwap_reversion,UNIUSDT,5m,-0.307,0.995,-0.29,2241,47,0.3,365,,filtered
@@ -981,7 +982,6 @@ bb_regime,XRPUSDT,5m,-1.181,0.984,-1.12,1246,47,0.26,365,,filtered
 vwap_reversion,XRPUSDT,15m,-1.182,0.962,-1.09,521,22,0.41,365,,filtered
 vol_pop,OPUSDT,15m,-1.183,0.956,-1.09,416,22,0.32,365,,filtered
 bb_maker,BTCUSDT,5m,-1.184,0.984,-1.12,1693,47,0.28,365,,filtered
-streak_vol,ETHUSDT,15m,-1.197,0.962,-2.2,1480,22,0.18,1460,,filtered
 bb_regime,NEARUSDT,15m,-1.201,0.974,-1.1,314,22,0.23,365,,filtered
 vol_drift,LINKUSDT,5m,-1.202,0.985,-1.14,830,47,0.38,365,,filtered
 funding_revert,BNBUSDT,15m,-1.203,0.967,-1.1,289,22,0.32,365,,filtered
