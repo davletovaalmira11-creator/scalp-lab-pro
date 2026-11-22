@@ -1,19 +1,7 @@
 {
  "capital_start": 1000.0,
- "equity": 771.5127295249354,
+ "equity": 770.3216362817544,
  "positions": {
-  "bb_maker-NEARUSDT-1m": {
-   "strategy": "bb_maker",
-   "symbol": "NEARUSDT",
-   "tf": "1m",
-   "signal": 1.0,
-   "entry": 2.874,
-   "opened": "2026-11-22 02:38:00",
-   "fee_mode": "maker",
-   "oos_sharpe": 2.74,
-   "last_ts": "2026-11-22 03:10:00",
-   "last_px": 2.87
-  },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
    "symbol": "SUIUSDT",
@@ -23,25 +11,11 @@
    "opened": "2026-11-22 02:35:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.67,
-   "last_ts": "2026-11-22 03:05:00",
-   "last_px": 0.6378
+   "last_ts": "2026-11-22 04:10:00",
+   "last_px": 0.6391
   }
  },
  "closed": [
-  {
-   "key": "bb_maker-NEARUSDT-1m",
-   "strategy": "bb_maker",
-   "symbol": "NEARUSDT",
-   "tf": "1m",
-   "side": "short",
-   "entry": 3.617,
-   "exit": 3.604,
-   "pnl_pct": 0.3094,
-   "opened": "2026-11-10 04:18:00",
-   "closed_ts": "2026-11-10 04:42:00",
-   "fee_mode": "maker",
-   "reason": "flat signal"
-  },
   {
    "key": "bb_regime-NEARUSDT-1m",
    "strategy": "bb_regime",
@@ -4227,16 +4201,31 @@
    "closed_ts": "2026-11-22 02:35:00",
    "fee_mode": "maker",
    "reason": "signal flip"
+  },
+  {
+   "key": "bb_maker-NEARUSDT-1m",
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "side": "long",
+   "entry": 2.874,
+   "exit": 2.871,
+   "pnl_pct": -0.1544,
+   "opened": "2026-11-22 02:38:00",
+   "closed_ts": "2026-11-22 04:05:00",
+   "fee_mode": "maker",
+   "reason": "flat signal"
   }
  ],
- "updated": "2026-11-22T03:11:58Z",
- "runs": 262,
+ "updated": "2026-11-22T04:19:54Z",
+ "runs": 263,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-22 03:10:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-22 03:05:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-22 03:10:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-22 03:05:00",
-  "wick_vol-OPUSDT-15m": "2026-11-22 02:45:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-22 04:18:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-22 04:10:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-22 04:18:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-22 04:10:00",
+  "wick_vol-OPUSDT-15m": "2026-11-22 04:00:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-22 04:00:00"
  },
  "tops": [
   {
@@ -4262,14 +4251,31 @@
    "tf": "1m",
    "params": {
     "k": 2.5,
-    "n": 200
+    "n": 100
    },
    "fee_mode": "maker",
-   "oos_sharpe": 2.74,
-   "score": 2.27,
-   "signal": 1.0,
-   "sig_last": "2026-11-22 03:10:00",
-   "sig_pct": 44.88
+   "oos_sharpe": 3.0,
+   "score": 2.49,
+   "signal": 0.0,
+   "sig_last": "2026-11-22 04:04:00",
+   "sig_pct": 53.56
+  },
+  {
+   "key": "wick_vol-AVAXUSDT-15m",
+   "strategy": "wick_vol",
+   "symbol": "AVAXUSDT",
+   "tf": "15m",
+   "params": {
+    "h": 60,
+    "vz": 3.0,
+    "w": 0.4
+   },
+   "fee_mode": "maker",
+   "oos_sharpe": 2.42,
+   "score": 1.88,
+   "signal": 0.0,
+   "sig_last": "2026-11-21 11:45:00",
+   "sig_pct": 26.93
   },
   {
    "key": "streak_bb-SUIUSDT-5m",
@@ -4285,8 +4291,8 @@
    "oos_sharpe": 1.67,
    "score": 1.67,
    "signal": 1.0,
-   "sig_last": "2026-11-22 03:05:00",
-   "sig_pct": 94.99
+   "sig_last": "2026-11-22 04:10:00",
+   "sig_pct": 95.63
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -4310,34 +4316,34 @@
    "symbol": "OPUSDT",
    "tf": "15m",
    "params": {
-    "h": 30,
-    "vz": 3.0,
-    "w": 0.4
+    "h": 15,
+    "vz": 2.0,
+    "w": 0.5
    },
    "fee_mode": "maker",
-   "oos_sharpe": 1.93,
-   "score": 1.25,
+   "oos_sharpe": 1.12,
+   "score": 1.12,
    "signal": 0.0,
-   "sig_last": "2026-11-21 11:30:00",
-   "sig_pct": 14.94
+   "sig_last": "2026-11-21 07:45:00",
+   "sig_pct": 14.42
   }
  ],
  "stats": {
   "n_trades": 300,
-  "wins": 168,
-  "winrate": 56.0,
-  "equity": 771.51,
-  "pnl_pct": -22.85,
-  "open": 2
+  "wins": 167,
+  "winrate": 55.7,
+  "equity": 770.32,
+  "pnl_pct": -22.97,
+  "open": 1
  },
  "filter_stats": {
   "total": 1860,
   "low_trades": 348,
   "low_folds": 0,
   "low_pf": 1425,
-  "low_t": 82,
+  "low_t": 81,
   "no_params": 0,
-  "admitted": 5
+  "admitted": 6
  },
  "candidates": [
   {
