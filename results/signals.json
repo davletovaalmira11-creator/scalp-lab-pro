@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-22T17:32:48Z",
+ "updated": "2026-11-22T18:17:17Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "will-solana-reach-180-in-november-2026",
+   "question": "Will Solana reach $180 in November?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 2000 против среднего 531",
+   "liq": 127030,
+   "v24": 2000,
+   "z": 0.0,
+   "end": "2026-12-01",
+   "days_left": 8.2,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-97pt5k-in-november-2026",
@@ -9,12 +24,27 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 37246 против среднего 9861",
-   "liq": 124274,
+   "note": "объём 24ч 37246 против среднего 9830",
+   "liq": 124297,
    "v24": 37246,
    "z": 0.0,
    "end": "2026-12-01",
-   "days_left": 8.3,
+   "days_left": 8.2,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-ethereum-reach-6000-by-december-31-2026",
+   "question": "Will Ethereum reach $6,000 by December 31, 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 1462 против среднего 382",
+   "liq": 120814,
+   "v24": 1462,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 39.2,
    "tradeable": false
   }
  ]
