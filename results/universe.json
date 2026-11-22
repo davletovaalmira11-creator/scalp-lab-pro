@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T23:52:37Z",
+ "updated": "2026-11-22T23:54:27Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
+   "okx_trader": "ok",
    "pm_trader": "ok"
   }
  },
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-22T23:45:23Z",
-  "age_s": 435.0
+  "age_s": 544.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-22T23:49:54Z",
-  "age_s": 164.0
+  "age_s": 273.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-22T23:29:00Z",
-  "age_s": 1418.0,
+  "age_s": 1527.0,
   "paper": {
    "equity": 781.0,
    "pnl_pct": -21.9,
@@ -271,14 +271,14 @@
  "okx": {
   "mode": "paper",
   "demo": null,
-  "equity": 1000.2,
-  "pnl_pct": 0.02,
+  "equity": 1000.17,
+  "pnl_pct": 0.017,
   "trades": 100,
-  "open": 9,
+  "open": 8,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 60880.0,
-    "atr": 210.88571428571387,
+    "price": 61251.4,
+    "atr": 243.5999999999996,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -289,8 +289,8 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1716.58,
-    "atr": 5.946428571428588,
+    "price": 1722.42,
+    "atr": 6.77928571428572,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -301,8 +301,8 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 70.3,
-    "atr": 0.26499999999999957,
+    "price": 70.65,
+    "atr": 0.2799999999999991,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -393,22 +393,12 @@
     "tp": 71.07964285714286,
     "sl": 69.84821428571428,
     "opened": "2026-11-22T16:08:01Z"
-   },
-   "ema_cross|SOL-USDT-SWAP": {
-    "strategy": "ema_cross",
-    "inst": "SOL-USDT-SWAP",
-    "side": -1,
-    "entry": 70.05,
-    "sz": 0.07137758743754462,
-    "tp": 69.47857142857143,
-    "sl": 70.39285714285714,
-    "opened": "2026-11-22T22:23:58Z"
    }
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-22T23:11:35Z",
-  "age_s": 2463.0
+  "updated": "2026-11-22T23:54:27Z",
+  "age_s": 0.0
  },
  "clob": {
   "mode": "off",
@@ -417,6 +407,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-22T23:52:37Z",
-  "age_s": 1.0
+  "age_s": 110.0
  }
 }
