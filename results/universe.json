@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-22T19:19:43Z",
+ "updated": "2026-11-22T19:27:12Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
-   "pm_trader": "stale"
+   "pm_trader": "ok"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-22T19:15:12Z",
-  "age_s": 272.0
+  "age_s": 720.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-22T18:56:02Z",
-  "age_s": 1422.0
+  "age_s": 1870.0
  },
  "scalp": {
   "done": 2672,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-22T18:26:53Z",
-  "age_s": 3171.0,
+  "age_s": 3619.0,
   "paper": {
    "equity": 761.5,
    "pnl_pct": -23.85,
@@ -277,8 +277,8 @@
   "open": 8,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 60732.3,
-    "atr": 217.20000000000022,
+    "price": 60699.5,
+    "atr": 224.4857142857145,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -289,8 +289,8 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1715.92,
-    "atr": 5.18714285714285,
+    "price": 1714.09,
+    "atr": 5.287857142857125,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -301,11 +301,11 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 70.42,
-    "atr": 0.21785714285714267,
+    "price": 70.31,
+    "atr": 0.22999999999999993,
     "sig": {
      "ema_cross": 0,
-     "momentum": 0,
+     "momentum": -1,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -397,8 +397,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-22T19:19:43Z",
-  "age_s": 1.0
+  "updated": "2026-11-22T19:26:53Z",
+  "age_s": 19.0
  },
  "clob": {
   "mode": "off",
@@ -406,7 +406,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-22T18:46:20Z",
-  "age_s": 2004.0
+  "updated": "2026-11-22T19:27:10Z",
+  "age_s": 2.0
  }
 }
