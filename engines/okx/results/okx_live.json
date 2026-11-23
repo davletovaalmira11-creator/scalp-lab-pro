@@ -12,6 +12,26 @@
     "tp": 72.8742857142857,
     "sl": 70.15357142857144,
     "opened": "2026-11-23T04:05:57Z"
+   },
+   "rsi_revert|BTC-USDT-SWAP": {
+    "strategy": "rsi_revert",
+    "inst": "BTC-USDT-SWAP",
+    "side": -1,
+    "entry": 61441.6,
+    "sz": 8.13780891122627e-05,
+    "tp": 60172.0,
+    "sl": 62235.1,
+    "opened": "2026-11-23T06:34:08Z"
+   },
+   "rsi_revert|SOL-USDT-SWAP": {
+    "strategy": "rsi_revert",
+    "inst": "SOL-USDT-SWAP",
+    "side": -1,
+    "entry": 71.64,
+    "sz": 0.06979341150195421,
+    "tp": 70.09714285714286,
+    "sl": 72.60428571428571,
+    "opened": "2026-11-23T06:34:08Z"
    }
   },
   "trades": [
@@ -1140,7 +1160,7 @@
    "pnl": -0.1179,
    "trades": 43,
    "wins": 17,
-   "open": 0
+   "open": 2
   },
   "sma_revert": {
    "pnl": 0.2764,
@@ -1155,7 +1175,7 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.038,
  "trades": 100,
- "open": 1,
+ "open": 3,
  "recent_trades": [
   {
    "ts": "2026-11-23T05:40:22Z",
@@ -1709,29 +1729,33 @@
   }
  ],
  "params": {
-  "ema_fast": 9,
-  "ema_slow": 21
+  "ema_fast": 12,
+  "ema_slow": 26
  },
  "params_source": "evolve",
  "active_strategies": [
-  "rsi_revert"
+  "ema_cross",
+  "momentum",
+  "rsi_revert",
+  "donchian_break",
+  "sma_revert"
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 61597.9,
-   "atr": 344.85000000000065,
+   "price": 61441.6,
+   "atr": 317.40000000000043,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
-    "rsi_revert": 0,
+    "rsi_revert": -1,
     "donchian_break": 0,
     "sma_revert": 0
    },
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1734.03,
-   "atr": 10.621428571428575,
+   "price": 1721.04,
+   "atr": 9.495714285714273,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1742,17 +1766,17 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 71.99,
-   "atr": 0.4385714285714276,
+   "price": 71.64,
+   "atr": 0.3857142857142851,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
-    "rsi_revert": 0,
-    "donchian_break": 1,
+    "rsi_revert": -1,
+    "donchian_break": 0,
     "sma_revert": 0
    },
    "err": null
   }
  },
- "updated": "2026-11-23T05:40:22Z"
+ "updated": "2026-11-23T06:34:08Z"
 }
