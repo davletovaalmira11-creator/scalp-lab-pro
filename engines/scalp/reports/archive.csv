@@ -1,12 +1,12 @@
 strategy,symbol,tf,oos_sharpe,oos_pf,oos_t,trades,folds,param_stability,days,wave,verdict
 spike_bb,ATOMUSDT,1m,4.666,1.306,3.04,67,31,0.52,180,,filtered
 funding_revert,SUIUSDT,1m,2.885,1.036,1.88,752,31,0.32,180,,passed
+funding_revert,ARBUSDT,1m,2.532,1.033,1.65,754,31,0.48,180,,passed
 crash_revert,PEPEUSDT,15m,2.512,1.144,2.31,117,22,0.23,365,,filtered
 crash_revert,XRPUSDT,15m,2.45,1.211,2.25,52,22,0.18,365,,filtered
 spike_bb,FILUSDT,1m,2.441,1.142,1.59,84,31,0.39,180,,filtered
 crash_revert,ARBUSDT,1m,2.378,1.394,1.55,16,31,0.32,180,,filtered
 bb_maker,NEARUSDT,1m,2.352,1.014,1.53,3455,31,0.32,180,,passed
-funding_revert,ARBUSDT,1m,2.263,1.027,1.48,796,31,0.39,180,,passed
 crash_revert,SUIUSDT,1m,2.26,1.499,1.47,14,31,0.45,180,,filtered
 spike_follow,BTCUSDT,15m,2.258,1.164,2.07,85,22,0.27,365,,filtered
 spike_revert,SUIUSDT,5m,2.251,1.132,2.14,147,47,0.26,365,,filtered
@@ -22,11 +22,11 @@ crash_revert,BTCUSDT,5m,1.796,1.45,1.71,9,47,0.6,365,,filtered
 spike_bb,LTCUSDT,5m,1.748,1.104,1.66,120,47,0.38,365,,filtered
 streak_bb,SUIUSDT,5m,1.727,1.017,1.64,2476,47,0.4,365,,passed
 spike_bb,SOLUSDT,1m,1.722,1.139,1.12,42,31,0.55,180,,filtered
-bb_regime,NEARUSDT,1m,1.696,1.01,1.11,2580,31,0.26,180,,passed
 spike_revert,SUIUSDT,15m,1.68,1.073,1.54,177,22,0.23,365,,filtered
 spike_bb,ADAUSDT,15m,1.679,1.083,1.54,149,22,0.23,365,,filtered
 wick_vol,AVAXUSDT,15m,1.661,1.059,1.53,461,22,0.23,365,,passed
 spike_bb,LINKUSDT,5m,1.632,1.1,1.55,120,47,0.36,365,,filtered
+bb_regime,NEARUSDT,1m,1.628,1.01,1.06,2574,31,0.23,180,,passed
 crash_revert,SUIUSDT,5m,1.62,1.133,1.54,62,47,0.17,365,,filtered
 spike_revert,PEPEUSDT,1m,1.588,1.059,1.03,129,31,0.23,180,,filtered
 crash_revert,LTCUSDT,15m,1.544,1.2,1.42,31,22,0.18,365,,filtered
