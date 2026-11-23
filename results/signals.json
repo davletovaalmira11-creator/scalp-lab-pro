@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T16:43:53Z",
+ "updated": "2026-11-23T17:42:41Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,24 +9,9 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 5696 против среднего 1112",
-   "liq": 110569,
-   "v24": 5696,
-   "z": 0.0,
-   "end": "2026-12-01",
-   "days_left": 7.3,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-reach-77pt5k-in-november-2026-from-november-5",
-   "question": "Will Bitcoin reach $77,500 in November?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 78305 против среднего 18848",
-   "liq": 102837,
-   "v24": 78305,
+   "note": "объём 24ч 10027 против среднего 1731",
+   "liq": 106244,
+   "v24": 10027,
    "z": 0.0,
    "end": "2026-12-01",
    "days_left": 7.3,
