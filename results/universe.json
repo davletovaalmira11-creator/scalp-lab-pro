@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-23T12:25:57Z",
+ "updated": "2026-11-23T12:36:49Z",
  "health": {
-  "overall": "ok",
+  "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-23T12:20:31Z",
-  "age_s": 326.0
+  "age_s": 979.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-23T12:00:12Z",
-  "age_s": 1545.0
+  "age_s": 2198.0
  },
  "scalp": {
   "done": 2682,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-23T12:22:53Z",
-  "age_s": 184.0,
+  "age_s": 837.0,
   "paper": {
    "equity": 786.87,
    "pnl_pct": -21.31,
@@ -239,8 +239,8 @@
   "open": 6,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 61253.2,
-    "atr": 190.05000000000084,
+    "price": 61300.3,
+    "atr": 177.35714285714388,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -251,10 +251,10 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1718.83,
-    "atr": 5.526428571428596,
+    "price": 1721.51,
+    "atr": 5.092142857142887,
     "sig": {
-     "ema_cross": -1,
+     "ema_cross": 0,
      "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
@@ -263,14 +263,14 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 72.26,
-    "atr": 0.2864285714285728,
+    "price": 72.23,
+    "atr": 0.27500000000000163,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
-     "sma_revert": 0
+     "sma_revert": 1
     },
     "err": null
    }
@@ -339,8 +339,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-23T12:25:41Z",
-  "age_s": 16.0
+  "updated": "2026-11-23T12:36:49Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -349,6 +349,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-23T12:25:55Z",
-  "age_s": 2.0
+  "age_s": 655.0
  }
 }
