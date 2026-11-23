@@ -1,5 +1,21 @@
 {
- "updated": "2026-11-23T13:49:04Z",
+ "updated": "2026-11-23T14:48:40Z",
  "scanned": 200,
- "signals": []
+ "signals": [
+  {
+   "strategy": "vols",
+   "slug": "will-solana-reach-160-in-november-2026",
+   "question": "Will Solana reach $160 in November?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 5701 против среднего 1106",
+   "liq": 110141,
+   "v24": 5701,
+   "z": 0.0,
+   "end": "2026-12-01",
+   "days_left": 7.4,
+   "tradeable": false
+  }
+ ]
 }
