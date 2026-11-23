@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-23T01:13:13Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-23T00:10:59Z",
    "best": {},
    "portfolio": [],
@@ -342,44 +349,37 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-21T21:11:42Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-23T00:10:59Z",
+ "updated": "2026-11-23T01:13:13Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": -8.16,
+   "is_ret": -9.34,
    "oos_ret": 2.91,
-   "trades": 20,
+   "trades": 19,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": -9.61,
-   "oos_ret": -5.69,
-   "trades": 28,
+   "is_ret": -3.16,
+   "oos_ret": -5.6,
+   "trades": 31,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
    "is_ret": 4.27,
-   "oos_ret": -3.06,
-   "trades": 27,
+   "oos_ret": -3.81,
+   "trades": 28,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
-   "is_ret": 3.21,
+   "is_ret": 1.06,
    "oos_ret": -4.92,
-   "trades": 15,
+   "trades": 16,
    "portfolio": false
   }
  ],
@@ -387,24 +387,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.339,
+   "okx_mom_pct": 0.201,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-23T00:10:59Z"
+   "ts": "2026-11-23T01:13:13Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.048,
+   "okx_mom_pct": -0.163,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-23T00:10:59Z"
+   "ts": "2026-11-23T01:13:13Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 0.541,
+   "okx_mom_pct": 0.384,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-23T00:10:59Z"
+   "ts": "2026-11-23T01:13:13Z"
   }
  ],
  "golden": [
@@ -420,18 +420,18 @@
   },
   {
    "src": "walk-forward bt",
+   "name": "funding_revert ARBUSDT 1m",
+   "note": "OOS PF 1.033, Sharpe 2.532"
+  },
+  {
+   "src": "walk-forward bt",
    "name": "bb_maker NEARUSDT 1m",
-   "note": "OOS PF 1.018, Sharpe 3.004"
+   "note": "OOS PF 1.014, Sharpe 2.352"
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
-  },
-  {
-   "src": "walk-forward bt",
-   "name": "wick_vol AVAXUSDT 15m",
-   "note": "OOS PF 1.08, Sharpe 2.418"
+   "name": "vol_burst_revert ARBUSDT 5m",
+   "note": "OOS PF 1.028, Sharpe 1.844"
   }
  ],
  "error": null
