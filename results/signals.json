@@ -1,21 +1,5 @@
 {
- "updated": "2026-11-23T11:18:48Z",
+ "updated": "2026-11-23T12:20:31Z",
  "scanned": 200,
- "signals": [
-  {
-   "strategy": "vols",
-   "slug": "will-bitcoin-reach-80k-in-november-2026-from-november-5",
-   "question": "Will Bitcoin reach $80,000 in November?",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 68534 против среднего 20696",
-   "liq": 120709,
-   "v24": 68534,
-   "z": 0.0,
-   "end": "2026-12-01",
-   "days_left": 7.5,
-   "tradeable": false
-  }
- ]
+ "signals": []
 }
