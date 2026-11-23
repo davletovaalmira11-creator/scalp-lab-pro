@@ -11,8 +11,32 @@
    "opened": "2026-11-23 03:20:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.73,
-   "last_ts": "2026-11-23 08:45:00",
-   "last_px": 0.6687
+   "last_ts": "2026-11-23 09:55:00",
+   "last_px": 0.6697
+  },
+  "bb_maker-NEARUSDT-1m": {
+   "strategy": "bb_maker",
+   "symbol": "NEARUSDT",
+   "tf": "1m",
+   "signal": 1.0,
+   "entry": 2.984,
+   "opened": "2026-11-23 09:47:00",
+   "fee_mode": "maker",
+   "oos_sharpe": 2.35,
+   "last_ts": "2026-11-23 10:01:00",
+   "last_px": 2.987
+  },
+  "vol_burst_revert-ARBUSDT-5m": {
+   "strategy": "vol_burst_revert",
+   "symbol": "ARBUSDT",
+   "tf": "5m",
+   "signal": 1.0,
+   "entry": 0.1145,
+   "opened": "2026-11-23 09:45:00",
+   "fee_mode": "maker",
+   "oos_sharpe": 1.93,
+   "last_ts": "2026-11-23 09:55:00",
+   "last_px": 0.1144
   }
  },
  "closed": [
@@ -4217,15 +4241,15 @@
    "reason": "flat signal"
   }
  ],
- "updated": "2026-11-23T08:52:50Z",
- "runs": 285,
+ "updated": "2026-11-23T10:02:35Z",
+ "runs": 286,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-23 08:51:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-23 08:45:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-23 08:45:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-23 08:51:00",
-  "wick_vol-OPUSDT-15m": "2026-11-23 08:30:00",
-  "wick_vol-AVAXUSDT-15m": "2026-11-23 08:30:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-23 10:01:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-23 09:55:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-23 09:55:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-23 10:01:00",
+  "wick_vol-OPUSDT-15m": "2026-11-23 09:45:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-23 09:45:00"
  },
  "tops": [
   {
@@ -4256,9 +4280,9 @@
    "fee_mode": "maker",
    "oos_sharpe": 2.35,
    "score": 2.17,
-   "signal": 0.0,
-   "sig_last": "2026-11-23 06:09:00",
-   "sig_pct": 40.43
+   "signal": 1.0,
+   "sig_last": "2026-11-23 10:01:00",
+   "sig_pct": 38.97
   },
   {
    "key": "streak_bb-SUIUSDT-5m",
@@ -4271,11 +4295,11 @@
     "n_streak": 3
    },
    "fee_mode": "maker",
-   "oos_sharpe": 1.73,
-   "score": 1.73,
+   "oos_sharpe": 1.84,
+   "score": 1.84,
    "signal": -1.0,
-   "sig_last": "2026-11-23 08:45:00",
-   "sig_pct": 95.38
+   "sig_last": "2026-11-23 09:55:00",
+   "sig_pct": 95.43
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -4287,11 +4311,11 @@
     "vz": 6.0
    },
    "fee_mode": "maker",
-   "oos_sharpe": 1.95,
-   "score": 1.54,
-   "signal": 0.0,
-   "sig_last": "2026-11-21 13:30:00",
-   "sig_pct": 27.2
+   "oos_sharpe": 1.93,
+   "score": 1.41,
+   "signal": 1.0,
+   "sig_last": "2026-11-23 09:55:00",
+   "sig_pct": 27.34
   },
   {
    "key": "wick_vol-OPUSDT-15m",
@@ -4300,15 +4324,15 @@
    "tf": "15m",
    "params": {
     "h": 15,
-    "vz": 3.0,
-    "w": 0.4
+    "vz": 2.0,
+    "w": 0.5
    },
    "fee_mode": "maker",
-   "oos_sharpe": 1.82,
-   "score": 1.18,
+   "oos_sharpe": 1.12,
+   "score": 1.12,
    "signal": 0.0,
    "sig_last": "2026-11-21 07:45:00",
-   "sig_pct": 5.47
+   "sig_pct": 9.82
   },
   {
    "key": "wick_vol-AVAXUSDT-15m",
@@ -4334,7 +4358,7 @@
   "winrate": 54.3,
   "equity": 782.28,
   "pnl_pct": -21.77,
-  "open": 1
+  "open": 3
  },
  "filter_stats": {
   "total": 1860,
