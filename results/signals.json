@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T06:04:17Z",
+ "updated": "2026-11-23T07:38:22Z",
  "scanned": 200,
  "signals": [
   {
@@ -10,8 +10,23 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 2000 против среднего 531",
-   "liq": 126237,
+   "liq": 126258,
    "v24": 2000,
+   "z": 0.0,
+   "end": "2026-12-01",
+   "days_left": 7.7,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "will-bitcoin-reach-80k-in-november-2026-from-november-5",
+   "question": "Will Bitcoin reach $80,000 in November?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 68210 против среднего 20811",
+   "liq": 121210,
+   "v24": 68210,
    "z": 0.0,
    "end": "2026-12-01",
    "days_left": 7.7,
