@@ -3,7 +3,7 @@ Collecting requests>=2.31 (from -r engines/okx/requirements.txt (line 1))
 Collecting pandas>=2.0 (from -r engines/okx/requirements.txt (line 2))
   Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
 Collecting charset_normalizer<4,>=2 (from requests>=2.31->-r engines/okx/requirements.txt (line 1))
-  Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+  Downloading charset_normalizer-3.5.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (43 kB)
 Collecting idna<4,>=2.5 (from requests>=2.31->-r engines/okx/requirements.txt (line 1))
   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
 Collecting urllib3<3,>=1.26 (from requests>=2.31->-r engines/okx/requirements.txt (line 1))
@@ -17,16 +17,16 @@ Collecting python-dateutil>=2.9.0 (from pandas>=2.0->-r engines/okx/requirements
 Collecting tzdata (from python-dateutil>=2.9.0->pandas>=2.0->-r engines/okx/requirements.txt (line 2))
   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
-Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+Downloading charset_normalizer-3.5.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (263 kB)
 Downloading idna-3.20-py3-none-any.whl (69 kB)
 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
 Downloading pandas-3.1.1-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 51.6 MB/s  0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 76.0 MB/s  0:00:00
 Downloading certifi-2026.11.20-py3-none-any.whl (127 kB)
 Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 96.5 MB/s  0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 121.1 MB/s  0:00:00
 Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
 Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
 Installing collected packages: urllib3, tzdata, numpy, idna, charset_normalizer, certifi, requests, python-dateutil, pandas
 
-Successfully installed certifi-2026.11.20 charset_normalizer-3.5.2 idna-3.20 numpy-2.4.6 pandas-3.1.1 python-dateutil-4.0.0 requests-2.34.2 tzdata-2026.6 urllib3-2.8.0
+Successfully installed certifi-2026.11.20 charset_normalizer-3.5.3 idna-3.20 numpy-2.4.6 pandas-3.1.1 python-dateutil-4.0.0 requests-2.34.2 tzdata-2026.6 urllib3-2.8.0
