@@ -11,8 +11,8 @@
    "opened": "2026-11-23 03:19:00",
    "fee_mode": "maker",
    "oos_sharpe": 2.74,
-   "last_ts": "2026-11-23 04:35:00",
-   "last_px": 3.009
+   "last_ts": "2026-11-23 05:50:00",
+   "last_px": 3.02
   },
   "streak_bb-SUIUSDT-5m": {
    "strategy": "streak_bb",
@@ -23,8 +23,8 @@
    "opened": "2026-11-23 03:20:00",
    "fee_mode": "maker",
    "oos_sharpe": 1.73,
-   "last_ts": "2026-11-23 04:30:00",
-   "last_px": 0.656
+   "last_ts": "2026-11-23 05:45:00",
+   "last_px": 0.6658
   }
  },
  "closed": [
@@ -4229,15 +4229,15 @@
    "reason": "signal flip"
   }
  ],
- "updated": "2026-11-23T04:36:55Z",
- "runs": 282,
+ "updated": "2026-11-23T05:51:21Z",
+ "runs": 283,
  "seen": {
-  "bb_maker-NEARUSDT-1m": "2026-11-23 04:35:00",
-  "streak_bb-SUIUSDT-5m": "2026-11-23 04:30:00",
-  "vol_burst_revert-ARBUSDT-5m": "2026-11-23 04:30:00",
-  "funding_revert-SUIUSDT-1m": "2026-11-23 04:35:00",
-  "wick_vol-OPUSDT-15m": "2026-11-23 04:15:00",
-  "wick_vol-AVAXUSDT-15m": "2026-11-23 04:15:00"
+  "bb_maker-NEARUSDT-1m": "2026-11-23 05:50:00",
+  "streak_bb-SUIUSDT-5m": "2026-11-23 05:45:00",
+  "vol_burst_revert-ARBUSDT-5m": "2026-11-23 05:45:00",
+  "funding_revert-SUIUSDT-1m": "2026-11-23 05:49:00",
+  "wick_vol-OPUSDT-15m": "2026-11-23 05:30:00",
+  "wick_vol-AVAXUSDT-15m": "2026-11-23 05:30:00"
  },
  "tops": [
   {
@@ -4269,8 +4269,8 @@
    "oos_sharpe": 2.35,
    "score": 2.17,
    "signal": -1.0,
-   "sig_last": "2026-11-23 04:35:00",
-   "sig_pct": 39.35
+   "sig_last": "2026-11-23 05:50:00",
+   "sig_pct": 41.96
   },
   {
    "key": "streak_bb-SUIUSDT-5m",
@@ -4283,11 +4283,11 @@
     "n_streak": 3
    },
    "fee_mode": "maker",
-   "oos_sharpe": 1.73,
-   "score": 1.73,
+   "oos_sharpe": 1.84,
+   "score": 1.84,
    "signal": -1.0,
-   "sig_last": "2026-11-23 04:30:00",
-   "sig_pct": 94.94
+   "sig_last": "2026-11-23 05:45:00",
+   "sig_pct": 95.68
   },
   {
    "key": "vol_burst_revert-ARBUSDT-5m",
@@ -4312,15 +4312,15 @@
    "tf": "15m",
    "params": {
     "h": 15,
-    "vz": 3.0,
-    "w": 0.4
+    "vz": 2.0,
+    "w": 0.5
    },
    "fee_mode": "maker",
-   "oos_sharpe": 1.82,
-   "score": 1.18,
+   "oos_sharpe": 1.12,
+   "score": 1.12,
    "signal": 0.0,
    "sig_last": "2026-11-21 07:45:00",
-   "sig_pct": 5.47
+   "sig_pct": 9.82
   },
   {
    "key": "wick_vol-AVAXUSDT-15m",
