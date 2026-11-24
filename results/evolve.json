@@ -1,6 +1,35 @@
 {
  "history": [
   {
+   "ts": "2026-11-24T10:13:42Z",
+   "best": {
+    "ema_fast": 5,
+    "ema_slow": 13,
+    "sl_atr": 1.0,
+    "tp_atr": 3.0,
+    "is_ret": 1.88,
+    "oos_ret": 6.35,
+    "trades": 24,
+    "active_strategies": [
+     "ema_cross",
+     "momentum",
+     "rsi_revert",
+     "donchian_break",
+     "sma_revert"
+    ],
+    "updated": "2026-11-24T10:13:41Z"
+   },
+   "portfolio": [
+    "ema_cross",
+    "momentum",
+    "rsi_revert",
+    "donchian_break",
+    "sma_revert"
+   ],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-24T09:51:41Z",
    "best": {
     "ema_fast": 5,
@@ -598,16 +627,9 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-22T23:11:54Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-24T09:51:41Z",
+ "updated": "2026-11-24T10:13:42Z",
  "best_okx": {
   "ema_fast": 5,
   "ema_slow": 13,
@@ -627,8 +649,8 @@
    {
     "strategy": "momentum",
     "is_ret": -2.33,
-    "oos_ret": 10.88,
-    "trades": 19,
+    "oos_ret": 7.94,
+    "trades": 20,
     "portfolio": false
    },
    {
@@ -646,14 +668,14 @@
     "portfolio": false
    }
   ],
-  "updated": "2026-11-24T09:51:41Z"
+  "updated": "2026-11-24T10:13:41Z"
  },
  "strategy_stats": [
   {
    "strategy": "momentum",
    "is_ret": -2.33,
-   "oos_ret": 10.88,
-   "trades": 19,
+   "oos_ret": 7.94,
+   "trades": 20,
    "portfolio": false
   },
   {
@@ -681,24 +703,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.638,
+   "okx_mom_pct": -0.547,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-24T09:51:41Z"
+   "ts": "2026-11-24T10:13:42Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.758,
+   "okx_mom_pct": -0.596,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-24T09:51:41Z"
+   "ts": "2026-11-24T10:13:42Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -1.309,
+   "okx_mom_pct": -1.158,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-24T09:51:41Z"
+   "ts": "2026-11-24T10:13:42Z"
   }
  ],
  "golden": [
