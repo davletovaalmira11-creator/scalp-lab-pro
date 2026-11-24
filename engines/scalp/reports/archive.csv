@@ -16,11 +16,11 @@ spike_bb,BNBUSDT,5m,1.9,1.184,1.8,55,47,0.32,365,,filtered
 squeeze_pop,XRPUSDT,5m,1.88,1.084,1.78,183,47,0.3,365,,filtered
 spike_follow,SOLUSDT,1m,1.878,1.107,1.22,85,31,0.35,180,,filtered
 vol_burst_revert,ARBUSDT,5m,1.844,1.028,1.75,882,47,0.28,365,,passed
+streak_bb,SUIUSDT,5m,1.839,1.018,1.75,2537,47,0.36,365,,passed
 wick_vol,OPUSDT,15m,1.816,1.057,1.67,481,22,0.23,365,,passed
 spike_bb,LINKUSDT,15m,1.798,1.101,1.65,154,22,0.32,365,,filtered
 crash_revert,BTCUSDT,5m,1.796,1.45,1.71,9,47,0.6,365,,filtered
 spike_bb,LTCUSDT,5m,1.748,1.104,1.66,120,47,0.38,365,,filtered
-streak_bb,SUIUSDT,5m,1.727,1.017,1.64,2476,47,0.4,365,,passed
 spike_bb,SOLUSDT,1m,1.722,1.139,1.12,42,31,0.55,180,,filtered
 bb_regime,NEARUSDT,1m,1.696,1.01,1.11,2580,31,0.26,180,,passed
 spike_revert,SUIUSDT,15m,1.68,1.073,1.54,177,22,0.23,365,,filtered
