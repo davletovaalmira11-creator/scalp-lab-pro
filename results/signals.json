@@ -1,36 +1,5 @@
 {
- "updated": "2026-11-23T23:21:38Z",
+ "updated": "2026-11-24T00:13:19Z",
  "scanned": 200,
- "signals": [
-  {
-   "strategy": "vols",
-   "slug": "btc-updown-5m-1795475700",
-   "question": "Bitcoin Up or Down - November 23, 6:15PM-6:20PM ET",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 41055 против среднего 5865",
-   "liq": 346388,
-   "v24": 41055,
-   "z": 0.0,
-   "end": "2026-11-23",
-   "days_left": 0.0,
-   "tradeable": false
-  },
-  {
-   "strategy": "vols",
-   "slug": "eth-updown-5m-1795475700",
-   "question": "Ethereum Up or Down - November 23, 6:15PM-6:20PM ET",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 5301 против среднего 757",
-   "liq": 134392,
-   "v24": 5301,
-   "z": 0.0,
-   "end": "2026-11-23",
-   "days_left": 0.0,
-   "tradeable": false
-  }
- ]
+ "signals": []
 }
