@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-24T15:51:05Z",
+ "updated": "2026-11-24T16:54:15Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "vols",
+   "slug": "bitcoin-above-54k-on-november-24-2026",
+   "question": "Will the price of Bitcoin be above $54,000 on November 24?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 110950 против среднего 29863",
+   "liq": 158280,
+   "v24": 110950,
+   "z": 0.0,
+   "end": "2026-11-24",
+   "days_left": 0.0,
+   "tradeable": false
+  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-200000-by-december-31-2026-752-232-389",
@@ -10,11 +25,26 @@
    "price": 0,
    "edge": 0,
    "note": "объём 24ч 17927 против среднего 2840",
-   "liq": 165940,
+   "liq": 152303,
    "v24": 17927,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 37.3,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "bitcoin-above-70k-on-november-24-2026",
+   "question": "Will the price of Bitcoin be above $70,000 on November 24?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 43287 против среднего 10304",
+   "liq": 120383,
+   "v24": 43287,
+   "z": 0.0,
+   "end": "2026-11-24",
+   "days_left": 0.0,
    "tradeable": false
   }
  ]
