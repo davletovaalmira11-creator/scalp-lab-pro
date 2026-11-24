@@ -62,6 +62,26 @@
     "tp": 71.83714285714285,
     "sl": 68.15607142857142,
     "opened": "2026-11-24T15:53:29Z"
+   },
+   "rsi_revert|ETH-USDT-SWAP": {
+    "strategy": "rsi_revert",
+    "inst": "ETH-USDT-SWAP",
+    "side": 1,
+    "entry": 1675.18,
+    "sz": 0.002984753877195286,
+    "tp": 1729.094285714286,
+    "sl": 1654.962142857143,
+    "opened": "2026-11-24T17:09:45Z"
+   },
+   "sma_revert|SOL-USDT-SWAP": {
+    "strategy": "sma_revert",
+    "inst": "SOL-USDT-SWAP",
+    "side": -1,
+    "entry": 69.35,
+    "sz": 0.07209805335255949,
+    "tp": 66.88714285714285,
+    "sl": 70.27357142857142,
+    "opened": "2026-11-24T17:09:45Z"
    }
   },
   "trades": [
@@ -1190,13 +1210,13 @@
    "pnl": -0.4262,
    "trades": 48,
    "wins": 17,
-   "open": 2
+   "open": 3
   },
   "sma_revert": {
    "pnl": 0.1686,
    "trades": 25,
    "wins": 12,
-   "open": 0
+   "open": 1
   }
  },
  "mode": "paper",
@@ -1205,7 +1225,7 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.082,
  "trades": 100,
- "open": 6,
+ "open": 8,
  "recent_trades": [
   {
    "ts": "2026-11-24T16:55:05Z",
@@ -1772,41 +1792,41 @@
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 59567.1,
-   "atr": 398.8714285714289,
+   "price": 59776.1,
+   "atr": 423.74285714285725,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
-    "rsi_revert": 0,
+    "rsi_revert": 1,
     "donchian_break": 0,
     "sma_revert": 0
    },
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1672.15,
-   "atr": 13.318571428571447,
+   "price": 1675.18,
+   "atr": 13.478571428571447,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
-    "rsi_revert": 0,
+    "rsi_revert": 1,
     "donchian_break": 0,
     "sma_revert": 0
    },
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 69.1,
-   "atr": 0.6178571428571412,
+   "price": 69.35,
+   "atr": 0.615714285714285,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
     "rsi_revert": 0,
     "donchian_break": 0,
-    "sma_revert": 0
+    "sma_revert": -1
    },
    "err": null
   }
  },
- "updated": "2026-11-24T16:55:05Z"
+ "updated": "2026-11-24T17:09:45Z"
 }
