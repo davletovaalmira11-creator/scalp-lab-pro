@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T04:46:23Z",
+ "updated": "2026-11-24T04:47:35Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
+   "okx_trader": "ok",
    "pm_trader": "ok"
   }
  },
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-24T04:43:51Z",
-  "age_s": 152.0
+  "age_s": 225.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-24T04:46:22Z",
-  "age_s": 1.0
+  "age_s": 74.0
  },
  "scalp": {
   "done": 2682,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-24T04:25:14Z",
-  "age_s": 1269.0,
+  "age_s": 1342.0,
   "paper": {
    "equity": 761.8,
    "pnl_pct": -23.82,
@@ -220,20 +220,8 @@
   "open": 5,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 60270.4,
-    "atr": 387.02142857142877,
-    "sig": {
-     "ema_cross": 0,
-     "momentum": 0,
-     "rsi_revert": 1,
-     "donchian_break": 0,
-     "sma_revert": 0
-    },
-    "err": null
-   },
-   "ETH-USDT-SWAP": {
-    "price": 1692.52,
-    "atr": 12.071428571428555,
+    "price": 60570.2,
+    "atr": 370.3500000000001,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -243,12 +231,24 @@
     },
     "err": null
    },
+   "ETH-USDT-SWAP": {
+    "price": 1705.83,
+    "atr": 11.518571428571429,
+    "sig": {
+     "ema_cross": 1,
+     "momentum": 1,
+     "rsi_revert": 0,
+     "donchian_break": 0,
+     "sma_revert": 0
+    },
+    "err": null
+   },
    "SOL-USDT-SWAP": {
-    "price": 71.04,
-    "atr": 0.5050000000000036,
+    "price": 71.85,
+    "atr": 0.4935714285714314,
     "sig": {
      "ema_cross": 0,
-     "momentum": 0,
+     "momentum": 1,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -310,8 +310,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-24T03:42:51Z",
-  "age_s": 3812.0
+  "updated": "2026-11-24T04:47:35Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -320,6 +320,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-24T04:38:56Z",
-  "age_s": 447.0
+  "age_s": 520.0
  }
 }
