@@ -52,6 +52,26 @@
     "tp": 61818.485714285714,
     "sl": 59302.84642857143,
     "opened": "2026-11-24T03:42:51Z"
+   },
+   "sma_revert|ETH-USDT-SWAP": {
+    "strategy": "sma_revert",
+    "inst": "ETH-USDT-SWAP",
+    "side": -1,
+    "entry": 1686.15,
+    "sz": 0.002965335231147881,
+    "tp": 1662.2485714285715,
+    "sl": 1694.1171428571429,
+    "opened": "2026-11-24T09:32:45Z"
+   },
+   "rsi_revert|SOL-USDT-SWAP": {
+    "strategy": "rsi_revert",
+    "inst": "SOL-USDT-SWAP",
+    "side": 1,
+    "entry": 70.88,
+    "sz": 0.07054176072234764,
+    "tp": 71.92142857142858,
+    "sl": 70.53285714285714,
+    "opened": "2026-11-24T09:32:45Z"
    }
   },
   "trades": [
@@ -1180,13 +1200,13 @@
    "pnl": -0.4017,
    "trades": 47,
    "wins": 17,
-   "open": 1
+   "open": 2
   },
   "sma_revert": {
    "pnl": 0.1922,
    "trades": 24,
    "wins": 12,
-   "open": 0
+   "open": 1
   }
  },
  "mode": "paper",
@@ -1195,7 +1215,7 @@
  "start_equity": 1000.0,
  "pnl_pct": 0.002,
  "trades": 100,
- "open": 5,
+ "open": 7,
  "recent_trades": [
   {
    "ts": "2026-11-24T02:32:33Z",
@@ -1754,24 +1774,28 @@
  },
  "params_source": "evolve",
  "active_strategies": [
-  "ema_cross"
+  "ema_cross",
+  "momentum",
+  "rsi_revert",
+  "donchian_break",
+  "sma_revert"
  ],
  "signals": {
   "BTC-USDT-SWAP": {
-   "price": 60196.5,
-   "atr": 208.49285714285674,
+   "price": 60007.3,
+   "atr": 255.5999999999996,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
-    "rsi_revert": 0,
+    "rsi_revert": 1,
     "donchian_break": 0,
     "sma_revert": 0
    },
    "err": null
   },
   "ETH-USDT-SWAP": {
-   "price": 1694.75,
-   "atr": 6.335714285714322,
+   "price": 1686.15,
+   "atr": 7.967142857142887,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
@@ -1782,17 +1806,17 @@
    "err": null
   },
   "SOL-USDT-SWAP": {
-   "price": 71.29,
-   "atr": 0.30428571428571666,
+   "price": 70.88,
+   "atr": 0.34714285714285914,
    "sig": {
     "ema_cross": 0,
     "momentum": 0,
-    "rsi_revert": 0,
+    "rsi_revert": 1,
     "donchian_break": 0,
-    "sma_revert": -1
+    "sma_revert": 0
    },
    "err": null
   }
  },
- "updated": "2026-11-24T08:41:39Z"
+ "updated": "2026-11-24T09:32:45Z"
 }
