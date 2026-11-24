@@ -1,1 +1,1 @@
-evolve2: tried=36 best=5/26 IS=+18.42% OOS=+32.48% trades=34 promoted=True
+evolve2: tried=36 best=9/21 IS=+9.46% OOS=+31.19% trades=32 promoted=True
