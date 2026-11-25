@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-25T09:47:42Z",
+ "updated": "2026-11-25T10:44:12Z",
  "scanned": 200,
  "signals": [
+  {
+   "strategy": "fav",
+   "slug": "will-bitcoin-reach-67pt5k-in-november-2026",
+   "question": "Will Bitcoin reach $67,500 in November?",
+   "outcome": "No",
+   "price": 0.945,
+   "edge": 0.0275,
+   "note": "фаворит (No) 94% до конца 6 дн",
+   "liq": 118676,
+   "v24": 19692,
+   "z": 0.0,
+   "end": "2026-12-01",
+   "days_left": 5.6,
+   "tradeable": true
+  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-200000-by-december-31-2026-752-232-389",
@@ -9,9 +24,9 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 18008 против среднего 2851",
-   "liq": 146084,
-   "v24": 18008,
+   "note": "объём 24ч 17971 против среднего 2851",
+   "liq": 169383,
+   "v24": 17971,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 36.6,
