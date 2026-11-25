@@ -1,22 +1,7 @@
 {
- "updated": "2026-11-25T03:45:40Z",
+ "updated": "2026-11-25T04:52:54Z",
  "scanned": 200,
  "signals": [
-  {
-   "strategy": "vols",
-   "slug": "btc-updown-15m-1795577400",
-   "question": "Bitcoin Up or Down - November 24, 10:30PM-10:45PM ET",
-   "outcome": "-",
-   "price": 0,
-   "edge": 0,
-   "note": "объём 24ч 9788 против среднего 1398",
-   "liq": 176706,
-   "v24": 9788,
-   "z": 0.0,
-   "end": "2026-11-25",
-   "days_left": 0.0,
-   "tradeable": false
-  },
   {
    "strategy": "vols",
    "slug": "will-bitcoin-reach-200000-by-december-31-2026-752-232-389",
@@ -24,9 +9,9 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 17927 против среднего 2840",
-   "liq": 165898,
-   "v24": 17927,
+   "note": "объём 24ч 17971 против среднего 2846",
+   "liq": 141647,
+   "v24": 17971,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 36.8,
