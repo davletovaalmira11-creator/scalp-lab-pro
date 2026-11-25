@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-25T00:36:26Z",
+ "updated": "2026-11-25T00:38:43Z",
  "health": {
-  "overall": "ok",
+  "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-25T00:21:29Z",
-  "age_s": 898.0
+  "age_s": 1034.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-24T23:54:57Z",
-  "age_s": 2490.0
+  "age_s": 2626.0
  },
  "scalp": {
   "done": 2682,
   "total": 2682,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-24T23:36:54Z",
-  "age_s": 3573.0,
+  "updated": "2026-11-25T00:38:18Z",
+  "age_s": 25.0,
   "paper": {
-   "equity": 769.62,
-   "pnl_pct": -23.04,
+   "equity": 776.77,
+   "pnl_pct": -22.32,
    "trades": 300,
-   "winrate": 54.0,
-   "open": 2,
+   "winrate": 54.7,
+   "open": 1,
    "tops": 6
   },
-  "paper_updated": "2026-11-24T23:37:25Z",
+  "paper_updated": "2026-11-25T00:38:42Z",
   "leaderboard": [
    {
     "strategy": "funding_revert",
@@ -99,20 +99,20 @@
     "strategy": "vol_burst_revert",
     "symbol": "ARBUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.844",
-    "oos_pf": "1.028",
-    "oos_t": "1.75",
-    "trades": "882",
+    "oos_sharpe": "1.951",
+    "oos_pf": "1.029",
+    "oos_t": "1.85",
+    "trades": "881",
     "param_stability": "0.28",
-    "is_sharpe_avg": "4.21",
+    "is_sharpe_avg": "4.17",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.8444706297408302",
-    "maker_pf": "1.0277994526948737",
-    "daily_pct": "0.002164",
-    "monthly_pct": "0.066984",
-    "trades_per_day": "2.42",
-    "usd_per_month_1000": "66.98"
+    "maker_sharpe": "1.951493983041779",
+    "maker_pf": "1.0294067257872943",
+    "daily_pct": "0.002252",
+    "monthly_pct": "0.069814",
+    "trades_per_day": "2.41",
+    "usd_per_month_1000": "69.81"
    },
    {
     "strategy": "wick_vol",
@@ -361,7 +361,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-25T00:36:06Z",
-  "age_s": 21.0
+  "age_s": 157.0
  },
  "clob": {
   "mode": "off",
@@ -370,6 +370,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-25T00:36:24Z",
-  "age_s": 3.0
+  "age_s": 139.0
  }
 }
