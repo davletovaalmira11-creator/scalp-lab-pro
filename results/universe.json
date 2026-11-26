@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T07:25:42Z",
+ "updated": "2026-11-26T07:58:25Z",
  "health": {
   "overall": "degraded",
   "modules": {
@@ -7,7 +7,7 @@
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
-   "pm_trader": "ok"
+   "pm_trader": "stale"
   }
  },
  "pm": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-26T07:02:54Z",
-  "age_s": 1369.0
+  "age_s": 3332.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-26T06:38:30Z",
-  "age_s": 2833.0
+  "age_s": 4796.0
  },
  "scalp": {
   "done": 2682,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-26T06:47:52Z",
-  "age_s": 2271.0,
+  "age_s": 4234.0,
   "paper": {
    "equity": 671.18,
    "pnl_pct": -32.88,
@@ -239,8 +239,8 @@
   "open": 2,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 60551.7,
-    "atr": 195.82857142857236,
+    "price": 60534.7,
+    "atr": 187.92857142857196,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -251,11 +251,11 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1690.66,
-    "atr": 5.516428571428605,
+    "price": 1689.54,
+    "atr": 5.589285714285746,
     "sig": {
      "ema_cross": 0,
-     "momentum": 0,
+     "momentum": -1,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -263,11 +263,11 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 71.03,
-    "atr": 0.24571428571428555,
+    "price": 70.86,
+    "atr": 0.24214285714285616,
     "sig": {
      "ema_cross": 0,
-     "momentum": 0,
+     "momentum": -1,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -299,8 +299,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-26T07:25:27Z",
-  "age_s": 16.0
+  "updated": "2026-11-26T07:58:25Z",
+  "age_s": 1.0
  },
  "clob": {
   "mode": "off",
@@ -309,6 +309,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-26T07:25:41Z",
-  "age_s": 2.0
+  "age_s": 1965.0
  }
 }
