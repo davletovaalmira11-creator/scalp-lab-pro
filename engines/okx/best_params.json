@@ -19,9 +19,9 @@
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -2.74,
+   "is_ret": -1.11,
    "oos_ret": -9.64,
-   "trades": 37,
+   "trades": 35,
    "portfolio": false
   },
   {
@@ -32,5 +32,5 @@
    "portfolio": false
   }
  ],
- "updated": "2026-11-26T02:34:04Z"
+ "updated": "2026-11-26T02:58:18Z"
 }
