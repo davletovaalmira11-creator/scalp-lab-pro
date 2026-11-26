@@ -1,5 +1,21 @@
 {
- "updated": "2026-11-26T14:03:24Z",
+ "updated": "2026-11-26T15:06:04Z",
  "scanned": 200,
- "signals": []
+ "signals": [
+  {
+   "strategy": "vols",
+   "slug": "bitcoin-above-52k-on-november-26-2026",
+   "question": "Will the price of Bitcoin be above $52,000 on November 26?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 59558 против среднего 13269",
+   "liq": 111628,
+   "v24": 59558,
+   "z": 0.0,
+   "end": "2026-11-26",
+   "days_left": 0.0,
+   "tradeable": false
+  }
+ ]
 }
