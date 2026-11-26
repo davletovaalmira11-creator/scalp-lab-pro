@@ -12,9 +12,9 @@
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": 5.46,
-   "oos_ret": 8.67,
-   "trades": 36,
+   "is_ret": 5.86,
+   "oos_ret": 11.6,
+   "trades": 38,
    "portfolio": true
   },
   {
@@ -26,11 +26,11 @@
   },
   {
    "strategy": "donchian_break",
-   "is_ret": -6.72,
+   "is_ret": -6.65,
    "oos_ret": 1.01,
    "trades": 29,
    "portfolio": false
   }
  ],
- "updated": "2026-11-26T03:43:01Z"
+ "updated": "2026-11-26T04:04:21Z"
 }
