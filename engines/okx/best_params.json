@@ -4,7 +4,7 @@
  "sl_atr": 1.0,
  "tp_atr": 3.0,
  "is_ret": 4.91,
- "oos_ret": 6.01,
+ "oos_ret": 6.28,
  "trades": 25,
  "active_strategies": [
   "momentum",
@@ -13,16 +13,16 @@
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": 6.17,
-   "oos_ret": 4.55,
-   "trades": 38,
+   "is_ret": 4.94,
+   "oos_ret": 3.2,
+   "trades": 41,
    "portfolio": true
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -1.52,
-   "oos_ret": -9.72,
-   "trades": 30,
+   "is_ret": -10.06,
+   "oos_ret": -6.82,
+   "trades": 24,
    "portfolio": false
   },
   {
@@ -33,5 +33,5 @@
    "portfolio": true
   }
  ],
- "updated": "2026-11-26T09:52:21Z"
+ "updated": "2026-11-26T11:02:33Z"
 }
