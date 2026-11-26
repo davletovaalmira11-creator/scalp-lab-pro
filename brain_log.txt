@@ -1,1 +1,1 @@
-brain v2: new_bars_preds=40 acc=77.5% trades_total=11159 equity=-410.49% signals=10
+brain v2: new_bars_preds=281 acc=50.53% trades_total=11344 equity=-449.12% signals=10
