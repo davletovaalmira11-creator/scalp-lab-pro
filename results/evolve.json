@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-26T17:58:47Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-26T17:13:12Z",
    "best": {},
    "portfolio": [],
@@ -658,30 +665,23 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-25T04:11:25Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-26T17:13:12Z",
+ "updated": "2026-11-26T17:58:47Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": -10.47,
-   "oos_ret": -2.57,
+   "is_ret": -11.4,
+   "oos_ret": -1.7,
    "trades": 46,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -8.9,
+   "is_ret": -7.92,
    "oos_ret": -1.44,
-   "trades": 24,
+   "trades": 23,
    "portfolio": false
   },
   {
@@ -696,24 +696,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.492,
+   "okx_mom_pct": -0.325,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-26T17:13:12Z"
+   "ts": "2026-11-26T17:58:47Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.661,
+   "okx_mom_pct": -0.22,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-26T17:13:12Z"
+   "ts": "2026-11-26T17:58:47Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.49,
+   "okx_mom_pct": 0.042,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-26T17:13:12Z"
+   "ts": "2026-11-26T17:58:47Z"
   }
  ],
  "golden": [
@@ -729,18 +729,18 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "name": "funding_revert ARBUSDT 1m",
+   "note": "OOS PF 1.033, Sharpe 2.532"
+  },
+  {
+   "src": "walk-forward bt",
+   "name": "wick_vol AVAXUSDT 15m",
+   "note": "OOS PF 1.08, Sharpe 2.418"
   },
   {
    "src": "walk-forward bt",
    "name": "bb_maker NEARUSDT 1m",
    "note": "OOS PF 1.014, Sharpe 2.352"
-  },
-  {
-   "src": "walk-forward bt",
-   "name": "funding_revert ARBUSDT 1m",
-   "note": "OOS PF 1.027, Sharpe 2.263"
   }
  ],
  "error": null
