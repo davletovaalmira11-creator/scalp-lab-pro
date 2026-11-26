@@ -13,8 +13,8 @@
   {
    "strategy": "momentum",
    "is_ret": 4.82,
-   "oos_ret": 9.15,
-   "trades": 37,
+   "oos_ret": 8.48,
+   "trades": 38,
    "portfolio": true
   },
   {
@@ -32,5 +32,5 @@
    "portfolio": false
   }
  ],
- "updated": "2026-11-26T07:22:33Z"
+ "updated": "2026-11-26T07:25:42Z"
 }
