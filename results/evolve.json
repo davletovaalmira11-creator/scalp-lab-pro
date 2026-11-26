@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-26T14:45:07Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-26T13:28:47Z",
    "best": {},
    "portfolio": [],
@@ -658,62 +665,48 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-25T01:16:26Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-26T13:28:47Z",
+ "updated": "2026-11-26T14:45:07Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": -3.51,
-   "oos_ret": -1.77,
+   "is_ret": -5.5,
+   "oos_ret": 0.7,
    "trades": 40,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
    "is_ret": -10.06,
-   "oos_ret": -6.82,
-   "trades": 24,
+   "oos_ret": -5.93,
+   "trades": 23,
    "portfolio": false
-  },
-  {
-   "strategy": "donchian_break",
-   "is_ret": 2.44,
-   "oos_ret": 3.04,
-   "trades": 19,
-   "portfolio": true
   }
  ],
  "portfolio": [],
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": 0.053,
+   "okx_mom_pct": 0.084,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-26T13:28:47Z"
+   "ts": "2026-11-26T14:45:07Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": 0.218,
+   "okx_mom_pct": -0.045,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-26T13:28:47Z"
+   "ts": "2026-11-26T14:45:07Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.07,
+   "okx_mom_pct": 0.565,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-26T13:28:47Z"
+   "ts": "2026-11-26T14:45:07Z"
   }
  ],
  "golden": [
@@ -729,8 +722,8 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "name": "funding_revert ARBUSDT 1m",
+   "note": "OOS PF 1.033, Sharpe 2.532"
   },
   {
    "src": "walk-forward bt",
@@ -739,8 +732,8 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert ARBUSDT 1m",
-   "note": "OOS PF 1.027, Sharpe 2.263"
+   "name": "vol_burst_revert ARBUSDT 5m",
+   "note": "OOS PF 1.028, Sharpe 1.844"
   }
  ],
  "error": null
