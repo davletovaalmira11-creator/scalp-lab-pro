@@ -27,8 +27,8 @@
   {
    "strategy": "donchian_break",
    "is_ret": 0.9,
-   "oos_ret": 0.86,
-   "trades": 25,
+   "oos_ret": 1.53,
+   "trades": 24,
    "portfolio": true
   },
   {
@@ -39,5 +39,5 @@
    "portfolio": false
   }
  ],
- "updated": "2026-11-27T19:45:37Z"
+ "updated": "2026-11-27T20:01:57Z"
 }
