@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T22:41:39Z",
+ "updated": "2026-11-27T22:43:09Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-27T22:36:29Z",
-  "age_s": 311.0
+  "age_s": 401.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,24 +38,24 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-27T22:02:33Z",
-  "age_s": 2347.0
+  "age_s": 2437.0
  },
  "scalp": {
   "done": 2682,
   "total": 2682,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-27T21:41:34Z",
-  "age_s": 3606.0,
+  "updated": "2026-11-27T22:42:41Z",
+  "age_s": 29.0,
   "paper": {
    "equity": 745.12,
    "pnl_pct": -25.49,
    "trades": 300,
    "winrate": 57.3,
-   "open": 1,
+   "open": 3,
    "tops": 6
   },
-  "paper_updated": "2026-11-27T21:42:00Z",
+  "paper_updated": "2026-11-27T22:43:09Z",
   "leaderboard": [
    {
     "strategy": "funding_revert",
@@ -118,20 +118,20 @@
     "strategy": "vol_burst_revert",
     "symbol": "ARBUSDT",
     "tf": "5m",
-    "oos_sharpe": "1.951",
-    "oos_pf": "1.029",
-    "oos_t": "1.85",
-    "trades": "881",
+    "oos_sharpe": "1.844",
+    "oos_pf": "1.028",
+    "oos_t": "1.75",
+    "trades": "882",
     "param_stability": "0.28",
-    "is_sharpe_avg": "4.17",
+    "is_sharpe_avg": "4.21",
     "folds": "47",
     "fee_mode": "maker",
-    "maker_sharpe": "1.951493983041779",
-    "maker_pf": "1.0294067257872943",
-    "daily_pct": "0.002252",
-    "monthly_pct": "0.069814",
-    "trades_per_day": "2.41",
-    "usd_per_month_1000": "69.81"
+    "maker_sharpe": "1.8444706297408302",
+    "maker_pf": "1.0277994526948737",
+    "daily_pct": "0.002164",
+    "monthly_pct": "0.066984",
+    "trades_per_day": "2.42",
+    "usd_per_month_1000": "66.98"
    },
    {
     "strategy": "wick_vol",
@@ -290,7 +290,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-27T22:41:21Z",
-  "age_s": 19.0
+  "age_s": 109.0
  },
  "clob": {
   "mode": "off",
@@ -299,6 +299,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-27T22:41:37Z",
-  "age_s": 3.0
+  "age_s": 93.0
  }
 }
