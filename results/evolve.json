@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-27T21:40:58Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-27T20:59:44Z",
    "best": {},
    "portfolio": [],
@@ -490,60 +497,37 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-26T11:02:34Z",
-   "best": {
-    "ema_fast": 5,
-    "ema_slow": 13,
-    "sl_atr": 1.0,
-    "tp_atr": 3.0,
-    "is_ret": 4.91,
-    "oos_ret": 6.28,
-    "trades": 25,
-    "active_strategies": [
-     "momentum",
-     "donchian_break"
-    ],
-    "updated": "2026-11-26T11:02:33Z"
-   },
-   "portfolio": [
-    "momentum",
-    "donchian_break"
-   ],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-27T20:59:44Z",
+ "updated": "2026-11-27T21:40:58Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
    "is_ret": 8.48,
-   "oos_ret": -4.27,
-   "trades": 32,
+   "oos_ret": -1.82,
+   "trades": 29,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
    "is_ret": -10.44,
-   "oos_ret": -0.62,
-   "trades": 31,
+   "oos_ret": -2.49,
+   "trades": 28,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": 0.9,
-   "oos_ret": 1.53,
-   "trades": 24,
+   "is_ret": 3.04,
+   "oos_ret": 3.98,
+   "trades": 18,
    "portfolio": true
   },
   {
    "strategy": "sma_revert",
    "is_ret": -2.25,
-   "oos_ret": -4.08,
-   "trades": 20,
+   "oos_ret": -1.51,
+   "trades": 17,
    "portfolio": false
   }
  ],
@@ -551,24 +535,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.18,
+   "okx_mom_pct": 0.082,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-27T20:59:44Z"
+   "ts": "2026-11-27T21:40:58Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.233,
+   "okx_mom_pct": -0.109,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-27T20:59:44Z"
+   "ts": "2026-11-27T21:40:58Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.125,
+   "okx_mom_pct": 0.195,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-27T20:59:44Z"
+   "ts": "2026-11-27T21:40:58Z"
   }
  ],
  "golden": [
