@@ -12,16 +12,16 @@
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": 6.34,
+   "is_ret": 6.32,
    "oos_ret": -1.01,
    "trades": 20,
    "portfolio": false
   },
   {
    "strategy": "momentum",
-   "is_ret": 10.79,
-   "oos_ret": -7.46,
-   "trades": 38,
+   "is_ret": 8.67,
+   "oos_ret": -5.88,
+   "trades": 35,
    "portfolio": false
   },
   {
@@ -40,11 +40,11 @@
   },
   {
    "strategy": "sma_revert",
-   "is_ret": 2.52,
+   "is_ret": 1.38,
    "oos_ret": -4.08,
-   "trades": 22,
+   "trades": 20,
    "portfolio": false
   }
  ],
- "updated": "2026-11-27T15:06:02Z"
+ "updated": "2026-11-27T16:06:07Z"
 }
