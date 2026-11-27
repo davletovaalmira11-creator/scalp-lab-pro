@@ -1,6 +1,13 @@
 {
  "history": [
   {
+   "ts": "2026-11-27T11:40:14Z",
+   "best": {},
+   "portfolio": [],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-27T10:29:44Z",
    "best": {},
    "portfolio": [],
@@ -560,58 +567,37 @@
    ],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-25T23:53:22Z",
-   "best": {
-    "ema_fast": 5,
-    "ema_slow": 13,
-    "sl_atr": 1.0,
-    "tp_atr": 2.5,
-    "is_ret": 3.43,
-    "oos_ret": 8.66,
-    "trades": 27,
-    "active_strategies": [
-     "momentum"
-    ],
-    "updated": "2026-11-25T23:53:21Z"
-   },
-   "portfolio": [
-    "momentum"
-   ],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-27T10:29:44Z",
+ "updated": "2026-11-27T11:40:14Z",
  "best_okx": null,
  "strategy_stats": [
   {
    "strategy": "momentum",
-   "is_ret": 6.99,
-   "oos_ret": -10.57,
-   "trades": 33,
+   "is_ret": 2.33,
+   "oos_ret": -9.89,
+   "trades": 35,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
    "is_ret": -9.3,
-   "oos_ret": 1.46,
-   "trades": 31,
+   "oos_ret": 0.72,
+   "trades": 30,
    "portfolio": false
   },
   {
    "strategy": "donchian_break",
-   "is_ret": 3.03,
+   "is_ret": -1.59,
    "oos_ret": -3.18,
-   "trades": 20,
+   "trades": 22,
    "portfolio": false
   },
   {
    "strategy": "sma_revert",
    "is_ret": -0.22,
-   "oos_ret": -3.82,
-   "trades": 22,
+   "oos_ret": -2.47,
+   "trades": 20,
    "portfolio": false
   }
  ],
@@ -619,24 +605,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.219,
+   "okx_mom_pct": -0.016,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-27T10:29:44Z"
+   "ts": "2026-11-27T11:40:14Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.242,
+   "okx_mom_pct": -0.103,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-27T10:29:44Z"
+   "ts": "2026-11-27T11:40:14Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": 0.685,
+   "okx_mom_pct": 0.082,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-27T10:29:44Z"
+   "ts": "2026-11-27T11:40:14Z"
   }
  ],
  "golden": [
@@ -652,8 +638,8 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert SUIUSDT 1m",
-   "note": "OOS PF 1.036, Sharpe 2.885"
+   "name": "funding_revert ARBUSDT 1m",
+   "note": "OOS PF 1.033, Sharpe 2.532"
   },
   {
    "src": "walk-forward bt",
@@ -662,8 +648,8 @@
   },
   {
    "src": "walk-forward bt",
-   "name": "funding_revert ARBUSDT 1m",
-   "note": "OOS PF 1.027, Sharpe 2.263"
+   "name": "vol_burst_revert ARBUSDT 5m",
+   "note": "OOS PF 1.029, Sharpe 1.951"
   }
  ],
  "error": null
