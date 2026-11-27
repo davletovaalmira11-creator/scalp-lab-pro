@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T06:50:21Z",
+ "updated": "2026-11-27T08:18:07Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,9 +9,9 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 100291 против среднего 14682",
-   "liq": 246724,
-   "v24": 100291,
+   "note": "объём 24ч 100281 против среднего 14682",
+   "liq": 246438,
+   "v24": 100281,
    "z": 0.0,
    "end": "2027-01-01",
    "days_left": 34.7,
@@ -19,17 +19,17 @@
   },
   {
    "strategy": "vols",
-   "slug": "will-ethereum-reach-3100-in-november-2026",
-   "question": "Will Ethereum reach $3,100 in November?",
+   "slug": "bitcoin-above-50k-on-november-27-2026",
+   "question": "Will the price of Bitcoin be above $50,000 on November 27?",
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 39263 против среднего 10801",
-   "liq": 128895,
-   "v24": 39263,
+   "note": "объём 24ч 41666 против среднего 13016",
+   "liq": 137420,
+   "v24": 41666,
    "z": 0.0,
-   "end": "2026-12-01",
-   "days_left": 3.7,
+   "end": "2026-11-27",
+   "days_left": 0.0,
    "tradeable": false
   }
  ]
