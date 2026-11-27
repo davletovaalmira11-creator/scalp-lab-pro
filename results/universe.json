@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-27T19:47:04Z",
+ "updated": "2026-11-27T19:59:53Z",
  "health": {
-  "overall": "ok",
+  "overall": "degraded",
   "modules": {
-   "pm_worker": "ok",
+   "pm_worker": "stale",
    "pm_lab": "ok",
    "scalp_worker": "ok",
    "okx_trader": "ok",
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-27T19:41:43Z",
-  "age_s": 322.0
+  "age_s": 1090.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-27T19:04:43Z",
-  "age_s": 2542.0
+  "age_s": 3310.0
  },
  "scalp": {
   "done": 2682,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-27T19:46:28Z",
-  "age_s": 37.0,
+  "age_s": 805.0,
   "paper": {
    "equity": 754.73,
    "pnl_pct": -24.53,
@@ -239,11 +239,11 @@
   "open": 0,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 59991.0,
-    "atr": 238.278571428571,
+    "price": 59882.3,
+    "atr": 249.65714285714265,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -251,11 +251,11 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1673.47,
-    "atr": 7.678571428571412,
+    "price": 1670.65,
+    "atr": 7.986428571428552,
     "sig": {
      "ema_cross": 0,
-     "momentum": 1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -263,8 +263,8 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 72.35,
-    "atr": 0.355714285714285,
+    "price": 72.02,
+    "atr": 0.3814285714285707,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -278,8 +278,8 @@
   "paper_positions": {},
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-27T19:45:19Z",
-  "age_s": 106.0
+  "updated": "2026-11-27T19:59:53Z",
+  "age_s": 0.0
  },
  "clob": {
   "mode": "off",
@@ -288,6 +288,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-27T19:45:36Z",
-  "age_s": 89.0
+  "age_s": 857.0
  }
 }
