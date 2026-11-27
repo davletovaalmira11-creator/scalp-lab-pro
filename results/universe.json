@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-27T22:36:29Z",
+ "updated": "2026-11-27T22:41:39Z",
  "health": {
-  "overall": "degraded",
+  "overall": "ok",
   "modules": {
    "pm_worker": "ok",
    "pm_lab": "ok",
    "scalp_worker": "ok",
-   "okx_trader": "stale",
+   "okx_trader": "ok",
    "pm_trader": "ok"
   }
  },
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-27T22:36:29Z",
-  "age_s": 1.0
+  "age_s": 311.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,7 +38,7 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-27T22:02:33Z",
-  "age_s": 2037.0
+  "age_s": 2347.0
  },
  "scalp": {
   "done": 2682,
@@ -46,7 +46,7 @@
   "errors": 0,
   "pending": 0,
   "updated": "2026-11-27T21:41:34Z",
-  "age_s": 3296.0,
+  "age_s": 3606.0,
   "paper": {
    "equity": 745.12,
    "pnl_pct": -25.49,
@@ -239,8 +239,8 @@
   "open": 1,
   "signals": {
    "BTC-USDT-SWAP": {
-    "price": 59804.1,
-    "atr": 123.07857142857132,
+    "price": 59690.6,
+    "atr": 122.03571428571377,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -251,11 +251,11 @@
     "err": null
    },
    "ETH-USDT-SWAP": {
-    "price": 1664.11,
-    "atr": 3.781428571428559,
+    "price": 1655.43,
+    "atr": 4.335714285714289,
     "sig": {
      "ema_cross": 0,
-     "momentum": -1,
+     "momentum": 0,
      "rsi_revert": 0,
      "donchian_break": 0,
      "sma_revert": 0
@@ -263,8 +263,8 @@
     "err": null
    },
    "SOL-USDT-SWAP": {
-    "price": 71.95,
-    "atr": 0.19499999999999623,
+    "price": 71.52,
+    "atr": 0.21714285714285353,
     "sig": {
      "ema_cross": 0,
      "momentum": 0,
@@ -289,8 +289,8 @@
   },
   "live_positions": {},
   "errors": null,
-  "updated": "2026-11-27T21:57:14Z",
-  "age_s": 2356.0
+  "updated": "2026-11-27T22:41:21Z",
+  "age_s": 19.0
  },
  "clob": {
   "mode": "off",
@@ -298,7 +298,7 @@
   "picked": null,
   "order": null,
   "error": null,
-  "updated": "2026-11-27T22:19:12Z",
-  "age_s": 1038.0
+  "updated": "2026-11-27T22:41:37Z",
+  "age_s": 3.0
  }
 }
