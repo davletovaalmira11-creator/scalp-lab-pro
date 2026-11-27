@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T23:38:30Z",
+ "updated": "2026-11-27T23:39:34Z",
  "health": {
   "overall": "ok",
   "modules": {
@@ -25,7 +25,7 @@
    "acc": 51.2
   },
   "updated": "2026-11-27T23:31:32Z",
-  "age_s": 419.0
+  "age_s": 482.0
  },
  "pm_lab": {
   "status": "ready",
@@ -38,44 +38,25 @@
    "Смесь 50/50 модели и рынка бьёт обоих"
   ],
   "updated": "2026-11-27T23:03:38Z",
-  "age_s": 2093.0
+  "age_s": 2156.0
  },
  "scalp": {
   "done": 2682,
   "total": 2682,
   "errors": 0,
   "pending": 0,
-  "updated": "2026-11-27T22:42:41Z",
-  "age_s": 3350.0,
+  "updated": "2026-11-27T23:39:24Z",
+  "age_s": 10.0,
   "paper": {
    "equity": 745.12,
    "pnl_pct": -25.49,
    "trades": 300,
    "winrate": 57.3,
    "open": 3,
-   "tops": 6
+   "tops": 5
   },
-  "paper_updated": "2026-11-27T22:43:09Z",
+  "paper_updated": "2026-11-27T23:39:33Z",
   "leaderboard": [
-   {
-    "strategy": "funding_revert",
-    "symbol": "SUIUSDT",
-    "tf": "1m",
-    "oos_sharpe": "2.885",
-    "oos_pf": "1.036",
-    "oos_t": "1.88",
-    "trades": "752",
-    "param_stability": "0.32",
-    "is_sharpe_avg": "4.37",
-    "folds": "31",
-    "fee_mode": "maker",
-    "maker_sharpe": "2.8852393906909355",
-    "maker_pf": "1.0355128146028323",
-    "daily_pct": "0.001691",
-    "monthly_pct": "0.051997",
-    "trades_per_day": "4.18",
-    "usd_per_month_1000": "52.0"
-   },
    {
     "strategy": "bb_maker",
     "symbol": "NEARUSDT",
@@ -290,7 +271,7 @@
   "live_positions": {},
   "errors": null,
   "updated": "2026-11-27T23:38:14Z",
-  "age_s": 17.0
+  "age_s": 80.0
  },
  "clob": {
   "mode": "off",
@@ -299,6 +280,6 @@
   "order": null,
   "error": null,
   "updated": "2026-11-27T23:38:28Z",
-  "age_s": 3.0
+  "age_s": 66.0
  }
 }
