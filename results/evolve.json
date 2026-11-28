@@ -1,6 +1,27 @@
 {
  "history": [
   {
+   "ts": "2026-11-28T10:54:45Z",
+   "best": {
+    "ema_fast": 9,
+    "ema_slow": 21,
+    "sl_atr": 1.5,
+    "tp_atr": 2.5,
+    "is_ret": 2.96,
+    "oos_ret": 1.81,
+    "trades": 21,
+    "active_strategies": [
+     "ema_cross"
+    ],
+    "updated": "2026-11-28T10:54:44Z"
+   },
+   "portfolio": [
+    "ema_cross"
+   ],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-28T10:39:08Z",
    "best": {
     "ema_fast": 9,
@@ -724,16 +745,9 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-27T02:59:18Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-28T10:39:08Z",
+ "updated": "2026-11-28T10:54:45Z",
  "best_okx": {
   "ema_fast": 9,
   "ema_slow": 21,
@@ -762,13 +776,20 @@
    },
    {
     "strategy": "rsi_revert",
-    "is_ret": -0.03,
-    "oos_ret": -10.06,
-    "trades": 25,
+    "is_ret": 0.75,
+    "oos_ret": -10.0,
+    "trades": 26,
+    "portfolio": false
+   },
+   {
+    "strategy": "sma_revert",
+    "is_ret": -4.88,
+    "oos_ret": -0.52,
+    "trades": 15,
     "portfolio": false
    }
   ],
-  "updated": "2026-11-28T10:39:07Z"
+  "updated": "2026-11-28T10:54:44Z"
  },
  "strategy_stats": [
   {
@@ -787,9 +808,16 @@
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": -0.03,
-   "oos_ret": -10.06,
-   "trades": 25,
+   "is_ret": 0.75,
+   "oos_ret": -10.0,
+   "trades": 26,
+   "portfolio": false
+  },
+  {
+   "strategy": "sma_revert",
+   "is_ret": -4.88,
+   "oos_ret": -0.52,
+   "trades": 15,
    "portfolio": false
   }
  ],
@@ -799,24 +827,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.838,
+   "okx_mom_pct": -1.003,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-28T10:39:08Z"
+   "ts": "2026-11-28T10:54:45Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.461,
+   "okx_mom_pct": -0.727,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-28T10:39:08Z"
+   "ts": "2026-11-28T10:54:45Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.478,
+   "okx_mom_pct": -0.786,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-28T10:39:08Z"
+   "ts": "2026-11-28T10:54:45Z"
   }
  ],
  "golden": [
