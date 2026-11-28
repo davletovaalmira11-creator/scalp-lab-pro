@@ -8,7 +8,7 @@
  "trades": 21,
  "active_strategies": [
   "ema_cross",
-  "donchian_break"
+  "momentum"
  ],
  "strategy_stats": [
   {
@@ -20,32 +20,25 @@
   },
   {
    "strategy": "momentum",
-   "is_ret": -1.77,
-   "oos_ret": -1.1,
-   "trades": 36,
-   "portfolio": false
-  },
-  {
-   "strategy": "rsi_revert",
-   "is_ret": -6.82,
-   "oos_ret": -1.58,
-   "trades": 24,
-   "portfolio": false
-  },
-  {
-   "strategy": "donchian_break",
-   "is_ret": 3.04,
-   "oos_ret": 3.98,
-   "trades": 18,
+   "is_ret": 0.3,
+   "oos_ret": 0.05,
+   "trades": 32,
    "portfolio": true
   },
   {
+   "strategy": "rsi_revert",
+   "is_ret": -5.93,
+   "oos_ret": -3.0,
+   "trades": 20,
+   "portfolio": false
+  },
+  {
    "strategy": "sma_revert",
-   "is_ret": -3.44,
+   "is_ret": -4.58,
    "oos_ret": -2.5,
-   "trades": 18,
+   "trades": 15,
    "portfolio": false
   }
  ],
- "updated": "2026-11-28T02:58:06Z"
+ "updated": "2026-11-28T03:59:31Z"
 }
