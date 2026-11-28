@@ -19,18 +19,18 @@
   },
   {
    "strategy": "momentum",
-   "is_ret": -2.68,
+   "is_ret": -7.38,
    "oos_ret": -4.64,
-   "trades": 32,
+   "trades": 30,
    "portfolio": false
   },
   {
    "strategy": "rsi_revert",
-   "is_ret": 0.23,
-   "oos_ret": -8.64,
-   "trades": 26,
+   "is_ret": 2.19,
+   "oos_ret": -9.36,
+   "trades": 27,
    "portfolio": false
   }
  ],
- "updated": "2026-11-28T08:55:52Z"
+ "updated": "2026-11-28T09:37:56Z"
 }
