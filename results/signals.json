@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T02:40:33Z",
+ "updated": "2026-11-28T03:38:20Z",
  "scanned": 200,
  "signals": [
   {
@@ -9,12 +9,42 @@
    "outcome": "-",
    "price": 0,
    "edge": 0,
-   "note": "объём 24ч 106651 против среднего 15623",
-   "liq": 298309,
-   "v24": 106651,
+   "note": "объём 24ч 106646 против среднего 15623",
+   "liq": 297681,
+   "v24": 106646,
    "z": 0.0,
    "end": "2027-01-01",
-   "days_left": 33.9,
+   "days_left": 33.8,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "clarity-act-signed-into-law-in-2026",
+   "question": "Clarity Act (H.R.3633) signed into law in 2026?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 70633 против среднего 23270",
+   "liq": 185467,
+   "v24": 70633,
+   "z": 0.0,
+   "end": "2027-01-01",
+   "days_left": 33.8,
+   "tradeable": false
+  },
+  {
+   "strategy": "vols",
+   "slug": "bitcoin-above-50k-on-november-28-2026",
+   "question": "Will the price of Bitcoin be above $50,000 on November 28?",
+   "outcome": "-",
+   "price": 0,
+   "edge": 0,
+   "note": "объём 24ч 47661 против среднего 11964",
+   "liq": 127244,
+   "v24": 47661,
+   "z": 0.0,
+   "end": "2026-11-28",
+   "days_left": 0.0,
    "tradeable": false
   }
  ]
