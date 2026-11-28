@@ -1,6 +1,27 @@
 {
  "history": [
   {
+   "ts": "2026-11-28T09:55:54Z",
+   "best": {
+    "ema_fast": 9,
+    "ema_slow": 21,
+    "sl_atr": 1.5,
+    "tp_atr": 2.5,
+    "is_ret": 2.96,
+    "oos_ret": 1.81,
+    "trades": 21,
+    "active_strategies": [
+     "ema_cross"
+    ],
+    "updated": "2026-11-28T09:55:53Z"
+   },
+   "portfolio": [
+    "ema_cross"
+   ],
+   "golden_n": 5,
+   "err": null
+  },
+  {
    "ts": "2026-11-28T09:37:57Z",
    "best": {
     "ema_fast": 9,
@@ -696,22 +717,15 @@
    "portfolio": [],
    "golden_n": 5,
    "err": null
-  },
-  {
-   "ts": "2026-11-27T01:21:46Z",
-   "best": {},
-   "portfolio": [],
-   "golden_n": 5,
-   "err": null
   }
  ],
- "updated": "2026-11-28T09:37:57Z",
+ "updated": "2026-11-28T09:55:54Z",
  "best_okx": {
   "ema_fast": 9,
   "ema_slow": 21,
   "sl_atr": 1.5,
   "tp_atr": 2.5,
-  "is_ret": 3.16,
+  "is_ret": 2.96,
   "oos_ret": 1.81,
   "trades": 21,
   "active_strategies": [
@@ -720,7 +734,7 @@
   "strategy_stats": [
    {
     "strategy": "ema_cross",
-    "is_ret": 3.16,
+    "is_ret": 2.96,
     "oos_ret": 1.81,
     "trades": 21,
     "portfolio": true
@@ -740,12 +754,12 @@
     "portfolio": false
    }
   ],
-  "updated": "2026-11-28T09:37:56Z"
+  "updated": "2026-11-28T09:55:53Z"
  },
  "strategy_stats": [
   {
    "strategy": "ema_cross",
-   "is_ret": 3.16,
+   "is_ret": 2.96,
    "oos_ret": 1.81,
    "trades": 21,
    "portfolio": true
@@ -771,24 +785,24 @@
  "radar": [
   {
    "coin": "BTC",
-   "okx_mom_pct": -0.543,
+   "okx_mom_pct": -0.289,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-28T09:37:57Z"
+   "ts": "2026-11-28T09:55:54Z"
   },
   {
    "coin": "ETH",
-   "okx_mom_pct": -0.688,
+   "okx_mom_pct": -0.348,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-28T09:37:57Z"
+   "ts": "2026-11-28T09:55:54Z"
   },
   {
    "coin": "SOL",
-   "okx_mom_pct": -0.812,
+   "okx_mom_pct": -0.56,
    "pm_p_up": null,
    "divergence": null,
-   "ts": "2026-11-28T09:37:57Z"
+   "ts": "2026-11-28T09:55:54Z"
   }
  ],
  "golden": [
