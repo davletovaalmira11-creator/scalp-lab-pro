@@ -7,7 +7,7 @@
    "outcome": "No",
    "strategy": "fav",
    "entry": 0.932,
-   "last": 0.9835,
+   "last": 0.9865,
    "shares": 237.31,
    "usd": 221.39,
    "opened": "2026-11-24T21:35:57Z",
@@ -3392,9 +3392,13 @@
   [
    "2026-11-28T03:38:20Z",
    4439.89
+  ],
+  [
+   "2026-11-28T04:41:45Z",
+   4440.61
   ]
  ],
- "runs": 468,
+ "runs": 469,
  "done_keys": {
   "will-bitcoin-dip-to-50k-in-november-2026": "2026-11-24T21:35:57Z"
  },
@@ -4026,15 +4030,15 @@
   }
  ],
  "stats": {
-  "equity": 4439.89,
+  "equity": 4440.61,
   "cash": 4206.5,
   "open": 1,
   "trades": 125,
   "wins": 64,
   "winrate": 51.2,
-  "pnl_pct": 343.99,
-  "updated": "2026-11-28T03:38:20Z",
-  "runs": 468,
+  "pnl_pct": 344.06,
+  "updated": "2026-11-28T04:41:45Z",
+  "runs": 469,
   "sht_open": 0,
   "sht_trades": 125,
   "sht_pnl": 3443.21
